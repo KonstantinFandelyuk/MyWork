@@ -1,0 +1,92 @@
+.switcher {
+  display: inline-block;
+  position: relative;
+}
+.switcher__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0);
+}
+.switcher__border {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 142px;
+  height: 75px;
+  background: linear-gradient(
+    180deg,
+    #f4f4f4 0%,
+    #ebebeb 3.89%,
+    #e9e9e9 6.73%,
+    #e1e1e1 9.69%,
+    #dbdbdb 88.64%,
+    #dddddd 92.5%,
+    #d8d8d8 96.36%,
+    #d1d1d1 100%
+  );
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25), inset 0px 0px 14px #adadad;
+  border-radius: 40px;
+}
+.switcher__body {
+  position: absolute;
+  background: #655466;
+  display: block;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+
+.switcher__input:checked + .switcher__border .switcher__body {
+  background: #a220c3;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+
+.switcher__button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  box-shadow: -4px 4px 4px #949494, inset 0px -6px 9px #949494;
+  border-radius: 50%;
+}
+.switcher__input:checked + .switcher__border .switcher__button {
+  left: calc(100% - 70px);
+  /* right: 0;
+  left: auto; */
+}
+.switcher__button-body {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 9px;
+  bottom: 10px;
+  background: #e4e4e4;
+  background-blend-mode: hue;
+  box-shadow: inset 3px 3px 9px rgba(87, 87, 87, 0.25);
+  border-radius: 50%;
+}
+.switcher__button-image {
+  fill: none;
+  width: 22px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  stroke: #655466;
+  transform: translate(-50%, -50%);
+}
+.switcher__input:checked + .switcher__border .switcher__button-image {
+  stroke: #cc00ff;
+}
+.switcher__input:focus + .switcher__border {
+  /* outline: green 1px solid; */
+  box-shadow: 0 0 2px 0 green;
+}
