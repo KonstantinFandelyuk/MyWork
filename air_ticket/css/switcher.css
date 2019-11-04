@@ -1,0 +1,37 @@
+.switcher {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 18px;
+}
+.switcher__item {
+  flex-basis: 250px;
+}
+.switcher__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0);
+}
+.switcher__border {
+  width: 252px;
+  height: 50px;
+}
+.switcher__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.switcher__input:checked + .switcher__border .switcher__text {
+  background: #2196f3;
+  border-radius: 5px;
+  color: white;
+  width: 252px;
+  height: 50px;
+}
