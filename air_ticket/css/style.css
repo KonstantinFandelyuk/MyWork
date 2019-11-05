@@ -1,13 +1,13 @@
 @import url(ticket.css);
 @import url(switcher.css);
 
-
-body{
-
+.wrapper {
+  border-radius: 5px;
+  width: 960px;
   background: #f3f7fa;
 }
-* {
-  border-radius: 5px;
+header {
+  text-align: center;
 }
 .logo {
   background-image: url("../image/Logo1.png");
@@ -16,7 +16,7 @@ body{
   height: 80px;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 0 463px;
+  margin: 0 auto;
 }
 .content {
   display: flex;
@@ -32,6 +32,7 @@ body{
   list-style-type: none;
   cursor: pointer;
   padding-left: 20px;
+  display: block;
 }
 
 .filter__list-title {
@@ -55,4 +56,3 @@ body{
   line-height: 20px;
   padding-bottom: 20px;
 }
-

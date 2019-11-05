@@ -8,227 +8,235 @@
     <title>Aviasales</title>
   </head>
   <body>
-    <header>
-      <img class="logo" src="../image/Logo1.png" alt="" />
-  </header>
-    <div class="content">
-      <!-- --------------------------------------------------------------- -->
-      <ul class="filter">
-        <div class="filter__list">
-        <span class="filter__list-title">Количетсво пересадок</span>
-        <li class="filter__list-item"><input type="checkbox" />Все</li>
-        <li class="filter__list-item">
-          <input type="checkbox" />Без пересадок
-        </li>
-        <li class="filter__list-item"><input type="checkbox" />1 пересадка</li>
-        <li class="filter__list-item"><input type="checkbox" />2 пересадки</li>
-        <li class="filter__list-item"><input type="checkbox" />3 пересадки</li>
-      </div>
-      </ul>
-      <!-- ----------------------------------------------------------------- -->
-      <div class="ticket-list">
-        <!-- ------------------------------------------------------------ -->
-        <div class="switcher">
-          <label class="switcher__item">
-            <input class="switcher__input" type="radio" checked name="dva" />
-            <div class="switcher__border">
-              <div class="switcher__text ">САМЫЙ ДЕШЕВЫЙ</div>
-            </div>
-          </label>
-          <label class="switcher__item">
-            <input class="switcher__input" type="radio" name="dva" />
-            <div class="switcher__border">
-              <div class="switcher__text">САМЫЙ БЫСТРЫЙ</div>
-            </div>
-          </label>
-        </div>
+    <div class="wrapper">
+      <header>
+        <img class="logo" src="../image/Logo1.png" alt="" />
+      </header>
+      <div class="content">
+        <!-- --------------------------------------------------------------- -->
+        <aside>
+        <ul class="filter__list">
+            <li class="filter__list-title">Количетсво пересадок</li>
+            <li class="filter__list-item"><input type="checkbox" />Все</li>
+            <li class="filter__list-item">
+              <input type="checkbox" />Без пересадок
+            </li>
+            <li class="filter__list-item">
+              <input type="checkbox" />1 пересадка
+            </li>
+            <li class="filter__list-item">
+              <input type="checkbox" />2 пересадки
+            </li>
+            <li class="filter__list-item">
+              <input type="checkbox" />3 пересадки
+            </li>
+        </ul>
+      </aside>
+        <!-- ----------------------------------------------------------------- -->
+        <div class="ticket-list">
+          <!-- ------------------------------------------------------------ -->
+          <div class="switcher">
+            <label class="switcher__item">
+              <input class="switcher__input" type="radio" checked name="dva" />
+              <div class="switcher__border">
+                <div class="switcher__text ">САМЫЙ ДЕШЕВЫЙ</div>
+              </div>
+            </label>
+            <label class="switcher__item">
+              <input class="switcher__input" type="radio" name="dva" />
+              <div class="switcher__border">
+                <div class="switcher__text">САМЫЙ БЫСТРЫЙ</div>
+              </div>
+            </label>
+          </div>
 
-        <!-- -----------------------------1--------------------------------- -->
-        <div class="ticket">
-          <div class="menu">
-            <div class="menu-price">13 400 Р</div>
-            <div class="menu-logo">
-              <img src="image/Logo.png" alt="" />
+          <!-- -----------------------------1--------------------------------- -->
+          <div class="ticket">
+            <div class="menu">
+              <div class="menu-price">13 400 Р</div>
+              <div class="menu-logo">
+                <img src="image/Logo.png" alt="" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">10:45 – 08:00</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">21ч 15м</div>
+              </div>
+              <div class="item">
+                <div class="text">2 пересадки</div>
+                <div class="time">HKG, JNB</div>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">11:20 – 00:50</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">13ч 30м</div>
+              </div>
+              <div class="item">
+                <div class="text">1 пересадка</div>
+                <div class="time">HKG</div>
+              </div>
             </div>
           </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">10:45 – 08:00</div>
+          <!-- -----------------------------2--------------------------------- -->
+          <div class="ticket">
+            <div class="menu">
+              <div class="menu-price">13 400 Р</div>
+              <div class="menu-logo">
+                <img src="image/Logo.png" alt="" />
+              </div>
             </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">21ч 15м</div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">10:45 – 08:00</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">21ч 15м</div>
+              </div>
+              <div class="item">
+                <div class="text">2 пересадки</div>
+                <div class="time">HKG, JNB</div>
+              </div>
             </div>
-            <div class="item">
-              <div class="text">2 пересадки</div>
-              <div class="time">HKG, JNB</div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">11:20 – 00:50</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">13ч 30м</div>
+              </div>
+              <div class="item">
+                <div class="text">1 пересадка</div>
+                <div class="time">HKG</div>
+              </div>
             </div>
           </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">11:20 – 00:50</div>
+          <!-- ------------------------3------------------------------- -->
+          <div class="ticket">
+            <div class="menu">
+              <div class="menu-price">13 400 Р</div>
+              <div class="menu-logo">
+                <img src="image/Logo.png" alt="" />
+              </div>
             </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">13ч 30м</div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">10:45 – 08:00</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">21ч 15м</div>
+              </div>
+              <div class="item">
+                <div class="text">2 пересадки</div>
+                <div class="time">HKG, JNB</div>
+              </div>
             </div>
-            <div class="item">
-              <div class="text">1 пересадка</div>
-              <div class="time">HKG</div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">11:20 – 00:50</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">13ч 30м</div>
+              </div>
+              <div class="item">
+                <div class="text">1 пересадка</div>
+                <div class="time">HKG</div>
+              </div>
             </div>
           </div>
+          <!-- ----------------------4----------------------------- -->
+          <div class="ticket">
+            <div class="menu">
+              <div class="menu-price">13 400 Р</div>
+              <div class="menu-logo">
+                <img src="image/Logo.png" alt="" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">10:45 – 08:00</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">21ч 15м</div>
+              </div>
+              <div class="item">
+                <div class="text">2 пересадки</div>
+                <div class="time">HKG, JNB</div>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">11:20 – 00:50</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">13ч 30м</div>
+              </div>
+              <div class="item">
+                <div class="text">1 пересадка</div>
+                <div class="time">HKG</div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------5-------------------------------- -->
+          <div class="ticket">
+            <div class="menu">
+              <div class="menu-price">13 400 Р</div>
+              <div class="menu-logo">
+                <img src="image/Logo.png" alt="" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">10:45 – 08:00</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">21ч 15м</div>
+              </div>
+              <div class="item">
+                <div class="text">2 пересадки</div>
+                <div class="time">HKG, JNB</div>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="item">
+                <div class="text">MOW – HKT</div>
+                <div class="time">11:20 – 00:50</div>
+              </div>
+              <div class="item">
+                <div class="text">В пути</div>
+                <div class="time">13ч 30м</div>
+              </div>
+              <div class="item">
+                <div class="text">1 пересадка</div>
+                <div class="time">HKG</div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------END--------------------------------- -->
         </div>
-        <!-- -----------------------------2--------------------------------- -->
-        <div class="ticket">
-          <div class="menu">
-            <div class="menu-price">13 400 Р</div>
-            <div class="menu-logo">
-              <img src="image/Logo.png" alt="" />
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">10:45 – 08:00</div>
-            </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">21ч 15м</div>
-            </div>
-            <div class="item">
-              <div class="text">2 пересадки</div>
-              <div class="time">HKG, JNB</div>
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">11:20 – 00:50</div>
-            </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">13ч 30м</div>
-            </div>
-            <div class="item">
-              <div class="text">1 пересадка</div>
-              <div class="time">HKG</div>
-            </div>
-          </div>
-        </div>
-        <!-- ------------------------3------------------------------- -->
-        <div class="ticket">
-          <div class="menu">
-            <div class="menu-price">13 400 Р</div>
-            <div class="menu-logo">
-              <img src="image/Logo.png" alt="" />
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">10:45 – 08:00</div>
-            </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">21ч 15м</div>
-            </div>
-            <div class="item">
-              <div class="text">2 пересадки</div>
-              <div class="time">HKG, JNB</div>
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">11:20 – 00:50</div>
-            </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">13ч 30м</div>
-            </div>
-            <div class="item">
-              <div class="text">1 пересадка</div>
-              <div class="time">HKG</div>
-            </div>
-          </div>
-        </div>
-        <!-- ----------------------4----------------------------- -->
-        <div class="ticket">
-          <div class="menu">
-            <div class="menu-price">13 400 Р</div>
-            <div class="menu-logo">
-              <img src="image/Logo.png" alt="" />
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">10:45 – 08:00</div>
-            </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">21ч 15м</div>
-            </div>
-            <div class="item">
-              <div class="text">2 пересадки</div>
-              <div class="time">HKG, JNB</div>
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">11:20 – 00:50</div>
-            </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">13ч 30м</div>
-            </div>
-            <div class="item">
-              <div class="text">1 пересадка</div>
-              <div class="time">HKG</div>
-            </div>
-          </div>
-        </div>
-        <!-- -------------------------5-------------------------------- -->
-        <div class="ticket">
-          <div class="menu">
-            <div class="menu-price">13 400 Р</div>
-            <div class="menu-logo">
-              <img src="image/Logo.png" alt="" />
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">10:45 – 08:00</div>
-            </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">21ч 15м</div>
-            </div>
-            <div class="item">
-              <div class="text">2 пересадки</div>
-              <div class="time">HKG, JNB</div>
-            </div>
-          </div>
-          <div class="list-item">
-            <div class="item">
-              <div class="text">MOW – HKT</div>
-              <div class="time">11:20 – 00:50</div>
-            </div>
-            <div class="item">
-              <div class="text">В пути</div>
-              <div class="time">13ч 30м</div>
-            </div>
-            <div class="item">
-              <div class="text">1 пересадка</div>
-              <div class="time">HKG</div>
-            </div>
-          </div>
-        </div>
-        <!-- -------------------------END--------------------------------- -->
       </div>
     </div>
   </body>
