@@ -14,7 +14,7 @@
   clip: rect(0 0 0 0);
 }
 .switcher__border {
-    position: relative;
+  position: relative;
   width: 252px;
   height: 50px;
   background: #ffffff;
@@ -31,8 +31,6 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 20px;
-  /* text-align: center;
-  align-items: center; */
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }

@@ -1,0 +1,30 @@
+.check {
+}
+
+.check__input {
+  /* position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    clip: rect(0 0 0 0); */
+}
+
+.check__box {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  background-color: teal;
+}
+
+i {
+  font-size: 20px;
+  color: #2196f3;
+  text-align: center;
+}
+.check__input:checked + i {
+  font-family: "FontAwesome";
+  line-height: 700;
+  font-size: 15px;
+  content: "\f14a";
+  color: #2196f3;
+}
