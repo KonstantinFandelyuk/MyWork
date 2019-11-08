@@ -1,0 +1,30 @@
+.header {
+    background-image: url("../image/Header/Layer25.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 1000px;
+}
+.header__row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo {
+    background-image: url("../image/Header/pex.png");
+    background-repeat: no-repeat;
+}
+.logo-text { 
+    
+}
+.header__menu {
+    
+}
+a {
+    color: white;
+    text-decoration: underline;
+}
+.header__serch {
+    
+}
