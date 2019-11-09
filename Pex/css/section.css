@@ -32,7 +32,6 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 50vh;
 }
 .pink__row-1 {
   display: flex;
@@ -55,6 +54,7 @@ h2 {
 }
 .pink__row-2 {
   padding-top: 35px;
+  padding-bottom: 190px;
   display: flex;
   justify-content: center;
 }
@@ -87,10 +87,9 @@ h2 {
 .about__list-image {
   background-image: url("../image/Section/About1/photo-abt.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center;
   width: 630px;
-  height: 500px;
-  flex-grow:1;
+  flex-grow: 1;
 }
 .about___list-text {
   padding: 90px 225px 132px 100px;
