@@ -115,12 +115,25 @@ h2 {
 /* -----------------------END----------------------------------------- */
 
 .mount {
+  background-color: #404040;
   background-image: url("../image/Section/ImageStretch/Layer12.png");
+  background-blend-mode: luminosity;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  position: relative;
 }
+.mount::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(91, 47, 107, 0.8);
+}
+
 .mount__row-1 {
   display: flex;
   flex-direction: column;
@@ -151,15 +164,129 @@ h2 {
   font-weight: bold;
   font-size: 18px;
   border: 0px solid;
-  background-color: #fff;
+  background-color: #8824cd;
   border-radius: 50px;
   padding: 15px 70px;
   cursor: pointer;
   transition: 0.6s;
-  color: #c7556b;
+  color: white;
   text-align: center;
 }
 .buttom-bold:hover {
   background-color: turquoise;
   transition: 0.6s;
 }
+
+/* ----------------------------END------------------------------------ */
+
+.food {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../image/Section/FeatureArticle/food.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  /* height: 100vh; */
+}
+.food-row-1 {
+  padding-top: 360px;
+}
+.food-row-1,
+.food-row-2,
+.food-row-3 {
+  padding-left: 90px;
+}
+.food .buttom-white {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.6s;
+  color: white;
+  text-align: center;
+}
+.buttom-bold:hover {
+  background-color: grey;
+  transition: 0.6s;
+}
+.food h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  text-transform: none;
+  padding-top: 30px;
+}
+.food-row-3 {
+  padding-bottom: 90px;
+}
+.food-author {
+  display: flex;
+  align-items: center;
+}
+.author-photo {
+  border: 2px solid grey;
+  border-radius: 50%;
+  background-color: grey;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.author-text {
+  padding-left: 20px;
+}
+/* ------------------------------------------------ */
+.about-list-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.about-list-revers .about__list-image {
+  background-image: url("../image/Section/About/about_time.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 630px;
+  flex-grow: 1;
+}
+.about-2 .about___list-text {
+  padding: 90px 40px 132px 225px;
+  flex-grow: 3;
+}
+/* --------------------------------------------------------- */
+.fotter {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.5;
+}
+.contact__list {
+  background-color: #e7526b;
+  padding: 80px 970px 180px 160px;
+}
+.contat__list-text {
+  padding-bottom: 30px;
+}
+.text-strong {
+  font-weight: bold;
+  display: block;
+}
+.contact__list-mail {
+  color: white;
+}
+/* ------------------------------------------- */
+.footer-text {
+  font-size: 13px;
+  padding-top: 59px;
+  padding-bottom: 309px;
+  padding-left: 160px;
+  background-color: #2e3b4e;
+  color: white;
+}
+/* ------------------------------------------------------- */
