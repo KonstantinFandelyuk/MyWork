@@ -1,0 +1,14 @@
+@import url("reset.css");
+@import url("main.css");
+
+/* <!--HEADER--> */
+@import url("header.css");
+/* <!--HEADER END--> */
+
+/* <!--SECTION--> */
+@import url("section.css");
+/* <!--SECTION END--> */
+
+/* <!--FOOTER--> */
+@import url("footer.css");
+/* <!--FOOTER END--> */
