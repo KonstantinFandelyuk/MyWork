@@ -3,7 +3,7 @@
 	text-align: center;
 }
 
-.header__menu {
+.header__menu-first {
 	padding: 17px 0;
 }
 
@@ -15,6 +15,7 @@
 /* ----------------------------------------------------- */
 
 .header__row-2 {
+	background-color: #ffffff;
 	border-bottom: 1px solid #efefef;
 	padding: 20px 0;
 }
@@ -74,18 +75,20 @@
 	color: black;
 }
 
-.callback__button {
+.callback-button {
+	font-size: 14px;
+	line-height: 16px;
 	color: black;
 	border-radius: 40px;
 	border: 2px solid #f13c6e;
-	width: 170px;
 	height: 40px;
-	box-sizing: border-box;
+	background: none;
 	padding: 12px 26px;
 }
 
 /* ------------------------------------------------ */
 .header__row-3 {
+	background-color: #ffffff;
 	text-align: center;
 }
 
@@ -102,7 +105,7 @@
 
 /* ------------------------------------------------ */
 .header__row-4 {
-	background-image: url("/images/header/Rectangle_2.png");
+	background-image: url("../images/header/Rectangle_2.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -114,27 +117,27 @@
 	color: white;
 }
 
-.promoution {
+.hero {
 	padding-top: 162px;
 	width: 308px;
 	height: 219px;
 }
 
-.slider__text-hero {
+.heror__text.heror__text_big {
 	margin-bottom: 30px;
 	font-weight: bold;
 	font-size: 48px;
 	line-height: 56px;
 }
 
-.slider__text-small {
+.heror__text.heror__text_small {
 	margin-bottom: 60px;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 20px;
 }
 
-.button__more {
+.button-botton .button {
 	color: white;
 	border-radius: 40px;
 	border: 2px solid white;
