@@ -75,7 +75,7 @@ h2 {
 
 .button-buy {
 	color: white;
-	background: #F13C6E;
+	background: #f13c6e;
 	border-radius: 30px;
 	border: 0px solid white;
 	width: 130px;
@@ -83,3 +83,82 @@ h2 {
 	box-sizing: border-box;
 	padding: 12px 26px;
 }
+
+/* ---------------------- */
+.section__row-3 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 100px;
+	justify-content: space-between;
+}
+
+.content-box {
+	color: white;
+	background-color: #f13c6e;
+	display: flex;
+	max-width: 540px;
+	max-height: 212px;
+}
+
+.content-box__col-1 {
+	padding: 30px 0 35px 30px;
+}
+
+.content-box__text-tittle {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	display: flex;
+	justify-content: start;
+	padding-bottom: 30px;
+}
+
+.content-box__text {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	display: flex;
+	justify-content: start;
+	padding-bottom: 30px;
+}
+
+.content-box .button {
+	background: #F13C6E;
+	border: 2px solid #FFFFFF;
+	background: #FFFFFF;
+	border-radius: 30px;
+	max-width: 225px;
+	max-height: 35px;
+}
+
+.content-box__col-2 {
+	display: flex;
+	align-items: center;
+	padding: 0 45px 0 75px;
+}
+
+.mail__input {
+	border-radius: 40px;
+	border: 0px solid;
+	background-color: #efefef;
+	padding: 9px 25px;
+}
+
+/* -------------------------------------------- */
+.section__row-4 {
+	margin-top: 100px;
+}
+
+.brand-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.brand-list__item {
+	border: 1px solid #efefef;
+	padding: 35px 60px;
+	background-color: white;
+}
+
+/* ------------------------------------------------- */
