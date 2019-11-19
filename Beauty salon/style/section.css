@@ -96,7 +96,7 @@ h2 {
 	color: white;
 	background-color: #f13c6e;
 	display: flex;
-	max-width: 540px;
+	width: 540px;
 	max-height: 212px;
 }
 
@@ -122,13 +122,15 @@ h2 {
 	padding-bottom: 30px;
 }
 
-.content-box .button {
+.content-box__button .button {
 	background: #F13C6E;
 	border: 2px solid #FFFFFF;
-	background: #FFFFFF;
+	box-sizing: border-box;
 	border-radius: 30px;
 	max-width: 225px;
 	max-height: 35px;
+	color: white;
+	padding: 9px 20px;
 }
 
 .content-box__col-2 {
@@ -136,7 +138,11 @@ h2 {
 	align-items: center;
 	padding: 0 45px 0 75px;
 }
-
+.content-box__col-2.mod {
+	display: flex;
+	align-items: center;
+	padding: 0 45px 0 100px;
+}
 .mail__input {
 	border-radius: 40px;
 	border: 0px solid;
