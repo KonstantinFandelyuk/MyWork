@@ -1,0 +1,163 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+		link(rel='stylesheet', href='css/style.css')
+		title Document
+	body
+		.wrapper
+			// --------------------------------------------------------------------------------------------------------------------
+			.header
+				.header__row-1
+					nav.header__menu-first
+						a.header__menu-item(href='#') Доставка
+						a.header__menu-item(href='#') Оплата
+						a.header__menu-item(href='#') Отзывы
+						a.header__menu-item(href='#') Вопрос-ответ
+						a.header__menu-item(href='#') Контакты
+				.header__row-2
+					.container
+						.logo
+							img.logo__img(src='img/header/logo.png', alt='')
+							.logo__text beauty
+						form.search
+							input.search__input
+						.phone
+							a.phone__number(href='tel:8(812)1234567') 8 (812) 123-45-67
+						button.callback-button#button-callback Обратный звонок
+				.header__row-3
+					nav.header__menu-2
+						a.header__menu-item-2(href='#') Парикмахерская
+						a.header__menu-item-2(href='#') Барбершоп
+						a.header__menu-item-2(href='#') Маникюр
+						a.header__menu-item-2(href='#') Педикюр
+						a.header__menu-item-2(href='#') Массаж
+						a.header__menu-item-2(href='#') Мебель
+				.header__row-4
+					.container
+						.hero
+							.heror__text.heror__text_big Супер кресло
+							.heror__text.heror__text_small
+								| Текст акции всегда отражает суть, а не просто болтовню, поэтому
+								| внимательнее
+							.button-botton
+								a.button(href='#') Подробней
+			// ------------------------------------------------------------------------------------------------------------------------
+			.section
+				.container
+					.section__row-1
+						h1.hiden_h1 Список предложений
+						h2 Специальные предложения
+					.section__row-2
+						.catalog__list
+							.catalog__list-item
+								img.catalog__list-item-img(src='img/section/item/Rectangle.png', alt='Товар')
+								span.catalog__list-item-text
+									| Парикмахерское кресло 
+									br
+									|  «Норм» гидравлическое
+								span.catalog__list-item-price 9 900 ₽
+								form.section.button(action='get')
+									button.button-buy Купить
+							.catalog__list-item
+								img.catalog__list-item-img(src='img/section/item/Rectangle.png', alt='Товар')
+								span.catalog__list-item-text
+									| Парикмахерское кресло 
+									br
+									|  «Норм» гидравлическое
+								span.catalog__list-item-price 9 900 ₽
+								form.section.button(action='get')
+									button.button-buy Купить
+							.catalog__list-item
+								img.catalog__list-item-img(src='img/section/item/Rectangle.png', alt='Товар')
+								span.catalog__list-item-text
+									| Парикмахерское кресло 
+									br
+									|  «Норм» гидравлическое
+								span.catalog__list-item-price 9 900 ₽
+								form.section.button(action='get')
+									button.button-buy Купить
+							.catalog__list-item
+								img.catalog__list-item-img(src='img/section/item/Rectangle.png', alt='Товар')
+								span.catalog__list-item-text
+									| Парикмахерское кресло 
+									br
+									|  «Норм» гидравлическое
+								span.catalog__list-item-price 9 900 ₽
+								form.section.button(action='get')
+									button.button-buy Купить
+					// ---------------------------------------------------------------------------------------------------------------
+					.section__row-3
+						.content-box
+							.content-box__col-1
+								span.content-box__text-tittle Получайте бонусы и подарки
+								span.content-box__text
+									| Каждый месяц разыгрываем 
+									br
+									|  10 000 рублей для наших клиентов
+								form.mail
+									input.mail__input(type='email', placeholder=' Введите e-mail')
+							.content-box__col-2
+								img.mail-icon(src='img/section/icon/mail.png', alt='')
+						// ---------------------------------------------------------------------------
+						.content-box
+							.content-box__col-1
+								span.content-box__text-tittle Заходите к нам
+								span.content-box__text
+									| Более 300 магазинов 
+									br
+									|  по Украине
+								.content-box__button
+									a.button(href='#') Карта магазинов
+							.content-box__col-2.mod
+								img.delivery-icon(src='img/section/icon/Vector.png', alt='')
+					// -------------------------------------------------------------------------------------------------------
+					.section__row-4
+						include ../blocks/brand-list.pug
+						
+					.section__row-5
+						h2 Вы недавно смотрели
+					.section__row-6
+						.catalog__list
+							.catalog__list-item
+								img.catalog__list-item-img(src='img/section/item/Rectangle.png', alt='Товар')
+								span.catalog__list-item-text
+									| Парикмахерское кресло 
+									br
+									|  «Норм» гидравлическое
+								span.catalog__list-item-price 9 900 ₽
+								form.section.button(action='get')
+									button.button-buy Купить
+							.catalog__list-item
+								img.catalog__list-item-img(src='img/section/item/Rectangle.png', alt='Товар')
+								span.catalog__list-item-text
+									| Парикмахерское кресло 
+									br
+									|  «Норм» гидравлическое
+								span.catalog__list-item-price 9 900 ₽
+								form.section.button(action='get')
+									button.button-buy Купить
+							.catalog__list-item
+								img.catalog__list-item-img(src='img/section/item/Rectangle.png', alt='Товар')
+								span.catalog__list-item-text
+									| Парикмахерское кресло 
+									br
+									|  «Норм» гидравлическое
+								span.catalog__list-item-price 9 900 ₽
+								form.section.button(action='get')
+									button.button-buy Купить
+							.catalog__list-item
+								img.catalog__list-item-img(src='img/section/item/Rectangle.png', alt='Товар')
+								span.catalog__list-item-text
+									| Парикмахерское кресло 
+									br
+									|  «Норм» гидравлическое
+								span.catalog__list-item-price 9 900 ₽
+								form.section.button(action='get')
+									button.button-buy Купить
+		include ../blocks/modal.pug
+		
+		script(src="js/app.js")
