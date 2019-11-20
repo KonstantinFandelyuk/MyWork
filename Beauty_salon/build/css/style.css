@@ -507,7 +507,7 @@ footer {
 .category-list-item-big::after {
   content: "";
   position: absolute;
-  bottom: 300px;
+  bottom: 440px;
   width: 13%;
   height: 2px;
   background: #EFEFEF; }
