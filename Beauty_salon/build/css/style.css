@@ -456,6 +456,9 @@ h2 {
   padding: 35px 60px;
   background-color: white; }
 
+.section__row-6 {
+  margin-bottom: 81px; }
+
 /* ------------------------------------------------- */
 .modal {
   display: none;
@@ -480,3 +483,29 @@ h2 {
     padding: 10px; }
   .modal.active {
     display: flex; }
+
+footer {
+  background-color: #ffffff; }
+
+.category__nav {
+  display: flex;
+  justify-content: space-between; }
+
+.category__nav-list {
+  margin-top: 60px;
+  display: inline-block;
+  text-align: start;
+  width: 255px; }
+
+.category-list-item-big {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140.62%;
+  border-bottom: 1px solid red;
+  padding-bottom: 30px; }
+
+.category-list-item {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px;
+  color: #828282; }
