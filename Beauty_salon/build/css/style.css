@@ -500,19 +500,11 @@ footer {
   width: 255px; }
 
 .category-list-item-big {
-  width: 25%;
   font-weight: 500;
   font-size: 16px;
   line-height: 140.62%;
-  padding-bottom: 30px; }
-
-.category-list-item-big::after {
-  content: "";
-  position: absolute;
-  bottom: 440px;
-  width: 13%;
-  height: 2px;
-  background: #EFEFEF; }
+  padding-bottom: 30px;
+  border-bottom: 1px solid #efefef; }
 
 .category-list-item {
   font-weight: normal;
@@ -542,54 +534,33 @@ ul > li:last-child {
   width: 255px; }
 
 .social-icon__item {
-  border: 2px solid #F13C6E;
+  border: 2px solid #f13c6e;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  box-sizing: border-box; }
-
-.youtube {
-  font-family: "Font Awesome 5 Free";
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Font Awesome 5 Brands";
   font-weight: 400;
-  font-size: 10px;
-  content: "\f167";
-  color: #F13C6E;
-  display: inline-grid;
-  justify-items: center;
-  align-items: center; }
+  font-size: 25px;
+  color: #f13c6e; }
 
-.vk {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  font-size: 10px;
-  content: "\f189";
-  color: #F13C6E;
-  display: inline-grid;
-  justify-items: center;
-  align-items: center; }
+.youtube::before {
+  content: "\f167"; }
 
-.fb {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  font-size: 55px;
-  content: "\f39e";
-  color: #F13C6E;
-  display: inline-grid;
-  justify-items: center;
-  align-items: center; }
+.vk::before {
+  content: "\f189"; }
 
-.inst {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  font-size: 10px;
-  content: "\f16d";
-  color: #F13C6E;
-  display: inline-grid;
-  justify-items: center;
-  align-items: center; }
+.fb::before {
+  content: "\f39e"; }
+
+.inst::before {
+  content: "\f16d"; }
 
 .footer__row-3 {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 25px 0; }
 
 .footer__row-3 .container {

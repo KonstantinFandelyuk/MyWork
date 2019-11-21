@@ -1,16 +1,15 @@
-// $("#button-callback").on("click", function () {
-// 	$("#modal-callback").addClass("active")
+let arrDataId = document.querySelectorAll("[data-id]");
+// Повесить обратчики событий на все елементы
+for (let i = 0; i < arrDataId.length; i++) {
+	arrDataId[i].addEventListener("click", function () {
+		let id = arrDataId[i].getAttribute("data-id");
+		let element = document.getElementById(id);
+		element.classList.add("active")
+	});
+}
+// Закрыть модалку
+// modalCallback.addEventListener("click", function (ev) {
+// 	if (ev.target.closest(".modal__close") || ev.target.classList.contains("modal")) {
+// 		modalCallback.classList.remove("active")
+// 	}
 // })
-var buttonCallback = document.querySelector("#button-callback");
-var modalCallback = document.querySelector("#modal-callback");
-
-buttonCallback.addEventListener("click", function () {
-	modalCallback.classList.add("active")
-})
-
-modalCallback.addEventListener("click", function (ev) {
-	console.log(ev)
-	if (ev.target.closest(".modal__close") || ev.target.classList.contains("modal")) {
-		modalCallback.classList.remove("active")
-	}
-})

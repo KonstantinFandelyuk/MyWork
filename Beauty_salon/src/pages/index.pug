@@ -12,7 +12,7 @@ html(lang='en')
 			// --------------------------------------------------------------------------------------------------------------------
 			.header
 				.header__row-1
-					nav.header__menu-first
+					nav.header__menu-first#nav-heder
 						a.header__menu-item(href='#') Доставка
 						a.header__menu-item(href='#') Оплата
 						a.header__menu-item(href='#') Отзывы
@@ -27,15 +27,15 @@ html(lang='en')
 							input.search__input
 						.phone
 							a.phone__number(href='tel:8(812)1234567') 8 (812) 123-45-67
-						button.callback-button#button-callback Обратный звонок
+						button.callback-button(data-id="modal-callback") Обратный звонок
 				.header__row-3
 					nav.header__menu-2
-						a.header__menu-item-2(href='#') Парикмахерская
+						a.header__menu-item-2(href='#' data-id="nav-heder") Парикмахерская
 						a.header__menu-item-2(href='#') Барбершоп
 						a.header__menu-item-2(href='#') Маникюр
 						a.header__menu-item-2(href='#') Педикюр
 						a.header__menu-item-2(href='#') Массаж
-						a.header__menu-item-2(href='#') Мебель
+						a.header__menu-item-2(href='#' data-id="nav-heder") Мебель
 				.header__row-4
 					.container
 						.hero
@@ -163,7 +163,7 @@ html(lang='en')
 					.container
 						.category__nav
 							ul.category__nav-list
-								li.category-list-item-big Популярныe категории
+								li.category-list-item-big Популярныe <br>  категории
 								li.category-list-item Насадки
 								li.category-list-item Инструменты
 								li.category-list-item Гель-лаки
@@ -171,7 +171,7 @@ html(lang='en')
 								li.category-list-item Наращивание
 								li.category-list-item Оборудование
 							ul.category__nav-list
-								li.category-list-item-big Популярные категории
+								li.category-list-item-big Популярные <br>  категории
 								li.category-list-item Насадки
 								li.category-list-item Инструменты
 								li.category-list-item Гель-лаки
@@ -179,7 +179,7 @@ html(lang='en')
 								li.category-list-item Наращивание
 								li.category-list-item Оборудование
 							ul.category__nav-list
-								li.category-list-item-big Популярные категории
+								li.category-list-item-big Популярные <br> категории
 								li.category-list-item Насадки
 								li.category-list-item Инструменты
 								li.category-list-item Гель-лаки
@@ -187,7 +187,7 @@ html(lang='en')
 								li.category-list-item Наращивание
 								li.category-list-item Оборудование
 							ul.category__nav-list
-								li.category-list-item-big Популярные категории
+								li.category-list-item-big Популярные <br>  категории
 								li.category-list-item Насадки
 								li.category-list-item Инструменты
 								li.category-list-item Гель-лаки
@@ -198,14 +198,14 @@ html(lang='en')
 					.container
 						.social-icon
 							.social-icon__item.youtube
-							.social-icon__item.vk 43
+							.social-icon__item.vk
 							.social-icon__item.fb
 							.social-icon__item.inst
 						.location
 							span.location-str 198555, Невский пр. 140, офис 140
 						.phone
 							a.phone__number(href='tel:8(812)1234567') 8 (812) 123-45-67
-						button.callback-button#button-callback Обратный звонок
+						button.callback-button(data-id="modal-callback") Обратный звонок
 				.footer__row-3
 					.container
 						div.footer-small-text Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты
