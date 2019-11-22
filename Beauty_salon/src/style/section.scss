@@ -18,11 +18,31 @@ h2 {
 	margin-bottom: 100px;
 }
 
+@media screen and (max-width: 1146px) {
+	.section__row-2 {
+		margin-bottom: 50px;
+	}
+}
+
 .catalog__list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1146px) {
+	.catalog__list {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+@media screen and (max-width: 320px) {
+.catalog__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+		width: 500px;
+	}
+}
 .catalog__list-item {
 	background-color: #fff;
 	border: 1px solid red;
@@ -30,16 +50,40 @@ h2 {
 	max-height: 363px;
 }
 
+@media screen and (max-width: 320px) {
+	.catalog__list-item {
+		max-width: 200px;
+		margin-bottom: 10px;
+		}
+	}
 .catalog__list-item:nth-child(2) {
 	margin-left: 30px;
+}
+
+@media screen and (max-width: 1146px) {
+	.catalog__list-item:nth-child(2) {
+		margin-left: 0px;
+	}
 }
 
 .catalog__list-item:nth-child(3) {
 	margin-left: 30px;
 }
 
+@media screen and (max-width: 1146px) {
+	.catalog__list-item:nth-child(3) {
+		margin-left: 0px;
+	}
+}
+
 .catalog__list-item:nth-child(4) {
 	margin-left: 30px;
+}
+
+@media screen and (max-width: 1146px) {
+	.catalog__list-item:nth-child(4) {
+		margin-left: 0px;
+	}
 }
 
 .catalog__list-item-img {
@@ -92,12 +136,25 @@ h2 {
 	justify-content: space-between;
 }
 
+@media screen and (max-width: 1146px) {
+	.section__row-3 {
+		justify-content: space-around;
+		margin-top: 50px;
+	}
+}
+
 .content-box {
 	color: white;
 	background-color: #f13c6e;
 	display: flex;
 	width: 540px;
 	max-height: 212px;
+}
+
+@media screen and (max-width: 1146px) {
+	.content-box {
+		width: 500px;
+	}
 }
 
 .content-box__col-1 {
@@ -122,6 +179,12 @@ h2 {
 	padding-bottom: 30px;
 }
 
+@media screen and (max-width: 1146px) {
+	.content-box__text {
+		display: none;
+	}
+}
+
 .content-box__button .button {
 	background: #F13C6E;
 	border: 2px solid #FFFFFF;
@@ -131,7 +194,16 @@ h2 {
 	max-height: 35px;
 	color: white;
 	padding: 9px 20px;
+	margin-bottom: 0px;
 }
+
+@media screen and (max-width: 1146px) {
+	.content-box__button .button {
+		margin-top: 19px;
+		text-align: center;
+	}
+}
+
 
 .content-box__col-2 {
 	display: flex;
@@ -150,7 +222,7 @@ h2 {
 	border: 0px solid;
 	background-color: #efefef;
 	padding: 9px 25px;
-	outline:none;
+	outline: none;
 }
 
 /* -------------------------------------------- */
