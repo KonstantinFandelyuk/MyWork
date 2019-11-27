@@ -107,15 +107,19 @@
 
 /* ------------------------------------------------ */
 .header__row-4 {
+	background-color: #f13c6e;
+}
+
+.mod {
+	max-width: 1268px;
+}
+
+.slider {
 	background-image: url("../img/header/Rectangle_2.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 1920px;
 	height: 604px;
-}
-
-.header__row-4 .container {
 	color: white;
 }
 

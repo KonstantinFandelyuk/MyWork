@@ -5,6 +5,7 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
 		link(rel='stylesheet', href='css/style.css')
 		title Document
 	body
@@ -21,7 +22,7 @@ html(lang='en')
 				.header__row-2
 					.container
 						.logo
-							img.logo__img(src='img/header/logo.png', alt='')
+							img.logo__img.animated.flip(src='img/header/logo.png', alt='')
 							.logo__text beauty
 						form.search
 							input.search__input
@@ -36,8 +37,9 @@ html(lang='en')
 						a.header__menu-item-2(href='#') Педикюр
 						a.header__menu-item-2(href='#') Массаж
 						a.header__menu-item-2(href='#' data-id="nav-heder") Мебель
-				.header__row-4
-					.container
+			.header__row-4
+				.container.mod
+					.slider
 						.hero
 							.heror__text.heror__text_big Супер кресло
 							.heror__text.heror__text_small
@@ -52,7 +54,7 @@ html(lang='en')
 						h1.hiden_h1 Список предложений
 						h2 Специальные предложения
 					.section__row-2
-						.catalog__list
+						.catalog__list.animated
 							.catalog__list-item
 								img.catalog__list-item-img(src='img/section/item/Rectangle.png', alt='Товар')
 								span.catalog__list-item-text
@@ -197,7 +199,7 @@ html(lang='en')
 				.footer__row-2
 					.container
 						.social-icon
-							.social-icon__item.youtube
+							.social-icon__item.youtube.animated
 							.social-icon__item.vk
 							.social-icon__item.fb
 							.social-icon__item.inst
