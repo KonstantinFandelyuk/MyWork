@@ -3,7 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i&display=swap&subset=cyrillic");
 html,
 body,
 div,
@@ -141,7 +141,7 @@ body {
   font-weight: 400;
   line-height: 1;
   overflow-x: hidden;
-  background-color: #E5E5E5; }
+  background-color: #fff; }
 
 /* Поведение вхех картинок поумолчанию */
 img {
@@ -171,7 +171,7 @@ input[type="submit"] {
 
 /* Класс который устанавливет рабочую область для контента */
 .container {
-  max-width: 1130px;
+  max-width: 1190px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
