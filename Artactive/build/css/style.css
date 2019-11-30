@@ -198,9 +198,8 @@ input[type="submit"] {
 
 .header {
   background-image: url("/img/header/figure-1.png");
-  background-image: linear-gradient(to left, #6a3093, #7634a9, #8238bf, #8d3cd6, #9841ee);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   color: white; }
 
 .header__row-1 {
