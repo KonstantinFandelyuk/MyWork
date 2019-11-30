@@ -39,12 +39,17 @@ function js() {
   return gulp.src("src/js/**/*.*").pipe(gulp.dest("build/js"));
 }
 
+function fonts() {
+  return gulp.src("src/fonts/**/*.*").pipe(gulp.dest("build/fonts"));
+}
+
 // Следить за изменениями в файлах и запускать соответсвующую задачу
 function watch() {
   gulp.watch("src/style/**/*.scss", styles);
   gulp.watch("src/**/*.pug", view);
   gulp.watch("src/img/*.*", img);
   gulp.watch("src/js/*.*", js);
+  gulp.watch("src/fonts/**/*.*", fonts);
   gulp.watch("src/**/*.*").on("change", browserSync.reload);
 }
 
@@ -53,6 +58,6 @@ function clean() {
   return del(["build"]);
 }
 
-var build = gulp.series(clean, gulp.parallel(watch, styles, view, img, serve, js));
+var build = gulp.series(clean, gulp.parallel(watch, styles, view, img, serve, js, fonts));
 
 exports.default = build;
