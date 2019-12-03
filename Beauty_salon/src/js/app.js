@@ -13,6 +13,11 @@ closeElement.addEventListener("click", function () {
 	modalElement.classList.remove("active");
 })
 
+modalElement.addEventListener("active", function (event) {
+	if (!event.currnt.target.closet(".modalElement")) {
+		modalElement.classList.remove("active");
+	}
+})
 
 var catalog__list = document.querySelector(".catalog__list");
 
