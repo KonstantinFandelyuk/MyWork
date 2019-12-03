@@ -1,0 +1,26 @@
+.check {
+  display: flex;
+  align-items: center;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0);
+}
+
+i {
+  font-size: 20px;
+  color: #2196f3;
+  text-align: center;
+  padding-right: 5px;
+}
+.check__input:checked + i::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 20px;
+  content: "\f14a";
+  color: #2196f3;
+}

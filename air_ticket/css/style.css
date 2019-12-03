@@ -1,0 +1,25 @@
+@import url(ticket.css);
+@import url(switcher.css);
+@import url(fliter.css);
+@import url(checkbox.css);
+
+.wrapper {
+  border-radius: 5px;
+  width: 960px;
+  background: #f3f7fa;
+}
+header {
+  text-align: center;
+}
+.logo {
+  background-image: url("../image/Logo1.png");
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+}

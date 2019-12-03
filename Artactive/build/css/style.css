@@ -1,0 +1,540 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ---------Шрифыт----------- */
+@font-face {
+  font-family: "Muller";
+  font-weight: 800;
+  font-style: normal;
+  src: url("/fonts/MullerExtraBold.woff");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muller";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/MullerMedium.woff2");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Muller';
+  src: url("/fonts/MullerRegular.woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+/* -------------------------------- */
+* {
+  box-sizing: border-box; }
+
+/* Стили поумолчанию для всех элементов */
+body {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #fff; }
+
+/* Поведение вхех картинок поумолчанию */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Стили ссылок поумолчанию */
+a {
+  text-decoration: none; }
+
+a:hover {
+  transition-duration: 0.3s; }
+
+/* Убрать обводку поумолчанию у кнопок, font: inherit - позволит наследовать стили родителя (у кнопки сили шрифтов заданы поумолчанию) */
+button {
+  border: none;
+  outline: none;
+  font: inherit; }
+
+button,
+input[type="submit"] {
+  cursor: pointer; }
+
+/* Обёртка всего - идёт после body */
+.wrapper {
+  position: relative; }
+
+/* Класс который устанавливет рабочую область для контента */
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+/* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
+@media (max-width: 1110px) {
+  .container {
+    padding: 0 10px; } }
+
+.header {
+  background-image: url("/img/header/figure-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: top;
+  height: 100vh; }
+
+.header__row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px; }
+
+.header__col-1 {
+  margin-right: 100px; }
+
+.header__nav-menu a {
+  color: white;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.header__nav-menu a:nth-child(2) {
+  margin-left: 50px; }
+
+.header__nav-menu a:nth-child(3) {
+  margin-left: 50px; }
+
+.header__nav-menu a:nth-child(4) {
+  margin-left: 50px; }
+
+.header__nav-menu a:nth-child(5) {
+  margin-left: 50px; }
+
+.header-phone {
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold; }
+
+.button {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 20px; }
+
+.header__row-2 {
+  margin-top: 135px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between; }
+
+.header__row-2 .header__col-1 {
+  margin: 0; }
+
+.header__slogan {
+  margin-top: 40px;
+  flex-grow: 2; }
+
+.header__slogan-hero-text {
+  font-family: "Muller";
+  font-weight: 800;
+  font-size: 60px;
+  margin-bottom: 60px;
+  text-transform: uppercase; }
+
+.header__slogan-text {
+  font-family: "Muller";
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 85px;
+  line-height: 1.2; }
+
+.header__calltoaction {
+  display: flex;
+  justify-content: start;
+  align-items: center; }
+
+.buy {
+  border: 1px solid #fb0275;
+  background: #fb0275;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 14px 40px; }
+
+.header__calltoaction-text {
+  font-size: 16px;
+  margin-left: 25px; }
+
+.header__row-3 {
+  text-align: center;
+  padding-bottom: 60px; }
+
+.header__row-2 .header__col-2 {
+  margin-right: 50px; }
+
+.scroll::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  content: "\f103";
+  color: #fff;
+  top: 14px; }
+
+.section__about {
+  background-image: url("/img/section/item/line.png");
+  background-position: center; }
+
+.section__row-1 {
+  display: flex; }
+
+.section__col-1 {
+  flex-basis: 50%; }
+
+.stages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 170px;
+  position: absolute; }
+
+.one {
+  left: 544px;
+  top: 1080px; }
+
+.two {
+  left: 768px;
+  top: 1233px; }
+
+.three {
+  left: 380px;
+  top: 1272px; }
+
+.four {
+  left: 581px;
+  top: 1434px; }
+
+.five {
+  left: 574px;
+  top: 1093px; }
+
+.stages__item-crl {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #f0e2ff;
+  margin-bottom: 18px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.boock {
+  background-image: url("/img/section/icon/ebook.png"); }
+
+.tablepc {
+  background-image: url("/img/section/icon/tablet.png"); }
+
+.writer {
+  background-image: url("/img/section/icon/writer.png"); }
+
+.moving {
+  background-image: url("/img/section/icon/moving.png"); }
+
+.line {
+  background-image: url("/img/section/icon/4343.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px; }
+
+.stages__item-text {
+  color: #5e606a;
+  font-size: 13px;
+  text-align: center; }
+
+.section__col-2 {
+  flex-basis: 50%;
+  padding-left: 55px; }
+
+.about-text {
+  margin-top: 110px;
+  color: #7f38bd;
+  font-size: 30px;
+  font-family: "Muller";
+  font-weight: 600;
+  margin-bottom: 80px; }
+
+.about-title {
+  color: black;
+  font-size: 32px;
+  font-family: "Muller";
+  font-weight: 500;
+  margin-bottom: 50px; }
+
+.about-text-item {
+  color: #5e606a;
+  max-width: 95%;
+  line-height: 1.5;
+  margin-top: 37px; }
+
+.about-text-item:last-child {
+  margin-bottom: 65px; }
+
+.section__row-2 {
+  max-width: 50%;
+  border-right: 2px solid #883eca;
+  height: 90px;
+  position: relative; }
+
+.section__row-2::after {
+  content: "";
+  position: absolute;
+  border-right: 2px solid #883eca;
+  height: 90px;
+  left: 575px;
+  top: 50px; }
+
+.section__services {
+  background-color: #faf8fb; }
+
+.section__services .section__col-2 {
+  padding-left: 0; }
+
+.section__services .section__row-1 {
+  display: flex;
+  padding-bottom: 120px; }
+
+.service-list {
+  list-style: disc;
+  padding-left: 18px; }
+
+.service-list-item {
+  color: #5e606a;
+  max-width: 95%;
+  line-height: 1.5;
+  font-size: 14px;
+  max-height: 150px; }
+
+.section__calltoaction {
+  box-shadow: 9px 11px 28px -4px rgba(0, 0, 0, 0.86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px;
+  border-radius: 14px;
+  background-color: #883eca;
+  color: white;
+  margin-top: 72px;
+  max-width: 475px; }
+
+.section__calltoaction-text {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 30px;
+  line-height: 1.5; }
+
+.little-text {
+  font-size: 13px;
+  font-style: italic; }
+
+.slider {
+  margin-top: 184px; }
+
+.slider-button {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 15px; }
+
+.next-slide {
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center; }
+
+.next-slide::before {
+  width: 80px;
+  content: "";
+  display: inline-block;
+  border-bottom: 2px solid #883eca; }
+
+.next-slide::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  content: "\f054";
+  color: #883eca; }
+
+.prev-slide {
+  background-color: transparent;
+  border-bottom: 2px solid #883eca;
+  padding-right: 82px;
+  margin-right: 42px; }
+
+.prev-slide::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  content: "\f053";
+  color: #883eca; }
+
+.slider-botton-text {
+  margin-left: 60px;
+  font-size: 13px;
+  color: #5e606a; }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center; }
+  .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #00e974;
+    padding: 10px; }
+  .modal.active {
+    display: flex; }

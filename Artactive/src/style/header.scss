@@ -1,0 +1,136 @@
+.header {
+  background-image: url("/img/header/figure-1.png");
+  // background-image: linear-gradient(to left, #6a3093, #7634a9, #8238bf, #8d3cd6, #9841ee);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: top;
+  height: 100vh;
+}
+
+// ---------------------------------------------------------------
+.header__row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.header__col-1 {
+  margin-right: 100px;
+}
+
+.header__nav-menu a {
+  color: white;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header__nav-menu a:nth-child(2) {
+  margin-left: 50px;
+}
+
+.header__nav-menu a:nth-child(3) {
+  margin-left: 50px;
+}
+
+.header__nav-menu a:nth-child(4) {
+  margin-left: 50px;
+}
+
+.header__nav-menu a:nth-child(5) {
+  margin-left: 50px;
+}
+
+.header-phone {
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.button {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+// --------------------------------------------------------------------------
+.header__row-2 {
+  margin-top: 135px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__row-2 .header__col-1 {
+  margin: 0;
+}
+
+.header__slogan {
+  margin-top: 40px;
+  flex-grow: 2;
+}
+
+.header__slogan-hero-text {
+  font-family: "Muller";
+  font-weight: 800;
+  font-size: 60px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.header__slogan-text {
+  font-family: "Muller";
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 85px;
+  line-height: 1.2;
+}
+
+.header__calltoaction {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.buy {
+  border: 1px solid #fb0275;
+  background: #fb0275;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 14px 40px;
+}
+
+.header__calltoaction-text {
+  font-size: 16px;
+  margin-left: 25px;
+}
+
+.header__row-3 {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.header__row-2 .header__col-2 {
+  margin-right: 50px;
+}
+
+.scroll::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  content: "\f103";
+  color: #fff;
+  top: 14px;
+}
