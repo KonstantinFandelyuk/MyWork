@@ -39,56 +39,39 @@ html(lang='en')
 							.header__calltoaction
 								button.buy Заказать печать
 								.header__calltoaction-text с доставкой по Ярославлю </br> и Ярославской области
-					.header__row-3
+					.header__row-3.animated.bounce
 						a(href="").scroll
 			.section
 				.container
-					.section__about
+					.section.about
 						.section__row-1
 							.section__col-1
 							.stages
 								.stages__item.one
-									.stages__item-crl.boock
+									.stages__item-circle.boock
 									.stages__item-text Приём и детальное обсуждение заказа
 								.stages__item.two
-									.stages__item-crl.tablepc
+									.stages__item-circle.tablepc
 									.stages__item-text Создание и согласование дизайн-макета
 								.stages__item.three
-									.stages__item-crl.writer
+									.stages__item-circle.writer
 									.stages__item-text Печать и постпечатная обработка изделий любых размеров
 								.stages__item.four
-									.stages__item-crl.moving
+									.stages__item-circle.moving
 									.stages__item-text Доставка готовой продукции
 								.stages__item.five
 									.line
 							.section__col-2
-								h2.about-text 1. О нас
-								h2.about-title Полный спектр услуг — </br>от дизайна до печати
+								h2.paragraph-text 1. О нас
+								h2.paragraph-title Полный спектр услуг — </br>от дизайна до печати
 								p.about-text-item К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой.
 								p.about-text-item В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра. 
 								p.about-text-item При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте.
 						.section__row-2
-				.section__services
-					.container
-						.section__row-1
-							.section__col-1
-								h2.about-text 2. Услуги
-									h2.about-title Широкоформатная печать баннеров, растяжек, афиш
-									ul.service-list
-										li.service-list-item подготовка макетов к печати, дизайн рекламных баннеров
-										li.service-list-item срочная печать за 3 часа
-										li.service-list-item проварка карманов и сварка нескольких изображений
-										li.service-list-item пробивка люверсов и вварка монтажных тросов
-										li.service-list-item изготовление цветопробы
-										li.service-list-item доставка баннеров
-								.section__calltoaction
-									.section__calltoaction-text <span class="little-text">Есть вопросы?</span> <br> Закажите консультацию
-									button.buy Заказать
-							.section__col-2
-								.slider
-									img.slider-img(src="/img/section/item/service-promo.png", alt="")
-									.slider-button
-										button.prev-slide 
-										button.next-slide 
-										span.slider-botton-text Растяжка на ул. Ленина
-										.slide-text
+							.double-line
+				.section.services-list
+					include ../blocks/services-list.pug
+				.section.service-print
+					include ../blocks/services-print.pug
+				.section.services-card
+					include ../blocks/services-card.pug
