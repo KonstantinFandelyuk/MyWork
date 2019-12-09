@@ -317,6 +317,9 @@ input[type="submit"] {
 .header__row-2 .header__col-2 {
   margin-right: 50px; }
 
+.scroll {
+  scroll-behavior: smooth; }
+
 .scroll::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -327,7 +330,8 @@ input[type="submit"] {
 
 .section .about {
   background-image: url("/img/section/item/line.png");
-  background-position: center; }
+  background-position: center;
+  scroll-behavior: smooth; }
 
 .about .section__row-1 {
   display: flex; }
@@ -401,12 +405,12 @@ input[type="submit"] {
   padding-left: 55px; }
 
 .paragraph-text {
-  margin-top: 110px;
+  padding-top: 130px;
   color: #7f38bd;
   font-size: 30px;
   font-family: "Muller";
   font-weight: 600;
-  margin-bottom: 80px; }
+  padding-bottom: 80px; }
 
 .paragraph-title {
   color: black;
@@ -483,7 +487,7 @@ input[type="submit"] {
   font-style: italic;
   font-weight: 400; }
 
-.slider {
+.services-list .slider {
   margin-top: 193px; }
 
 .slider-button {
@@ -624,87 +628,213 @@ input[type="submit"] {
   background-image: url("/img/section/item/line.png");
   background-position: center; }
 
-.feedback__list {
-  display: flex;
-  justify-content: space-between; }
+.feedback .paragraph-text {
+  margin-left: 15px; }
 
-.feedback__list-item {
+.feedback .slider {
+  position: relative;
+  overflow: hidden; }
+
+.slider__list {
+  display: flex;
+  justify-content: center;
+  transform: translateX(0); }
+
+.slider__list-item {
   display: flex;
   align-items: center;
   justify-content: center;
   max-height: 270px;
   background-color: #fff;
-  padding: 45px 80px 45px 75px;
   border-style: solid;
-  border-color: gray; }
+  border-color: gray;
+  flex-shrink: 0;
+  opacity: 0.4; }
 
-.feedback__list-item.right {
-  overflow: hidden;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
-  border-left: 1px solid red; }
-
-.feedback__list-item.left {
-  overflow: hidden;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
-  border-right: 1px solid red; }
+.slider__list-item--active {
+  opacity: 1;
+  width: 850px; }
 
 .list__col-1 {
-  margin-right: 45px; }
+  margin-right: 40px; }
 
-.feedback__list-item-center {
+.slider__list-item {
   display: flex;
   align-items: center;
   border-radius: 10px 10px 10px 10px;
-  border: 1px solid gray;
+  border: 1px solid white;
   max-height: 270px;
   max-width: 70%;
   padding: 60px 80px 60px 75px;
   margin-left: 23px;
   background-color: #fff;
-  margin: 0 20px 0 20px; }
+  box-shadow: -1px 2px 5px 5px rgba(0, 0, 0, 0.1); }
 
-.feedback__list-item-center .feedback__list-item-photo {
-  background-image: url("/img/section/photo/alexandr.png");
-  background-position: center;
+.slider__list-item-photo {
   background-color: #fff;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 400px;
   border: 0px solid grey; }
 
-.feedback__list-item-photo {
-  background-image: url("https://www.womanhit.ru/media/CACHE/images/articleimage2/2019/2/1_xUxYctC/adfc66b2c3579b92484689ffd584e840.png");
-  background-position: center;
-  background-color: #fff;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px; }
-
-.feedback__list-item-text {
+.slider__list-item-text {
   color: #5e606a;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.5; }
 
-.feedback__list-item-full-name {
+.slider__list-item-full-name {
   color: black;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  margin-top: 15px; }
+  margin-top: 15px;
+  display: block; }
 
-.feedback__list-item-social-link {
+.slider__list-item-social-link {
   color: #3594dd;
   margin-top: 10px;
   display: block;
   max-width: 20%; }
 
 .feedback .slider-button {
-  margin-bottom: 125px;
-  margin-left: 15%; }
+  margin-left: 15.5%; }
+
+.faq {
+  background-image: url("/img/section/item/line.png");
+  background-position: center; }
+
+.faq .paragraph-text {
+  margin-bottom: 15px;
+  margin-left: 15px; }
+
+.faq .section__row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px; }
+
+.faq .section__col-1 {
+  flex-basis: 50%;
+  margin-right: 40px; }
+
+.faq .section__col-2 {
+  flex-basis: 50%; }
+
+.faq__list-item-tittle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #383d52;
+  margin-top: 55px; }
+
+.faq__list-item-text {
+  color: #5e606a;
+  margin-top: 35px;
+  line-height: 1.5;
+  max-width: 95%; }
+
+.faq .section__row-3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 105px; }
+
+.faq .calltoaction__form {
+  border-radius: 10px 10px 10px 10px;
+  background: url("/img/section/faq/faq_btn.png");
+  background-size: 150%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.53); }
+
+.calltoaction__form-logo {
+  margin: 0px 35px 0px 30px;
+  background-position: center; }
+
+.faq .calltoaction__form-input {
+  border-bottom: 1px solid white;
+  color: white; }
+
+.faq input[type="text"]::-webkit-input-placeholder {
+  color: white; }
+
+.faq input[type="tel"]::-webkit-input-placeholder {
+  color: white; }
+
+.faq .buy {
+  margin-right: 40px; }
+
+footer .section__row-1 {
+  position: relative; }
+
+footer .contacts {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 455px;
+  bottom: 100px;
+  left: 16%;
+  display: flex;
+  align-items: start;
+  flex-direction: column; }
+
+footer .paragraph-text {
+  margin-top: 90px;
+  margin-bottom: 30px;
+  margin-left: 90px;
+  padding: 0px; }
+
+footer .contacts__adress,
+.contacts__email,
+.contacts__phone {
+  color: #5e606a;
+  margin-left: 90px;
+  margin-top: 30px; }
+
+footer .contacts__phone {
+  margin-bottom: 116px; }
+
+footer .contacts__adress::before {
+  padding-right: 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 15px;
+  content: "\f3c5";
+  color: #883eca; }
+
+footer .contacts__email::before {
+  padding-right: 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 15px;
+  content: "\f0e0";
+  color: #883eca; }
+
+footer .contacts__phone::before {
+  padding-right: 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 15px;
+  content: "\f879";
+  color: #883eca; }
+
+footer .section__row-2 {
+  background-color: #7f38bd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+footer .company-name,
+.nda,
+.designer {
+  font-size: 13px;
+  padding: 18px 0px;
+  color: #d1bee2; }
+
+.nda {
+  text-decoration: underline; }
 
 .modal {
   display: none;

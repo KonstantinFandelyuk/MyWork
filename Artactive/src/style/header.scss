@@ -139,6 +139,10 @@
   margin-right: 50px;
 }
 
+.scroll {
+  scroll-behavior: smooth;
+}
+
 .scroll::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
