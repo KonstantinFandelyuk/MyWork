@@ -82,9 +82,21 @@ input[type="submit"] {
 	box-sizing: border-box;
 }
 
+@media (max-width:750px) {
+
+	.container {
+		max-width: 772px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+}
+
 /* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
 @media (max-width: 1110px) {
 	.container {
 		padding: 0 10px;
+		
 	}
 }
