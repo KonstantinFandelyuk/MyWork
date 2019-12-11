@@ -750,6 +750,7 @@
     background-size: 280%;
     position: relative;
     overflow: hidden;
+    padding-bottom: 35px;
   }
 }
 
@@ -767,6 +768,14 @@
   }
 }
 
+@media (max-width: 750px) {
+  .faq .section__calltoaction-text {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+
 .faq .calltoaction__form-input {
   border-bottom: 1px solid white;
   color: white;
@@ -778,6 +787,12 @@
   }
 }
 
+@media (max-width: 750px) {
+  .faq .buy {
+    margin-right: 0px;
+    padding: 12px 45px;
+  }
+}
 .faq input[type="text"]::-webkit-input-placeholder {
   color: white;
 }
