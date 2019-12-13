@@ -21,6 +21,18 @@
 	padding-left: 61px;
 }
 
+@media (max-width: 320px) {
+	.modal-background {
+		background-color: white;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		height: 666px;
+		padding-left: 61px;
+	}
+}
+
 .modal__nav-menu {
 	display: flex;
 	flex-direction: column;

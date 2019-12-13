@@ -83,9 +83,18 @@ input[type="submit"] {
 }
 
 @media (max-width:750px) {
-
 	.container {
 		max-width: 772px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width:320px) {
+	.container {
+		max-width: 340px;
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 10px;
@@ -97,6 +106,5 @@ input[type="submit"] {
 @media (max-width: 1110px) {
 	.container {
 		padding: 0 10px;
-		
 	}
 }

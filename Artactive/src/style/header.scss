@@ -22,6 +22,15 @@
   }
 }
 
+@media (max-width:320px) {
+
+  .header__row-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .header__col-1 {
   margin-right: 100px;
 }
@@ -37,7 +46,8 @@
 .header__nav-menu a {
   color: white;
   font-size: 13px;
-  font-family: "Open Sans", sans-serif;    width: 124px;
+  font-family: "Open Sans", sans-serif;
+  width: 124px;
   height: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -131,6 +141,14 @@
   }
 }
 
+@media (max-width:320px) {
+
+  .header__row-2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .header__row-2 .header__col-1 {
   margin: 0;
 }
@@ -202,6 +220,13 @@
 
   .header .buy {
     padding: 16px 40px;
+  }
+}
+
+@media (max-width:320px) {
+
+  .header .buy {
+    padding: 15px 64px;
   }
 }
 
