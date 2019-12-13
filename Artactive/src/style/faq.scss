@@ -72,7 +72,7 @@
 
 .faq .calltoaction__form {
   border-radius: 10px 10px 10px 10px;
-  background: url("/img/section/faq/faq_btn.png");
+  background: url("../img/section/faq/faq_btn.png");
   background-size: 150%;
   background-position: center;
   display: flex;
@@ -130,6 +130,7 @@
     padding: 12px 45px;
   }
 }
+
 .faq input[type="text"]::-webkit-input-placeholder {
   color: white;
 }

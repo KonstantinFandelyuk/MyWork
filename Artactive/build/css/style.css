@@ -211,7 +211,7 @@ input[type="submit"] {
     padding: 0 10px; } }
 
 .header {
-  background-image: url("/img/header/figure-1.png");
+  background-image: url("../img/header/figure-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -410,7 +410,7 @@ input[type="submit"] {
   top: 14px; }
 
 .section .about {
-  background-image: url("/img/section/item/line.png");
+  background-image: url("../img/section/item/line.png");
   background-position: center;
   scroll-behavior: smooth; }
 
@@ -679,13 +679,13 @@ input[type="submit"] {
     margin-left: 300px; } }
 
 .service-print {
-  background-image: url("/img/section/item/line.png");
+  background-image: url("../img/section/item/line.png");
   background-color: white;
   position: relative;
   background-position: center; }
 
 .sercice-print-img.flower {
-  background-image: url("/img/section/item/sofa_flowers.png");
+  background-image: url("../img/section/item/sofa_flowers.png");
   background-repeat: no-repeat;
   background-position: center;
   background-position-x: 20%;
@@ -693,7 +693,7 @@ input[type="submit"] {
 
 @media (max-width: 750px) {
   .sercice-print-img.flower {
-    background-image: url("/img/section/item/flower_sofa_750px.png");
+    background-image: url("../img/section/item/flower_sofa_750px.png");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 35%; } }
@@ -807,7 +807,7 @@ input[type="submit"] {
     margin-top: 30px; } }
 
 .calltoaction__form-line {
-  background-image: url("/img/section/item/line-2.png");
+  background-image: url("../img/section/item/line-2.png");
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
@@ -821,7 +821,7 @@ input[type="submit"] {
     display: none; } }
 
 .calltoaction__form-airplane {
-  background-image: url("/img/section/item/paper-plane.png");
+  background-image: url("../img/section/item/paper-plane.png");
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
@@ -832,7 +832,7 @@ input[type="submit"] {
 
 @media (max-width: 750px) {
   .services-card .calltoaction__form-airplane {
-    background-image: url("/img/section/item/paper-plane-750px.png");
+    background-image: url("../img/section/item/paper-plane-750px.png");
     bottom: 0%;
     left: 16%; } }
 
@@ -966,7 +966,7 @@ input[type="submit"] {
 
 .faq .calltoaction__form {
   border-radius: 10px 10px 10px 10px;
-  background: url("/img/section/faq/faq_btn.png");
+  background: url("../img/section/faq/faq_btn.png");
   background-size: 150%;
   background-position: center;
   display: flex;
