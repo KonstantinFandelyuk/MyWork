@@ -1,5 +1,5 @@
 .section .feedback {
-  background-image: url("/img/section/item/line.png");
+  background-image: url("../img/section/item/line.png");
   background-position: center;
 }
 
@@ -97,6 +97,7 @@
 .feedback .slider-button {
   margin-left: 15.5%;
 }
+
 @media (max-width: 750px) {
   .feedback .slider-button {
     margin-left: 2%;
