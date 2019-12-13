@@ -29,15 +29,16 @@
 @media (max-width:750px) {
 
   .logo {
-   width: 200px;
-   height: 12px;
+    width: 124px;
+    height: 16px;
   }
 }
 
 .header__nav-menu a {
   color: white;
   font-size: 13px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;    width: 124px;
+  height: 16px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -46,7 +47,7 @@
 
   nav.header__nav-menu,
   a.header-phone {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -88,6 +89,8 @@
   font-size: 35px;
   margin: 0 10px;
   cursor: pointer;
+  background-color: transparent;
+  color: white;
 }
 
 @media (min-width:750px) {

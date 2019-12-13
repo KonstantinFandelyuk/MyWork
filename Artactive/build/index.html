@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
-    <script src="js/app.js" type="defer"></script>
     <title>Artactive UX\UI</title>
   </head>
   <body>
@@ -24,7 +23,7 @@
             </div>
             <div class="header__col-3"><a class="header-phone" href="tel:+7(920)1488131">+7 (920) 148 81 31</a></div>
             <div class="header__col-4">
-              <div class="button-burger fas fa-bars"></div>
+              <button class="button-burger fas fa-bars" data-id="modal-button"></button>
               <button class="button">Заказать звонок</button>
             </div>
           </div>
@@ -244,7 +243,18 @@
           </div>
           <div class="section__row-2"><span class="company-name">ООО «АртАктив», 2017 ©</span><a class="nda" href="#">Политика конфиденциальноси</a><span class="designer">Designed by Sergey Strogiy</span></div>
         </footer>
+        <div class="modal animated">
+          <div class="modal-background">
+            <nav class="modal__nav-menu"><a href="">О нас</a><a href="">Услуги</a><a href="">Отзывы</a><a href="">Faq</a><a href="">Контакты</a></nav>
+            <div class="modal-contact"><a class="modal-contact phone" href="tel:+7(920)1488131">+7 (920) 148 81 31</a></div>
+            <div class="modal__calltoaction">
+              <button class="buy">Заказать звонок</button>
+            </div>
+            <div class="modal__close"></div>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="js/app.js"></script>
   </body>
 </html>
