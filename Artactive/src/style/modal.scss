@@ -3,26 +3,77 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgba(0, 0, 0, 0.7);
 	width: 100%;
 	height: 100%;
 	justify-content: center;
 	align-items: center;
+}
 
-	&__close {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		font-size: 40px;
-		color: white;
-		cursor: pointer;
-		border-radius: 50%;
-		display: inline-block;
-		border: 1px solid #00e974;
-		padding: 10px;
-	}
+.modal-background {
+	// transform: translate(150%);
+	background-color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 35%;
+	height: 666px;
+	padding-left: 61px;
+}
 
-	&.active {
-		display: flex;
-	}
+.modal__nav-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-top: 40px;
+}
+
+.modal__nav-menu>a {
+	font-size: 14px;
+	color: black;
+	font-weight: 600;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+.modal-contact {
+	margin-top: 100px;
+}
+
+.modal-contact.phone {
+	font-size: 17px;
+	color: black;
+	font-weight: bold;
+}
+
+.modal__calltoaction {
+	margin-top: 35px;
+}
+
+.modal__calltoaction button.buy {
+	border: 3px solid #fb0275;
+	color: #fb0275;
+	font-weight: bold;
+	font-size: 11px;
+	background-color: white;
+	padding: 11px 22px;
+}
+
+.modal__close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.modal__close::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 30px;
+	content: "\f00d";
+	color: gray;
+}
+
+.modal.slideInRight {
+	display: flex;
 }
