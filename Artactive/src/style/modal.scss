@@ -23,13 +23,7 @@
 
 @media (max-width: 320px) {
 	.modal-background {
-		background-color: white;
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 35%;
-		height: 666px;
-		padding-left: 61px;
+		width: 77%;
 	}
 }
 
@@ -44,7 +38,7 @@
 	font-size: 14px;
 	color: black;
 	font-weight: 600;
-	padding-top: 20px;
+	padding: 10px 0px;
 	text-transform: uppercase;
 }
 

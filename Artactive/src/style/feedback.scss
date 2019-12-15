@@ -7,6 +7,12 @@
   margin-left: 15px;
 }
 
+@media (max-width: 320px) {
+  .feedback .section__row-1 {
+    display: none;
+  }
+}
+
 .feedback .slider {
   position: relative;
   overflow: hidden;

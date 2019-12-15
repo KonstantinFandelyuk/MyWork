@@ -14,6 +14,12 @@
   }
 }
 
+@media (max-width:320px) {
+  .faq .paragraph-text {
+    padding-bottom: 40px;
+  }
+}
+
 .faq .section__row-2 {
   display: flex;
   justify-content: space-between;
@@ -30,6 +36,12 @@
 .faq .section__col-1 {
   flex-basis: 50%;
   margin-right: 40px;
+}
+
+@media (max-width:320px) {
+  .faq .section__col-1 {
+    margin-right: 0px;
+  }
 }
 
 .faq .section__col-2 {
@@ -56,6 +68,12 @@
   max-width: 95%;
 }
 
+@media (max-width: 320px) {
+  .faq__list-item-text {
+    max-width: 100%;
+  }
+}
+
 .faq .section__row-3 {
   display: flex;
   justify-content: center;
@@ -75,6 +93,7 @@
   background: url("../img/section/faq/faq_btn.png");
   background-size: 150%;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +110,15 @@
   }
 }
 
+@media (max-width: 320px) {
+  .faq .calltoaction__form {
+    background-size: 400px 550px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 35px;
+  }
+}
+
 .calltoaction__form-logo {
   margin: 0px 35px 0px 30px;
   background-position: center;
@@ -101,7 +129,16 @@
     position: absolute;
     top: -56px;
     right: -56px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .faq .calltoaction__form-logo {
+    position: absolute;
+    top: -80px;
+    right: -100px;
+    margin: 0px 0px;
   }
 }
 
@@ -113,6 +150,18 @@
   }
 }
 
+@media (max-width: 320px) {
+  .faq .section__calltoaction-text {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .faq .little-text {
+    display: inline-block;
+  }
+}
+
 .faq .calltoaction__form-input {
   border-bottom: 1px solid white;
   color: white;
@@ -121,6 +170,12 @@
 @media (max-width: 750px) {
   .faq .calltoaction__form-input {
     padding: 0px 0px 10px 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .faq .calltoaction__form-input {
+    padding: 0px 70px 5px 10px;
   }
 }
 
@@ -141,4 +196,17 @@
 
 .faq .buy {
   margin-right: 40px;
+}
+
+@media (max-width: 750px) {
+  .faq .buy {
+    margin-top: 30px;
+    padding: 12px 70px;
+  }
+}
+
+@media (max-width: 750px) {
+  .faq .section__row-4 {
+    display: none;
+  }
 }

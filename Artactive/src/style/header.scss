@@ -22,15 +22,6 @@
   }
 }
 
-@media (max-width:320px) {
-
-  .header__row-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 .header__col-1 {
   margin-right: 100px;
 }
@@ -53,7 +44,7 @@
   text-transform: uppercase;
 }
 
-@media (max-width:750px) {
+@media (max-width:1107px) {
 
   nav.header__nav-menu,
   a.header-phone {
@@ -110,14 +101,14 @@
   }
 }
 
-@media (max-width:750px) {
+@media (max-width:1107px) {
 
   .header .button {
     display: none;
   }
 }
 
-@media (max-width:750px) {
+@media (max-width:1107px) {
 
   .button-burger.fas.fa-bars {
     display: inline-block;
@@ -138,14 +129,6 @@
   .header__row-2 {
     margin-top: 55px;
     padding-bottom: 21px;
-  }
-}
-
-@media (max-width:320px) {
-
-  .header__row-2 {
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -220,13 +203,6 @@
 
   .header .buy {
     padding: 16px 40px;
-  }
-}
-
-@media (max-width:320px) {
-
-  .header .buy {
-    padding: 15px 64px;
   }
 }
 

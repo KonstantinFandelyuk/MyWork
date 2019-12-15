@@ -22,7 +22,7 @@
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width:320px) {
 	.sercice-print-img.flower {
 		background-image: url("../img/section/item/flower_sofa_320px.png");
 		background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width:320px) {
 	.service-print .section__row-1 {
 		padding-bottom: 270px;
 		margin-bottom: 0px;
@@ -65,7 +65,7 @@
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width:320px) {
 	.service-print .section__col-1 {
 		display: none;
 	}
@@ -74,6 +74,12 @@
 @media (max-width: 750px) {
 	.service-print .section__col-2 {
 		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	.service-print .section__row-3 {
+		display: none;
 	}
 }
 
@@ -102,12 +108,6 @@
 
 @media (max-width: 320px) {
 	.service-print .buy {
-		padding: 17px 65px;
-	}
-}
-
-@media (max-width: 320px) {
-	.service-print .section__row-3 {
-		display: none;
+		padding: 16px 56px;
 	}
 }
