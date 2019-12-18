@@ -14,24 +14,8 @@
   padding-top: 70px;
 }
 
-@media (max-width:750px) {
-
-  .header__row-1 {
-    padding-top: 25px;
-    align-items: end;
-  }
-}
-
 .header__col-1 {
   margin-right: 100px;
-}
-
-@media (max-width:750px) {
-
-  .logo {
-    width: 124px;
-    height: 16px;
-  }
 }
 
 .header__nav-menu a {
@@ -42,14 +26,6 @@
   height: 16px;
   font-weight: 400;
   text-transform: uppercase;
-}
-
-@media (max-width:1107px) {
-
-  nav.header__nav-menu,
-  a.header-phone {
-    display: none;
-  }
 }
 
 .header__nav-menu a:nth-child(2) {
@@ -94,13 +70,6 @@
   color: white;
 }
 
-@media (min-width:750px) {
-
-  .button-burger.fas.fa-bars {
-    display: none;
-  }
-}
-
 @media (max-width:1107px) {
 
   .header .button {
@@ -115,21 +84,12 @@
   }
 }
 
-
 // --------------------------------------------------------------------------
 .header__row-2 {
   margin-top: 135px;
   padding-bottom: 120px;
   display: flex;
   justify-content: space-between;
-}
-
-@media (max-width:750px) {
-
-  .header__row-2 {
-    margin-top: 55px;
-    padding-bottom: 21px;
-  }
 }
 
 .header__row-2 .header__col-1 {
@@ -149,13 +109,6 @@
   text-transform: uppercase;
 }
 
-@media (max-width:750px) {
-
-  .header__slogan-hero-text {
-    font-size: 45px;
-  }
-}
-
 .header__slogan-text {
   font-family: "Muller";
   font-weight: 500;
@@ -164,26 +117,10 @@
   line-height: 1.2;
 }
 
-@media (max-width:750px) {
-
-  .header__slogan-text {
-    font-size: 19px;
-    margin-bottom: 40px;
-  }
-}
-
 .header__calltoaction {
   display: flex;
   justify-content: start;
   align-items: center;
-}
-
-@media (max-width:750px) {
-
-  .header__calltoaction {
-    flex-direction: column;
-    align-items: start;
-  }
 }
 
 .buy {
@@ -199,13 +136,6 @@
   transition-timing-function: ease-in;
 }
 
-@media (max-width:750px) {
-
-  .header .buy {
-    padding: 16px 40px;
-  }
-}
-
 .buy:hover {
   transition-timing-function: ease-in;
   transition: .3s;
@@ -215,7 +145,6 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ff9472, #f2709c);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .header__calltoaction-text {
@@ -223,35 +152,13 @@
   margin-left: 25px;
 }
 
-@media (max-width:750px) {
-
-  .header__calltoaction-text {
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-}
-
 .header__row-3 {
   text-align: center;
   padding-bottom: 60px;
 }
 
-@media (max-width:750px) {
-
-  .header__row-3 {
-    padding-bottom: 40px;
-  }
-}
-
 .header__row-2 .header__col-2 {
   margin-right: 50px;
-}
-
-@media (max-width:750px) {
-
-  .header__row-2 .header__col-2 {
-    margin-right: 0px;
-  }
 }
 
 .scroll {

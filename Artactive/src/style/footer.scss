@@ -7,12 +7,6 @@ footer .section__row-1 {
   height: 660px;
 }
 
-@media (max-width: 320px) {
-  .footer-maps {
-    height: 530px;
-  }
-}
-
 footer .contacts {
   position: absolute;
   background-color: white;
@@ -26,34 +20,11 @@ footer .contacts {
   flex-direction: column;
 }
 
-@media (max-width: 750px) {
-  footer .contacts {
-    left: 2%;
-  }
-}
-
-@media (max-width: 320px) {
-  footer .contacts {
-    width: 300px;
-    left: 3%;
-    bottom: 152px;
-  }
-}
-
 footer .paragraph-text {
   margin-top: 90px;
   margin-bottom: 30px;
   margin-left: 90px;
   padding: 0px;
-}
-
-@media (max-width: 320px) {
-  footer .paragraph-text {
-    margin-top: 50px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    padding: 0px;
-  }
 }
 
 footer .contacts__adress,
@@ -64,24 +35,8 @@ footer .contacts__adress,
   margin-top: 30px;
 }
 
-@media (max-width: 320px) {
-
-  footer .contacts__adress,
-  .contacts__email,
-  .contacts__phone {
-    margin-left: 25px;
-    margin-top: 20px;
-  }
-}
-
 footer .contacts__phone {
   margin-bottom: 116px;
-}
-
-@media (max-width: 320px) {
-  footer .contacts__phone {
-    margin-bottom: 60px;
-  }
 }
 
 footer .contacts__adress::before {
@@ -118,12 +73,6 @@ footer .section__row-2 {
   align-items: center;
 }
 
-@media (max-width: 320px) {
-  footer .section__row-2 {
-    flex-direction: column-reverse;
-  }
-}
-
 footer .company-name,
 .nda,
 .designer {
@@ -132,24 +81,6 @@ footer .company-name,
   color: #d1bee2;
 }
 
-@media (max-width: 320px) {
-  footer .nda {
-    padding-bottom: 30px;
-    padding-top: 40px;
-  }
-}
-
-@media (max-width: 320px) {
-  footer .company-name {
-    padding-bottom: 55px;
-  }
-}
-
-@media (max-width: 320px) {
-  footer .designer {
-    display: none;
-  }
-}
 
 .nda {
   text-decoration: underline;
