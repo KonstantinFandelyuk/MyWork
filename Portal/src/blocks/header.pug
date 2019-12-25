@@ -1,0 +1,15 @@
+.container
+	.header__block-list
+		label.header-checkbox
+			input(type="checkbox", name="").header-shwitch
+			<i class="fas fa-angle-double-right"></i>
+		.header-world-time 12:30 (+2 GMT Kyiv)
+		label.header-search
+			input.header-search--input(type="search", name="search" placeholder="Поиск")
+			button.header-search--button(type ="submit")
+		.header__col-2
+			.header-notification
+			.header-user
+				.header-user--photo
+				a(href="#").header-user--name Джеймс Бонд
+	include ../blocks/dashboard.pug

@@ -1,0 +1,59 @@
+.dashdoard {
+  margin-top: 40px;
+}
+
+.dashboard__user-information {
+  width: 1450px;
+  height: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard__user-information .hello-message,
+.current-day {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.dasboard__user-metric {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.dasboard__user-metric--element {
+  width: 500px;
+  height: 300px;
+  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 3px 5px 3px 7px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.dasboard__information-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dasboard__information-news,
+.dasboard__information-interrogation,
+.dasboard__information-payonline {
+  width: 400px;
+  height: 300px;
+  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 3px 5px 3px 7px;
+  background-color: white;
+  margin: 5px;
+}

@@ -1,0 +1,20 @@
+footer {
+	background-color: grey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	opacity: 0.8;
+}
+
+.company-name,
+.support,
+.nda {
+	color: white;
+	font-size: 13px;
+	padding-bottom: 16px;
+	padding-top: 16px;
+}
+
+.footera:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,645 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ---------Шрифыт----------- */
+/* -------------------------------- */
+* {
+  box-sizing: border-box; }
+
+/* Стили поумолчанию для всех элементов */
+body {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #fff; }
+
+/* Поведение вхех картинок поумолчанию */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Стили ссылок поумолчанию */
+a {
+  text-decoration: none; }
+
+a:hover {
+  transition-duration: 0.3s; }
+
+/* Убрать обводку поумолчанию у кнопок, font: inherit - позволит наследовать стили родителя (у кнопки сили шрифтов заданы поумолчанию) */
+button {
+  border: none;
+  outline: none;
+  font: inherit; }
+
+button,
+input[type="submit"] {
+  cursor: pointer; }
+
+/* Обёртка всего - идёт после body */
+.wrapper {
+  position: relative; }
+
+/* Класс который устанавливет рабочую область для контента */
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+/* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
+@media (max-width: 1110px) {
+  .container {
+    padding: 0 10px; } }
+
+.login {
+  background-image: url("../img/header/background-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; }
+
+.login__row-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px; }
+
+.login-list {
+  background: rgba(141, 141, 141, 0.637);
+  max-width: 600px;
+  margin-top: 150px;
+  border-radius: 10px; }
+
+.login__title {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 65px 60px 40px 60px; }
+
+.login__forma-list {
+  display: flex;
+  flex-direction: column; }
+
+.login__input {
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 24px 40px;
+  outline: none;
+  font-style: italic;
+  box-shadow: 0px 0px 33px 5px rgba(0, 0, 0, 0.3);
+  background: transparent;
+  border: 1px solid white; }
+
+.login__input::placeholder {
+  color: white;
+  opacity: 0.7; }
+
+.login__input:nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 20px; }
+
+.login label {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+label > span {
+  color: white; }
+
+.login__input--checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0); }
+
+.login i {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-right: 5px; }
+
+.login__input--checkbox:checked + i::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 20px;
+  content: "\f14a";
+  color: white; }
+
+.login__button--sumbit {
+  border-radius: 30px;
+  background-color: rgba(189, 89, 212, 0.9);
+  color: white;
+  margin: 20px 90px;
+  padding: 20px;
+  transition: 0.3s; }
+
+.login__button--sumbit:hover {
+  box-shadow: 0px 0px 33px 4px rgba(0, 0, 0, 0.32);
+  background-color: rgba(8, 5, 8, 0.9);
+  transition: 0.3s; }
+
+.login--forgot-password a {
+  color: white;
+  display: flex;
+  justify-content: center; }
+
+.login--forgot-password a:hover {
+  text-decoration: underline; }
+
+.login-social {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 50px auto; }
+
+.login__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  opacity: 0.6;
+  font-size: 35px; }
+
+.login__social-item:nth-child(1) {
+  margin-right: 5px; }
+
+.login__social-item:nth-child(2) {
+  margin-left: 5px; }
+
+.icon--fb::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f39e";
+  color: blue; }
+
+.icon--google::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  content: "\f1a0";
+  color: red; }
+
+.login--register a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.login--register a:hover {
+  text-decoration: underline; }
+
+.register {
+  background-image: url("../img/header/background-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; }
+
+.register__row-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px; }
+
+.register-list {
+  background: rgba(141, 141, 141, 0.637);
+  max-width: 560px;
+  margin-top: 146px;
+  border-radius: 10px; }
+
+.register__title {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  padding: 65px 60px 40px 60px; }
+
+.register__input {
+  background-color: transparent;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  padding: 15px 40px;
+  border: 1px solid white;
+  color: white;
+  margin: 10px auto; }
+
+.register__input::placeholder {
+  color: white;
+  opacity: 0.7; }
+
+.register__input:nth-child(1) {
+  margin-right: 15px;
+  margin-left: 20px; }
+
+.register__input:nth-child(3) {
+  margin-right: 15px;
+  margin-left: 20px; }
+
+.register__input:nth-child(6) {
+  margin-right: 15px;
+  margin-left: 20px; }
+
+.checkbox-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 129px; }
+
+span > a {
+  color: white;
+  text-decoration: underline; }
+
+.register__input--checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0); }
+
+.register i {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-right: 5px; }
+
+.register__input--checkbox:checked + i::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 20px;
+  content: "\f14a";
+  color: white; }
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px; }
+
+.register__button--sumbit {
+  border-radius: 30px;
+  background-color: rgba(189, 89, 212, 0.9);
+  color: white;
+  padding: 15px 60px;
+  transition: 0.3s;
+  display: inline-block; }
+
+.register__button--sumbit:hover {
+  box-shadow: 0px 0px 33px 4px rgba(0, 0, 0, 0.32);
+  background-color: rgba(8, 5, 8, 0.9);
+  transition: 0.3s; }
+
+.register .login-social {
+  margin: 48px auto; }
+
+.main-screen {
+  display: flex;
+  background-color: #f8f9ff; }
+
+.show-menu {
+  background-color: #fff;
+  flex-grow: 1;
+  height: 100%;
+  box-shadow: 5px 0px 9px 4px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 5px 0px 9px 4px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 5px 0px 9px 4px rgba(0, 0, 0, 0.05); }
+
+.show-menu.active {
+  display: block;
+  transition: 0.3s; }
+
+.logo {
+  width: 100px;
+  padding-bottom: 40px;
+  margin-left: 20px; }
+
+.menu__list--item {
+  padding: 10px 20px;
+  text-transform: uppercase; }
+
+.menu__list--item:hover {
+  text-decoration: underline; }
+
+.menu__list--item > a {
+  color: black; }
+
+.menu__list--item:last-child {
+  margin-top: 450px; }
+
+.header {
+  flex-grow: 20;
+  height: 100%;
+  margin-top: 7px; }
+
+.header__block-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 5px;
+  border-radius: 20px; }
+
+.header-shwitch {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0); }
+
+.fas.fa-angle-double-right {
+  font-size: 20px; }
+
+.header-shwitch:checked + i::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f100";
+  font-size: 20px; }
+
+label.header-search {
+  position: relative; }
+
+.header-search--input {
+  border: transparent;
+  background-color: #f8f9ff;
+  border-bottom: 1px solid grey;
+  padding: 10px 100px 10px 15px;
+  outline: none; }
+
+.header-search--input::placeholder {
+  padding-right: 50px;
+  font-size: 20px;
+  background-color: #f8f9ff; }
+
+.header-search--button {
+  background-color: transparent;
+  position: absolute;
+  top: 4px;
+  right: 10px; }
+
+.header-search--button::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  content: "\f002";
+  color: grey;
+  opacity: .6; }
+
+.header__col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.header-notification {
+  margin-right: 20px;
+  border: 1px solid grey;
+  text-align: center;
+  padding: 9px 10px;
+  border-radius: 5px; }
+
+.header-notification::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  content: "\f0f3"; }
+
+.header-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 3px 5px 3px 7px;
+  background-color: white; }
+
+.header-user--photo {
+  background-image: url("../img/photo-user/alexandr.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 1px solid green;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  margin-right: 5px; }
+
+a.header-user--name {
+  color: grey;
+  font-weight: 500; }
+
+a.header-user--name::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  content: "\f107";
+  color: black;
+  vertical-align: middle;
+  padding-left: 5px;
+  padding-right: 10px; }
+
+.dashdoard {
+  margin-top: 40px; }
+
+.dashboard__user-information {
+  width: 1450px;
+  height: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.dashboard__user-information .hello-message,
+.current-day {
+  font-size: 30px;
+  padding-left: 10px; }
+
+.dasboard__user-metric {
+  display: flex;
+  justify-content: center;
+  justify-items: center; }
+
+.dasboard__user-metric--element {
+  width: 500px;
+  height: 300px;
+  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 3px 5px 3px 7px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px; }
+
+.dasboard__information-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; }
+
+.dasboard__information-news,
+.dasboard__information-interrogation,
+.dasboard__information-payonline {
+  width: 400px;
+  height: 300px;
+  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 3px 5px 3px 7px;
+  background-color: white;
+  margin: 5px; }
+
+footer {
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.8; }
+
+.company-name,
+.support,
+.nda {
+  color: white;
+  font-size: 13px;
+  padding-bottom: 16px;
+  padding-top: 16px; }
+
+.footera:hover {
+  text-decoration: underline; }
