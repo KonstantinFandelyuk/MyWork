@@ -15,3 +15,13 @@
 https://zzik.github.io/WebAcademy/Artactive/build/index.html
 
 (Не много кривоват Js, но я на  этим работаю.)
+
+**Страничка со списком билетов + фильтр(только визуальная часть без js)**
+
+https://zzik.github.io/WebAcademy/air_ticket/index.html
+
+**Lending page - Салон красоты**
+
+(Без адаптации и js. Базовая анимация + модалка)
+
+https://zzik.github.ioWebAcademy/Beauty_salon/build/index.html
