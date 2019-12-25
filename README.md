@@ -22,6 +22,6 @@ https://zzik.github.io/WebAcademy/air_ticket/index.html
 
 **Lending page - Салон красоты**
 
-(Без адаптации и js. Базовая анимация + модалка)
+(Без адаптации и js. Базовая анимация + модалка(Модалка стремноватая, позже переделаю))
 
-https://zzik.github.ioWebAcademy/Beauty_salon/build/index.html
+https://zzik.github.io/WebAcademy/Beauty_salon/build/index.html
