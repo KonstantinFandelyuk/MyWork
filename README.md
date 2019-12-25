@@ -25,3 +25,10 @@ https://zzik.github.io/WebAcademy/air_ticket/index.html
 (Без адаптации и js. Базовая анимация + модалка(Модалка стремноватая, позже переделаю))
 
 https://zzik.github.io/WebAcademy/Beauty_salon/build/index.html
+
+**Lending page - Pex (Первые попытки обучения html + css)**
+
+(Без адаптации и js. Базовая анимация + модалка(Модалка стремноватая, позже переделаю))
+
+https://zzik.github.io/WebAcademy/Pex/index.html#
+
