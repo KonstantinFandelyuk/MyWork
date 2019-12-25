@@ -108,7 +108,6 @@
 
 	.services-list .section__row-1 {
 		display: block;
-		margin-left: 15px;
 		padding-bottom: 10px;
 	}
 
@@ -130,8 +129,14 @@
 		display: inline-block;
 	}
 
+	.services-list .section__col-1,
+	.section__col-2 {
+		margin-left: 15px;
+	}
+
 	.services-list .section__col-3 {
-		margin-top: 50px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 
 	.section__calltoaction--tablet {
@@ -147,7 +152,11 @@
 	}
 
 	.services-list .slider {
-		margin-top: 50px;
+		margin-top: 0px;
+	}
+
+	.services-list .slider-img {
+		right: 83px;
 	}
 
 	button.buy {
@@ -157,7 +166,7 @@
 	.slider-button {
 		margin-left: 0px;
 		margin-right: 0px;
-		margin-top: 30px;
+		margin-top: 243px;
 		display: flex;
 		justify-content: start;
 	}
@@ -284,6 +293,10 @@
 	.faq .section__row-3 {
 		margin-top: 40px;
 		margin-bottom: 50px;
+	}
+
+	.faq .section__col-2 {
+		margin-left: 0px;
 	}
 
 	.faq .calltoaction__form {
