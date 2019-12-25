@@ -5,6 +5,7 @@ html(lang='ru')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
 		link(rel="shortcut icon", href="/img/header/favicon.ico", type="image/x-icon")
+		meta(name="description" content="Мы креативная компания, которая создает крутые банеры, визитки, флаера. У нас большая база подрядчиков, все заказы делаем в срок")
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
 		link(rel='stylesheet', href='css/style.css')
@@ -18,7 +19,7 @@ html(lang='ru')
 				.container
 					.header__row-1
 						.header__col-1
-									img.logo(src="/img/header/Artactive-logo.png", alt="")
+									img.logo(src="img/header/Artactive-logo.png", alt="")
 						.header__col-2
 								nav.header__nav-menu
 									a(href="") О нас
@@ -30,10 +31,10 @@ html(lang='ru')
 								a.header-phone(href="tel:+7(920)1488131") +7 (920) 148 81 31
 						.header__col-4
 							include ../blocks/burger_menu.pug
-							button.button Заказать звонок
+							button.button(data-id="modal-callback") Заказать звонок
 					.header__row-2
 						.header__col-1
-							img.header__brand-pic(src="/img/header/alternative.png", alt="")
+							img.header__brand-pic(src="img/header/alternative.png", alt="")
 						.header__col-2
 							.header__slogan
 								.header__slogan-hero-text Размер</br> не имеет</br> значения!
@@ -59,5 +60,6 @@ html(lang='ru')
 				footer
 					include ../blocks/footer.pug
 				include ../blocks/modal.pug
+				include ../blocks/modal-callback.pug
 			include ../blocks/arrow-up.pug
-		script(src="js/app.js")
+		script(src="js/app.js?v-4")

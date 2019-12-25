@@ -14,13 +14,16 @@
 				.section__calltoaction-text <span class="little-text">Есть вопросы?</span> <br> Закажите консультацию
 				button.buy Заказать
 		.section__col-2
-			.slider
-				img.slider-img(src="/img/section/item/service-promo.png", alt="")
+			.slider#slider-service-list
+				.slider__list
+					img.slider-img(src="img/section/item/service-promo.png", alt="Изображение рекламы")
+					img.slider-img(src="img/section/item/service-promo2.jpg", alt="Реклама взрыв красок")
+					img.slider-img(src="img/section/item/service-promo3.jpg", alt="Реклама советская женщина")
+					img.slider-img(src="img/section/item/service-promo4.jpg", alt="Изображение рекламы с девушкой")
 				.slider-button
-					button.prev-slide 
-					button.next-slide 
+					button.prev-slide(data-btn="prve")
+					button.next-slide(data-btn="next")
 					span.slider-botton-text Растяжка на ул. Ленина
-					.slide-text
 		.section__col-3
 			.section__calltoaction--tablet
 				.section__calltoaction-text-little Есть вопросы?

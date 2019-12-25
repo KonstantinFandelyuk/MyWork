@@ -1,0 +1,33 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
+		link(rel='stylesheet', href='css/style.css')
+		title Portal
+	body
+		.wrapper
+			.login
+				.container
+					.login__row-1
+						.login-list
+							.login__title Вход в личный кабинет
+							forma.login__forma-list
+								input.login__input.login__input--mail(type="mail" name="user mail" placeholder="Ввведите вашу почту")
+								input.login__input.login__input--password(type="password" name="user password" placeholder="Ввведите ваш пароль")
+								label
+									input.login__input--checkbox(type="checkbox")
+									<i class="far fa-square"></i>
+									span Запомнить меня
+								button.login__button--sumbit(type="submit" name="Войти") Войти
+								.login--forgot-password 
+									a(href="") Забыли пароль?
+								.login-social
+									a(href="https://www.facebook.com/").login__social-item.icon--fb
+									a(href="https://www.google.com/").login__social-item.icon--google
+								.login--register 
+									a(href="register.html") Зарегистрироваться
+				include ../blocks/footer.pug

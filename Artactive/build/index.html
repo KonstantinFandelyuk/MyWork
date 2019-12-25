@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/img/header/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Мы креативная компания, которая создает крутые банеры, визитки, флаера. У нас большая база подрядчиков, все заказы делаем в срок">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,18 +18,18 @@
       <div class="header">
         <div class="container">
           <div class="header__row-1">
-            <div class="header__col-1"><img class="logo" src="/img/header/Artactive-logo.png" alt=""></div>
+            <div class="header__col-1"><img class="logo" src="img/header/Artactive-logo.png" alt=""></div>
             <div class="header__col-2">
               <nav class="header__nav-menu"><a href="">О нас</a><a href="">Услуги</a><a href="">Отзывы</a><a href="">Faq</a><a href="">Контакты</a></nav>
             </div>
             <div class="header__col-3"><a class="header-phone" href="tel:+7(920)1488131">+7 (920) 148 81 31</a></div>
             <div class="header__col-4">
               <button class="button-burger fas fa-bars" data-id="modal-button"></button>
-              <button class="button">Заказать звонок</button>
+              <button class="button" data-id="modal-callback">Заказать звонок</button>
             </div>
           </div>
           <div class="header__row-2">
-            <div class="header__col-1"><img class="header__brand-pic" src="/img/header/alternative.png" alt=""></div>
+            <div class="header__col-1"><img class="header__brand-pic" src="img/header/alternative.png" alt=""></div>
             <div class="header__col-2">
               <div class="header__slogan">
                 <div class="header__slogan-hero-text">Размер</br> не имеет</br> значения!</div>
@@ -47,7 +48,7 @@
         <div class="about" id="abou_us">
           <div class="container">
             <div class="section__row-1">
-              <div class="section__col-1"><img class="stage_scheme" src="/img/section/item/scheme_step.png" alt=""><img class="stage_scheme_750px" src="/img/section/item/scheme_step_750px.png" alt=""></div>
+              <div class="section__col-1"><img class="stage_scheme" src="img/section/item/scheme_step.png" alt=""><img class="stage_scheme_750px" src="img/section/item/scheme_step_750px.png" alt=""><img class="stage_scheme_320px" src="img/section/item/scheme_step_320px.png" alt=""></div>
               <div class="section__col-2">
                 <h2 class="paragraph-text">1. О нас</h2>
                 <h2 class="paragraph-title">Полный спектр услуг — </br>от дизайна до печати</h2>
@@ -82,11 +83,11 @@
                 </div>
               </div>
               <div class="section__col-2">
-                <div class="slider"><img class="slider-img" src="/img/section/item/service-promo.png" alt="">
+                <div class="slider" id="slider-service-list">
+                  <div class="slider__list"><img class="slider-img" src="img/section/item/service-promo.png" alt="Изображение рекламы"><img class="slider-img" src="img/section/item/service-promo2.jpg" alt="Реклама взрыв красок"><img class="slider-img" src="img/section/item/service-promo3.jpg" alt="Реклама советская женщина"><img class="slider-img" src="img/section/item/service-promo4.jpg" alt="Изображение рекламы с девушкой"></div>
                   <div class="slider-button">
-                    <button class="prev-slide"> </button>
-                    <button class="next-slide"> </button><span class="slider-botton-text">Растяжка на ул. Ленина</span>
-                    <div class="slide-text"></div>
+                    <button class="prev-slide" data-btn="prve"></button>
+                    <button class="next-slide" data-btn="next"></button><span class="slider-botton-text">Растяжка на ул. Ленина</span>
                   </div>
                 </div>
               </div>
@@ -124,7 +125,7 @@
                 <h2 class="paragraph-title">Оперативная полиграфия — <br>от визитки до баннера</h2>
                 <p class="about-text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br> <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error. </p>
               </div>
-              <div class="section__col-2"><img class="card-img" src="/img/section/item/firstil.png" alt=""></div>
+              <div class="section__col-2"><img class="card-img" src="img/section/item/firstil.png" alt=""></div>
               <div class="section__col-3">
                 <div class="calltoaction__form">
                   <div class="section__calltoaction-text"><span class="little-text">Есть вопросы?</span> <br> Оставьте заявку на консультацию
@@ -148,29 +149,29 @@
             </div>
             <div class="section__row-2">
               <div class="slider">
-                <div class="slider__list">
+                <div class="slider__list" id="slider-feedback-list">
                   <div class="slider__list-item">
-                    <div class="list__col-1"><img class="slider__list-item-photo" src="/img/section/photo/nattella.png" alt=""></div>
+                    <div class="list__col-1"><img class="slider__list-item-photo" src="img/section/photo/nattella.png" alt=""></div>
                     <div class="list__col-2">
                       <p class="slider__list-item-text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p><span class="slider__list-item-full-name">Александров Максим, 24 года</span><a class="slider__list-item-social-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
                     </div>
                   </div>
                   <div class="slider__list-item slider__list-item--active">
-                    <div class="list__col-1"><img class="slider__list-item-photo" src="/img/section/photo/alexandr.png" alt=""></div>
+                    <div class="list__col-1"><img class="slider__list-item-photo" src="img/section/photo/alexandr.png" alt=""></div>
                     <div class="list__col-2">
                       <p class="slider__list-item-text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p><span class="slider__list-item-full-name">Александров Максим, 24 года</span><a class="slider__list-item-social-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
                     </div>
                   </div>
                   <div class="slider__list-item">
-                    <div class="list__col-1"><img class="slider__list-item-photo" src="/img/section/photo/veronika.png" alt=""></div>
+                    <div class="list__col-1"><img class="slider__list-item-photo" src="img/section/photo/veronika.png" alt=""></div>
                     <div class="list__col-2">
                       <p class="slider__list-item-text">Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p><span class="slider__list-item-full-name">Александров Максим, 24 года</span><a class="slider__list-item-social-link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
                     </div>
                   </div>
                 </div>
                 <div class="slider-button">
-                  <button class="prev-slide"></button>
-                  <button class="next-slide"></button>
+                  <button class="prev-slide" id="data-btn-prev"></button>
+                  <button class="next-slide" id="data-btn-next"></button>
                 </div>
               </div>
             </div>
@@ -216,7 +217,7 @@
               </div>
             </div>
             <div class="section__row-3">
-              <div class="calltoaction__form"><img class="calltoaction__form-logo" src="/img/section/faq/question_logo.png" alt="">
+              <div class="calltoaction__form"><img class="calltoaction__form-logo" src="img/section/faq/question_logo.png" alt="">
                 <div class="section__calltoaction-text"><span class="little-text">Есть вопросы?</span> <br> Оставьте заявку на консультацию
                   <form>
                     <input class="calltoaction__form-input" type="text" placeholder="Имя">
@@ -231,7 +232,7 @@
             </div>
           </div>
         </div>
-        <footer><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d871.8343349170225!2d30.5606851636049!3d50.49366656951048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x271966cb3f0d18b1!2sSkyMall!5e0!3m2!1sru!2sua!4v1575846987572!5m2!1sru!2sua" width="2000" height="650" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <footer><iframe class="footer-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d871.8343349170225!2d30.5606851636049!3d50.49366656951048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x271966cb3f0d18b1!2sSkyMall!5e0!3m2!1sru!2sua!4v1575846987572!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           <div class="section__row-1"> 
             <div class="container">
               <div class="contacts">
@@ -243,18 +244,30 @@
           </div>
           <div class="section__row-2"><span class="company-name">ООО «АртАктив», 2017 ©</span><a class="nda" href="#">Политика конфиденциальноси</a><span class="designer">Designed by Sergey Strogiy</span></div>
         </footer>
-        <div class="modal animated">
-          <div class="modal-background">
+        <div class="modal">
+          <div class="modal-background animated">
             <nav class="modal__nav-menu"><a href="">О нас</a><a href="">Услуги</a><a href="">Отзывы</a><a href="">Faq</a><a href="">Контакты</a></nav>
             <div class="modal-contact"><a class="modal-contact phone" href="tel:+7(920)1488131">+7 (920) 148 81 31</a></div>
             <div class="modal__calltoaction">
               <button class="buy">Заказать звонок</button>
             </div>
-            <div class="modal__close"></div>
+            <div class="modal__close animated"></div>
+          </div>
+        </div>
+        <div class="modal-callback">
+          <div class="calltoaction__form animated" data-id="callback-animated">
+            <div class="section__calltoaction-text"><span class="little-text">Есть вопросы?</span> <br> Закажите звонок
+              <form>
+                <input class="calltoaction__form-input" type="text" placeholder="Имя">
+                <input class="calltoaction__form-input" type="tel" placeholder="Телефон">
+                <button class="buy">Отправить</button>
+              </form>
+            </div>
+            <div class="modal-callback__close"></div>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/app.js"></script>
+    <script src="js/app.js?v-4"></script>
   </body>
 </html>

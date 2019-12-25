@@ -1,0 +1,37 @@
+.service-print {
+	background-image: url("../img/section/item/line.png");
+	background-color: white;
+	position: relative;
+	background-position: center;
+}
+
+.sercice-print-img.flower {
+	background-image: url("../img/section/item/sofa_flowers.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 20%;
+	background-position-y: 35%;
+}
+
+.service-print .section__row-1 {
+	padding-top: 120px;
+	padding-bottom: 0;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 450px;
+}
+
+.service-print .section__col-1 {
+	flex-basis: 50%;
+}
+
+.service-print .about-text-item {
+	margin-bottom: 60px;
+}
+
+.service-print .about-text-item {
+	color: #5e606a;
+	max-width: 100%;
+	line-height: 1.5;
+	margin-top: 37px;
+}

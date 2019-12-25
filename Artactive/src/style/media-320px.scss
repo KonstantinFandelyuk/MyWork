@@ -1,0 +1,280 @@
+@media (max-width: 320px) {
+
+	//  --------------Header-------------------
+
+	.header__row-1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header__row-2 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header .buy {
+		padding: 15px 64px;
+	}
+
+	//  --------------Header-END---------------
+
+	//  --------------AboutUs------------------
+
+	.about .section__row-1 {
+		margin-bottom: 60px;
+	}
+
+	.about .section__col-1 {
+		padding-top: 0px;
+		margin-left: 10px;
+	}
+
+	.stage_scheme_750px {
+		display: none;
+	}
+
+	.stage_scheme_320px {
+		max-width: none;
+		display: inline-block;
+	}
+
+	.about .section__col-2 {
+		width: 100%;
+		padding-left: 15px;
+	}
+
+	.about .paragraph-text {
+		padding-top: 40px;
+		padding-bottom: 35px;
+	}
+
+	.paragraph-title {
+		font-size: 23px;
+	}
+
+	.about-text-item {
+		margin-top: 30px;
+	}
+
+	.about-text-item:last-child {
+		margin-bottom: 40px;
+	}
+
+	.section__row-2 {
+		display: none;
+	}
+
+	//  --------------AboutUs-END---------------
+
+	//  --------------Services-list-------------
+
+	.services-list .paragraph-text {
+		padding-top: 70px;
+		padding-bottom: 50px;
+	}
+
+	.service-list-item {
+		max-width: 100%;
+	}
+
+	.services-list .section__col-3 {
+		padding-bottom: 50px;
+	}
+
+	.section__calltoaction--tablet {
+		box-shadow: -1px 2px 5px 5px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+		padding: 30px 18px;
+		border-radius: 14px;
+		background-color: #883eca;
+		color: white;
+	}
+
+	.services-list .slider {
+		margin-top: 40px;
+	}
+
+	.slider-button {
+		margin-top: 30px;
+	}
+
+	.slider-botton-text {
+		display: none;
+	}
+
+	.section__calltoaction--tablet .section__calltoaction-text {
+		padding-bottom: 30px;
+	}
+
+	//  --------------Services-list-END-----------
+
+	//  --------------Services-Print--------------
+
+	.sercice-print-img.flower {
+		background-image: url("../img/section/item/flower_sofa_320px.png");
+		background-repeat: no-repeat;
+		background-position: right;
+		background-position-y: 82%;
+	}
+
+	.service-print .section__row-1 {
+		padding-bottom: 270px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		padding-top: 70px;
+	}
+
+	.service-print .section__col-1 {
+		display: none;
+	}
+
+	.service-print .section__row-3 {
+		display: none;
+	}
+
+	.service-print .buy {
+		padding: 16px 56px;
+	}
+
+	//  ---------------Services-Print-END-------
+
+	//  --------------Services-Card-------------
+
+	.services-card .section__row-1 {
+		margin-left: 15px;
+	}
+
+	.services-card .section__col-2 {
+		flex-basis: 75%;
+		order: 2;
+		transform: translate(0%);
+	}
+
+	.services-card .section__col-3 {
+		flex-basis: 50%;
+		padding-bottom: 0;
+		order: 3;
+	}
+
+	.services-card .calltoaction__form-input {
+		margin-bottom: 20px;
+		margin-top: 15px;
+		padding: 0px 73px 10px 25px;
+	}
+
+	.services-card .buy {
+		padding: 12px 80px;
+	}
+
+	.services-card .calltoaction__form-line {
+		display: none;
+	}
+
+	.services-card .calltoaction__form-airplane {
+		display: none;
+	}
+
+	//  ------------ervices-Card-END-----------
+
+	//  ------------Feedback-------------------
+
+	.feedback .section__row-1 {
+		display: none;
+	}
+
+	//  ------------Feedback-END---------------
+
+	//  --------------FAQ----------------------
+
+	.faq .paragraph-text {
+		padding-bottom: 40px;
+	}
+
+	.faq .section__col-1 {
+		margin-right: 0px;
+	}
+
+	.faq__list-item-text {
+		max-width: 100%;
+	}
+
+	.faq .calltoaction__form {
+		background-size: 400px 550px;
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 35px;
+	}
+
+	.faq .calltoaction__form-logo {
+		position: absolute;
+		top: -80px;
+		right: -100px;
+		margin: 0px 0px;
+	}
+
+	.faq .section__calltoaction-text {
+		margin-top: 20px;
+	}
+
+	.faq .little-text {
+		display: inline-block;
+	}
+
+	.faq .calltoaction__form-input {
+		padding: 0px 70px 5px 10px;
+	}
+
+	//  ------------FAQ-END--------------------
+
+	//  --------------Footer-------------------
+	.footer-maps {
+		height: 530px;
+	}
+
+	footer .contacts {
+		width: 300px;
+		left: 2%;
+		bottom: 152px;
+	}
+
+	footer .paragraph-text {
+		margin-top: 50px;
+		margin-bottom: 25px;
+		margin-left: 25px;
+		padding: 0px;
+	}
+
+	footer .contacts__adress,
+	.contacts__email,
+	.contacts__phone {
+		margin-left: 25px;
+		margin-top: 20px;
+	}
+
+	footer .contacts__phone {
+		margin-bottom: 60px;
+	}
+
+	footer .section__row-2 {
+		flex-direction: column-reverse;
+	}
+
+	footer .nda {
+		padding-bottom: 30px;
+		padding-top: 40px;
+	}
+
+	footer .company-name {
+		padding-bottom: 55px;
+	}
+
+	footer .designer {
+		display: none;
+	}
+
+	//  --------------Footer-END----------------
+}
