@@ -32,3 +32,5 @@ https://zzik.github.io/WebAcademy/Beauty_salon/build/index.html
 
 https://zzik.github.io/WebAcademy/Pex/index.html#
 
+https://zzik.github.io/Zet/
+
