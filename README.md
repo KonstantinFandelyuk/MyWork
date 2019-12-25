@@ -8,5 +8,6 @@
 
 Попробовал самостоятельно сделать кнопку - https://zzik.github.io/WebAcademy/Mybutton/my_button.html
 
-Lending page - "Визитки, банера, флаера" - https://zzik.github.io/WebAcademy/Artactive/build/index.html 
+Lending page - "Визитки, банера, флаера" - https://zzik.github.io/WebAcademy/Artactive/build/index.html
+
 (Не много кривоват Js, но я на  этим работаю.)
