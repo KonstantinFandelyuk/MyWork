@@ -4,6 +4,9 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600i,700&display=swap&subset=cyrillic");
 html,
 body,
 div,
@@ -129,19 +132,62 @@ table {
   border-spacing: 0; }
 
 /* ---------Шрифыт----------- */
+@font-face {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/Raleway/Raleway-Medium.ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-style: normal;
+  src: url("/fonts/Raleway/Raleway-Light.ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/fonts/Raleway/Raleway-SemiBold.ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/Raleway/Raleway-Bold.ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-style: normal;
+  src: url("/fonts/Raleway/Raleway-ExtraBold.ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muller";
+  font-weight: 300;
+  font-style: normal;
+  src: url("/fonts/Muller/MullerLight.woff2");
+  font-display: swap; }
+
 /* -------------------------------- */
 * {
   box-sizing: border-box; }
 
 /* Стили поумолчанию для всех элементов */
 body {
-  color: #000000;
+  color: #00203a;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
   overflow-x: hidden;
-  background-color: #E5E5E5; }
+  background-image: url("../img/main/background.png");
+  background-position: center; }
 
 /* Поведение вхех картинок поумолчанию */
 img {
@@ -167,11 +213,12 @@ input[type="submit"] {
 
 /* Обёртка всего - идёт после body */
 .wrapper {
-  position: relative; }
+  position: relative;
+  background-image: url("../img/main/background.png") #E5E5E5; }
 
 /* Класс который устанавливет рабочую область для контента */
 .container {
-  max-width: 1190px;
+  max-width: 1183px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
@@ -181,3 +228,326 @@ input[type="submit"] {
 @media (max-width: 1110px) {
   .container {
     padding: 0 10px; } }
+
+header {
+  background: linear-gradient(90deg, rgba(24, 44, 61, 0.9) 47%, rgba(255, 255, 255, 0.5) 40%);
+  color: white; }
+
+.header__row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px; }
+
+.burger-menu {
+  color: white;
+  font-size: 30px; }
+
+.burger-menu::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c9"; }
+
+.logo {
+  margin-left: 25px; }
+
+.header-phone > a {
+  color: black;
+  font-family: "Muller";
+  font-weight: 300;
+  font-size: 14px; }
+
+.header-phone::before {
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  content: "\f879";
+  color: grey;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+.header__row-2 {
+  margin-top: 205px;
+  margin-bottom: 190px;
+  max-width: 40%; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: white; }
+
+.header-tittle-text {
+  font-family: "Muller";
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 40px; }
+
+.header-order {
+  max-width: 280px; }
+
+.header-order-pay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8a25a;
+  color: white;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 30px 20px 30px;
+  transition: .3s; }
+
+.header-order-pay:hover {
+  background-color: #ca3a3a;
+  transition: .3s; }
+
+.header-order-line {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.header-order-line::before {
+  width: 40px;
+  content: "";
+  display: inline-block;
+  border-bottom: 2px solid white;
+  vertical-align: middle; }
+
+.header-order-line::after {
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  content: "\f105";
+  color: white;
+  vertical-align: middle; }
+
+.social__icon-list {
+  display: flex; }
+
+.social__icon-item {
+  font-size: 20px;
+  color: #b3b9bf; }
+
+.vk::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f189"; }
+
+.instagram::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f16d";
+  margin-left: 35px; }
+
+.facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f39e";
+  margin-left: 35px; }
+
+.header__row-3 {
+  padding-bottom: 35px; }
+
+.advantages__row-1 {
+  padding-bottom: 130px; }
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; }
+
+.advantages__list-item {
+  max-width: 244px; }
+
+.advantages__list-item:nth-child(2) {
+  margin-top: 340px; }
+
+.advantages__list-item:nth-child(4) {
+  margin-top: 340px; }
+
+.advantages__number {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 85px;
+  color: #fde3c9;
+  margin-bottom: 20px;
+  line-height: 1; }
+
+.advantages__tittle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px; }
+
+.advantages__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: grey;
+  line-height: 1.5; }
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 60px; }
+
+.project__list {
+  display: flex;
+  justify-content: start;
+  align-items: center; }
+
+.project__list-item {
+  display: inline-block;
+  font-size: 18px;
+  color: #00203a; }
+
+.project__list-item:nth-child(2) {
+  margin-left: 50px; }
+
+.project__list-item:nth-child(3) {
+  margin-left: 50px; }
+
+.portfolio__row-3 {
+  margin-top: 50px;
+  margin-bottom: 135px; }
+
+.service__menu-list-item {
+  color: #00203a;
+  font-size: 18px;
+  margin-bottom: 60px; }
+
+.service__col-1 {
+  flex-grow: 1; }
+
+.service__menu-list-item:last-child {
+  margin-bottom: 140px; }
+
+.service__col-2 {
+  flex-grow: 10; }
+
+.swiper-container {
+  border: 1px solid red;
+  width: 1162px;
+  height: 601px;
+  position: absolute;
+  top: 80px; }
+
+.h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #333; }
+
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 20px auto; }
+  .accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0; }
+    .accordion ul li {
+      display: table-cell;
+      vertical-align: bottom;
+      position: relative;
+      width: 16.666%;
+      height: 250px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: all 500ms ease; }
+      .accordion ul li div {
+        display: block;
+        overflow: hidden;
+        width: 100%; }
+        .accordion ul li div a {
+          display: block;
+          height: 250px;
+          width: 100%;
+          position: relative;
+          z-index: 3;
+          vertical-align: bottom;
+          padding: 15px 20px;
+          box-sizing: border-box;
+          color: #fff;
+          text-decoration: none;
+          font-family: "Open Sans", sans-serif;
+          transition: all 200ms ease; }
+          .accordion ul li div a * {
+            opacity: 0;
+            margin: 0;
+            width: 100%;
+            text-overflow: ellipsis;
+            position: relative;
+            z-index: 5;
+            white-space: nowrap;
+            overflow: hidden;
+            -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+            -webkit-transition: all 400ms ease;
+            transition: all 400ms ease; }
+          .accordion ul li div a .h2 {
+            font-family: "Montserrat", sans-serif;
+            text-overflow: clip;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            top: 160px; }
+          .accordion ul li div a p {
+            top: 160px;
+            font-size: 13.5px; }
+    .accordion ul li:nth-child(1) {
+      background-image: url("http://michael-ferry.com/assets/accordion1.jpg"); }
+    .accordion ul li:nth-child(2) {
+      background-image: url("http://michael-ferry.com/assets/accordion2.jpg"); }
+    .accordion ul li:nth-child(3) {
+      background-image: url("http://michael-ferry.com/assets/accordion3.jpg"); }
+    .accordion ul li:nth-child(4) {
+      background-image: url("http://michael-ferry.com/assets/accordion4.jpg"); }
+    .accordion ul li:nth-child(5) {
+      background-image: url("http://michael-ferry.com/assets/accordion5.jpg"); }
+    .accordion ul li:nth-child(6) {
+      background-image: url("http://michael-ferry.com/assets/accordion6.jpg"); }
+    .accordion ul:hover li {
+      width: 8%; }
+    .accordion ul:hover li:hover {
+      width: 60%; }
+      .accordion ul:hover li:hover a {
+        background: rgba(0, 0, 0, 0.4); }
+        .accordion ul:hover li:hover a * {
+          opacity: 1;
+          -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0; }
+  .accordion {
+    height: auto; }
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      -webkit-transition: none;
+      transition: none; } }
+
+.about {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #666; }
+  .about a {
+    color: blue;
+    text-decoration: none; }
+    .about a:hover {
+      text-decoration: underline; }

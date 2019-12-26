@@ -1,0 +1,149 @@
+header {
+  background: linear-gradient(90deg, rgba(24, 44, 61, 0.9) 47%, rgba(255, 255, 255, 0.5) 40%);
+  color: white;
+}
+
+.header__row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.burger-menu {
+  color: white;
+  font-size: 30px;
+}
+
+.burger-menu::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c9";
+}
+
+.logo {
+  margin-left: 25px;
+}
+
+.header-phone>a {
+  color: black;
+  font-family: "Muller";
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.header-phone::before {
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  content: "\f879";
+  color: grey;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+// --------------------------------------------
+
+.header__row-2 {
+  margin-top: 205px;
+  margin-bottom: 190px;
+  max-width: 40%;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.header-tittle-text {
+  font-family: "Muller";
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.header-order {
+  max-width: 280px;
+}
+
+.header-order-pay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8a25a;
+  color: white;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 30px 20px 30px;
+  transition: .3s;
+}
+
+.header-order-pay:hover {
+  background-color: rgb(202, 58, 58);
+  transition: .3s;
+}
+
+.header-order-line {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-order-line::before {
+  width: 40px;
+  content: "";
+  display: inline-block;
+  border-bottom: 2px solid white;
+  vertical-align: middle;
+}
+
+.header-order-line::after {
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  content: "\f105";
+  color: white;
+  vertical-align: middle;
+}
+
+// --------------------------------------------
+
+.social__icon-list {
+  display: flex;
+}
+
+.social__icon-item {
+  font-size: 20px;
+  color: #b3b9bf;
+}
+
+.vk::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f189";
+}
+
+.instagram::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f16d";
+  margin-left: 35px;
+}
+
+.facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f39e";
+  margin-left: 35px;
+}
+
+.header__row-3 {
+  padding-bottom: 35px;
+}
+
+// --------------------------------------------

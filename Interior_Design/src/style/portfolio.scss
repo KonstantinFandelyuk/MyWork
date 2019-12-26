@@ -1,0 +1,31 @@
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 45px;
+	margin-bottom: 60px;
+}
+
+.project__list {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.project__list-item {
+	display: inline-block;
+	font-size: 18px;
+	color: #00203a;
+}
+
+.project__list-item:nth-child(2) {
+	margin-left: 50px;
+}
+
+.project__list-item:nth-child(3) {
+	margin-left: 50px;
+}
+
+.portfolio__row-3 {
+	margin-top: 50px;
+	margin-bottom: 135px;
+}

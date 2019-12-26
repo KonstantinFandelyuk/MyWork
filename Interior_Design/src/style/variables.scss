@@ -1,1 +1,7 @@
-$color: #fff
+$color: #fff;
+
+// Accordion Height
+$a-height: 250px;
+
+// Position text along bottom
+$text-offset: $a-height - 90;
