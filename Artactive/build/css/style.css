@@ -146,7 +146,7 @@ table {
 @font-face {
   font-family: 'Muller';
   src: url("/fonts/MullerRegular.woff2");
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal; }
 
 /* -------------------------------- */
