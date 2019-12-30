@@ -1180,12 +1180,77 @@ footer .company-name,
     margin-bottom: 10px; }
   .header .header__col-2 {
     margin: 0 20px; }
+  .header__row-2 {
+    margin-top: 10px; }
   .header .buy {
     padding: 16px 100px; }
   .header__calltoaction-text {
     display: none; }
   .header__row-3 {
-    padding-bottom: 15px; } }
+    padding-bottom: 15px; }
+  .paragraph-title {
+    margin-bottom: 30px; }
+  .section__col-1 {
+    display: none; }
+  .about .section__col-2 {
+    width: 100%;
+    padding-left: 15px; }
+  .about-text-item {
+    margin-top: 20px; }
+  .double-line::after {
+    height: 85px;
+    left: 204px; }
+  .services-list .section__col-2 {
+    padding-top: 40px;
+    margin-left: 0px; }
+  .services-list .slider {
+    margin-left: 35px; }
+  .services-list .slider__list {
+    padding-left: 15px; }
+  .services-list .slider-button {
+    margin-top: 128px; }
+  .section__calltoaction--tablet {
+    flex-direction: column; }
+  .section__calltoaction-text {
+    margin: 0 auto; }
+  .services-list .slider-botton-text {
+    margin-left: 0px;
+    text-align: center; }
+  button.buy {
+    padding: 12px 140px; }
+  .service-print .section__row-1 {
+    padding-top: 70px;
+    margin-left: 15px; }
+  .sercice-print-img.flower {
+    background-position-y: 71%; }
+  .services-card .section__row-1 {
+    padding-top: 70px;
+    padding-left: 15px;
+    margin-left: 0px; }
+  .services-card .calltoaction__form-airplane {
+    display: none; }
+  footer .contacts {
+    width: 330px;
+    bottom: 150px;
+    left: 3%; }
+  footer .paragraph-text {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    margin-left: 45px;
+    padding: 0px; }
+  footer .contacts__adress,
+  .contacts__email,
+  .contacts__phone {
+    margin-left: 45px;
+    margin-top: 20px; }
+  footer .section__row-2 {
+    flex-direction: column; }
+  footer .designer {
+    display: none; }
+  footer .company-name,
+  .nda,
+  .designer {
+    padding: 10px 0px; } }
 
 @media (max-width: 320px) {
   .header__row-1 {
