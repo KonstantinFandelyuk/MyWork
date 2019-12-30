@@ -1,20 +1,22 @@
-.container
-	.header__row-1
-		a(href="").burger-menu
-		.logo
-			img(src="/img/header/logo.png", alt="")
-		.header-phone
-			a(href="tel:+7(800)823-48-88") +7 (800) 823-48-88
-	.header__row-2
-		h1 Дизайн <br> интерьеров
-		.header-tittle-text Воплотим в жизнь интерьер, который будет<br> радовать лаконичностью и уютом.
-		.header-order
-			button.header-order-pay Заказать дизайн
-				.header-order-line
-	.header__row-3
-		.social-icon
-			.social__icon-list
-				.social__icon-item.vk
-				.social__icon-item.instagram
-				.social__icon-item.facebook
-	include ../blocks/header-slider.pug
+header
+	.header-box
+		.container
+			include ../blocks/header-slider.pug
+			.header__row-1
+				a(href="").burger-menu
+				.logo
+					img(src="/img/header/logo.png", alt="")
+				.header-phone
+					a(href="tel:+7(800)823-48-88") +7 (800) 823-48-88
+			.header__row-2
+				h1 Дизайн <br> интерьеров
+				.header-tittle-text Воплотим в жизнь интерьер, который будет<br> радовать лаконичностью и уютом.
+				.header-order
+					button.header-order-pay Заказать дизайн
+						.header-order-line
+			.header__row-3
+				.social-icon
+					.social__icon-list
+						a(href="https://vk.com").social__icon-item.vk
+						a(href="https://instagram.com").social__icon-item.instagram
+						a(href="https://facebook.com").social__icon-item.facebook

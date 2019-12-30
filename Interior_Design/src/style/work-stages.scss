@@ -1,0 +1,38 @@
+.work__stages__row-2 {
+	padding-bottom: 75px;
+}
+
+.work__stages-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.work__stages-item {
+	width: 305px;
+	max-width: 370px;
+}
+
+.work__stages-item.tittle {
+	font-family: "Raleway";
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.work__stages-item.tittle::after {
+	margin-right: 210px;
+	content: "";
+	width: 40px;
+	border-bottom: 1px solid black;
+	display: inline-block;
+}
+
+.work__stages-item.text {
+	font-family: "Raleway";
+	font-weight: 300;
+	padding-top: 35px;
+	padding-bottom: 65px;
+	font-size: 16px;
+	color: grey;
+}

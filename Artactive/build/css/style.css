@@ -133,19 +133,19 @@ table {
   font-family: "Muller";
   font-weight: 800;
   font-style: normal;
-  src: url("/fonts/MullerExtraBold.woff");
+  src: url("../fonts/MullerExtraBold.woff");
   font-display: swap; }
 
 @font-face {
   font-family: "Muller";
   font-weight: 500;
   font-style: normal;
-  src: url("/fonts/MullerMedium.woff2");
+  src: url("../fonts/MullerMedium.woff2");
   font-display: swap; }
 
 @font-face {
   font-family: 'Muller';
-  src: url("/fonts/MullerRegular.woff2");
+  src: url("../fonts/MullerRegular.woff2");
   font-weight: 600;
   font-style: normal; }
 
@@ -393,7 +393,7 @@ input[type="submit"] {
   color: #7f38bd;
   font-size: 30px;
   font-family: "Muller";
-  font-weight: 800;
+  font-weight: bold;
   padding-bottom: 80px; }
 
 .paragraph-title {
