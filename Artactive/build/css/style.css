@@ -1186,14 +1186,14 @@ footer .company-name,
     padding-bottom: 15px; }
   .modal-background.animated.slideInRight {
     width: 67%;
-    height: 736px; }
+    height: 753px; }
   .paragraph-title {
     margin-bottom: 30px; }
   .section__col-1 {
     display: none; }
   .about .section__col-2 {
-    width: 100%;
-    padding-left: 15px; }
+    padding-left: 15px;
+    margin-left: 0px; }
   .about-text-item {
     margin-top: 20px; }
   .double-line::after {
@@ -1229,6 +1229,8 @@ footer .company-name,
     margin-left: 0px; }
   .services-card .calltoaction__form-airplane {
     display: none; }
+  .services-card .section__col-2 {
+    margin-left: 0px; }
   .faq .calltoaction__form {
     background-size: cover;
     background-position: center; }
