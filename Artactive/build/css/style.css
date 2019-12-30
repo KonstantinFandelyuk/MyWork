@@ -393,7 +393,7 @@ input[type="submit"] {
   color: #7f38bd;
   font-size: 30px;
   font-family: "Muller";
-  font-weight: 600;
+  font-weight: 800;
   padding-bottom: 80px; }
 
 .paragraph-title {
@@ -1109,7 +1109,7 @@ footer .company-name,
   .services-card .section__col-1 {
     flex-basis: 100%; }
   .services-card .section__col-2 {
-    flex-basis: 50%;
+    flex-basis: 45%;
     order: 3;
     transform: translate(10%); }
   .services-card .section__col-3 {
@@ -1118,8 +1118,6 @@ footer .company-name,
     order: 2; }
   .services-card .section__calltoaction-text {
     max-width: 150px; }
-  .services-card .card-img {
-    max-width: 130%; }
   .services-card .calltoaction__form-input {
     margin-bottom: 35px;
     margin-top: 30px; }

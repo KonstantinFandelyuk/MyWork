@@ -221,7 +221,7 @@
 	}
 
 	.services-card .section__col-2 {
-		flex-basis: 50%;
+		flex-basis: 45%;
 		order: 3;
 		transform: translate(10%);
 	}
@@ -236,9 +236,9 @@
 		max-width: 150px;
 	}
 
-	.services-card .card-img {
-		max-width: 130%;
-	}
+	// .services-card .card-img {
+	// 	max-width: 130%;
+	// }
 
 	.services-card .calltoaction__form-input {
 		margin-bottom: 35px;
