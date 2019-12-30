@@ -1170,7 +1170,7 @@ footer .company-name,
   .faq .section__row-4 {
     display: none; }
   footer .contacts {
-    left: 2%; } }
+    left: 3%; } }
 
 @media (max-width: 414px) {
   .header__row-2 {
@@ -1199,7 +1199,7 @@ footer .company-name,
     margin-top: 20px; }
   .double-line::after {
     height: 85px;
-    left: 204px; }
+    left: 200px; }
   .services-list .section__col-2 {
     padding-top: 40px;
     margin-left: 0px; }
