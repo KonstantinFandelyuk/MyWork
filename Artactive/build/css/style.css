@@ -1221,7 +1221,8 @@ footer .company-name,
     padding-top: 70px;
     margin-left: 15px; }
   .sercice-print-img.flower {
-    background-position-y: 71%; }
+    background-position-y: 71%;
+    background-position-x: -46px; }
   .services-card .section__row-1 {
     padding-top: 70px;
     padding-left: 15px;
