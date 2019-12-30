@@ -1,0 +1,27 @@
+footer {
+  background-color: #182c3d;
+  color: #ffc487;
+}
+
+.footer__row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__col-2 {
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 42px;
+  margin-top: 75px;
+}
+
+.social-icon {
+  margin-bottom: 80px;
+}
+
+footer .social__icon-item {
+  color: white;
+}

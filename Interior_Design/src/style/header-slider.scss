@@ -1,7 +1,21 @@
 .swiper-container {
-	border: 1px solid red;
 	width: 1162px;
 	height: 601px;
 	position: absolute;
-	top: 80px;
+	top: 90px;
+	right: 370px;
+	z-index: -1;
+
+	// &::before {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	z-index: 2;
+	// 	content: "";
+	// 	display: block;
+	// 	width: 50%;
+	// 	height: 100%;
+	// 	background-color: rgba(24, 44, 61, 0.9);
+	// }
+
 }
