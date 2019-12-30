@@ -5,12 +5,12 @@ let modalElement = document.querySelector(".modal");
 let animateModalElement = document.querySelector(".modal-background");
 let closeModalElement = document.querySelector(".modal__close");
 
-buttonElement.addEventListener("click", function() {
+buttonElement.addEventListener("click", function () {
   modalElement.classList.add("active");
   animateModalElement.classList.add("slideInRight");
 });
 
-closeModalElement.addEventListener("click", function() {
+closeModalElement.addEventListener("click", function () {
   modalElement.classList.remove("active");
 });
 
@@ -23,12 +23,12 @@ let closeModalCallbackElement = document.querySelector(
 );
 let rew = document.querySelector("[data-id=callback-animated]");
 
-buttonCallbackElement.addEventListener("click", function() {
+buttonCallbackElement.addEventListener("click", function () {
   modalCallbackElement.classList.add("active");
   rew.classList.add("zoomIn");
 });
 
-closeModalCallbackElement.addEventListener("click", function() {
+closeModalCallbackElement.addEventListener("click", function () {
   modalCallbackElement.classList.remove("active");
 });
 
@@ -38,7 +38,7 @@ let sliderServiceList = document.querySelector("#slider-service-list");
 let sliderImg = sliderServiceList.querySelectorAll(".slider-img");
 let curNum = 0;
 
-sliderServiceList.addEventListener("click", function(event) {
+sliderServiceList.addEventListener("click", function (event) {
   let btn = event.target.closest("[data-btn]"),
     countSlides = sliderImg.length;
 
@@ -85,10 +85,10 @@ function myFunctionNext() {
     "translate(-800px)";
 }
 
-document.getElementById("data-btn-prev").addEventListener("click", function() {
+document.getElementById("data-btn-prev").addEventListener("click", function () {
   myFunctionPrev();
 });
 
-document.getElementById("data-btn-next").addEventListener("click", function() {
+document.getElementById("data-btn-next").addEventListener("click", function () {
   myFunctionNext();
 });
