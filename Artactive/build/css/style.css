@@ -1269,7 +1269,7 @@ footer .company-name,
     flex-direction: column; }
   .header .buy {
     padding: 15px 64px; }
-  .modal-background.animated.slideInRigh {
+  .modal-background.animated.slideInRight {
     width: 77%; }
   .about .section__row-1 {
     margin-bottom: 60px; }
@@ -1337,7 +1337,7 @@ footer .company-name,
   .service-print .buy {
     padding: 16px 56px; }
   .services-card .section__row-1 {
-    margin-left: 15px; }
+    padding-left: 15px; }
   .services-card .section__col-2 {
     flex-basis: 75%;
     order: 2;
