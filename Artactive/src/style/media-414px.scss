@@ -30,6 +30,11 @@
 		padding-bottom: 15px;
 	}
 
+	.modal-background.animated.slideInRight {
+		width: 67%;
+		height: 736px;
+	}
+
 	//  --------------AboutUs--------------------
 	.paragraph-title {
 		margin-bottom: 30px;
@@ -87,7 +92,7 @@
 		text-align: center;
 	}
 
-	button.buy {
+	.services-list.buy {
 		padding: 12px 140px;
 	}
 
@@ -101,7 +106,9 @@
 	}
 
 	.sercice-print-img.flower {
-		background-position-y: 71%
+		background-position-y: 71%;
+		background-position-x: -46px;
+
 	}
 
 	//  ---------------Services-Print-END---------

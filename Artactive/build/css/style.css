@@ -868,10 +868,6 @@ footer .company-name,
   height: 666px;
   padding-left: 61px; }
 
-@media (max-width: 320px) {
-  .modal-background {
-    width: 77%; } }
-
 .modal__nav-menu {
   display: flex;
   flex-direction: column;
@@ -1188,6 +1184,9 @@ footer .company-name,
     display: none; }
   .header__row-3 {
     padding-bottom: 15px; }
+  .modal-background.animated.slideInRight {
+    width: 67%;
+    height: 736px; }
   .paragraph-title {
     margin-bottom: 30px; }
   .section__col-1 {
@@ -1216,13 +1215,14 @@ footer .company-name,
   .services-list .slider-botton-text {
     margin-left: 0px;
     text-align: center; }
-  button.buy {
+  .services-list.buy {
     padding: 12px 140px; }
   .service-print .section__row-1 {
     padding-top: 70px;
     margin-left: 15px; }
   .sercice-print-img.flower {
-    background-position-y: 71%; }
+    background-position-y: 71%;
+    background-position-x: -46px; }
   .services-card .section__row-1 {
     padding-top: 70px;
     padding-left: 15px;
@@ -1267,6 +1267,8 @@ footer .company-name,
     flex-direction: column; }
   .header .buy {
     padding: 15px 64px; }
+  .modal-background.animated.slideInRigh {
+    width: 77%; }
   .about .section__row-1 {
     margin-bottom: 60px; }
   .about .section__col-1 {
