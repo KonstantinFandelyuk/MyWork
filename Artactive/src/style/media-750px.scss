@@ -3,7 +3,9 @@
 
   .header__row-1 {
     padding-top: 25px;
-    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .logo {

@@ -144,7 +144,7 @@ table {
   font-display: swap; }
 
 @font-face {
-  font-family: 'Muller';
+  font-family: "Muller";
   src: url("../fonts/MullerRegular.woff2");
   font-weight: 600;
   font-style: normal; }
@@ -991,7 +991,9 @@ footer .company-name,
 @media (max-width: 750px) {
   .header__row-1 {
     padding-top: 25px;
-    align-items: end; }
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .logo {
     width: 124px;
     height: 16px; }
@@ -1169,6 +1171,21 @@ footer .company-name,
     display: none; }
   footer .contacts {
     left: 2%; } }
+
+@media (max-width: 414px) {
+  .header__row-2 {
+    display: flex;
+    flex-direction: column; }
+  .header__slogan-hero-text {
+    margin-bottom: 10px; }
+  .header .header__col-2 {
+    margin: 0 20px; }
+  .header .buy {
+    padding: 16px 100px; }
+  .header__calltoaction-text {
+    display: none; }
+  .header__row-3 {
+    padding-bottom: 15px; } }
 
 @media (max-width: 320px) {
   .header__row-1 {
