@@ -167,6 +167,13 @@ table {
   src: url("../fonts/Raleway/Raleway-ExtraBold.ttf");
   font-display: swap; }
 
+@font-face {
+  font-family: "Muller";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Muller/MullerLight.woff2");
+  font-display: swap; }
+
 /* -------------------------------- */
 * {
   box-sizing: border-box; }
