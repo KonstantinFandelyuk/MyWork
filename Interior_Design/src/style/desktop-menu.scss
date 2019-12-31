@@ -1,0 +1,42 @@
+.desktop__menu {
+	display: none;
+}
+
+.active {
+	position: absolute;
+	top: 90px;
+	left: 0;
+	width: 100%;
+	display: block;
+}
+
+.desktop__menu-box {
+	height: 600px;
+	background-color: #112537;
+}
+
+.menu__list>a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu__list-item {
+	color: white;
+	font-size: 20px;
+	padding-bottom: 45px;
+	transition: 0.3s;
+}
+
+.menu__list-item:hover {
+	color: #f8a25a;
+	transition: 0.3s;
+}
+
+.menu__list-item:first-child {
+	padding-top: 70px;
+}
+
+.menu__list-item:last-child {
+	padding-bottom: 70px;
+}
