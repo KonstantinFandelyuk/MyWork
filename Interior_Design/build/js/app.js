@@ -1,43 +1,9 @@
-var buttonElement = document.querySelector("[data-id=modal-callback]");
-var modalElement = document.querySelector(".modal");
+let burgerElement = document.querySelector(".burger-menu"),
+	menuDesktopElement = document.querySelector("[data-id=desktop__menu]");
 
-// console.log(modalButtonElement);
 
-buttonElement.addEventListener("click", function () {
-	modalElement.classList.add("active");
-})
+// console.log(burgerElement);
 
-var closeElement = document.querySelector(".modal__close");
-
-closeElement.addEventListener("click", function () {
-	modalElement.classList.remove("active");
-})
-
-modalElement.addEventListener("active", function (event) {
-	if (!event.currnt.target.closet(".modalElement")) {
-		modalElement.classList.remove("active");
-	}
-})
-
-var catalog__list = document.querySelector(".catalog__list");
-
-var catalog__listPosTop = catalog__list.getBoundingClientRect().top;
-
-var scroll = function () {
-	if (window.pageYOffset >= catalog__listPosTop - 300) {
-		window.removeEventListener("scroll", scroll) // Важно
-		catalog__list.classList.add("slideInLeft")
-	}
-}
-window.addEventListener("scroll", scroll)
-
-// ----------------------Animated social icon----------------------------------------------------------
-
-var socialIcon = document.querySelector(".social-icon__item");
-
-socialIcon.addEventListener("mouseover", function () {
-	socialIcon.classList.add("flip");
-	this.addEventListener("mouseout", function () {
-		socialIcon.classList.remove("flip");
-	});
+burgerElement.addEventListener("click", function () {
+	menuDesktopElement.classList.add("active");
 });

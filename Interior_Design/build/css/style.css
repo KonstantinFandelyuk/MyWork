@@ -136,42 +136,35 @@ table {
   font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
-  src: url("/fonts/Raleway/Raleway-Medium.ttf");
+  src: url("../fonts/Raleway/Raleway-Medium.ttf");
   font-display: swap; }
 
 @font-face {
   font-family: "Raleway";
   font-weight: 300;
   font-style: normal;
-  src: url("/fonts/Raleway/Raleway-Light.ttf");
+  src: url("../fonts/Raleway/Raleway-Light.ttf");
   font-display: swap; }
 
 @font-face {
   font-family: "Raleway";
   font-weight: 600;
   font-style: normal;
-  src: url("/fonts/Raleway/Raleway-SemiBold.ttf");
+  src: url("../fonts/Raleway/Raleway-SemiBold.ttf");
   font-display: swap; }
 
 @font-face {
   font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
-  src: url("/fonts/Raleway/Raleway-Bold.ttf");
+  src: url("../fonts/Raleway/Raleway-Bold.ttf");
   font-display: swap; }
 
 @font-face {
   font-family: "Raleway";
   font-weight: 800;
   font-style: normal;
-  src: url("/fonts/Raleway/Raleway-ExtraBold.ttf");
-  font-display: swap; }
-
-@font-face {
-  font-family: "Muller";
-  font-weight: 300;
-  font-style: normal;
-  src: url("/fonts/Muller/MullerLight.woff2");
+  src: url("../fonts/Raleway/Raleway-ExtraBold.ttf");
   font-display: swap; }
 
 /* -------------------------------- */
@@ -330,6 +323,9 @@ h1 {
   color: white;
   vertical-align: middle; }
 
+.header__row-3 {
+  padding-bottom: 35px; }
+
 .social__icon-list {
   display: flex; }
 
@@ -356,9 +352,6 @@ h1 {
   font-weight: 900;
   content: "\f39e";
   margin-left: 35px; }
-
-.header__row-3 {
-  padding-bottom: 35px; }
 
 .advantages__row-1 {
   padding-bottom: 130px; }
@@ -731,7 +724,7 @@ footer {
   margin-bottom: 42px;
   margin-top: 75px; }
 
-.social-icon {
+footer .social-icon {
   margin-bottom: 80px; }
 
 footer .social__icon-item {
@@ -744,3 +737,38 @@ footer .social__icon-item {
   top: 90px;
   right: 370px;
   z-index: -1; }
+
+.desktop__menu {
+  display: none; }
+
+.active {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  display: block; }
+
+.desktop__menu-box {
+  height: 600px;
+  background-color: #112537; }
+
+.menu__list > a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.menu__list-item {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 45px;
+  transition: 0.3s; }
+
+.menu__list-item:hover {
+  color: #f8a25a;
+  transition: 0.3s; }
+
+.menu__list-item:first-child {
+  padding-top: 70px; }
+
+.menu__list-item:last-child {
+  padding-bottom: 70px; }
