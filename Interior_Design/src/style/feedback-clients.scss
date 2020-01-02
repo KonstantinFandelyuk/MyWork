@@ -22,6 +22,12 @@
 	transform: translateX(-25%);
 }
 
+@media (max-width: 768px) {
+	.feedback-clients__list {
+		transform: translateX(-6%);
+	}
+}
+
 .feedback-clients__list--item {
 	width: 660px;
 	max-height: 275px;

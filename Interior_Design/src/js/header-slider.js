@@ -1,10 +1,10 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container-1', {
 	spaceBetween: 30,
 	centeredSlides: true,
-	// autoplay: {
-	// 	delay: 2500,
-	// 	disableOnInteraction: false,
-	// },
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,

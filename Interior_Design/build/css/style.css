@@ -240,10 +240,8 @@ input[type="submit"] {
 
 @media (max-width: 768px) {
   .header-box {
-    background: #2e343b;
-    background-image: url("../img/header/768px/life.png");
-    background-repeat: no-repeat;
-    background-blend-mode: soft-light; } }
+    background-image: linear-gradient(to top, rgba(46, 63, 78, 0.7), rgba(46, 63, 78, 0.7)), url("../img/header/768px/life.png.jpg");
+    background-repeat: no-repeat; } }
 
 .header__row-1 {
   display: flex;
@@ -800,6 +798,9 @@ input {
   padding: 10px 390px 10px 0px;
   outline: none; }
 
+input:focus {
+  color: white; }
+
 input::placeholder {
   color: #a4acb3;
   font-family: "Raleway";
@@ -867,6 +868,10 @@ input:nth-child(3) {
   align-items: center;
   transform: translateX(-25%); }
 
+@media (max-width: 768px) {
+  .feedback-clients__list {
+    transform: translateX(-6%); } }
+
 .feedback-clients__list--item {
   width: 660px;
   max-height: 275px;
@@ -927,13 +932,14 @@ footer .social-icon {
 footer .social__icon-item {
   color: white; }
 
-header .swiper-container {
+header .swiper-container-1 {
   width: 1162px;
   height: 601px;
   position: absolute;
   top: 90px;
   right: 370px;
-  z-index: -1; }
+  z-index: -1;
+  overflow: hidden; }
 
 @media (max-width: 768px) {
   header .swiper-container {

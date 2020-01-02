@@ -47,6 +47,11 @@ input {
 	margin-bottom: 30px;
 	padding: 10px 390px 10px 0px;
 	outline: none;
+
+}
+
+input:focus {
+	color: white;
 }
 
 input::placeholder {
