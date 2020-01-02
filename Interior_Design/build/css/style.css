@@ -1019,6 +1019,9 @@ header .swiper-container-1 {
 .menu__list-item:last-child {
   padding-bottom: 70px; }
 
+.desktop__menu .social-icon {
+  display: none; }
+
 @media (max-width: 768px) {
   .desktop__menu .social-icon {
     display: block;
