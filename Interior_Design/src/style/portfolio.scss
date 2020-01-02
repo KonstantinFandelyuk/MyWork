@@ -16,11 +16,13 @@ h2 {
 	font-size: 18px;
 	color: gray;
 	padding: 5px;
+	transition: .3s;
 }
 
 .project__list-item:hover {
 	color: #01182b;
 	font-weight: bold;
+	transition: .3s;
 }
 
 .project__list-item:nth-child(2) {
