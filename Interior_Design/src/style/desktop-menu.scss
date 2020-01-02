@@ -12,7 +12,7 @@
 
 @media (max-width: 768px) {
 	.active {
-		top: 40px;
+		top: 0px;
 	}
 }
 
@@ -23,7 +23,7 @@
 
 @media (max-width: 768px) {
 	.desktop__menu-box {
-		height: 1022px;
+		height: 1060px;
 		background-color: #112537;
 	}
 }
@@ -80,5 +80,12 @@
 
 	.desktop__menu .social__icon-item:hover {
 		color: #f8a25a;
+	}
+}
+
+@media (max-width: 768px) {
+	.desktop__menu .container {
+		padding: 0;
+		max-width: 768px;
 	}
 }

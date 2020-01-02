@@ -14,7 +14,13 @@ h2 {
 .project__list-item {
 	display: inline-block;
 	font-size: 18px;
-	color: #00203a;
+	color: gray;
+	padding: 5px;
+}
+
+.project__list-item:hover {
+	color: #01182b;
+	font-weight: bold;
 }
 
 .project__list-item:nth-child(2) {

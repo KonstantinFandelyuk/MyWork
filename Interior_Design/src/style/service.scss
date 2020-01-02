@@ -17,6 +17,11 @@ ul.service__menu-list {
 	text-align: start;
 }
 
+li:hover {
+	color: #01182b;
+	font-weight: bold;
+}
+
 .service__menu-list-item {
 	font-family: 'Open Sans', sans-serif;
 	color: #00203a;
