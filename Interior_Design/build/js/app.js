@@ -4,6 +4,7 @@ let burgerElement = document.querySelector(".burger-menu"),
 
 // console.log(burgerElement);
 
-burgerElement.addEventListener("click", function () {
-	menuDesktopElement.classList.add("active");
+burgerElement.addEventListener("change", function () {
+	menuDesktopElement.classList.add("slideInLeft"),
+		menuDesktopElement.classList.toggle("active");
 });

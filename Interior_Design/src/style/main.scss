@@ -4,53 +4,53 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600i,700&display=swap&subset=cyrillic');
 
-@font-face {
-	font-family: "Raleway";
-	font-weight: 500;
-	font-style: normal;
-	src: url('../fonts/Raleway/Raleway-Medium.ttf');
-	font-display: swap;
-}
+	@font-face {
+		font-family: "Raleway";
+		font-weight: 500;
+		font-style: normal;
+		src: url('../fonts/Raleway/Raleway-Medium.ttf');
+		font-display: swap;
+	}
 
-@font-face {
-	font-family: "Raleway";
-	font-weight: 300;
-	font-style: normal;
-	src: url('../fonts/Raleway/Raleway-Light.ttf');
-	font-display: swap;
-}
+	@font-face {
+		font-family: "Raleway";
+		font-weight: 300;
+		font-style: normal;
+		src: url('../fonts/Raleway/Raleway-Light.ttf');
+		font-display: swap;
+	}
 
-@font-face {
-	font-family: "Raleway";
-	font-weight: 600;
-	font-style: normal;
-	src: url('../fonts/Raleway/Raleway-SemiBold.ttf');
-	font-display: swap;
-}
+	@font-face {
+		font-family: "Raleway";
+		font-weight: 600;
+		font-style: normal;
+		src: url('../fonts/Raleway/Raleway-SemiBold.ttf');
+		font-display: swap;
+	}
 
-@font-face {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-style: normal;
-	src: url('../fonts/Raleway/Raleway-Bold.ttf');
-	font-display: swap;
-}
+	@font-face {
+		font-family: "Raleway";
+		font-weight: 700;
+		font-style: normal;
+		src: url('../fonts/Raleway/Raleway-Bold.ttf');
+		font-display: swap;
+	}
 
-@font-face {
-	font-family: "Raleway";
-	font-weight: 800;
-	font-style: normal;
-	src: url('../fonts/Raleway/Raleway-ExtraBold.ttf');
-	font-display: swap;
-}
+	@font-face {
+		font-family: "Raleway";
+		font-weight: 800;
+		font-style: normal;
+		src: url('../fonts/Raleway/Raleway-ExtraBold.ttf');
+		font-display: swap;
+	}
 
-@font-face {
-	font-family: "Muller";
-	font-weight: 300;
-	font-style: normal;
-	src: url('../fonts/Muller/MullerLight.woff2');
-	font-display: swap;
-}
+	@font-face {
+		font-family: "Muller";
+		font-weight: 300;
+		font-style: normal;
+		src: url('../fonts/Muller/MullerLight.woff2');
+		font-display: swap;
+	}
 
 /* -------------------------------- */
 
@@ -115,6 +115,11 @@ input[type="submit"] {
 
 /* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
 @media (max-width: 1110px) {
+	.container {
+		padding: 0 10px;
+	}
+}
+@media (max-width: 768px) {
 	.container {
 		padding: 0 10px;
 	}

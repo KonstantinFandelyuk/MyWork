@@ -1,24 +1,7 @@
 .feedback-form {
-	// background-image: url("../img/section/record-form/kitchen2.jpg");
 	color: white;
 	background-color: #182c3d;
-	// background-repeat: no-repeat;
-	// background-position: bottom;
-	// background-size: cover;
-	// position: relative;
-	// background-position-x: 80px
 }
-
-// .feedback-form::before {
-// 	content: "";
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	background: #182c3d;
-// 	width: 50%;
-// 	height: 100%;
-// 	z-index: 1;
-// }
 
 .feedback-form__row-1 {
 	display: flex;
@@ -31,6 +14,7 @@
 
 .feedback-form__col-1 {
 	margin-right: 100px;
+	margin-left: 360px;
 }
 
 .feedback-form__box-tittle {
@@ -104,9 +88,10 @@ input:nth-child(3) {
 	padding-bottom: 90px;
 }
 
-// .feedback-form__img {
-// 	background-image: url("../img/section/record-form/kitchen2.jpg");
-// 	background-repeat: no-repeat;
-// 	height: 650px;
-// 	width: 1000px;
-// }
+.feedback-form__col-2 {
+	background-image: url("../img/section/record-form/kitchen2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 732px;
+}

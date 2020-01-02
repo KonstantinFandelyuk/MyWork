@@ -7,8 +7,11 @@
     <meta name="description" content="Описание страницы сайта">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" defer>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" defer>
+    <script src="https://unpkg.com/swiper/js/swiper.js" defer></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js" defer></script>
+    <script src="js/header-slider.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Interior Design</title>
   </head>
@@ -17,14 +20,21 @@
       <header>
         <div class="header-box">
           <div class="container">
-            <!-- Swiper-->
+            <!--Swiper-->
             <div class="swiper-container">
-              <div class="swiper-wrapper"><img class="swiper-slide" src="/img/header/slider/1.jpg" alt=""><img class="swiper-slide" src="/img/header/slider/2.jpg" alt=""><img class="swiper-slide" src="/img/header/slider/3.jpg" alt=""><img class="swiper-slide" src="/img/header/slider/4.jpg" alt=""></div>
+              <div class="swiper-wrapper"><img class="swiper-slide" src="../img/header/slider/1.jpg" alt=""><img class="swiper-slide" src="../img/header/slider/2.jpg" alt=""><img class="swiper-slide" src="/img/header/slider/3.jpg" alt=""><img class="swiper-slide" src="/img/header/slider/4.jpg" alt=""></div>
               <div class="swiper-pagination"></div>
-              <!-- Add Arrows-->
             </div>
-            <div class="header__row-1"><a class="burger-menu" href=""></a>
-              <div class="logo"><img src="/img/header/logo.png" alt=""></div>
+            <div class="header__row-1">
+              <label>
+                <input class="burger-menu" type="checkbox"><i class="fas fa-bars"></i>
+              </label>
+              <div class="logo">
+                <picture>
+                  <source media="(min-width: 769px)" srcset="/img/header/logo.png">
+                  <source media="(min-width: 768px)" srcset="/img/header/logo-768px.png"><img src="/img/header/logo.png" alt="">
+                </picture>
+              </div>
               <div class="header-phone"><a href="tel:+7(800)823-48-88">+7 (800) 823-48-88</a></div>
             </div>
             <div class="header__row-2">
@@ -36,12 +46,12 @@
                 </button>
               </div>
             </div>
-            <div class="header__row-3">
+            <div class="header__row-3"><a class="arrow-down" href="#"></a>
               <div class="social-icon">
                 <div class="social__icon-list"><a class="social__icon-item vk" href="https://vk.com"></a><a class="social__icon-item instagram" href="https://instagram.com"></a><a class="social__icon-item facebook" href="https://facebook.com"></a></div>
               </div>
             </div>
-            <div class="desktop__menu" data-id="desktop__menu">
+            <div class="desktop__menu animated" data-id="desktop__menu">
               <div class="container">
                 <div class="desktop__menu-box">
                   <nav class="menu__list"><a class="menu__list-item" href="">Главная</a><a class="menu__list-item" href="#advantages">Приемущества</a><a class="menu__list-item" href="">Портфолио</a><a class="menu__list-item" href="">Наши Услуги</a><a class="menu__list-item" href="">Отзывы</a><a class="menu__list-item" href="">Контакты</a></nav>
@@ -90,7 +100,16 @@
                 <div class="project__list"><a class="project__list-item" href="">Все проекты </a><a class="project__list-item" href="">Дизайн интерьеров</a><a class="project__list-item" href="">Отделочные работы</a></div>
               </div>
             </div>
-            <div class="portfolio__row-3"></div>
+            <div class="portfolio__row-3">
+              <!-- Swiper-->
+              <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper"><img class="swiper-slide" src="/img/section/portfolio/slider/nature-1.jpg" alt=""><img class="swiper-slide" src="/img/section/portfolio/slider/nature-2.jpg" alt=""><img class="swiper-slide" src="/img/section/portfolio/slider/nature-3.jpg" alt=""><img class="swiper-slide" src="/img/section/portfolio/slider/nature-4.jpg" alt=""></div>
+                <!-- Add Arrows-->
+              </div>
+              <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper"><img class="swiper-slide" src="/img/section/portfolio/slider/nature-1.jpg" alt=""><img class="swiper-slide" src="/img/section/portfolio/slider/nature-2.jpg" alt=""><img class="swiper-slide" src="/img/section/portfolio/slider/nature-3.jpg" alt=""><img class="swiper-slide" src="/img/section/portfolio/slider/nature-4.jpg" alt=""></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="service">
@@ -175,9 +194,9 @@
           </div>
         </div>
         <div class="feedback-form">
-          <div class="container">
-            <div class="feedback-form__row-1">
-              <div class="feedback-form__col-1">
+          <div class="feedback-form__row-1">
+            <div class="feedback-form__col-1">
+              <div class="container">
                 <div class="feedback-form__box">
                   <div class="feedback-form__box-tittle">Мечтаете об интерьере  <br>от BRUME?</div>
                   <div class="feedback-form__box-text">Оставьте контактные данные, менеджер свяжется с вами <br> в течении 15 минут,для уточнения всех деталей.
@@ -190,6 +209,9 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="feedback-form__col-2">
+              <div class="feedback-form__img"></div>
             </div>
           </div>
         </div>
@@ -219,29 +241,27 @@
             </div>
           </div>
         </div>
-        <footer>
-          <div class="container">
-            <div class="footer__row-1">
-              <div class="footer__col-1">
-                <div class="company-name">BRUME interior, 2017 ©</div>
-              </div>
-              <div class="footer__col-2">
-                <div class="footer-logo"><img src="/img/footer/logo.png" alt=""></div>
-                <div class="social-icon">
-                  <div class="social__icon-list"><a class="social__icon-item vk" href="https://vk.com"></a><a class="social__icon-item instagram" href="https://instagram.com"></a><a class="social__icon-item facebook" href="https://facebook.com"></a></div>
-                </div>
-              </div>
-              <div class="footer__col-3">
-                <div class="desing-name">HolodnayaDesign</div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="footer__row-1">
+            <div class="footer__col-1">
+              <div class="company-name">BRUME interior, 2017 ©</div>
+            </div>
+            <div class="footer__col-2">
+              <div class="footer-logo"><img src="/img/footer/logo.png" alt=""></div>
+              <div class="social-icon">
+                <div class="social__icon-list"><a class="social__icon-item vk" href="https://vk.com"></a><a class="social__icon-item instagram" href="https://instagram.com"></a><a class="social__icon-item facebook" href="https://facebook.com"></a></div>
               </div>
             </div>
+            <div class="footer__col-3">
+              <div class="desing-name">HolodnayaDesign</div>
+            </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
-    <script src="js/app.js"></script>
-    <script src="js/header-slider.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/portfolio-slider.js" defer></script>
+    <script src="js/app.js" defer></script>
   </body>
 </html>

@@ -3,6 +3,15 @@
   color: white;
 }
 
+@media (max-width: 768px) {
+  .header-box {
+    background-image: url("../img/header/768px/life.png");
+    background-repeat: no-repeat;
+    //   background-size: cover;
+    //   background-position-y: 20%;
+  }
+}
+
 .header__row-1 {
   display: flex;
   justify-content: space-between;
@@ -12,15 +21,44 @@
   z-index: 100;
 }
 
+@media (max-width: 768px) {
+  .header__row-1 {
+    padding: 55px 36px 100px 36px;
+  }
+}
+
 .burger-menu {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0);
+}
+
+@media (max-width: 768px) {
+  header label {
+    order: 3;
+  }
+}
+
+i.fas.fa-bars {
   color: white;
   font-size: 30px;
 }
 
-.burger-menu::before {
+.burger-menu:checked+i::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f0c9";
+  content: "\f00d";
+  color: white;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  i.fas.fa-bars {
+    color: white;
+    font-size: 50px;
+  }
 }
 
 .logo {
@@ -30,11 +68,27 @@
   transform: translateX(-50%);
 }
 
+@media (max-width: 768px) {
+  .logo {
+    margin: 0;
+    position: static;
+    left: 0;
+    transform: none;
+    order: 2;
+  }
+}
+
 .header-phone>a {
   color: black;
   font-family: "Muller";
   font-weight: 300;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .header-phone {
+    display: none;
+  }
 }
 
 .header-phone::before {
@@ -55,12 +109,31 @@
   margin-left: 100px;
 }
 
+@media (max-width: 768px) {
+  .header__row-2 {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+}
+
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 60px;
   margin-bottom: 30px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 100px;
+  }
 }
 
 .header-tittle-text {
@@ -70,8 +143,21 @@ h1 {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  .header-tittle-text {
+    text-align: center;
+    font-size: 26px;
+  }
+}
+
 .header-order {
   max-width: 280px;
+}
+
+@media (max-width: 768px) {
+  .header-order {
+    max-width: 400px;
+  }
 }
 
 .header-order-pay {
@@ -87,6 +173,17 @@ h1 {
   text-transform: uppercase;
   padding: 20px 30px 20px 30px;
   transition: .3s;
+}
+
+@media (max-width: 768px) {
+  .header-order-pay {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-size: 30px;
+    padding: 30px 45px 30px 45px;
+    margin-bottom: 175px;
+  }
 }
 
 .header-order-pay:hover {
@@ -109,6 +206,12 @@ h1 {
   vertical-align: middle;
 }
 
+@media (max-width: 768px) {
+  .header-order-line::before {
+    display: none;
+  }
+}
+
 .header-order-line::after {
   font-family: "Font Awesome 5 free";
   font-weight: 900;
@@ -117,10 +220,34 @@ h1 {
   vertical-align: middle;
 }
 
+@media (max-width: 768px) {
+  .header-order-line::after {
+    display: none;
+  }
+}
+
 // --------------------------------------------
 
 .header__row-3 {
   padding-bottom: 35px;
+}
+
+.arrow-down::after {
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  content: "\f107";
+  color: white;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .arrow-down::after {
+    display: flex;
+    padding-bottom: 100px;
+  }
 }
 
 .social__icon-list {
@@ -130,6 +257,12 @@ h1 {
 .social__icon-item {
   font-size: 20px;
   color: #b3b9bf;
+}
+
+@media (max-width: 768px) {
+  .social-icon {
+    display: none;
+  }
 }
 
 .social__icon-item:hover {
