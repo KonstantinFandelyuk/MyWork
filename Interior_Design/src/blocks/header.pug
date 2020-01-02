@@ -3,9 +3,14 @@ header
 		.container
 			include ../blocks/header-slider.pug
 			.header__row-1
-				a(href="").burger-menu
+				label
+					input(type="checkbox").burger-menu
+					i.fas.fa-bars
 				.logo
-					img(src="/img/header/logo.png", alt="")
+					picture
+						source(media='(min-width: 769px)', srcset='/img/header/logo.png')
+						source(media='(min-width: 768px)', srcset='/img/header/logo-768px.png')
+						img(src="/img/header/logo.png", alt="")
 				.header-phone
 					a(href="tel:+7(800)823-48-88") +7 (800) 823-48-88
 			.header__row-2
@@ -15,6 +20,7 @@ header
 					button.header-order-pay Заказать дизайн
 						.header-order-line
 			.header__row-3
+				a(href="#").arrow-down
 				.social-icon
 					.social__icon-list
 						a(href="https://vk.com").social__icon-item.vk
