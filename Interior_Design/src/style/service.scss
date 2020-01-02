@@ -18,6 +18,7 @@ ul.service__menu-list {
 }
 
 li:hover {
+	transition: 0.3s;
 	color: #01182b;
 	font-weight: bold;
 }
