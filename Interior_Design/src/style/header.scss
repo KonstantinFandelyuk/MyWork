@@ -5,8 +5,10 @@
 
 @media (max-width: 768px) {
   .header-box {
+    background: #2e343b;
     background-image: url("../img/header/768px/life.png");
     background-repeat: no-repeat;
+    background-blend-mode: soft-light;
     //   background-size: cover;
     //   background-position-y: 20%;
   }

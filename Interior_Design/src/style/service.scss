@@ -22,13 +22,13 @@ ul.service__menu-list {
 	color: #00203a;
 	font-size: 18px;
 	margin-bottom: 86px;
-
 }
 
 @media (max-width: 768px) {
 	.service__menu-list-item {
 		flex-basis: 50%;
 		width: 320px;
+		margin-bottom: 50px;
 	}
 }
 
@@ -46,9 +46,20 @@ ul.service__menu-list {
 	color: $color-global;
 }
 
+.service a:hover {
+	color: black;
+}
+
 .service_art-imgbox {
 	width: 883px;
 	height: 340px;
+}
+
+@media (max-width: 768px) {
+	.service_art-imgbox {
+		width: 696px;
+		height: 340px;
+	}
 }
 
 .service-img {

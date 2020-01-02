@@ -10,9 +10,22 @@
 	display: block;
 }
 
+@media (max-width: 768px) {
+	.active {
+		top: 40px;
+	}
+}
+
 .desktop__menu-box {
 	height: 600px;
 	background-color: #112537;
+}
+
+@media (max-width: 768px) {
+	.desktop__menu-box {
+		height: 1022px;
+		background-color: #112537;
+	}
 }
 
 .menu__list>a {
@@ -37,6 +50,29 @@
 	padding-top: 70px;
 }
 
+@media (max-width: 768px) {
+	.menu__list-item:first-child {
+		padding-top: 140px;
+	}
+}
+
 .menu__list-item:last-child {
 	padding-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+	.desktop__menu .social-icon {
+		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.desktop__menu .social__icon-item {
+		color: white;
+	}
+
+	.desktop__menu .social__icon-item:hover {
+		color: #f8a25a;
+	}
 }

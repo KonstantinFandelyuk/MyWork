@@ -3,6 +3,12 @@
 	margin-bottom: 90px;
 }
 
+@media (max-width: 768px) {
+	.feedback-clients {
+		margin-bottom: 0px;
+	}
+}
+
 .feedback-clients__row-2 {
 	padding-bottom: 245px;
 	overflow: hidden;
