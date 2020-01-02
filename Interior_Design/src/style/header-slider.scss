@@ -1,10 +1,11 @@
-header .swiper-container {
+header .swiper-container-1 {
 	width: 1162px;
 	height: 601px;
 	position: absolute;
 	top: 90px;
 	right: 370px;
 	z-index: -1;
+	overflow: hidden;
 }
 
 @media (max-width: 768px) {
