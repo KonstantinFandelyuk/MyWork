@@ -7,8 +7,20 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .video__background {
+    width: 768px;
+  }
+}
+
 .video-works {
   padding-bottom: 130px;
+}
+
+@media (max-width: 768px) {
+  .video-works {
+    padding-bottom: 0px;
+  }
 }
 
 .video__background-img {
@@ -28,6 +40,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .video__background-box {
+    text-align: center;
+  }
 }
 
 .video__background-play {
