@@ -983,7 +983,7 @@ header .swiper-container-1 {
 
 @media (max-width: 768px) {
   .active {
-    top: 40px; } }
+    top: 0px; } }
 
 .desktop__menu-box {
   height: 600px;
@@ -991,7 +991,7 @@ header .swiper-container-1 {
 
 @media (max-width: 768px) {
   .desktop__menu-box {
-    height: 1022px;
+    height: 1060px;
     background-color: #112537; } }
 
 .menu__list > a {
@@ -1032,3 +1032,8 @@ header .swiper-container-1 {
     color: white; }
   .desktop__menu .social__icon-item:hover {
     color: #f8a25a; } }
+
+@media (max-width: 768px) {
+  .desktop__menu .container {
+    padding: 0;
+    max-width: 768px; } }
