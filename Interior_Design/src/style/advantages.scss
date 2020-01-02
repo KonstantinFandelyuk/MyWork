@@ -39,7 +39,7 @@
 
 	.advantages__list-item:nth-child(2),
 		{
-		margin-top: 0px;
+		margin-top: 170px;
 	}
 }
 
@@ -51,7 +51,7 @@
 
 	.advantages__list-item:nth-child(4),
 		{
-		margin-top: 0px;
+		margin-top: 170px;
 	}
 }
 
@@ -71,9 +71,21 @@
 	margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+	.advantages__tittle {
+		max-width: 270px;
+	}
+}
+
 .advantages__text {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	color: grey;
 	line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+	.advantages__text {
+		max-width: 300px;
+	}
 }
