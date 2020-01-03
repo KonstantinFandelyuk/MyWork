@@ -174,6 +174,13 @@ table {
   src: url("../fonts/Muller/MullerLight.woff2");
   font-display: swap; }
 
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://example.com/MaterialIcons-Regular.eot");
+  /* For IE6-8 */ }
+
 /* -------------------------------- */
 * {
   box-sizing: border-box; }
@@ -266,21 +273,27 @@ input[type="submit"] {
   header label {
     order: 3; } }
 
-i.fas.fa-bars {
+.material-icons:before {
+  content: "menu";
   color: white;
-  font-size: 30px; }
+  font-size: 40px; }
 
 .burger-menu:checked + i::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00d";
+  content: "close";
   color: white;
-  font-size: 30px; }
+  font-size: 40px; }
 
 @media (max-width: 768px) {
-  i.fas.fa-bars {
+  .burger-menu:checked + i::before {
+    content: "close";
     color: white;
-    font-size: 50px; } }
+    font-size: 60px; } }
+
+@media (max-width: 768px) {
+  .material-icons:before {
+    content: "menu";
+    color: white;
+    font-size: 60px; } }
 
 .logo {
   margin: 0 auto;
