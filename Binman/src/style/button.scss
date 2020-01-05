@@ -1,0 +1,27 @@
+.button {
+	margin-top: 41px;
+}
+
+button {
+	width: 295px;
+	height: 36px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 13px;
+	text-transform: uppercase;
+	color: #475364;
+}
+
+.button-cancel {
+	background-color: transparent;
+	border: 1px solid #D4E2E7;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.button-sumbit {
+	background: #386BF2;
+	border-radius: 3px;
+	color: white;
+}

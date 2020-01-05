@@ -287,7 +287,7 @@ input[type="submit"] {
   background-color: #323A45;
   max-width: 80px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  height: 958px; }
+  height: 954px; }
 
 .menu__list {
   display: flex;
@@ -521,8 +521,7 @@ input[type="submit"] {
 
 .modal-background {
   max-width: 650px;
-  height: 1776px;
-  right: 214px;
+  right: 78px;
   position: absolute;
   background: #FFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); }
@@ -532,7 +531,7 @@ input[type="submit"] {
   margin-top: 20px;
   margin-bottom: 41px; }
 
-h2 {
+h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -540,17 +539,38 @@ h2 {
   text-transform: uppercase;
   color: #475364; }
 
-.basic-information {
-  margin-bottom: 41px; }
+.modal__close {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 11px;
+  left: -45px; }
 
-.employee-card__information {
+.modal__close::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00d";
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: black; }
+
+.basic-information {
+  margin-bottom: 16px; }
+
+h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
   color: #475364;
-  margin-bottom: 16px; }
+  margin-top: 41px; }
 
 .employee-card__fullname,
 .employee-card__vacancy,
@@ -624,9 +644,6 @@ span {
   text-transform: none;
   margin-bottom: 8px; }
 
-.contact-information {
-  margin-bottom: 40px; }
-
 .contact-information__phone,
 .contact-information__email {
   font-style: normal;
@@ -654,9 +671,6 @@ span {
 .add-phone {
   text-decoration: underline dashed; }
 
-.results-information {
-  margin-bottom: 41px; }
-
 .results-information__resume,
 .results-information__archive {
   font-style: normal;
@@ -674,18 +688,38 @@ span {
   align-items: center;
   margin-top: 16px; }
 
-.rating-resume,
-.rating-test,
-.rating-interview {
+h3 {
   padding-bottom: 6px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 11px;
   line-height: 11px;
-  /* identical to box height, or 100% */
   text-transform: uppercase;
   color: #475364; }
 
 .rating-interview {
   margin-right: 71px; }
+
+.button {
+  margin-top: 41px; }
+
+button {
+  width: 295px;
+  height: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #475364; }
+
+.button-cancel {
+  background-color: transparent;
+  border: 1px solid #D4E2E7;
+  box-sizing: border-box;
+  border-radius: 3px; }
+
+.button-sumbit {
+  background: #386BF2;
+  border-radius: 3px;
+  color: white; }
