@@ -139,7 +139,7 @@ body {
   color: #000000;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1;
   overflow-x: hidden;
   background-color: #fff; }
@@ -287,7 +287,7 @@ input[type="submit"] {
   background-color: #323A45;
   max-width: 80px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  height: 954px; }
+  height: 100vh; }
 
 .menu__list {
   display: flex;
@@ -521,6 +521,7 @@ input[type="submit"] {
 
 .modal-background {
   max-width: 650px;
+  max-height: 1000px;
   right: 78px;
   position: absolute;
   background: #FFF;
@@ -598,14 +599,14 @@ select {
   width: 600px;
   height: 36px; }
 
-.upload-photo {
+.upload {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: 1px;
   clip: rect(0 0 0 0); }
 
-.upload-photo__box {
+.upload__box {
   background: #F4F9FB;
   border: 1px solid #DCE5EA;
   box-sizing: border-box;

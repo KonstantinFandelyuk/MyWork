@@ -49,8 +49,8 @@
                       </select>
                       <div class="employee-card__photo">Фотография</div><span>Размер файла вложения не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов: jpg, png</span>
                       <label>
-                        <input class="upload-photo" type="file" name="photo[]">
-                        <div class="upload-photo__box">
+                        <input class="upload" type="file" name="photo[]">
+                        <div class="upload__box">
                           <div class="select-files">Выбрать файл</div>
                         </div>
                       </label>
@@ -65,15 +65,19 @@
                     <div class="results-information"> 
                       <h2>Резюме и результаты тестового задания</h2>
                       <div class="results-information__resume">Резюме</div><span>Размер файла вложения не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов: pdf, doc</span>
-                      <input class="upload-photo" type="file" name="photo[]">
-                      <div class="upload-photo__box">
-                        <div class="select-files">Выбрать файл</div>
-                      </div>
+                      <label>
+                        <input class="upload" type="file" name="resume[]">
+                        <div class="upload__box">
+                          <div class="select-files">Выбрать файл</div>
+                        </div>
+                      </label>
                       <div class="results-information__archive">Архив с результатами тестового задания</div><span>Размер файла вложения не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов: zip, rar</span>
-                      <input class="upload-photo" type="file" name="photo[]">
-                      <div class="upload-photo__box">
-                        <div class="select-files">Выбрать файл</div>
-                      </div>
+                      <label>
+                        <input class="upload" type="file" name="archive[]">
+                        <div class="upload__box">
+                          <div class="select-files">Выбрать файл</div>
+                        </div>
+                      </label>
                     </div>
                     <div class="rating-information"> 
                       <h2>Оценка соискателя</h2>
@@ -135,8 +139,8 @@
                       <button class="button-cancel">Отменить</button>
                       <button class="button-sumbit" type="submit">Добавить соискателя</button>
                     </div>
+                    <button class="modal__close"></button>
                   </div>
-                  <button class="modal__close"></button>
                 </div>
               </div>
             </div>

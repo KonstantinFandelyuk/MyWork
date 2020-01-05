@@ -41,7 +41,7 @@ select {
 	height: 36px;
 }
 
-.upload-photo {
+.upload {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -49,7 +49,7 @@ select {
 	clip: rect(0 0 0 0);
 }
 
-.upload-photo__box {
+.upload__box {
 	background: #F4F9FB;
 	border: 1px solid #DCE5EA;
 	box-sizing: border-box;
