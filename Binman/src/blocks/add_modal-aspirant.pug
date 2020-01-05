@@ -1,0 +1,17 @@
+.modal
+	.modal-background.animated
+		.employee-card
+			.employee-card__paragraf Добавление соискателя
+			.employee-card__information Основные данные
+				.employee-card__fullname Фио
+				input(type="text" placegolder="Введите ФИО")
+				.employee-card__vacancy Вакансия
+				select(placegolder="Выберите вакансию") Вакансия
+					option 
+					option Full-stack разработчик
+					option Web-дизайнер
+					option Front-end разрабочик
+				.employee-card__photo Фотография
+				span Размер файла вложения не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов: jpg, png
+				input(type="file", name="")
+		.modal__close

@@ -1,0 +1,174 @@
+.user__list-item {
+  display: flex;
+  // justify-content: space-between;
+  // justify-content: start;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #475364;
+  background: #fff;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin: 2px;
+}
+
+.aspirant-text {
+  margin-right: 247px;
+}
+
+.phone-text {
+  margin-right: 195px;
+}
+
+.email-text {
+  margin-right: 360px;
+}
+
+.user-rating {
+  margin-right: 198px;
+}
+
+// --------------User-BOX--------------------------------------------
+
+.user-box,
+.phone-box,
+.email-box {
+  text-transform: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.user-box {
+  width: 250px;
+  margin-right: 69px;
+}
+
+.phone-box {
+  width: 155px;
+  margin-right: 92px;
+}
+
+.email-box {
+  margin-right: 247px;
+}
+
+.rating-box {
+  margin-right: 92px;
+}
+
+.user-box__img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.user-box__fullname,
+.phone-box__number {
+  color: #475364;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 4px;
+}
+
+.user-box__vacancy,
+.phone-box__show,
+.email-box__show,
+.rating-box__show {
+  font-size: 10px;
+  line-height: 12px;
+  color: #8ea4b5;
+  text-transform: none;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.phone-box__img,
+.email-box__img {
+  background-color: #e8eff1;
+  border-radius: 3px;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.phone-box__img::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f879";
+  font-size: 15px;
+  margin-right: 6px;
+}
+
+.email-box__img::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e0";
+  font-size: 15px;
+  margin-right: 6px;
+}
+
+.rating-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.widget-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget-box__item {
+  background: #ffffff;
+  border: 1px solid #dbe4e7;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  color: #475364;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.widget-box__item:last-child {
+  margin-right: 20px;
+}
+
+.resume::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f15c";
+}
+
+.archive::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f187";
+}
+
+.favorites::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f02e";
+}
