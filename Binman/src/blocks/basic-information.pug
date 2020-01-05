@@ -1,0 +1,16 @@
+.basic-information
+	.employee-card__information Основные данные
+	.employee-card__fullname Фио
+	input(type="text" placeholder="Введите ФИО" name="user[]")
+	.employee-card__vacancy Вакансия
+	select Вакансия
+		option 
+		option Full-stack разработчик
+		option Web-дизайнер
+		option Front-end разрабочик
+	.employee-card__photo Фотография
+	span Размер файла вложения не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов: jpg, png
+	label
+		input.upload-photo(type="file", name="photo[]")
+		.upload-photo__box
+			.select-files Выбрать файл
