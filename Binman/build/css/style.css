@@ -1,0 +1,474 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ---------Шрифыт----------- */
+/* -------------------------------- */
+* {
+  box-sizing: border-box; }
+
+/* Стили поумолчанию для всех элементов */
+body {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #fff; }
+
+/* Поведение вхех картинок поумолчанию */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Стили ссылок поумолчанию */
+a {
+  text-decoration: none; }
+
+a:hover {
+  transition-duration: 0.3s; }
+
+/* Убрать обводку поумолчанию у кнопок, font: inherit - позволит наследовать стили родителя (у кнопки сили шрифтов заданы поумолчанию) */
+button {
+  border: none;
+  outline: none;
+  font: inherit; }
+
+button,
+input[type="submit"] {
+  cursor: pointer; }
+
+/* Обёртка всего - идёт после body */
+.wrapper {
+  position: relative; }
+
+/* Класс который устанавливет рабочую область для контента */
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+/* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
+@media (max-width: 1110px) {
+  .container {
+    padding: 0 10px; } }
+
+.header__row-1 {
+  background-color: #29313C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.logo {
+  padding: 15px 27px; }
+
+.content {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  background-color: #F2F2F2; }
+
+.main-screen {
+  margin: 22px 30px;
+  flex-grow: 1; }
+
+.main-screen__row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.text-information__paragraf {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  color: #475364;
+  padding-bottom: 4px; }
+
+.text-information__statistics {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 12px;
+  color: #8EA4B5; }
+
+.button-box__favorites {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #475364;
+  background: #FFF;
+  border: 1px solid #DBE4E7;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 12px 16px 11px 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; }
+
+.button-box__favorites::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f02e";
+  font-size: 15px;
+  margin-right: 6px;
+  vertical-align: middle; }
+
+.button-box__aspirant {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #386BF2;
+  border-radius: 3px;
+  padding: 13px 16px 12px 21px; }
+
+.button-box__aspirant::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f067";
+  font-size: 15px;
+  margin-right: 6px;
+  vertical-align: middle; }
+
+.main-screen__row-2 {
+  margin-top: 20px; }
+
+.main-screen__row-3 {
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 3px; }
+
+.more-information {
+  margin: 13px auto;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #475364; }
+
+.menu {
+  background-color: #323A45;
+  max-width: 80px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  height: 958px; }
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.menu__list-item {
+  padding: 26px 31px 23px 31px;
+  color: white;
+  font-size: 18px; }
+
+.active {
+  color: #00D4FF;
+  background: #282E37;
+  border-radius: 4px;
+  padding: 10px 15px 10px 15px; }
+
+.home::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f015"; }
+
+.aspirant::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c0"; }
+
+.report::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f201"; }
+
+.user-info__list-item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #475364;
+  background: #FFF;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin: 2px; }
+
+.user-rating {
+  padding-right: 198px; }
+
+.user-box,
+.phone-box,
+.email-box {
+  text-transform: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.user-box__img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  overflow: hidden; }
+
+.user-box__fullname,
+.phone-box__number {
+  color: #475364;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 4px; }
+
+.user-box__vacancy,
+.phone-box__show,
+.email-box__show,
+.rating-box__show {
+  font-size: 10px;
+  line-height: 12px;
+  color: #8EA4B5;
+  text-transform: none; }
+
+.phone-box__img,
+.email-box__img {
+  background-color: #E8EFF1;
+  border-radius: 3px;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  position: relative; }
+
+.phone-box__img::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f879";
+  font-size: 15px;
+  margin-right: 6px; }
+
+.email-box__img::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e0";
+  font-size: 15px;
+  margin-right: 6px; }
+
+.rating-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.widget-box {
+  display: flex;
+  justify-content: space-between; }
+
+.widget-box__item {
+  background: #FFFFFF;
+  border: 1px solid #DBE4E7;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  color: #475364;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px; }
+
+.widget-box__item:last-child {
+  margin-right: 20px; }
+
+.resume::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f15c"; }
+
+.archive::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f187"; }
+
+.favorites::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f02e"; }
+
+.rating-box__stars {
+  overflow: hidden;
+  margin-bottom: 4px; }
+
+#review_stars {
+  overflow: hidden;
+  position: relative;
+  float: left; }
+
+#review_stars input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0; }
+
+#review_stars input ~ label i {
+  color: #ccc; }
+
+#review_stars input:checked ~ label i {
+  color: #DAE700; }
+
+#review_stars label {
+  float: right;
+  cursor: pointer;
+  position: relative;
+  z-index: 1; }
+
+#review_stars label:hover i,
+#review_stars label:hover ~ label i {
+  color: #ABD02D; }

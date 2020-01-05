@@ -1,0 +1,45 @@
+.menu {
+	background-color: #323A45;
+	max-width: 80px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	height: 958px;
+}
+
+.menu__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu__list-item {
+	padding: 26px 31px 23px 31px;
+	color: white;
+	font-size: 18px;
+}
+
+.active {
+	color: #00D4FF;
+	background: #282E37;
+	border-radius: 4px;
+	padding: 10px 15px 10px 15px;
+}
+
+.home::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f015";
+
+}
+
+.aspirant::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f0c0";
+}
+
+.report::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f201";
+}
