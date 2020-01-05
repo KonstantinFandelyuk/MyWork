@@ -1,0 +1,26 @@
+.results-information 
+	h2 Резюме и результаты тестового задания
+	.results-information__resume Резюме
+	span Размер файла вложения не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов: pdf, doc
+	label
+		input.upload(type="file", name="resume[]")
+		.upload__box
+			.select-files Выбрать файл
+	.results-information__archive Архив с результатами тестового задания
+	span Размер файла вложения не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов: zip, rar
+	label
+		input.upload(type="file", name="archive[]")
+		.upload__box
+			.select-files Выбрать файл
+.rating-information 
+	h2 Оценка соискателя
+	.rating-wrapper
+		.rating-resume 
+			h3 Оценка резюме
+			include ../blocks/block-stars.pug
+		.rating-test 
+			h3 Оценка резюме
+			include ../blocks/block-stars.pug
+		.rating-interview 
+			h3 Оценка резюме
+			include ../blocks/block-stars.pug

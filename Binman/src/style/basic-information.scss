@@ -1,0 +1,95 @@
+.basic-information {
+	margin-bottom: 16px;
+}
+
+h2 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #475364;
+	margin-top: 41px;
+}
+
+.employee-card__fullname,
+.employee-card__vacancy,
+.employee-card__photo {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 12px;
+	text-transform: uppercase;
+	color: #475364;
+	margin-bottom: 8px;
+	margin-top: 16px;
+}
+
+.employee-card__fullname {
+	margin-top: 16px;
+}
+
+input,
+select {
+	background: #F4F9FB;
+	border: 1px solid #DCE5EA;
+	box-sizing: border-box;
+	border-radius: 3px;
+	padding-left: 12px;
+	margin-right: 25px;
+	width: 600px;
+	height: 36px;
+}
+
+.upload {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: 1px;
+	clip: rect(0 0 0 0);
+}
+
+.upload__box {
+	background: #F4F9FB;
+	border: 1px solid #DCE5EA;
+	box-sizing: border-box;
+	border-radius: 3px;
+	padding-left: 5px;
+	margin-right: 25px;
+	width: 600px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+}
+
+.select-files {
+	padding: 8px 10px;
+	// max-width: 104px;
+	// max-height: 26px;
+	background: #386BF2;
+	border-radius: 3px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+input::placeholder {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 12px;
+	color: #8EA4B5;
+}
+
+span {
+	display: block;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+	color: #8EA4B5;
+	text-transform: none;
+	margin-bottom: 8px;
+}

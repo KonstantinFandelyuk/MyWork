@@ -1,0 +1,32 @@
+.results-information__resume,
+.results-information__archive {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 12px;
+	text-transform: uppercase;
+	color: #475364;
+	margin-bottom: 8px;
+	margin-top: 16px;
+}
+
+.rating-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 16px;
+}
+
+h3 {
+	padding-bottom: 6px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 11px;
+	text-transform: uppercase;
+	color: #475364;
+}
+
+.rating-interview {
+	margin-right: 71px;
+}

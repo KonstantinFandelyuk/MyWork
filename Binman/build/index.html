@@ -31,26 +31,116 @@
             </div>
             <div class="button-box">
               <button class="button-box__favorites">Избранное</button>
-              <button class="button-box__aspirant">Добавить соискателя</button>
+              <button class="button-box__aspirant" data-id="modal-button">Добавить соискателя</button>
               <div class="modal">
                 <div class="modal-background animated">
                   <div class="employee-card">
-                    <div class="employee-card__paragraf">Добавление соискателя</div>
-                    <div class="employee-card__information">Основные данные
+                    <h1>Добавление соискателя</h1>
+                    <div class="basic-information">
+                      <h2>Основные данные</h2>
                       <div class="employee-card__fullname">Фио</div>
-                      <input type="text" placegolder="Введите ФИО">
+                      <input type="text" placeholder="Введите ФИО" name="user[]">
                       <div class="employee-card__vacancy">Вакансия</div>
-                      <select placegolder="Выберите вакансию">Вакансия
+                      <select>Вакансия
                         <option> </option>
                         <option>Full-stack разработчик</option>
                         <option>Web-дизайнер</option>
                         <option>Front-end разрабочик</option>
                       </select>
                       <div class="employee-card__photo">Фотография</div><span>Размер файла вложения не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов: jpg, png</span>
-                      <input type="file" name="">
+                      <label>
+                        <input class="upload" type="file" name="photo[]">
+                        <div class="upload__box">
+                          <div class="select-files">Выбрать файл</div>
+                        </div>
+                      </label>
                     </div>
+                    <div class="contact-information"> 
+                      <h2>Контактные данные</h2>
+                      <div class="contact-information__phone">Номер телефона</div>
+                      <input type="tel" placeholder="Введите номер телефона" name="phone"><a class="add-phone" href="">Добавить еще один номер телефона</a>
+                      <div class="contact-information__email">E-mail</div>
+                      <input type="email" value="ioan@binman.ru" name="email"><a class="add-email" href="">Добавить еще один e-mail</a>
+                    </div>
+                    <div class="results-information"> 
+                      <h2>Резюме и результаты тестового задания</h2>
+                      <div class="results-information__resume">Резюме</div><span>Размер файла вложения не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов: pdf, doc</span>
+                      <label>
+                        <input class="upload" type="file" name="resume[]">
+                        <div class="upload__box">
+                          <div class="select-files">Выбрать файл</div>
+                        </div>
+                      </label>
+                      <div class="results-information__archive">Архив с результатами тестового задания</div><span>Размер файла вложения не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов: zip, rar</span>
+                      <label>
+                        <input class="upload" type="file" name="archive[]">
+                        <div class="upload__box">
+                          <div class="select-files">Выбрать файл</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="rating-information"> 
+                      <h2>Оценка соискателя</h2>
+                      <div class="rating-wrapper">
+                        <div class="rating-resume"> 
+                          <h3>Оценка резюме</h3>
+                          <div class="rating-box__stars"> 
+                            <div id="review_stars">
+                              <input id="star-4" type="radio" name="stars">
+                              <label title="Отлично" for="star-4"><i class="fas fa-star"></i></label>
+                              <input id="star-3" type="radio" name="stars">
+                              <label title="Хорошо" for="star-3"><i class="fas fa-star"></i></label>
+                              <input id="star-2" type="radio" name="stars" checked="checked">
+                              <label title="Нормально" for="star-2"><i class="fas fa-star"></i></label>
+                              <input id="star-1" type="radio" name="stars">
+                              <label title="Плохо" for="star-1"><i class="fas fa-star"></i></label>
+                              <input id="star-0" type="radio" name="stars">
+                              <label title="Ужасно" for="star-0"><i class="fas fa-star"></i></label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="rating-test"> 
+                          <h3>Оценка резюме</h3>
+                          <div class="rating-box__stars"> 
+                            <div id="review_stars">
+                              <input id="star-4" type="radio" name="stars">
+                              <label title="Отлично" for="star-4"><i class="fas fa-star"></i></label>
+                              <input id="star-3" type="radio" name="stars">
+                              <label title="Хорошо" for="star-3"><i class="fas fa-star"></i></label>
+                              <input id="star-2" type="radio" name="stars" checked="checked">
+                              <label title="Нормально" for="star-2"><i class="fas fa-star"></i></label>
+                              <input id="star-1" type="radio" name="stars">
+                              <label title="Плохо" for="star-1"><i class="fas fa-star"></i></label>
+                              <input id="star-0" type="radio" name="stars">
+                              <label title="Ужасно" for="star-0"><i class="fas fa-star"></i></label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="rating-interview"> 
+                          <h3>Оценка резюме</h3>
+                          <div class="rating-box__stars"> 
+                            <div id="review_stars">
+                              <input id="star-4" type="radio" name="stars">
+                              <label title="Отлично" for="star-4"><i class="fas fa-star"></i></label>
+                              <input id="star-3" type="radio" name="stars">
+                              <label title="Хорошо" for="star-3"><i class="fas fa-star"></i></label>
+                              <input id="star-2" type="radio" name="stars" checked="checked">
+                              <label title="Нормально" for="star-2"><i class="fas fa-star"></i></label>
+                              <input id="star-1" type="radio" name="stars">
+                              <label title="Плохо" for="star-1"><i class="fas fa-star"></i></label>
+                              <input id="star-0" type="radio" name="stars">
+                              <label title="Ужасно" for="star-0"><i class="fas fa-star"></i></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button">
+                      <button class="button-cancel">Отменить</button>
+                      <button class="button-sumbit" type="submit">Добавить соискателя</button>
+                    </div>
+                    <button class="modal__close"></button>
                   </div>
-                  <div class="modal__close"></div>
                 </div>
               </div>
             </div>
@@ -110,16 +200,16 @@
                     <div class="user-box__vacancy">Вакансия: Full-stack разрабочик</div>
                   </div>
                 </div>
-                <div class="phone-box">
+                <div class="phone-box disable">
                   <div class="phone-box__img"></div>
-                  <div class="phone-box__number">+7 (900) 800-70-60 
-                    <div class="phone-box__show">Показать еще 1 номер</div>
+                  <div class="phone-box__number">Телефон не указан
+                    <div class="phone-box__show"> </div>
                   </div>
                 </div>
                 <div class="email-box">
                   <div class="email-box__img"></div>
                   <div class="email-box__mail">ioan@binman.ru
-                    <div class="email-box__show">Показать еще 1 e-mail</div>
+                    <div class="email-box__show"> </div>
                   </div>
                 </div>
                 <div class="rating-box">
@@ -154,13 +244,13 @@
                 <div class="phone-box">
                   <div class="phone-box__img"></div>
                   <div class="phone-box__number">+7 (800) 555-35-35 
-                    <div class="phone-box__show">Показать еще 1 номер</div>
+                    <div class="phone-box__show"> </div>
                   </div>
                 </div>
                 <div class="email-box">
                   <div class="email-box__img"></div>
                   <div class="email-box__mail">design@lebedin.ru
-                    <div class="email-box__show">Показать еще 1 e-mail</div>
+                    <div class="email-box__show"> </div>
                   </div>
                 </div>
                 <div class="rating-box">
@@ -192,16 +282,16 @@
                     <div class="user-box__vacancy">Вакансия: Web-дизайнер</div>
                   </div>
                 </div>
-                <div class="phone-box">
+                <div class="phone-box disable">
                   <div class="phone-box__img"></div>
-                  <div class="phone-box__number">+7 (900) 800-70-60 
-                    <div class="phone-box__show">Показать еще 1 номер</div>
+                  <div class="phone-box__number">Телефон не указан
+                    <div class="phone-box__show"> </div>
                   </div>
                 </div>
-                <div class="email-box">
+                <div class="email-box disable">
                   <div class="email-box__img"></div>
                   <div class="email-box__mail">E-mail не указан
-                    <div class="email-box__show">Показать еще 1 e-mail</div>
+                    <div class="email-box__show"> </div>
                   </div>
                 </div>
                 <div class="rating-box">
@@ -274,5 +364,6 @@
         </div>
       </div>
     </div>
+    <script src="js/app.js"></script>
   </body>
 </html>
