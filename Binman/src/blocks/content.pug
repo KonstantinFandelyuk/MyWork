@@ -1,0 +1,14 @@
+.content
+	include ../blocks/nav-menu.pug
+	.main-screen
+		.main-screen__row-1
+			.text-information
+				h2.text-information__paragraf Ваши соискатели
+				span.text-information__statistics Всего соискателей: 67
+			.button-box
+				button.button-box__favorites Избранное
+				button.button-box__aspirant Добавить соискателя
+		.main-screen__row-2
+			include ../blocks/user-info.pug
+		.main-screen__row-3
+			a(href="").more-information Показать еще
