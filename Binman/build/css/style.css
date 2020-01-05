@@ -368,7 +368,19 @@ input[type="submit"] {
   margin-right: 247px; }
 
 .rating-box {
-  margin-right: 92px; }
+  margin-right: 544px; }
+
+@media (max-width: 1679px) {
+  .rating-box {
+    margin-right: 280px; } }
+
+@media (max-width: 1600px) {
+  .rating-box {
+    margin-right: 190px; } }
+
+@media (max-width: 1572px) {
+  .rating-box {
+    margin-right: 130px; } }
 
 .user-box__img {
   border-radius: 50%;
@@ -386,16 +398,19 @@ input[type="submit"] {
   line-height: 14px;
   margin-bottom: 4px; }
 
-.user-box__vacancy,
-.phone-box__show,
-.email-box__show,
-.rating-box__show {
+.show-more,
+.user-box__vacancy {
   font-size: 10px;
   line-height: 12px;
   color: #8ea4b5;
   text-transform: none;
   font-style: normal;
   font-weight: normal; }
+
+.show-more span {
+  font-weight: bold;
+  color: #475364;
+  display: contents; }
 
 .phone-box__img,
 .email-box__img {
@@ -704,7 +719,7 @@ h3 {
 .button {
   margin-top: 41px; }
 
-button {
+.button button {
   width: 295px;
   height: 36px;
   font-style: normal;
