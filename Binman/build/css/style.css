@@ -643,6 +643,13 @@ select {
   text-transform: uppercase;
   color: #FFF; }
 
+.select-files--no {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #8EA4B5;
+  margin-left: 10px; }
+
 input::placeholder {
   font-style: normal;
   font-weight: normal;
@@ -719,7 +726,8 @@ h3 {
 .button {
   margin-top: 41px; }
 
-.button button {
+.button .button-cancel,
+.button-sumbit {
   width: 295px;
   height: 36px;
   font-style: normal;
