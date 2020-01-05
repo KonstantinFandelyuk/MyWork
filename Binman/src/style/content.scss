@@ -23,11 +23,13 @@
 }
 
 .text-information__paragraf {
+	padding-bottom: 4px;
+	font-style: normal;
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 24px;
 	color: #475364;
-	padding-bottom: 4px;
+	text-transform: none;
 }
 
 .text-information__statistics {
