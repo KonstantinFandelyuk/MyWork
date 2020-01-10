@@ -26,6 +26,12 @@ https://zzik.github.io/WebAcademy/air_ticket/index.html
 
 https://zzik.github.io/WebAcademy/Beauty_salon/build/index.html
 
+**Lending page - Дизайн интерьера**
+
+(Адаптация под 768px - iPad + слайдеры + меню)
+
+https://zzik.github.io/WebAcademy/Interior_Design/build/index.html
+
 **Lending page - Pex (Первые попытки обучения html + css)**
 
 (Без адаптации и js. Базовая анимация + модалка(Модалка стремноватая, позже переделаю))
