@@ -548,26 +548,35 @@ h2 {
 
 .project__list {
   display: flex;
-  justify-content: start;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%; }
 
 .project__list-item {
-  display: inline-block;
+  font-weight: 400;
   font-size: 18px;
-  color: gray;
-  padding: 5px;
-  transition: .3s; }
+  line-height: 1;
+  display: inline-block;
+  color: grey;
+  transition: .3s;
+  position: relative; }
 
-.project__list-item:hover {
-  color: #01182b;
-  font-weight: bold;
-  transition: .3s; }
+.project__list-item:active {
+  color: #2e3f4e; }
 
-.project__list-item:nth-child(2) {
-  margin-left: 50px; }
+.project__list-item:after {
+  top: 30px;
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: black;
+  transition: width .3s ease-in-out; }
 
-.project__list-item:nth-child(3) {
-  margin-left: 50px; }
+.project__list-item:hover:after,
+.project__list-item:focus:after {
+  width: 100%; }
 
 .portfolio__row-3 {
   margin-top: 50px;
@@ -587,14 +596,8 @@ ul.service__menu-list {
   flex-wrap: wrap;
   text-align: start; }
 
-li:hover {
-  transition: 0.3s;
-  color: #01182b;
-  font-weight: bold; }
-
 .service__menu-list-item {
   font-family: 'Open Sans', sans-serif;
-  color: #00203a;
   font-size: 18px;
   margin-bottom: 86px; }
 
@@ -611,11 +614,13 @@ li:hover {
   .service__menu-list-item:last-child {
     margin-bottom: 70px; } }
 
+li:hover {
+  padding-left: 25px;
+  transition: 0.3s;
+  font-weight: bold; }
+
 .service a {
   color: #00203a; }
-
-.service a:hover {
-  color: black; }
 
 .service_art-imgbox {
   width: 883px;

@@ -629,6 +629,18 @@ input[type="submit"] {
   bottom: 78%;
   left: 127%; }
 
+.send {
+  background: #fb0275;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 12px 40px;
+  transition: .3s;
+  transition-timing-function: ease-in; }
+
 .faq {
   background-image: url("../img/section/item/line.png");
   background-position: center; }
@@ -934,7 +946,7 @@ footer .company-name,
   position: relative;
   color: white;
   max-width: 356px;
-  background: url("../img/header/figure-1.png") #9040dd;
+  background: url("../img/header/figure-1.jpg") #9040dd;
   background-repeat: no-repeat;
   background-position: left;
   border-radius: 10px;
