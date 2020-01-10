@@ -17,15 +17,8 @@ ul.service__menu-list {
 	text-align: start;
 }
 
-li:hover {
-	transition: 0.3s;
-	color: #01182b;
-	font-weight: bold;
-}
-
 .service__menu-list-item {
 	font-family: 'Open Sans', sans-serif;
-	color: #00203a;
 	font-size: 18px;
 	margin-bottom: 86px;
 }
@@ -48,13 +41,20 @@ li:hover {
 	}
 }
 
+li:hover {
+	padding-left: 25px;
+	transition: 0.3s;
+	// color: #01182b;
+	font-weight: bold;
+}
+
 .service a {
 	color: $color-global;
 }
 
-.service a:hover {
-	color: black;
-}
+// .service a:hover {
+// 	color: black;
+// }
 
 .service_art-imgbox {
 	width: 883px;
