@@ -958,7 +958,8 @@ footer .company-name,
 
 .modal-callback .calltoaction__form-input {
   padding: 0px 70px 5px 10px;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+  color: white; }
 
 .modal-callback .calltoaction__form-input:nth-last-child(2) {
   margin-bottom: 30px; }
@@ -1212,7 +1213,7 @@ footer .company-name,
     margin-top: 20px; }
   .double-line::after {
     height: 85px;
-    left: 200px; }
+    left: 195px; }
   .services-list .section__col-2 {
     padding-top: 40px;
     margin-left: 0px; }
@@ -1245,9 +1246,16 @@ footer .company-name,
     display: none; }
   .services-card .section__col-2 {
     margin-left: 0px; }
+  .feedback .slider__list {
+    transform: translateX(33%); }
   .faq .calltoaction__form {
     background-size: cover;
     background-position: center; }
+  .faq .send {
+    margin-top: 10px;
+    padding: 12px 60px; }
+  .faq .calltoaction__form-input {
+    padding: 0px 14px 10px 25px; }
   footer .contacts {
     width: 330px;
     bottom: 120px;

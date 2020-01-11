@@ -55,7 +55,7 @@
 
 	.double-line::after {
 		height: 85px;
-		left: 200px;
+		left: 195px;
 	}
 
 	//  --------------AboutUs-END----------------
@@ -130,7 +130,10 @@
 	//  --------------Services-Card-END-----------
 
 	//  --------------Feedback--------------------
+	.feedback .slider__list {
 
+		transform: translateX(33%);
+	}
 
 	//  ------------Feedback-END----------------
 
@@ -140,6 +143,16 @@
 		background-size: cover;
 		background-position: center;
 	}
+
+	.faq .send {
+		margin-top: 10px;
+		padding: 12px 60px;
+	}
+
+	.faq .calltoaction__form-input {
+		padding: 0px 14px 10px 25px;
+	}
+
 
 	//  ------------FAQ-END----------------------
 
