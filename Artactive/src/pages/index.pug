@@ -16,19 +16,19 @@ html(lang='ru')
 			// ------------------------------------------------------------------------------------//
 			include ../blocks/header.pug
 			.section
-				.about(id="abou_us")
+				.about(id="about_us")
 						include ../blocks/about_us.pug
-				.services-list
+				.services-list(id="services")
 					include ../blocks/services-list.pug
 				.service-print
 					include ../blocks/services-print.pug
 				.services-card
 					include ../blocks/services-card.pug
-				.feedback
+				.feedback(id="feedback")
 					include ../blocks/feedback.pug
-				.faq
+				.faq(id="faq")
 					include ../blocks/faq.pug
-				footer
+				footer(id="contact")
 					include ../blocks/footer.pug
 				include ../blocks/modal.pug
 				include ../blocks/modal-callback.pug

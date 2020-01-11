@@ -1169,7 +1169,8 @@ footer .company-name,
   .faq .section__calltoaction-text {
     display: inline-block;
     margin-left: 20px;
-    margin-right: 0; }
+    margin-right: 0;
+    z-index: 1; }
   .faq .calltoaction__form-input {
     padding: 0px 0px 10px 25px; }
   .faq .buy {
@@ -1387,7 +1388,8 @@ footer .company-name,
     right: -100px;
     margin: 0px 0px; }
   .faq .section__calltoaction-text {
-    margin-top: 20px; }
+    margin-top: 20px;
+    z-index: 1; }
   .faq .little-text {
     display: inline-block; }
   .faq .calltoaction__form-input {

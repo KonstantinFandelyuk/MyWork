@@ -16,13 +16,14 @@ closeModalElement.addEventListener("click", function() {
 
 // --------------------MODAL CALLBACK--------------------------
 
-let buttonCallbackElement = document.querySelector("[data-id=modal-callback]");
+let buttonCallbackElement = document.querySelector("[data-id=modal-callback-btn]");
 let buyCallbackElement = document.querySelector(".buy");
 let modalCallbackElement = document.querySelector(".modal-callback");
 let rew = document.querySelector("[data-id=callback-animated]");
 
+
 document.addEventListener("click", function(event) {
-  let btnElementBuy = event.target.closest(".buy");
+  let btnElementBuy = event.target.closest(".buy, .button");
   if (btnElementBuy !== null) {
     modalCallbackElement.classList.add("active");
     rew.classList.add("zoomIn");
@@ -30,8 +31,10 @@ document.addEventListener("click", function(event) {
 });
 
 document.addEventListener("click", function(event) {
+  if (modalCallbackElement.querySelector(".active")) {
     let closeModalCallbackElement = event.target.closest(".modal-callback__close");
     modalCallbackElement.classList.remove("active");
+  }
 });
 
 //--------------------SLIDER--------------------------
