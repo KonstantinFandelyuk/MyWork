@@ -36,14 +36,14 @@
       }
     </style>
     <script>
-      document.addEventListener("DOMContentLoaded", function(){
+      window.addEventListener("load", function(){
       	document.querySelector('.preloader').classList.remove('noload');
       });
       
     </script>
     <div class="preloader"><img src="img/preloader/preloader.gif" alt="preloader"></div>
     <div class="wrapper">
-      <!-- ------------------------------------------------------------------------------------//-->
+      <script>document.querySelector('.preloader').classList.add('noload');</script>
       <div class="header">
         <div class="container">
           <div class="header__row-1">
