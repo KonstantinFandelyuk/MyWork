@@ -42,6 +42,8 @@ html(lang='ru')
 		.preloader
 			img(src="img/preloader/preloader.gif" alt="preloader")
 		.wrapper
+			script.
+				document.querySelector('.preloader').classList.add('noload');
 			// ------------------------------------------------------------------------------------//
 			include ../blocks/header.pug
 			.section
