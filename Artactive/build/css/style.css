@@ -1205,7 +1205,8 @@ footer .company-name,
   .services-list .slider {
     margin-left: 35px; }
   .services-list .slider__list {
-    padding-left: 15px; }
+    padding-left: 15px;
+    height: 140px; }
   .services-list .slider-button {
     margin-top: 128px; }
   .section__calltoaction--tablet {
