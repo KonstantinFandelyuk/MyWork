@@ -29,9 +29,12 @@ document.addEventListener("click", function (event) {
 });
 
 document.addEventListener("click", function (event) {
-  let closeModalCallbackElement = event.target.closest(".modal-callback__close");
-  console.log(closeModalCallbackElement)
-  if (closeModalCallbackElement) {
+  let isModalCallbackClose = event.target.closest(".modal-callback__close");
+  let isCalltoactionForm = event.target.closest(".calltoaction__form");
+  let isModalCallback = event.target.closest(".modal-callback");
+
+  console.log(isCalltoactionForm, isModalCallback)
+  if (isModalCallbackClose || (isModalCallback && !isCalltoactionForm)) {
     modalCallbackElement.classList.remove("active");
   }
 

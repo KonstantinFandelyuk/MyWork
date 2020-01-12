@@ -36,6 +36,7 @@
 .modal-callback .calltoaction__form-input {
 	padding: 0px 70px 5px 10px;
 	border-bottom: 1px solid white;
+	color: white;
 }
 
 .modal-callback .calltoaction__form-input:nth-last-child(2) {
@@ -62,27 +63,9 @@
 .modal-callback__close {
 	position: absolute;
 	cursor: pointer;
-	top: 25px;
-	right: 36px;
-}
-
-
-.modal-callback__close:before {
+	top: 15px;
+	right: 20px;
 	width: 20px;
-	position: absolute;
-	content: "";
-	display: inline-block;
-	border-bottom: 3px solid white;
-	transform: rotate(50deg);
+	height: 15px;
 }
-
-.modal-callback__close::after {
-	position: absolute;
-	width: 20px;
-	content: "";
-	display: inline-block;
-	border-bottom: 3px solid white;
-	transform: rotate(-50deg);
-}
-
 // -------------------------------------------------
