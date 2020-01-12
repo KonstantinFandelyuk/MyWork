@@ -191,7 +191,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
   overflow-x: hidden;
   background-image: url("../img/main/background.png");
   background-position: center; }
@@ -551,6 +551,10 @@ h2 {
   justify-content: space-between;
   align-items: center;
   max-width: 50%; }
+
+@media (max-width: 768px) {
+  .project__list {
+    max-width: 70%; } }
 
 .project__list-item {
   font-weight: 400;
