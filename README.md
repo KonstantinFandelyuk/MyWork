@@ -18,7 +18,7 @@ https://KonstantinFandelyuk.github.io/WebAcademy/air_ticket/index.html
 
 **Lending page - Салон красоты**
 
-(Без адаптации и js. Базовая анимация + модалка(Модалка стремноватая, позже переделаю))
+(Без адаптации. Базовая анимация + модалка + Jquery)
 
 https://KonstantinFandelyuk.github.io/WebAcademy/Beauty_salon/build/index.html
 
