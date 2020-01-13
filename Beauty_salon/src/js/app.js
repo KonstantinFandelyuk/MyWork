@@ -26,18 +26,27 @@ var catalog__listPosTop = catalog__list.getBoundingClientRect().top;
 var scroll = function () {
 	if (window.pageYOffset >= catalog__listPosTop - 300) {
 		window.removeEventListener("scroll", scroll) // Важно
-		catalog__list.classList.add("slideInLeft")
+		catalog__list.classList.add("bounceInDown")
 	}
 }
 window.addEventListener("scroll", scroll)
 
 // ----------------------Animated social icon----------------------------------------------------------
 
-var socialIcon = document.querySelector(".social-icon__item");
+// var socialIcon = document.querySelector(".social-icon__item");
 
-socialIcon.addEventListener("mouseover", function () {
-	socialIcon.classList.add("flip");
-	this.addEventListener("mouseout", function () {
-		socialIcon.classList.remove("flip");
-	});
-});
+// socialIcon.addEventListener("mouseover", function () {
+// 	socialIcon.classList.add("flip");
+// 	this.addEventListener("mouseout", function () {
+// 		socialIcon.classList.remove("flip");
+// 	});
+// });
+
+
+document.addEventListener("mouseover", function (event) {
+	let socialIconItem = event.target.closest(".social-icon__item");
+	console.log(socialIconItem)
+	if (socialIconItem != null) {
+		socialIconItem.classList.add("flip");
+	}
+})
