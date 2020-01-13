@@ -7,8 +7,10 @@ html(lang='en')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
 		link(rel='stylesheet', href='css/style.css')
-		title Document
+		script(src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js")
+		title Магазин Beauty Shop
 	body
+		script(src="js/scroll.js")
 		.wrapper
 			// --------------------------------------------------------------------------------------------------------------------
 			.header
@@ -18,7 +20,7 @@ html(lang='en')
 						a.header__menu-item(href='#') Оплата
 						a.header__menu-item(href='#') Отзывы
 						a.header__menu-item(href='#') Вопрос-ответ
-						a.header__menu-item(href='#') Контакты
+						a.header__menu-item(href='#contact') Контакты
 				.header__row-2
 					.container
 						.logo
@@ -206,7 +208,7 @@ html(lang='en')
 						.location
 							span.location-str 198555, Невский пр. 140, офис 140
 						.phone
-							a.phone__number(href='tel:8(812)1234567') 8 (812) 123-45-67
+							a.phone__number#contact( name="contact" href='tel:8(812)1234567') 8 (812) 123-45-67
 						button.callback-button(data-id="modal-callback") Обратный звонок
 				.footer__row-3
 					.container

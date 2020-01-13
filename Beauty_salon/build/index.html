@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>Магазин Beauty Shop</title>
   </head>
   <body>
+    <script src="js/scroll.js"></script>
     <div class="wrapper">
       <!-- ---------------------------------------------------------------------------------------------------------------------->
       <div class="header">
         <div class="header__row-1">
-          <nav class="header__menu-first" id="nav-heder"><a class="header__menu-item" href="#">Доставка</a><a class="header__menu-item" href="#">Оплата</a><a class="header__menu-item" href="#">Отзывы</a><a class="header__menu-item" href="#">Вопрос-ответ</a><a class="header__menu-item" href="#">Контакты</a></nav>
+          <nav class="header__menu-first" id="nav-heder"><a class="header__menu-item" href="#">Доставка</a><a class="header__menu-item" href="#">Оплата</a><a class="header__menu-item" href="#">Отзывы</a><a class="header__menu-item" href="#">Вопрос-ответ</a><a class="header__menu-item" href="#contact">Контакты</a></nav>
         </div>
         <div class="header__row-2">
           <div class="container">
@@ -193,7 +195,7 @@
               <div class="social-icon__item inst animated"></div>
             </div>
             <div class="location"><span class="location-str">198555, Невский пр. 140, офис 140</span></div>
-            <div class="phone"><a class="phone__number" href="tel:8(812)1234567">8 (812) 123-45-67</a></div>
+            <div class="phone"><a class="phone__number" id="contact" name="contact" href="tel:8(812)1234567">8 (812) 123-45-67</a></div>
             <button class="callback-button" data-id="modal-callback">Обратный звонок</button>
           </div>
         </div>
