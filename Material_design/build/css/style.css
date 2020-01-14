@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i&display=swap&subset=cyrillic");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ---------Шрифыт----------- */
+/* -------------------------------- */
+* {
+  box-sizing: border-box; }
+
+/* Стили поумолчанию для всех элементов */
+body {
+  color: #000000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #fff; }
+
+/* Поведение вхех картинок поумолчанию */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Стили ссылок поумолчанию */
+a {
+  text-decoration: none; }
+
+a:hover {
+  transition-duration: 0.3s; }
+
+/* Убрать обводку поумолчанию у кнопок, font: inherit - позволит наследовать стили родителя (у кнопки сили шрифтов заданы поумолчанию) */
+button {
+  border: none;
+  outline: none;
+  font: inherit; }
+
+button,
+input[type="submit"] {
+  cursor: pointer; }
+
+/* Обёртка всего - идёт после body */
+.wrapper {
+  position: relative; }
+
+/* Класс который устанавливет рабочую область для контента */
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+/* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
+@media (max-width: 1110px) {
+  .container {
+    padding: 0 10px; } }
+
+header {
+  background-image: url("../img/header/Background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 793px; }
+
+.header__row-1 {
+  padding-top: 30px;
+  padding-bottom: 141px; }
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white; }
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 230px; }
+
+.header__logo-text {
+  padding-left: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px; }
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.menu__list-item {
+  color: white;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-right: 50px; }
+
+.menu__list-item:last-child {
+  padding-right: 199px; }
+
+.header__login-item {
+  color: white;
+  padding-right: 43px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.white-login {
+  color: #250F8A;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 8px 43px; }
+
+.swiper-container {
+  width: 1130px; }
+
+.swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.swiper-pagination {
+  color: red; }
+
+.slider__info {
+  max-width: 506px; }
+
+.slider__info-tittle {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 60px;
+  color: #FFF;
+  margin-bottom: 10px; }
+
+.slider__info-text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 55px;
+  color: #FFF;
+  margin-bottom: 60px; }
+
+.slider__info-button {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #250F8A;
+  text-transform: uppercase;
+  background: #FFCA00;
+  border-radius: 25px;
+  padding: 13px 39px; }
+
+.services {
+  background-image: url("../img/section/services/background-img.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 100%;
+  height: 100%; }
+
+h2 {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 45px;
+  color: #202020; }
+
+.hero__text {
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 96px; }
+
+.services__list {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.services__list-item {
+  width: 280px;
+  margin-right: 70px; }
+
+.services__list-item:last-child {
+  margin-right: 0; }
+
+.services__list-item.title {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #202020;
+  margin-bottom: 10px; }
+
+.services__list-item.text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #272727;
+  mix-blend-mode: normal;
+  opacity: 0.7; }
+
+.services__row-2 {
+  padding-bottom: 93px; }
