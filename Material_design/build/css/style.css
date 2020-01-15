@@ -187,8 +187,9 @@ input[type="submit"] {
 header {
   background-image: url("../img/header/Background.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  height: 793px; }
+  min-height: 793px;
+  background-size: cover;
+  background-position: top center; }
 
 .header__row-1 {
   padding-top: 30px;
@@ -203,8 +204,7 @@ header {
 .header__logo {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-right: 230px; }
+  align-items: center; }
 
 .header__logo-text {
   padding-left: 12px;
@@ -229,7 +229,7 @@ header {
   padding-right: 50px; }
 
 .menu__list-item:last-child {
-  padding-right: 199px; }
+  padding-right: 0px; }
 
 .header__login-item {
   color: white;

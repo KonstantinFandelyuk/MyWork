@@ -1,8 +1,9 @@
 header {
 	background-image: url("../img/header/Background.svg");
 	background-repeat: no-repeat;
-	background-position: center;
-	height: 793px;
+	min-height: 793px;
+	background-size: cover;
+	background-position: top center;
 }
 
 .header__row-1 {
@@ -21,7 +22,6 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-right: 230px;
 }
 
 .header__logo-text {
@@ -50,7 +50,7 @@ header {
 }
 
 .menu__list-item:last-child {
-	padding-right: 199px;
+	padding-right: 0px;
 }
 
 .header__login-item {
