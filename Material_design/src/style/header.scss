@@ -18,7 +18,13 @@ header {
 	color: white;
 }
 
-.logo {
+@media (max-width: 768px) {
+	.header-box {
+		flex-wrap: wrap;
+	}
+}
+
+.header__logo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -38,9 +44,8 @@ header {
 }
 
 .menu__list-item {
+	font-family: 'Source Sans Pro', sans-serif;
 	color: white;
-	font-family: Source Sans Pro;
-	font-style: normal;
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 24px;
@@ -53,11 +58,17 @@ header {
 	padding-right: 0px;
 }
 
+@media (max-width: 768px) {
+	.header__login {
+		width: 100%;
+		text-align: right;
+		padding-top: 10px;
+	}
+}
+
 .header__login-item {
 	color: white;
 	padding-right: 43px;
-	font-family: Source Sans Pro;
-	font-style: normal;
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 24px;

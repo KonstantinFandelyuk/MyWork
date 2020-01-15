@@ -37,7 +37,14 @@ h2 {
 	margin-right: 0;
 }
 
-.services__list-item.title {
+@media (max-width: 768px) {
+
+	.services__list-item:last-child {
+		margin-right: 0;
+	}
+}
+
+.services__list-item-title {
 	font-family: Source Sans Pro;
 	font-style: normal;
 	font-weight: bold;
@@ -48,7 +55,7 @@ h2 {
 	margin-bottom: 10px;
 }
 
-.services__list-item.text {
+.services__list-item-text {
 	font-family: Source Sans Pro;
 	font-style: normal;
 	font-weight: normal;

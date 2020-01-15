@@ -6,6 +6,12 @@
 	background-position-y: 720px;
 }
 
+@media (max-width: 768px) {
+	.works {
+		background-image: none
+	}
+}
+
 .works__row-1 {
 	padding-top: 91px;
 	padding-bottom: 55px;
