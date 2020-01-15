@@ -1,6 +1,7 @@
 .swiper-container {
 	width: 1120px;
 	height: 500px;
+	margin: 0;
 }
 
 .swiper-slide {
@@ -68,11 +69,13 @@
 	background: #FFCA00;
 	border-radius: 25px;
 	padding: 13px 39px;
+	transition: 0.3s;
 }
 
 .slider__info-button:hover {
 	background-color: black;
 	color: white;
+	transition: 0.3s;
 }
 
 .slider__img {
