@@ -15,7 +15,7 @@
 - **gulp** - запуск
 
 
-**Lending page - "Materia Desing - (Дорабатываю адаптацию под 3 экрана (750px & 320px + xiaomi Mi8Pro)"**
+**Lending page - "Materia Desing - (Дорабатываю адаптацию под 3 экрана (768px & 320px + xiaomi Mi8Pro)"**
 
 - https://konstantinfandelyuk.github.io/WebAcademy/Material_design/build/index.html
 
