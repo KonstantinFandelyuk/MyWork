@@ -201,7 +201,7 @@ header {
   align-items: center;
   color: white; }
 
-.header__logo {
+.logo {
   display: flex;
   justify-content: center;
   align-items: center; }
