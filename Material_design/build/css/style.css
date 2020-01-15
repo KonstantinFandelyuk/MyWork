@@ -248,6 +248,10 @@ header {
   border-radius: 20px;
   padding: 8px 43px; }
 
+.white-login:hover {
+  background-color: black;
+  color: white; }
+
 .swiper-container {
   width: 1130px;
   height: 500px; }
@@ -293,6 +297,10 @@ header {
   background: #FFCA00;
   border-radius: 25px;
   padding: 13px 39px; }
+
+.slider__info-button:hover {
+  background-color: black;
+  color: white; }
 
 .services {
   background-image: url("../img/section/services/background-img.svg");
