@@ -70,9 +70,11 @@ header {
 	background: #FFFFFF;
 	border-radius: 20px;
 	padding: 8px 43px;
+	transition: 0.3s;
 }
 
 .white-login:hover {
 	background-color: black;
 	color: white;
+	transition: 0.3s;
 }

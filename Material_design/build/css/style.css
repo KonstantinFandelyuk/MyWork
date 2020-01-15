@@ -246,15 +246,18 @@ header {
   color: #250F8A;
   background: #FFFFFF;
   border-radius: 20px;
-  padding: 8px 43px; }
+  padding: 8px 43px;
+  transition: 0.3s; }
 
 .white-login:hover {
   background-color: black;
-  color: white; }
+  color: white;
+  transition: 0.3s; }
 
 .swiper-container {
   width: 1120px;
-  height: 500px; }
+  height: 500px;
+  margin: 0; }
 
 .swiper-slide {
   display: flex;
@@ -313,11 +316,13 @@ header {
   text-transform: uppercase;
   background: #FFCA00;
   border-radius: 25px;
-  padding: 13px 39px; }
+  padding: 13px 39px;
+  transition: 0.3s; }
 
 .slider__info-button:hover {
   background-color: black;
-  color: white; }
+  color: white;
+  transition: 0.3s; }
 
 .slider__img {
   margin-left: 68px; }
