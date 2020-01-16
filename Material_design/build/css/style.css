@@ -290,8 +290,8 @@ header {
 
 @media (max-width: 414px) {
   .swiper-container {
-    width: 400px;
-    height: 410px;
+    width: 365px;
+    height: 393px;
     margin: 10px; } }
 
 .swiper-slide {
@@ -316,7 +316,7 @@ header {
 
 @media (max-width: 414px) {
   .swiper-container-vertical > .swiper-pagination-bullets {
-    right: 390px; } }
+    right: 0px; } }
 
 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.5);
@@ -395,10 +395,6 @@ header {
 
 .slider__img {
   margin-left: 68px; }
-
-@media (max-width: 768px) {
-  .swiper-container {
-    width: 750px; } }
 
 @media (max-width: 768px) {
   .slider__img {
