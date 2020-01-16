@@ -6,6 +6,12 @@
 	height: 100%;
 }
 
+@media (max-width: 414px) {
+	.services {
+		background-image: none
+	}
+}
+
 h2 {
 	font-family: Source Sans Pro;
 	font-style: normal;
@@ -28,9 +34,21 @@ h2 {
 	margin: 0 auto;
 }
 
+@media (max-width: 414px) {
+	.services__list {
+		flex-direction: column;
+	}
+}
+
 .services__list-item {
 	width: 280px;
 	margin-right: 70px;
+}
+
+@media (max-width: 414px) {
+	.services__list-item {
+		margin: 0 auto;
+	}
 }
 
 .services__list-item:last-child {
@@ -38,9 +56,14 @@ h2 {
 }
 
 @media (max-width: 768px) {
-
 	.services__list-item:last-child {
 		margin-right: 0;
+	}
+}
+
+@media (max-width: 414px) {
+	.services__list-item:last-child {
+		margin: 0 auto;
 	}
 }
 
