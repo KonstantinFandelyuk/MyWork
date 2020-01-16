@@ -276,7 +276,9 @@ header {
 
 @media (max-width: 560px) {
   .burger {
-    display: flex; } }
+    display: flex; }
+  img {
+    fill: white; } }
 
 .swiper-container {
   width: 1120px;
@@ -291,8 +293,7 @@ header {
 @media (max-width: 414px) {
   .swiper-container {
     width: 365px;
-    height: 393px;
-    margin: 10px; } }
+    height: 393px; } }
 
 .swiper-slide {
   display: flex;
@@ -301,7 +302,8 @@ header {
 
 @media (max-width: 414px) {
   .swiper-slide {
-    justify-content: start; } }
+    justify-content: start;
+    flex-direction: column; } }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
   right: 0px;
@@ -398,7 +400,8 @@ header {
 
 @media (max-width: 768px) {
   .slider__img {
-    display: none; } }
+    margin-right: 68px;
+    margin-left: 0px; } }
 
 .services {
   background-image: url("../img/section/services/background-img.svg");
@@ -406,6 +409,10 @@ header {
   background-position: left;
   width: 100%;
   height: 100%; }
+
+@media (max-width: 414px) {
+  .services {
+    background-image: none; } }
 
 h2 {
   font-family: Source Sans Pro;
@@ -426,9 +433,17 @@ h2 {
   align-items: center;
   margin: 0 auto; }
 
+@media (max-width: 414px) {
+  .services__list {
+    flex-direction: column; } }
+
 .services__list-item {
   width: 280px;
   margin-right: 70px; }
+
+@media (max-width: 414px) {
+  .services__list-item {
+    margin: 0 auto; } }
 
 .services__list-item:last-child {
   margin-right: 0; }
@@ -436,6 +451,10 @@ h2 {
 @media (max-width: 768px) {
   .services__list-item:last-child {
     margin-right: 0; } }
+
+@media (max-width: 414px) {
+  .services__list-item:last-child {
+    margin: 0 auto; } }
 
 .services__list-item-title {
   font-family: Source Sans Pro;
@@ -482,6 +501,10 @@ h2 {
   display: flex;
   justify-content: space-between; }
 
+@media (max-width: 414px) {
+  .works__box-item {
+    height: 350px; } }
+
 .works__box-item--revers {
   flex-direction: row-reverse; }
 
@@ -515,6 +538,10 @@ h2 {
 
 .works__box-img {
   width: 667px; }
+
+@media (max-width: 414px) {
+  .works__box-img {
+    display: none; } }
 
 p {
   display: inline-block; }
@@ -610,10 +637,19 @@ p {
   line-height: 24px;
   text-align: center; }
 
+@media (max-width: 414px) {
+  .feedback__list-item-text {
+    font-size: 14px; } }
+
 .footer__row-1 {
   display: flex;
   justify-content: space-between;
   padding: 20px 0px 17px 0px; }
+
+@media (max-width: 414px) {
+  .footer__row-1 {
+    flex-direction: column;
+    align-items: center; } }
 
 .footer__info > a {
   font-size: 15px;

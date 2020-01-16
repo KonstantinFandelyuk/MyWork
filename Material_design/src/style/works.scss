@@ -24,6 +24,12 @@
 	justify-content: space-between;
 }
 
+@media (max-width: 414px) {
+	.works__box-item {
+		height: 350px;
+	}
+}
+
 .works__box-item--revers {
 	flex-direction: row-reverse;
 }
@@ -64,6 +70,12 @@
 
 .works__box-img {
 	width: 667px;
+}
+
+@media (max-width: 414px) {
+	.works__box-img {
+		display: none;
+	}
 }
 
 p {
