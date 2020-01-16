@@ -5,9 +5,16 @@
 }
 
 @media (max-width: 768px) {
-
 	.swiper-container {
 		width: 750px;
+		margin: 10px;
+	}
+}
+
+@media (max-width: 414px) {
+	.swiper-container {
+		width: 400px;
+		height: 410px;
 		margin: 10px;
 	}
 }
@@ -16,6 +23,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (max-width: 414px) {
+	.swiper-slide {
+		justify-content: start;
+	}
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
@@ -27,14 +40,19 @@
 }
 
 @media (max-width: 768px) {
-
 	.swiper-container-vertical>.swiper-pagination-bullets {
 		right: 20px;
 	}
 }
 
+@media (max-width: 414px) {
+	.swiper-container-vertical>.swiper-pagination-bullets {
+		right: 390px;
+	}
+}
+
 .swiper-pagination-bullet {
-	background: rgba(255, 255, 255, .5);
+	background: rgba(255, 255, 255, 0.5);
 	mix-blend-mode: normal;
 	border-radius: 3.5px;
 }
@@ -53,9 +71,14 @@
 }
 
 @media (max-width: 768px) {
-
 	.slider__info {
-		max-width: 100%;
+		max-width: 660px;
+	}
+}
+
+@media (max-width: 414px) {
+	.slider__info {
+		max-width: 370px;
 	}
 }
 
@@ -65,8 +88,21 @@
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 60px;
-	color: #FFF;
+	color: #fff;
 	margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+	.slider__info-tittle {
+		font-size: 35px;
+		line-height: 30px;
+	}
+}
+
+@media (max-width: 414px) {
+	.slider__info-tittle {
+		font-size: 25px;
+	}
 }
 
 .slider__info-text {
@@ -75,8 +111,15 @@
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 55px;
-	color: #FFF;
+	color: #fff;
 	margin-bottom: 60px;
+}
+
+@media (max-width: 414px) {
+	.slider__info-text {
+		font-size: 14px;
+		line-height: 20px;
+	}
 }
 
 .slider__info-button {
@@ -86,9 +129,9 @@
 	font-size: 15px;
 	line-height: 24px;
 	text-align: center;
-	color: #250F8A;
+	color: #250f8a;
 	text-transform: uppercase;
-	background: #FFCA00;
+	background: #ffca00;
 	border-radius: 25px;
 	padding: 13px 39px;
 	transition: 0.3s;
@@ -105,14 +148,12 @@
 }
 
 @media (max-width: 768px) {
-
 	.swiper-container {
 		width: 750px;
 	}
 }
 
 @media (max-width: 768px) {
-
 	.slider__img {
 		display: none;
 	}
