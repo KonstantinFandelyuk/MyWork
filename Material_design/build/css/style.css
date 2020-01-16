@@ -285,14 +285,23 @@ header {
   height: 500px;
   margin: 0; }
 
+@media (max-width: 1024px) {
+  .swiper-container {
+    width: 950px;
+    margin: 10px; } }
+
 @media (max-width: 768px) {
   .swiper-container {
-    width: 750px;
-    margin: 10px; } }
+    width: 750px; } }
 
 @media (max-width: 414px) {
   .swiper-container {
     width: 365px;
+    height: 393px; } }
+
+@media (max-width: 375px) {
+  .swiper-container {
+    width: 337px;
     height: 393px; } }
 
 .swiper-slide {
@@ -311,6 +320,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+@media (max-width: 1024px) {
+  .swiper-container-vertical > .swiper-pagination-bullets {
+    right: 0px; } }
 
 @media (max-width: 768px) {
   .swiper-container-vertical > .swiper-pagination-bullets {
