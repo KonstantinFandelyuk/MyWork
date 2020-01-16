@@ -295,6 +295,11 @@ header {
     width: 365px;
     height: 393px; } }
 
+@media (max-width: 375px) {
+  .swiper-container {
+    width: 337px;
+    height: 393px; } }
+
 .swiper-slide {
   display: flex;
   justify-content: center;
