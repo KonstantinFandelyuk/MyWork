@@ -342,7 +342,8 @@ header {
 
 @media (max-width: 414px) {
   .slider__info {
-    max-width: 370px; } }
+    max-width: 370px;
+    margin-bottom: 15px; } }
 
 .slider__info-tittle {
   font-family: Source Sans Pro;
