@@ -25,7 +25,7 @@
 
 - https://KonstantinFandelyuk.github.io/WebAcademy/Artactive/build/index.html
 
-- (Не много кривоват Js, но я на  этим работаю.)
+- (Не много кривоват Js, но я на  этим работаю.(Использование slick slider + js slider)
 
 **Страничка со списком билетов + фильтр(только визуальная часть без js)**
 
