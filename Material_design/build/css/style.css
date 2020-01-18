@@ -802,11 +802,13 @@ p {
   display: block; }
 
 .modal__close {
+  font-style: italic;
   position: absolute;
-  border: 2px solid black;
-  border-radius: 3px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  border-radius: 0px;
   width: 150px;
-  color: black;
-  bottom: 0%;
+  color: #bbbbbb;
+  bottom: -1%;
   left: 50%;
   transform: translate(-50%, -50%); }
