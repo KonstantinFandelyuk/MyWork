@@ -1,5 +1,19 @@
 // --------------------MODAL BURGER MENU------------------------
 
+// document.addEventListener("click", function(event) {
+//   let buttonElement = document.querySelector("[data-id=modal_menu]"),
+//     modalElement = document.querySelector(".modal__menu"),
+//     animatedModalElement = document.querySelector(".modal__menu-background"),
+//     closeModalElement = event.target.closest(".modal__close");
+//   if (buttonElement) {
+//     modalElement.classList.add("active");
+//     animatedModalElement.classList.add("fadeInDown");
+//   }
+//   if (closeModalElement) {
+//     modalElement.classList.remove("active");
+//   }
+// });
+
 const buttonElement = document.querySelector("[data-id=modal_menu]"),
   modalElement = document.querySelector(".modal__menu"),
   animatedModalElement = document.querySelector(".modal__menu-background"),

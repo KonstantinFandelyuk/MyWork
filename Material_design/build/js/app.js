@@ -1,5 +1,19 @@
 // --------------------MODAL BURGER MENU------------------------
 
+// document.addEventListener("click", function(event) {
+//   let buttonElement = document.querySelector("[data-id=modal_menu]"),
+//     modalElement = document.querySelector(".modal__menu"),
+//     animatedModalElement = document.querySelector(".modal__menu-background"),
+//     closeModalElement = event.target.closest(".modal__close");
+//   if (buttonElement) {
+//     modalElement.classList.add("active");
+//     animatedModalElement.classList.add("fadeInDown");
+//   }
+//   if (closeModalElement) {
+//     modalElement.classList.remove("active");
+//   }
+// });
+
 const buttonElement = document.querySelector("[data-id=modal_menu]"),
   modalElement = document.querySelector(".modal__menu"),
   animatedModalElement = document.querySelector(".modal__menu-background"),
@@ -12,22 +26,7 @@ buttonElement.addEventListener("click", function() {
 
 closeModalElement.addEventListener("click", function() {
   modalElement.classList.remove("active");
-  animatedModalElement.classList.add("fadeInDown");
 });
-
-// let buttonElement = document.querySelector("[data-id=modal-button]");
-// let modalElement = document.querySelector(".modal");
-// let animateModalElement = document.querySelector(".modal-background");
-// let closeModalElement = document.querySelector(".modal__close");
-
-// buttonElement.addEventListener("click", function () {
-//   modalElement.classList.add("active");
-//   animateModalElement.classList.add("slideInRight");
-// });
-
-// closeModalElement.addEventListener("click", function () {
-//   modalElement.classList.remove("active");
-// });
 
 // --------------------MODAL CALLBACK--------------------------
 
