@@ -6,7 +6,7 @@
 	height: 100%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 425px) {
 	.services {
 		background-image: none
 	}
@@ -34,7 +34,7 @@ h2 {
 	margin: 0 auto;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 425px) {
 	.services__list {
 		flex-direction: column;
 	}
@@ -45,7 +45,7 @@ h2 {
 	margin-right: 70px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 425px) {
 	.services__list-item {
 		margin: 0 auto;
 	}
@@ -61,7 +61,7 @@ h2 {
 	}
 }
 
-@media (max-width: 414px) {
+@media (max-width: 425px) {
 	.services__list-item:last-child {
 		margin: 0 auto;
 	}
