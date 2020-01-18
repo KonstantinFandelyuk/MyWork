@@ -14,18 +14,23 @@
 //   }
 // });
 
-const buttonElement = document.querySelector("[data-id=modal_menu]"),
+const bodyElement = document.getElementById("body"),
+  buttonElement = document.querySelector("[data-id=modal_menu]"),
   modalElement = document.querySelector(".modal__menu"),
   animatedModalElement = document.querySelector(".modal__menu-background"),
   closeModalElement = document.querySelector(".modal__close");
 
+console.log(bodyElement);
+
 buttonElement.addEventListener("click", function() {
+  bodyElement.classList.add("hidden-scroll");
   modalElement.classList.add("active");
   animatedModalElement.classList.add("fadeInDown");
 });
 
 closeModalElement.addEventListener("click", function() {
   modalElement.classList.remove("active");
+  bodyElement.classList.remove("hidden-scroll");
 });
 
 // --------------------MODAL CALLBACK--------------------------
