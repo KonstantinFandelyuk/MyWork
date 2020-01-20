@@ -1,6 +1,21 @@
 .feedback-form {
-  color: white;
+  //   color: white;
+  //   background-color: #182c3d;
+  //   max-height: 750px;
+  background-image: url("../img/section/record-form/kitchen2.jpg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.feedback-form::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
   background-color: #182c3d;
+  width: 50%;
+  height: 100%;
 }
 
 .feedback-form__row-1 {
@@ -8,13 +23,13 @@
   justify-content: start;
   align-items: center;
   flex-basis: 50%;
-  position: relative;
   z-index: 2;
+  position: relative;
 }
 
 .feedback-form__col-1 {
   margin-right: 100px;
-  margin-left: 360px;
+  padding-left: 360px;
 }
 
 @media (max-width: 768px) {
@@ -27,6 +42,7 @@
   font-size: 50px;
   margin-bottom: 30px;
   margin-top: 80px;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -131,18 +147,15 @@ input:nth-child(3) {
   padding-bottom: 90px;
 }
 
+.feedback-form__col-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 768px) {
   .feedback-form__list-item.text {
     max-width: 411px;
   }
-}
-
-.feedback-form__col-2 {
-  background-image: url("../img/section/record-form/kitchen2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 745px;
 }
 
 @media (max-width: 768px) {
