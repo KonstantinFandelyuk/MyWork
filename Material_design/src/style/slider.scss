@@ -31,6 +31,12 @@
   }
 }
 
+@media (max-width: 320px) {
+  .swiper-container {
+    width: 280px;
+  }
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;
