@@ -197,9 +197,9 @@ input[type="submit"] {
   padding: 0 10px;
   box-sizing: border-box; }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
   .container {
-    max-width: 772px;
+    max-width: 750px;
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
@@ -1031,15 +1031,15 @@ footer .company-name,
   width: 20px;
   height: 15px; }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .header__row-1 {
     padding-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .logo {
-    width: 124px;
-    height: 16px; }
+    width: 115px;
+    height: 14px; }
   nav.header__nav-menu,
   a.header-phone {
     display: none; }
@@ -1123,10 +1123,14 @@ footer .company-name,
     right: 83px; }
   button.buy {
     padding: 12px 70px; }
+  .service__slider-list {
+    position: relative;
+    height: 500px;
+    margin-top: 50px; }
   .slider-button {
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 243px;
+    margin-top: 0px;
     display: flex;
     justify-content: start; }
   .slider-botton-text {
@@ -1180,6 +1184,12 @@ footer .company-name,
     max-width: 95%; }
   .feedback .slider-button {
     margin-left: 2%; }
+  .slick-slide {
+    transform: translate(-8px); }
+  .slick-prev.slick-arrow {
+    left: 20px; }
+  .slick-next.slick-arrow {
+    left: 120px; }
   .faq .paragraph-text {
     margin-bottom: 0px; }
   .faq .section__row-2 {
@@ -1216,7 +1226,7 @@ footer .company-name,
   footer .contacts {
     left: 3%; } }
 
-@media (max-width: 414px) {
+@media (max-width: 425px) {
   .header__row-2 {
     display: flex;
     flex-direction: column; }
@@ -1238,15 +1248,17 @@ footer .company-name,
   .paragraph-title {
     margin-bottom: 30px; }
   .section__col-1 {
-    display: none; }
+    display: block; }
   .about .section__col-2 {
     padding-left: 15px;
     margin-left: 0px; }
+  .about .section__col-1 {
+    display: none; }
   .about-text-item {
     margin-top: 20px; }
   .double-line::after {
     height: 85px;
-    left: 195px; }
+    left: 210px; }
   .services-list .section__col-2 {
     padding-top: 40px;
     margin-left: 0px; }
@@ -1255,8 +1267,11 @@ footer .company-name,
   .services-list .slider__list {
     padding-left: 15px;
     height: 140px; }
+  .service__slider-list {
+    margin-top: 20px;
+    height: 370px; }
   .services-list .slider-button {
-    margin-top: 128px; }
+    margin-top: 0px; }
   .section__calltoaction--tablet {
     flex-direction: column; }
   .section__calltoaction-text {
@@ -1266,6 +1281,8 @@ footer .company-name,
     text-align: center; }
   .services-list.buy {
     padding: 12px 140px; }
+  .services-list .slider-img {
+    right: 0px; }
   .service-print .section__row-1 {
     padding-top: 70px;
     margin-left: 15px; }
@@ -1282,6 +1299,18 @@ footer .company-name,
     margin-left: 0px; }
   .feedback .slider__list {
     transform: translateX(33%); }
+  .slick-arrow.slick-prev {
+    bottom: 2181px; }
+  .slick-arrow.slick-next {
+    bottom: 2181px; }
+  .slick-slide {
+    max-height: 500px;
+    max-width: 800px;
+    padding: 25px 35px 20px 40px;
+    margin-left: 23px;
+    flex-direction: column; }
+  .feedback .list__col-1 {
+    margin-right: 56px; }
   .faq .calltoaction__form {
     background-size: cover;
     background-position: center; }
@@ -1357,12 +1386,11 @@ footer .company-name,
   .service-list-item {
     max-width: 100%; }
   .services-list .section__col-3 {
-    padding-bottom: 50px; }
+    padding-bottom: 30px; }
   .section__calltoaction--tablet {
     box-shadow: -1px 2px 5px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: start;
     padding: 30px 18px;
     border-radius: 14px;
@@ -1376,6 +1404,10 @@ footer .company-name,
     display: none; }
   .section__calltoaction--tablet .section__calltoaction-text {
     padding-bottom: 30px; }
+  .services-list .slider-img {
+    right: 0px; }
+  .service__slider-list {
+    height: 280px; }
   .sercice-print-img.flower {
     background-image: url("../img/section/item/flower_sofa_320px.png");
     background-repeat: no-repeat;
