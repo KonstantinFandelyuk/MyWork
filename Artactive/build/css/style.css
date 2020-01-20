@@ -1344,6 +1344,15 @@ footer .company-name,
   .footer-maps {
     height: 600px; } }
 
+@media (max-width: 414px) {
+  .double-line::after {
+    height: 85px;
+    left: 204px; }
+  .slick-arrow.slick-prev {
+    bottom: 2135px; }
+  .slick-arrow.slick-next {
+    bottom: 2135px; } }
+
 @media (max-width: 320px) {
   .header__row-1 {
     display: flex;

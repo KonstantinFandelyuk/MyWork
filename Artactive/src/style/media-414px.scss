@@ -228,3 +228,18 @@
 
   //  --------------Footer-END------------------
 }
+
+@media (max-width: 414px) {
+  .double-line::after {
+    height: 85px;
+    left: 204px;
+  }
+
+  .slick-arrow.slick-prev {
+    bottom: 2135px;
+  }
+
+  .slick-arrow.slick-next {
+    bottom: 2135px;
+  }
+}
