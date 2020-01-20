@@ -52,12 +52,17 @@ header {
 .menu__list-item {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: white;
+	opacity: 0.5;
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 24px;
 	text-align: center;
 	text-transform: uppercase;
 	padding-right: 50px;
+}
+
+.menu__list-item:hover {
+	opacity: 1;
 }
 
 .menu__list-item:last-child {
