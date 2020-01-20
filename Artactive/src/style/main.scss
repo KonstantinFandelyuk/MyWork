@@ -82,9 +82,9 @@ input[type="submit"] {
   box-sizing: border-box;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
   .container {
-    max-width: 772px;
+    max-width: 750px;
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;

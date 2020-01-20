@@ -1,4 +1,4 @@
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   //  --------------Header-------------------
 
   .header__row-1 {
@@ -9,8 +9,8 @@
   }
 
   .logo {
-    width: 124px;
-    height: 16px;
+    width: 115px;
+    height: 14px;
   }
 
   nav.header__nav-menu,
@@ -164,10 +164,16 @@
     padding: 12px 70px;
   }
 
+  .service__slider-list {
+    position: relative;
+    height: 500px;
+    margin-top: 50px;
+  }
+
   .slider-button {
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 243px;
+    margin-top: 0px;
     display: flex;
     justify-content: start;
   }
@@ -275,7 +281,18 @@
     margin-left: 2%;
   }
 
+  .slick-slide {
+    transform: translate(-8px);
+  }
+
   //  ------------Feedback-END----------------
+  .slick-prev.slick-arrow {
+    left: 20px;
+  }
+
+  .slick-next.slick-arrow {
+    left: 120px;
+  }
 
   //  --------------FAQ---------------------
 
