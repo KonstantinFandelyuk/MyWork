@@ -721,6 +721,9 @@ input[type="submit"] {
 .list__col-1 {
   margin-right: 15px; }
 
+.slider {
+  position: relative; }
+
 .feedback .slider__list-item-photo {
   background-color: #fff;
   border-radius: 50%;
@@ -863,8 +866,8 @@ footer .company-name,
   background-color: transparent;
   display: inline-flex;
   align-items: center;
-  left: 438px;
-  bottom: 1900px;
+  left: 50px;
+  bottom: -30px;
   font-size: 0; }
 
 .slick-arrow.slick-prev::after {
@@ -886,8 +889,8 @@ footer .company-name,
   background-color: transparent;
   display: inline-flex;
   align-items: center;
-  left: 550px;
-  bottom: 1900px;
+  left: 150px;
+  bottom: -30px;
   font-size: 0; }
 
 .slick-arrow.slick-next::before {
@@ -1299,10 +1302,6 @@ footer .company-name,
     margin-left: 0px; }
   .feedback .slider__list {
     transform: translateX(33%); }
-  .slick-arrow.slick-prev {
-    bottom: 2181px; }
-  .slick-arrow.slick-next {
-    bottom: 2181px; }
   .slick-slide {
     max-height: 500px;
     max-width: 800px;
@@ -1349,9 +1348,9 @@ footer .company-name,
     height: 85px;
     left: 204px; }
   .slick-arrow.slick-prev {
-    bottom: 2135px; }
+    bottom: 0px; }
   .slick-arrow.slick-next {
-    bottom: 2135px; } }
+    bottom: 0px; } }
 
 @media (max-width: 320px) {
   .header__row-1 {

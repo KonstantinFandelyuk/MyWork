@@ -147,15 +147,6 @@
     transform: translateX(33%);
   }
 
-  .slick-arrow.slick-prev {
-    bottom: 2181px;
-  }
-
-  .slick-arrow.slick-next {
-    bottom: 2181px;
-  }
-
-  //  ------------Feedback-END----------------
   .slick-slide {
     max-height: 500px;
     max-width: 800px;
@@ -167,6 +158,9 @@
   .feedback .list__col-1 {
     margin-right: 56px;
   }
+
+  //  ------------Feedback-END----------------
+
 
   //  --------------FAQ------------------------
 
@@ -236,10 +230,10 @@
   }
 
   .slick-arrow.slick-prev {
-    bottom: 2135px;
+    bottom: 0px;
   }
 
   .slick-arrow.slick-next {
-    bottom: 2135px;
+    bottom: 0px;
   }
 }
