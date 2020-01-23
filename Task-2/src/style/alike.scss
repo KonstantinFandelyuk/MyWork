@@ -8,6 +8,12 @@
   padding-top: 170px;
 }
 
+@media (max-width: 425px) {
+  .section__row-1 {
+    padding-top: 70px;
+  }
+}
+
 .section__list {
   display: flex;
   text-align: center;
@@ -62,8 +68,6 @@
     margin-top: 25px;
   }
 }
-
-
 
 .section__list-tittle {
   font-size: 24px;

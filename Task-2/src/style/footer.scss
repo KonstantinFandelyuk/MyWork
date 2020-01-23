@@ -15,15 +15,32 @@ h2>span {
 	align-items: center;
 }
 
+@media (max-width: 425px) {
+	.product-box {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 425px) {
+	.product__img {
+		width: 50%;
+	}
+}
+
 .product__list-item {
 	display: flex;
 	align-items: center;
 	margin-bottom: 15px;
-
 }
 
 .product__list-item--img {
 	margin-right: 30px;
+}
+
+@media (max-width: 425px) {
+	.product__list-item--img {
+		width: 100px;
+	}
 }
 
 .product__list-item--text {
