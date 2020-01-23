@@ -12,6 +12,16 @@ h1 {
 	font-weight: bolder;
 }
 
+@media (max-width: 425px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	.info__box-subtitle {
+		font-size: 30px;
+	}
+}
+
 .underline_orange {
 	background-image: linear-gradient(to right, $color-orange 75%, transparent 75%);
 	background-position: 0 1.04em;

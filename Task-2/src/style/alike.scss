@@ -116,6 +116,12 @@
       top: 36%;
     }
   }
+
+  @media (max-width: 320px) {
+    .section__list-subtittle::after {
+      display: none;
+    }
+  }
 }
 
 .section__list-subtittle>span {
@@ -164,6 +170,12 @@
 @media (max-width: 768px) {
   .attention__box-info--alike {
     background-image: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .attention__box-info--alike {
+    background-color: #f5fbfd;
   }
 }
 
