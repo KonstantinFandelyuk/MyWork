@@ -323,19 +323,55 @@ input[type="submit"] {
   left: -38%;
   z-index: 1; }
 
-@media (max-width: 1024px) {
-  .header__price-orange {
-    top: 76%;
-    left: -13%; } }
-
 .header__price-green {
   top: 80%;
   left: -23%; }
 
 @media (max-width: 1024px) {
+  .header__price-orange {
+    top: 76%;
+    left: -13%; }
   .header__price-green {
     top: 97%;
     left: 2%; } }
+
+@media (max-width: 1024px) and (max-width: 768px) {
+  .header__price-orange {
+    top: 60%;
+    left: 52%; }
+  .header__price-green {
+    top: 73%;
+    left: 66%; } }
+
+@media (max-width: 1024px) and (max-width: 425px) {
+  .header__price-orange {
+    top: 0%;
+    left: 48%;
+    font-size: 20px; }
+  .header__price-green {
+    top: 5%;
+    left: 64%;
+    font-size: 20px; } }
+
+@media (max-width: 1024px) and (max-width: 375px) {
+  .header__price-orange {
+    top: 0%;
+    left: 48%;
+    font-size: 19px; }
+  .header__price-green {
+    top: 65px;
+    left: 64%;
+    font-size: 19px; } }
+
+@media (max-width: 1024px) and (max-width: 320px) {
+  .header__price-orange {
+    top: 0%;
+    left: 48%;
+    font-size: 17px; }
+  .header__price-green {
+    top: 53px;
+    left: 181px;
+    font-size: 17px; } }
 
 .info__box {
   max-width: 380px; }
