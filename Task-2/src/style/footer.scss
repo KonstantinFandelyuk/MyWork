@@ -27,6 +27,14 @@ h2>span {
 	}
 }
 
+@media (max-width: 425px) {
+	.product__list {
+		margin-top: 15px;
+	}
+}
+
+
+
 .product__list-item {
 	display: flex;
 	align-items: center;
@@ -55,5 +63,5 @@ h2>span {
 	top: -20px;
 	left: 0;
 	width: 20px;
-	border-bottom: 4px solid $color-green;
+	border-bottom: 3px solid #7bbf1c;
 }
