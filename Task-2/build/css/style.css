@@ -693,7 +693,11 @@ h2 {
   h2 {
     font-size: 44px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) and (max-width: 375px) {
+  h2 {
+    font-size: 40px; } }
+
+@media (max-width: 425px) and (max-width: 320px) {
   h2 {
     font-size: 30px; } }
 
@@ -1035,6 +1039,10 @@ h2 > span {
   .product__img {
     width: 50%; } }
 
+@media (max-width: 425px) {
+  .product__list {
+    margin-top: 15px; } }
+
 .product__list-item {
   display: flex;
   align-items: center;
@@ -1058,4 +1066,4 @@ h2 > span {
   top: -20px;
   left: 0;
   width: 20px;
-  border-bottom: 4px solid green; }
+  border-bottom: 3px solid #7bbf1c; }
