@@ -1,0 +1,93 @@
+.about__viruse {
+	margin-top: 130px;
+}
+
+.logo {
+	text-align: center;
+}
+
+h2 {
+	font-size: 47px;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.section-subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.viruse__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 33%;
+	margin-bottom: 55px;
+}
+
+.viruse__box-item {
+	max-width: 345px;
+	margin-left: 30px;
+}
+
+.viruse__box-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 45px;
+}
+
+.viruse__box-img {
+	max-width: 190px;
+	margin-right: 16px;
+}
+
+.viruse__box-text {
+	font-size: 22px;
+	font-weight: 500;
+	max-width: 137px;
+}
+
+.viruse__info-text>p {
+	font-size: 18px;
+	font-weight: normal;
+	position: relative;
+}
+
+.viruse__info-text ::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: -20px;
+	width: 50px;
+	display: inline-block;
+	border-bottom: 4px solid #becbd8;
+}
+
+.attention__box {
+	position: relative;
+	border-radius: 9px;
+	border: 3px solid $color-stats;
+}
+
+.attention__box-info {
+	position: absolute;
+	background-color: white;
+	width: 168px;
+	top: 0%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.attention__box-text {
+	font-size: 22px;
+	text-align: center;
+	padding: 40px 60px;
+}
+
+p>span {
+	font-weight: bold;
+}
