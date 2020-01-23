@@ -925,7 +925,7 @@ p > span {
 
 @media (max-width: 768px) {
   .attention__box-info--alike {
-    background-image: none; } }
+    background-image: #f5fbfd; } }
 
 @media (max-width: 425px) {
   .attention__box-info--alike {
