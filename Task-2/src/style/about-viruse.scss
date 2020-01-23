@@ -7,13 +7,13 @@
 }
 
 h2 {
-	font-size: 48px;
+	font-size: 47px;
 	font-weight: 800;
 	text-align: center;
 	margin-bottom: 40px;
 }
 
-.about__viruse-subtitle {
+.section-subtitle {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -66,13 +66,13 @@ h2 {
 	border-bottom: 4px solid #becbd8;
 }
 
-.viruse__stat {
+.attention__box {
 	position: relative;
 	border-radius: 9px;
-	border: 2px solid $color-stats;
+	border: 3px solid $color-stats;
 }
 
-.viruse__stat-img {
+.attention__box-info {
 	position: absolute;
 	background-color: white;
 	width: 168px;
@@ -82,10 +82,10 @@ h2 {
 	transform: translate(-50%, -50%);
 }
 
-.viruse__stat-text {
+.attention__box-text {
 	font-size: 22px;
 	text-align: center;
-	padding: 40px 85px;
+	padding: 40px 60px;
 }
 
 p>span {

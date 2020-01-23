@@ -1,0 +1,42 @@
+.footer {
+	background-image: url("../img/footer/background.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+h2>span {
+	color: $color-no;
+}
+
+.product-box {
+	display: flex;
+	flex: 0 0 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+.product__list-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+
+}
+
+.product__list-item--img {
+	margin-right: 30px;
+}
+
+.product__list-item--text {
+	max-width: 195px;
+	position: relative;
+	font-size: 18px;
+}
+
+.product__list-item--text::before {
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 20px;
+	border-bottom: 4px solid $color-green;
+}
