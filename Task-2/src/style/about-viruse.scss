@@ -19,6 +19,12 @@ h2 {
 	margin-bottom: 40px;
 }
 
+@media (max-width: 425px) {
+	h2 {
+		font-size: 44px;
+	}
+}
+
 .section-subtitle {
 	font-size: 24px;
 	font-weight: bold;
@@ -34,9 +40,21 @@ h2 {
 	margin-bottom: 55px;
 }
 
+@media (max-width: 425px) {
+	.viruse__box {
+		flex-wrap: wrap;
+	}
+}
+
 .viruse__box-item {
 	max-width: 345px;
 	margin-left: 30px;
+}
+
+@media (max-width: 425px) {
+	.viruse__box-item {
+		margin: 10px auto;
+	}
 }
 
 .viruse__box-info {
@@ -46,7 +64,7 @@ h2 {
 }
 
 .viruse__box-img {
-	max-width: 190px;
+	width: 190px;
 	margin-right: 16px;
 }
 
