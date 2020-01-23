@@ -10,6 +10,13 @@
 	position: relative;
 }
 
+@media (max-width: 425px) {
+	.form-order {
+		margin: 20px auto;
+		justify-content: center;
+	}
+}
+
 .form-order::after {
 	content: "";
 	position: absolute;
@@ -27,6 +34,14 @@
 	}
 }
 
+@media (max-width: 425px) {
+	.form-order::after {
+		display: block;
+		top: 185px;
+		right: -33px;
+	}
+}
+
 .free_delivery {
 	border-left: 5px solid #a8ca3f;
 	border-right: 5px solid #a8ca3f;
@@ -41,6 +56,12 @@
 	top: -5px;
 	left: 60px;
 	font-size: 16px;
+}
+
+@media (max-width: 425px) {
+	.free_delivery {
+		background-color: white;
+	}
 }
 
 .free_delivery::before {

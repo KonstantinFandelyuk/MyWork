@@ -7,7 +7,7 @@
 
 @media (max-width: 768px) {
   .header {
-    background-position-x: -90px;
+    background-position: right top;
   }
 }
 
@@ -48,6 +48,12 @@
   position: relative;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 425px) {
+  .promo__list {
+    display: none;
+  }
 }
 
 .promo__list-item {
@@ -136,6 +142,11 @@
   }
 }
 
+@media (max-width: 425px) {
+  .promo-img {
+    order: 0;
+  }
+}
 
 
 .header__price-orange,
