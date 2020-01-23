@@ -194,7 +194,8 @@ input[type="submit"] {
 
 @media (max-width: 768px) {
   .header {
-    background-position: right top; } }
+    background-position: right top;
+    background-size: contain; } }
 
 .promo-info {
   display: flex;
@@ -220,6 +221,10 @@ input[type="submit"] {
 .logo-text {
   font-size: 22px;
   font-weight: bolder; }
+
+@media (max-width: 425px) {
+  .logo-text {
+    font-size: 25px; } }
 
 .promo__list {
   display: flex;
@@ -343,6 +348,12 @@ h1 {
   font-size: 34px;
   font-weight: bolder; }
 
+@media (max-width: 425px) {
+  h1 {
+    font-size: 40px; }
+  .info__box-subtitle {
+    font-size: 30px; } }
+
 .underline_orange {
   background-image: linear-gradient(to right, orange 75%, transparent 75%);
   background-position: 0 1.04em;
@@ -439,6 +450,10 @@ h1 {
     display: block;
     top: 185px;
     right: -33px; } }
+
+@media (max-width: 320px) {
+  .form-order::after {
+    display: none; } }
 
 .free_delivery {
   border-left: 5px solid #a8ca3f;
@@ -642,11 +657,19 @@ h2 {
   h2 {
     font-size: 44px; } }
 
+@media (max-width: 320px) {
+  h2 {
+    font-size: 30px; } }
+
 .section-subtitle {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px; }
+
+@media (max-width: 425px) {
+  .section-subtitle {
+    font-size: 18px; } }
 
 .viruse__box {
   display: flex;
@@ -655,7 +678,7 @@ h2 {
   flex: 0 0 33%;
   margin-bottom: 55px; }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .viruse__box {
     flex-wrap: wrap; } }
 
@@ -718,6 +741,12 @@ h2 {
   font-size: 22px;
   text-align: center;
   padding: 40px 60px; }
+
+@media (max-width: 425px) {
+  .attention__box-text {
+    font-size: 17px;
+    text-align: center;
+    padding: 40px 20px; } }
 
 p > span {
   font-weight: bold; }
@@ -816,6 +845,10 @@ p > span {
   .section__list-subtittle::after {
     top: 36%; } }
 
+@media (max-width: 1024px) and (max-width: 320px) {
+  .section__list-subtittle::after {
+    display: none; } }
+
 .section__list-subtittle > span {
   display: inline-block;
   font-size: 16px;
@@ -857,6 +890,10 @@ p > span {
 @media (max-width: 768px) {
   .attention__box-info--alike {
     background-image: none; } }
+
+@media (max-width: 425px) {
+  .attention__box-info--alike {
+    background-color: #f5fbfd; } }
 
 .section__row-3 {
   margin-top: 60px;

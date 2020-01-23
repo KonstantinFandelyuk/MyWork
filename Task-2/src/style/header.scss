@@ -8,6 +8,7 @@
 @media (max-width: 768px) {
   .header {
     background-position: right top;
+    background-size: contain;
   }
 }
 
@@ -41,6 +42,13 @@
 .logo-text {
   font-size: 22px;
   font-weight: bolder;
+}
+
+@media (max-width: 425px) {
+  .logo-text {
+    font-size: 25px;
+
+  }
 }
 
 .promo__list {
@@ -147,7 +155,6 @@
     order: 0;
   }
 }
-
 
 .header__price-orange,
 .header__price-green {
