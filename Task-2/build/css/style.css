@@ -725,7 +725,8 @@ p > span {
 .alike {
   background-image: url("../img/section/alike/background.png");
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center;
+  background-size: cover; }
 
 .section__row-1 {
   padding-top: 170px; }
@@ -755,6 +756,10 @@ p > span {
   .section__list-item {
     max-width: 360px;
     margin: 0 auto; } }
+
+@media (max-width: 425px) {
+  .section__list-item:nth-child(2) {
+    margin-top: 60px; } }
 
 .section__list-item:last-child {
   margin-right: 0px; }
