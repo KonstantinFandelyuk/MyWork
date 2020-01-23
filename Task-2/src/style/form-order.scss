@@ -10,6 +10,23 @@
 	position: relative;
 }
 
+.form-order::after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/header/order_icon/arrow_price.png");
+	background-repeat: no-repeat;
+	top: 188px;
+	right: -33px;
+	width: 50px;
+	height: 232px;
+}
+
+@media (max-width: 1024px) {
+	.form-order::after {
+		display: none;
+	}
+}
+
 .free_delivery {
 	border-left: 5px solid #a8ca3f;
 	border-right: 5px solid #a8ca3f;
@@ -79,6 +96,33 @@
 	font-size: 34px;
 	font-weight: 300;
 	margin-top: 5px;
+
+}
+
+.form__price-old {
+	position: relative;
+}
+
+.form__price-old::before {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 0px;
+	width: 84px;
+	display: inline-block;
+	border: 1px solid red;
+	transform: rotate(-17deg);
+}
+
+.form__price-old::after {
+	content: "";
+	position: absolute;
+	top: 13px;
+	left: 0;
+	width: 84px;
+	display: inline-block;
+	border: 1px solid red;
+	transform: rotate(17deg);
 }
 
 .form__price-new {

@@ -2,6 +2,12 @@
 	margin-top: 130px;
 }
 
+@media (max-width: 768px) {
+	.about__viruse {
+		margin-top: 0px;
+	}
+}
+
 .logo {
 	text-align: center;
 }
@@ -48,6 +54,13 @@ h2 {
 	font-size: 22px;
 	font-weight: 500;
 	max-width: 137px;
+}
+
+@media (max-width: 768px) {
+	.viruse__box-text {
+		font-size: 18px;
+		max-width: 100%;
+	}
 }
 
 .viruse__info-text>p {

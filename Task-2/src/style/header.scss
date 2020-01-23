@@ -1,108 +1,169 @@
 .header {
-	background-image: url("../img/header/background.png");
-	background-repeat: no-repeat;
-	background-position: top center;
-	position: relative;
+  background-image: url("../img/header/background.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-position-x: -90px;
+  }
 }
 
 .promo-info {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .promo-info {
+    flex-wrap: wrap;
+  }
 }
 
 .header__logo {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 195px;
-	margin-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 195px;
+  margin-right: 150px;
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    margin: 10px auto;
+  }
 }
 
 .logo-text {
-	font-size: 22px;
-	font-weight: bolder;
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 .promo__list {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.promo__list {
-	position: relative;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .promo__list-item {
-	position: relative;
-	margin-right: 85px;
-	font-style: italic;
-	font-size: 16px;
-	color: $color-gray;
+  position: relative;
+  margin-right: 85px;
+  font-style: italic;
+  font-size: 16px;
+  color: $color-gray;
 }
 
 .promo__list-item:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .promo__list-item:first-child:before {
-	position: absolute;
-	background-image: url("../img/header/icon/1.png");
-	background-repeat: no-repeat;
-	content: "";
-	width: 39px;
-	height: 39px;
-	top: 50%;
-	left: -20%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  background-image: url("../img/header/icon/1.png");
+  background-repeat: no-repeat;
+  content: "";
+  width: 39px;
+  height: 39px;
+  top: 50%;
+  left: -20%;
+  transform: translate(-50%, -50%);
 }
 
 .promo__list-item:nth-child(2) {
-	margin-right: 90px;
+  margin-right: 90px;
 }
 
 .promo__list-item:nth-child(2):before {
-	position: absolute;
-	background-image: url("../img/header/icon/2.png");
-	background-repeat: no-repeat;
-	content: "";
-	width: 39px;
-	height: 39px;
-	top: 50%;
-	left: -20%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  background-image: url("../img/header/icon/2.png");
+  background-repeat: no-repeat;
+  content: "";
+  width: 39px;
+  height: 39px;
+  top: 50%;
+  left: -20%;
+  transform: translate(-50%, -50%);
 }
 
 .promo__list-item:nth-child(3):before {
-	position: absolute;
-	background-image: url("../img/header/icon/3.png");
-	background-repeat: no-repeat;
-	content: "";
-	width: 39px;
-	height: 39px;
-	top: 50%;
-	left: -20%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  background-image: url("../img/header/icon/3.png");
+  background-repeat: no-repeat;
+  content: "";
+  width: 39px;
+  height: 39px;
+  top: 50%;
+  left: -20%;
+  transform: translate(-50%, -50%);
 }
 
 .header__row-2 {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin-top: 55px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 55px;
 }
 
 .header__col-1 {
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .promo-img {
-	position: absolute;
-	bottom: -159px;
-	left: 270px;
+  position: absolute;
+  bottom: -23%;
+  left: -87%;
+}
+
+@media (max-width: 1024px) {
+  .promo-img {
+    bottom: -40%;
+    left: -62%;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-img {
+    position: static;
+    order: 3;
+  }
+}
+
+
+
+.header__price-orange,
+.header__price-green {
+  position: absolute;
+  font-size: 34px;
+  font-weight: 700;
+  color: white;
+  top: 59%;
+  left: -38%;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .header__price-orange {
+    top: 76%;
+    left: -13%;
+  }
+}
+
+.header__price-green {
+  top: 80%;
+  left: -23%;
+}
+
+@media (max-width: 1024px) {
+  .header__price-green {
+    top: 97%;
+    left: 2%;
+  }
 }
