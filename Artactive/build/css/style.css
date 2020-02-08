@@ -1291,7 +1291,8 @@ footer .company-name,
     margin-left: 15px; }
   .sercice-print-img.flower {
     background-position-y: 71%;
-    background-position-x: -46px; }
+    background-position-x: 50px;
+    background-size: 90%; }
   .services-card .section__row-1 {
     padding-top: 70px;
     padding-left: 15px;
@@ -1348,9 +1349,9 @@ footer .company-name,
     height: 85px;
     left: 204px; }
   .slick-arrow.slick-prev {
-    bottom: 0px; }
+    bottom: -30px; }
   .slick-arrow.slick-next {
-    bottom: 0px; } }
+    bottom: -30px; } }
 
 @media (max-width: 320px) {
   .header__row-1 {
