@@ -1,0 +1,260 @@
+.form-order {
+	max-width: 275px;
+	border: 7px solid #a8ca3f;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: white;
+	position: relative;
+}
+
+@media (max-width: 425px) {
+	.form-order {
+		margin: 20px auto;
+		justify-content: center;
+	}
+}
+
+.form-order::after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/header/order_icon/arrow_price.png");
+	background-repeat: no-repeat;
+	top: 188px;
+	right: -33px;
+	width: 50px;
+	height: 232px;
+}
+
+@media (max-width: 1024px) {
+	.form-order::after {
+		display: none;
+	}
+}
+
+@media (max-width: 425px) {
+	.form-order::after {
+		display: block;
+		top: 185px;
+		right: -33px;
+	}
+}
+
+@media (max-width: 320px) {
+	.form-order::after {
+		display: none;
+	}
+}
+
+.free_delivery {
+	border-left: 5px solid #a8ca3f;
+	border-right: 5px solid #a8ca3f;
+	border-bottom: 5px solid #a8ca3f;
+	border-radius: 0 0 10px 10px;
+	// padding: 10px 25px;
+	padding: 7px;
+	width: 145px;
+	position: absolute;
+	background-color: #f2f8ff;
+	text-align: right;
+	top: -7px;
+	left: 60px;
+	font-size: 16px;
+}
+
+@media (max-width: 425px) {
+	.free_delivery {
+		background-color: white;
+	}
+}
+
+.free_delivery::before {
+	position: absolute;
+	content: "";
+	background-image: url("../img/header/delivery.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	display: block;
+	width: 27px;
+	height: 15px;
+}
+
+.form-order__tittle {
+	padding-top: 49px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.form-order__date {
+	color: ff6b00;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.order__cost-block {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.form__order-cost {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form__text-old {
+	color: $color-gray;
+}
+
+.form__text-new {
+	font-weight: 500;
+}
+
+.form__price-old,
+.form__price-new {
+	font-size: 34px;
+	font-weight: 300;
+	margin-top: 5px;
+
+}
+
+.form__price-old {
+	position: relative;
+}
+
+.form__price-old::before {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 0px;
+	width: 84px;
+	display: inline-block;
+	border: 1px solid red;
+	transform: rotate(-17deg);
+}
+
+.form__price-old::after {
+	content: "";
+	position: absolute;
+	top: 13px;
+	left: 0;
+	width: 84px;
+	display: inline-block;
+	border: 1px solid red;
+	transform: rotate(17deg);
+}
+
+.form__price-new {
+	font-weight: 800;
+	background-color: $color-price;
+	border: 0px solid $color-price;
+	border-radius: 7px;
+	padding: 4px 10px;
+}
+
+.form__buy {
+	display: flex;
+	flex-direction: column;
+}
+
+.buy__label {
+	position: relative;
+}
+
+.buy__label:first-child {
+	margin-bottom: 10px;
+}
+
+.buy__input {
+	padding: 25px 25px 25px 55px;
+	max-width: 220px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 18px;
+	color: $color-gray;
+	outline: none;
+	border: 0;
+	border-radius: 30px;
+	background-color: #eef2f7;
+	box-sizing: border-box;
+}
+
+.buy__label--name::before,
+.buy__label--phone::before {
+	content: "";
+	background-image: url("../img/header/input_man.png");
+	position: absolute;
+	left: 26px;
+	top: 21px;
+	display: block;
+	width: 20px;
+	height: 24px;
+}
+
+.buy__label--phone::before {
+	background-image: url("../img/header/input_phone.png");
+}
+
+.button {
+	line-height: 20px;
+	display: inline-block;
+	padding: 10px 35px;
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+	color: black;
+	background-image: linear-gradient(#ffbc02, #ffce02);
+	border-radius: 40px;
+	box-shadow: 0 0 0 5px #ffbf02;
+	border: 3px solid #ffd34e;
+	margin-top: 15px;
+}
+
+.buy__submit-text {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.amount__item-info {
+	font-size: 18px;
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.amount__item-info--green {
+	color: green;
+	font-weight: 500;
+}
+
+.guard__box {
+	background-color: #eef2f7;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 14px;
+	border-radius: 0px 0px 8px 8px;
+	position: relative;
+}
+
+.guard__box::before {
+	position: absolute;
+	content: "";
+	background-image: url("../img/header/guard.png");
+	position: absolute;
+	left: 11%;
+	top: 3%;
+	display: block;
+	width: 19px;
+	height: 21px;
+	transform: translate(-50%, 50%);
+}
