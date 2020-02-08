@@ -1344,10 +1344,10 @@ footer .company-name,
   .footer-maps {
     height: 600px; } }
 
-@media (max-width: 414px) {
+@media (max-width: 424px) {
   .double-line::after {
     height: 85px;
-    left: 204px; }
+    left: 193px; }
   .slick-arrow.slick-prev {
     bottom: -30px; }
   .slick-arrow.slick-next {
