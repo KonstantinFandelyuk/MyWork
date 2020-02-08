@@ -14,6 +14,9 @@
 - **npm i gulp -g** - установка gulp глобально
 - **gulp** - запуск
 
+**Lending page - "Микоцин"**
+
+- https://konstantinfandelyuk.github.io/WebAcademy/Mikocin/build/index.html
 
 **Lending page - "Materia Desing - (Дорабатываю адаптацию под 3 экрана (768px & 320px + xiaomi Mi8Pro)"**
 
