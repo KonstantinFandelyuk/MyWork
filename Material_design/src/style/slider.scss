@@ -4,38 +4,75 @@
   margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1117px) {
   .swiper-container {
-    width: 950px;
+    width: 1050px;
     margin: 10px;
   }
-}
 
-@media (max-width: 768px) {
-  .swiper-container {
-    width: 750px;
+  @media (max-width: 1080px) {
+    .swiper-container {
+      width: 1000px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .swiper-container {
+      width: 950px;
+    }
+  }
+
+  @media (max-width: 978px) {
+    .swiper-container {
+      width: 930px;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .swiper-container {
+      width: 890px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .swiper-container {
+      width: 840px;
+    }
+  }
+
+  @media (max-width: 857px) {
+    .swiper-container {
+      width: 780px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .swiper-container {
+      width: 750px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .swiper-container {
+      width: 365px;
+      height: 393px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .swiper-container {
+      width: 337px;
+      height: 393px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .swiper-container {
+      width: 280px;
+    }
   }
 }
 
-@media (max-width: 425px) {
-  .swiper-container {
-    width: 365px;
-    height: 393px;
-  }
-}
-
-@media (max-width: 375px) {
-  .swiper-container {
-    width: 337px;
-    height: 393px;
-  }
-}
-
-@media (max-width: 320px) {
-  .swiper-container {
-    width: 280px;
-  }
-}
 
 .swiper-slide {
   display: flex;
@@ -118,6 +155,12 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: 857px) {
+  .slider__info-tittle {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .slider__info-tittle {
     font-size: 35px;
@@ -141,12 +184,20 @@
   margin-bottom: 60px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 857px) {
   .slider__info-text {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 20px;
+  }
+
+  @media (max-width: 425px) {
+    .slider__info-text {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }
+
+
 
 .slider__info-button {
   font-family: Source Sans Pro;
