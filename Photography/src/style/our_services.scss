@@ -1,0 +1,36 @@
+.our_services {
+	background-color: $our_services-background;
+}
+
+
+.box-arrow {
+	border-right: 1px solid $gold-color;
+	max-width: 50%;
+	height: 120px;
+	position: relative;
+}
+
+.box-arrow::after {
+	content: "our services";
+	font-size: 14px;
+	font-weight: 700;
+	color: $gold-color;
+	text-transform: uppercase;
+	position: absolute;
+	right: -53px;
+	bottom: -35px;
+}
+
+.section__row-2 {
+	margin-top: 80px;
+}
+
+h2 {
+	font-family: 'Merriweather', serif;
+	color: white;
+	font-size: 40px;
+	max-width: 650px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 1.7;
+}
