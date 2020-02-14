@@ -2,7 +2,6 @@
 	background-color: $our_services-background;
 }
 
-
 .box-arrow {
 	border-right: 1px solid $gold-color;
 	max-width: 50%;
@@ -26,11 +25,56 @@
 }
 
 h2 {
-	font-family: 'Merriweather', serif;
+	font-family: "Merriweather", serif;
 	color: white;
 	font-size: 40px;
 	max-width: 650px;
 	text-align: center;
 	margin: 0 auto;
 	line-height: 1.7;
+}
+
+.seriveces-steps--wrapper {
+	margin-top: 110px;
+	padding-bottom: 150px;
+}
+
+.seriveces-steps__list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.seriveces-steps__list--item {
+	max-width: 235px;
+}
+
+.seriveces-step--img {
+	margin-bottom: 34px;
+}
+
+.seriveces-step--tittle,
+.seriveces-step--text,
+.seriveces-step--seemore {
+	color: white;
+	margin-bottom: 26px;
+}
+
+.seriveces-step--tittle {
+	font-family: 'Merriweather', serif;
+	font-size: 30px;
+}
+
+.seriveces-step--text {
+	line-height: 1.5;
+	color: #bbbbbb;
+}
+
+.seriveces-step--seemore {
+	font-family: "Open Sans", sans-serif;
+}
+
+.seriveces-step--seemore::after {
+	content: "";
+	height: 8px;
 }

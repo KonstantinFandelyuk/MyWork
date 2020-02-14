@@ -10,39 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Photography</title>
   </head>
-  <body id="body">
-    <style>
-      .preloader{
-      	min-height: 100vh;
-      	height: 100%;
-      	width: 100%;
-      	background-color: rgb(255,255,255);
-      	color: rgb(36,111,176);
-      	font-size: 45px;
-      	font-family:  Arial, sans-serif;
-      	align-items: center;
-      	justify-content: center;
-      	flex-direction: column;
-      	position: fixed;
-      	top: 0;
-      	left: 0;
-      	transition-duration: 1s;
-      	display: none;
-      	z-index: 10000;
-      }
-      .preloader.noload{
-      	display: flex;
-      }
-    </style>
-    <script>
-      window.addEventListener("load", function(){
-      	document.querySelector('.preloader').classList.remove('noload');
-      });
-      
-    </script>
-    <div class="preloader"><img src="img/preloader/preloader.gif" alt="preloader"></div>
+  <body>
     <div class="wrapper">
-      <script>document.querySelector('.preloader').classList.add('noload');</script>
       <header class="header">
         <div class="container">
           <div class="header__row-1">
@@ -59,12 +28,12 @@
             <div class="scroll-arrow"><img src="img/icon/arrow.png" alt=""></div>
           </div>
           <div class="header__row-4">
-            <div class="header-end"><a class="social-fb" href=""><img src="img/icon/fusion.png" alt=""></a><a class="get-start" href="">Get in touch</a></div>
+            <div class="header-end"><a class="social-fb" href=""><img src="img/icon/fusion.png" alt=""></a><a class="seemore" href="">Get in touch</a></div>
           </div>
         </div>
       </header>
       <div class="section">
-        <div class="our_services">
+        <div class="section our_services">
           <div class="container">
             <div class="section__row-1">
               <div class="box-arrow"></div>
@@ -72,10 +41,57 @@
             <div class="section__row-2">
               <h2>Our team will take your business presence to new level</h2>
             </div>
-            <div class="section__row-3"></div>
+            <div class="section__row-3">
+              <div class="seriveces-steps--wrapper">
+                <div class="seriveces-steps">
+                  <div class="seriveces-steps__list">
+                    <div class="seriveces-steps__list--item">
+                      <div class="seriveces-step--img"><img src="img/icon/services/list.png" alt=""></div>
+                      <div class="seriveces-step--tittle">Strategy.</div>
+                      <div class="seriveces-step--text">Ship it user story iterate engaging co-working intuitive pitch deck hacker prototype SpaceTeam user centered design big data.</div><a class="seemore seriveces-step--seemore" href="">See Details</a>
+                    </div>
+                    <div class="seriveces-steps__list--item">
+                      <div class="seriveces-step--img"><img src="img/icon/services/pen.png" alt=""></div>
+                      <div class="seriveces-step--tittle">Branding.</div>
+                      <div class="seriveces-step--text">Ship it user story iterate engaging co-working intuitive pitch deck hacker prototype SpaceTeam user centered design big data.</div><a class="seemore seriveces-step--seemore" href="">See Details</a>
+                    </div>
+                    <div class="seriveces-steps__list--item">
+                      <div class="seriveces-step--img"><img src="img/icon/services/dbl-pen.png" alt=""></div>
+                      <div class="seriveces-step--tittle">Design.</div>
+                      <div class="seriveces-step--text">Ship it user story iterate engaging co-working intuitive pitch deck hacker prototype SpaceTeam user centered design big data.</div><a class="seemore seriveces-step--seemore" href="">See Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section slider_prj">
+          <div class="container">
+            <div class="section__row-1">
+              <div class="slider-box">
+                <div class="prj__text-info">
+                  <div class="prj__line"></div>
+                  <div class="prj__text">Branding & design</div>
+                  <div class="prj__tittle">Project One</div>
+                </div>
+                <div class="slider">
+                  <div class="slider__item"><img src="img/section/slider_prj/slider/1.jpg" alt=""></div>
+                  <div class="slider__item"><img src="img/section/slider_prj/slider/2.jpg" alt=""></div>
+                  <div class="slider__item"><img src="img/section/slider_prj/slider/3.jpg" alt=""></div>
+                  <div class="slider__item"><img src="img/section/slider_prj/slider/4.jpg" alt=""></div>
+                </div>
+                <div class="prj__slide-info"><a class="seemore prj__slide-seemore" href="">Project Details</a><a class="seemore prj__slide-seemore" href="">View Slides</a>
+                  <div class="prj__line prj__line-revers"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

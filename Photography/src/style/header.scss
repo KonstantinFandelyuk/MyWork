@@ -59,12 +59,12 @@ span {
 	align-items: center;
 }
 
-.get-start {
+.seemore {
 	color: white;
 	text-transform: uppercase;
 }
 
-.get-start::after {
+.seemore::after {
 	display: inline-block;
 	content: "";
 	background-image: url("../img/icon/right-arrow.png");
