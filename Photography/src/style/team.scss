@@ -1,0 +1,115 @@
+.team {
+	background-color: #181818;
+}
+
+.box-arrow--team::after {
+	content: "Our Team";
+	margin-right: 15px;
+}
+
+.team-box__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex: 0 0 12.5%;
+}
+
+.team-box__list-item {
+	border-right: 1px solid #202020;
+	border-bottom: 1px solid #202020;
+	color: white;
+	padding: 50px 80px 86px 80px;
+}
+
+.team-box__list-item:nth-child(n+5) {
+	border-bottom: 0px solid red;
+}
+
+// ---------------------------------------------------
+
+
+.team-box__list-item--reverce {
+	padding: 14px 19px 67px 0;
+	display: flex;
+	position: relative;
+}
+
+.team-photo.team-photo--reverce {
+	width: 46px;
+	height: 46px;
+	margin: 11px 20px 11px 11px;
+	position: relative;
+}
+
+.team-photo--reverce::after,
+.team-photo--reverce::before {
+	content: "";
+	position: absolute;
+	background-color: $gold-color;
+	display: block;
+	width: 68px;
+	height: 1px;
+
+}
+
+.team-photo--reverce::before {
+	transform: rotate(90deg);
+	top: 21px;
+	left: -47px;
+	;
+}
+
+.team-photo--reverce::after {
+	top: -13px;
+	left: -13px;
+}
+
+.team-name.team-name--reverce {
+	transform: rotate(90deg);
+	position: absolute;
+	display: inline-block;
+	width: 130px;
+	top: 135px;
+	left: -20px;
+	font-size: 13px;
+}
+
+.team-position--reverce {
+	font-size: 13px;
+	transform: rotate(90deg);
+	position: absolute;
+	width: 130px;
+	top: 125px;
+	left: -41px;
+}
+
+.team-text {
+	font-size: 13px;
+	line-height: 1.6;
+	max-width: 180px;
+}
+
+// ---------------------------------------------------
+
+.team-photo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: white;
+	margin-bottom: 26px;
+	text-align: center;
+}
+
+.team-name {
+	margin-bottom: 15px;
+	color: $gold-color;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.team-position {
+	text-align: center;
+	font-size: 13px;
+}
