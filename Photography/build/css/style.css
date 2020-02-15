@@ -500,6 +500,9 @@ h2 {
   content: "Our Team";
   margin-right: 15px; }
 
+.team .section__row-3 {
+  padding-bottom: 100px; }
+
 .team-box__list {
   display: flex;
   justify-content: center;
@@ -585,3 +588,10 @@ h2 {
 .team-position {
   text-align: center;
   font-size: 13px; }
+
+.contact {
+  background-color: #343434; }
+
+.box-arrow--contact::after {
+  content: "contact us";
+  margin-right: 10px; }
