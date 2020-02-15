@@ -290,13 +290,15 @@ h2 {
   font-family: "Merriweather", serif;
   color: white;
   font-size: 40px;
-  max-width: 650px;
+  max-width: 730px;
   text-align: center;
   margin: 0 auto;
   line-height: 1.7; }
 
+.section__row-3 {
+  margin-top: 110px; }
+
 .seriveces-steps--wrapper {
-  margin-top: 110px;
   padding-bottom: 150px; }
 
 .seriveces-steps__list {
@@ -375,6 +377,9 @@ h2 {
 .slick-slider {
   max-width: 800px; }
 
+.slick-slider.feedback-slider {
+  margin: 0 auto; }
+
 /* Слайдер запущен */
 /* Слайдер с точками */
 /* Ограничивающая оболочка */
@@ -402,7 +407,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 44px; }
+  margin-top: 44px;
+  max-width: 770px; }
 
 .slick-dots li {
   list-style: none;
@@ -418,3 +424,71 @@ h2 {
 /* Активная точка */
 .slick-dots li.slick-active button {
   background-color: #feb960; }
+
+.feedback {
+  background-color: #202020; }
+
+.box-arrow--feedback::after {
+  content: "Testimonials"; }
+
+.brands__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.section__row-4 {
+  margin-top: 105px;
+  padding-bottom: 175px; }
+
+.feedback-slider__item {
+  max-width: 750px;
+  color: white;
+  background-color: #181818;
+  padding: 0 70px 0 66px;
+  margin: 0 auto; }
+
+.clients-photo {
+  border: 1px solid white;
+  background-color: white;
+  width: 78px;
+  height: 78px;
+  margin: 0 auto;
+  margin-bottom: 46px; }
+
+.clients-text {
+  font-family: "Merriweather", serif;
+  color: #909090;
+  line-height: 1.9;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 55px; }
+
+.clients-name {
+  font-weight: 700;
+  color: #feb960;
+  text-align: center;
+  margin-bottom: 17px;
+  text-transform: uppercase; }
+
+.clients-name::before,
+.clients-name::after {
+  content: "";
+  width: 168px;
+  height: 1px;
+  display: inline-block;
+  background-color: #474747;
+  vertical-align: middle;
+  position: relative; }
+
+.clients-name:before {
+  margin-left: -100%;
+  left: -40px; }
+
+.clients-name:after {
+  margin-right: -100%;
+  right: -40px; }
+
+.clients-position {
+  text-align: center;
+  padding-bottom: 38px;
+  font-size: 13px; }

@@ -1,7 +1,10 @@
 /* Слайдер */
 .slick-slider {
 	max-width: 800px;
+}
 
+.slick-slider.feedback-slider {
+	margin: 0 auto;
 }
 
 /* Слайдер запущен */
@@ -55,6 +58,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 44px;
+	max-width: 770px;
 }
 
 .slick-dots li {

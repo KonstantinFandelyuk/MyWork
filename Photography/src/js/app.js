@@ -4,3 +4,10 @@ $(document).ready(function() {
     dots: true,
   });
 });
+
+$(document).ready(function() {
+  $(".feedback-slider").slick({
+    arrows: false,
+    dots: true,
+  });
+});
