@@ -595,3 +595,158 @@ h2 {
 .box-arrow--contact::after {
   content: "contact us";
   margin-right: 10px; }
+
+.contact .section__row-3 {
+  margin-top: 92px; }
+
+.contact-form {
+  background-color: #181818;
+  max-width: 750px;
+  padding: 100px 56px 56px 56px;
+  margin: 0 auto; }
+
+.contact-form__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+li {
+  position: relative; }
+
+.contact-form__item {
+  background-color: transparent;
+  border: 0px solid black;
+  border-bottom: 1px solid #5c5c5c;
+  outline-style: none;
+  width: 270px;
+  margin-bottom: 66px;
+  color: white; }
+
+.contact-form__item:first-child,
+.contact-form__item :nth-child(3) {
+  margin-right: 80px; }
+
+input:focus {
+  border-bottom: 1px solid #feb960; }
+
+.contact-form__item--msg {
+  width: 100%;
+  margin-bottom: 55px;
+  margin-right: 0; }
+
+label[for="contact_email"],
+label[for="contact_subject"] {
+  color: white;
+  position: absolute;
+  top: -10px;
+  left: 370px; }
+
+input:focus ~ label[for="contact_email"],
+input:focus ~ label[for="contact_subject"] {
+  top: -10px;
+  left: 370px;
+  color: #feb960; }
+
+label[for="contact_name"],
+label[for="contact_company"],
+label[for="contact_message"] {
+  color: white;
+  position: absolute;
+  top: -10px;
+  left: 12px; }
+
+input:focus ~ label[for="contact_name"],
+input:focus ~ label[for="contact_company"],
+input:focus ~ label[for="contact_message"] {
+  top: -20px;
+  left: 5px;
+  color: #feb960; }
+
+.contact-form li:last-child {
+  margin: 0 auto; }
+
+.contact-form__item--button {
+  background-color: #feb960;
+  padding: 24px 35px 24px 36px;
+  color: black;
+  border: 0px solid black;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.contact-form__item--button::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/icon/btn-arrow.png");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 11px;
+  vertical-align: baseline;
+  margin-left: 10px; }
+
+.contact-end {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  max-width: 752px;
+  margin: 0 auto; }
+
+.contact-office,
+.contact-other {
+  max-width: 140px; }
+
+.contact-office--tittle,
+.contact-other--tittle {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 35px; }
+
+.contact-office--text {
+  line-height: 1.6;
+  color: #bababa; }
+
+.contact-other--email {
+  color: #bababa;
+  margin-bottom: 30px;
+  display: block; }
+
+.social__icon {
+  display: flex;
+  justify-content: space-between;
+  max-width: 172px; }
+
+.social__list-item {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 12px;
+  position: relative; }
+
+.social__list-item::after {
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.fb::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f39e"; }
+
+.tw::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099"; }
+
+.pi::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f231"; }
+
+.inst::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d"; }
+
+.ball::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f434"; }
