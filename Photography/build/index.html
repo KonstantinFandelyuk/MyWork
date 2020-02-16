@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Описание для фотографов, кратко и лаконично. А главное красиво.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Photography</title>
   </head>
@@ -210,16 +211,47 @@
               <h2>Let’s talk about the project</h2>
             </div>
             <div class="section__row-3">
-              <form action="" method="post">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="button" value="get in touch">
+              <form class="contact-form" action="" method="post">
+                <ul class="contact-form__list">
+                  <li>
+                    <input class="contact-form__item" type="text" id="contact_name">
+                    <label for="contact_name">Your Name</label>
+                    <input class="contact-form__item" type="email" id="contact_email">
+                    <label for="contact_email">Your Email</label>
+                  </li>
+                  <li>
+                    <input class="contact-form__item" type="text" id="contact_company">
+                    <label for="contact_company">Company</label>
+                    <input class="contact-form__item" type="text" id="contact_subject">
+                    <label for="contact_subject">Subject</label>
+                  </li>
+                  <li>
+                    <input class="contact-form__item contact-form__item--msg" type="text" id="contact_message">
+                    <label for="contact_message">Your message</label>
+                  </li>
+                  <li>
+                    <button class="contact-form__item--button" type="submit">get in touch</button>
+                  </li>
+                </ul>
               </form>
             </div>
-            <div class="section__row-4"></div>
+            <div class="section__row-4">
+              <div class="contact-end">
+                <div class="logo"><img src="img/icon/fusion.png" alt=""></div>
+                <div class="contact-office">
+                  <div class="contact-office--tittle">California Office</div>
+                  <div class="contact-office--text">4243 Woodland Terrace Sacramento, CA 95814 916 753 2645</div>
+                </div>
+                <div class="contact-office">
+                  <div class="contact-office--tittle">New york Office</div>
+                  <div class="contact-office--text">885 Oakwood Avenue New York, NY 10013 212 660 0744</div>
+                </div>
+                <div class="contact-other">
+                  <div class="contact-other--tittle">Other Contact</div><a class="contact-other--email" href="mail:jobs@templateocean.com">jobs@templateocean.com
+                    <div class="social__icon"><a class="social__list-item fb" href=""></a><a class="social__list-item tw" href=""></a><a class="social__list-item pi" href=""></a><a class="social__list-item inst" href=""></a><a class="social__list-item ball" href=""></a></div></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

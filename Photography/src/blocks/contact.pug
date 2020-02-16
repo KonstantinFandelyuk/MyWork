@@ -5,11 +5,39 @@
 		.section__row-2
 			h2 Let’s talk about the project
 		.section__row-3
-			form(action="", method="post")
-				input(type="text")
-				input(type="text")
-				input(type="text")
-				input(type="text")
-				input(type="text")
-				input(type="button", value="get in touch")
+			form(action="", method="post").contact-form
+				ul.contact-form__list
+					li
+						input(type="text" id="contact_name").contact-form__item
+						label(for="contact_name") Your Name
+						input(type="email" id="contact_email").contact-form__item
+						label(for="contact_email") Your Email
+					li
+						input(type="text" id="contact_company").contact-form__item
+						label(for="contact_company") Company
+						input(type="text" id="contact_subject").contact-form__item
+						label(for="contact_subject") Subject
+					li
+						input(type="text"  id="contact_message").contact-form__item.contact-form__item--msg
+						label(for="contact_message") Your message
+					li
+						button(type="submit").contact-form__item--button get in touch
 		.section__row-4
+			.contact-end
+				.logo
+					img(src="img/icon/fusion.png", alt="")
+				.contact-office
+					.contact-office--tittle California Office
+					.contact-office--text 4243 Woodland Terrace Sacramento, CA 95814 916 753 2645
+				.contact-office
+					.contact-office--tittle New york Office
+					.contact-office--text 885 Oakwood Avenue New York, NY 10013 212 660 0744
+				.contact-other
+					.contact-other--tittle Other Contact
+					a(href="mail:jobs@templateocean.com").contact-other--email jobs@templateocean.com
+						.social__icon
+							a(href="").social__list-item.fb
+							a(href="").social__list-item.tw
+							a(href="").social__list-item.pi
+							a(href="").social__list-item.inst
+							a(href="").social__list-item.ball
