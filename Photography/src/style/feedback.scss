@@ -12,6 +12,20 @@
 	align-items: center;
 }
 
+@media (max-width: 836px) {
+	.brands__list {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+}
+
+@media (max-width: 836px) {
+	.brands__list-item {
+		flex-basis: 33%;
+		margin: 20px auto;
+	}
+}
+
 .section__row-4 {
 	margin-top: 105px;
 	padding-bottom: 127px;

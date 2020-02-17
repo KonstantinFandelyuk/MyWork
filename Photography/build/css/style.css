@@ -349,6 +349,10 @@ h2 {
   background-color: #feb960;
   margin-bottom: 25px; }
 
+@media (max-width: 799px) {
+  .prj__line {
+    height: 115px; } }
+
 .prj__text {
   color: #feb960;
   margin-right: 29px;
@@ -370,12 +374,80 @@ h2 {
   margin-top: 213px;
   justify-content: center; }
 
+@media (max-width: 1118px) {
+  .prj__slide-info {
+    margin-top: 158px; } }
+
+@media (max-width: 1050px) {
+  .prj__slide-info {
+    margin-top: 133px; } }
+
+@media (max-width: 1024px) {
+  .prj__slide-info {
+    margin-top: 110px; } }
+
+@media (max-width: 1000px) {
+  .prj__slide-info {
+    margin-top: 90px; } }
+
+@media (max-width: 917px) {
+  .prj__slide-info {
+    margin-top: 70px; } }
+
+@media (max-width: 873px) {
+  .prj__slide-info {
+    margin-top: 45px; } }
+
+@media (max-width: 827px) {
+  .prj__slide-info {
+    margin-top: 25px; } }
+
+@media (max-width: 827px) and (max-width: 799px) {
+  .prj__slide-info {
+    margin-top: 0px; } }
+
 .prj__slide-seemore {
   margin-bottom: 25px; }
 
 /* Слайдер */
 .slick-slider {
   max-width: 800px; }
+
+@media (max-width: 1127px) {
+  .slick-slider {
+    max-width: 740px; } }
+
+@media (max-width: 1127px) and (max-width: 1118px) {
+  .slick-slider {
+    max-width: 700px; } }
+
+@media (max-width: 1127px) and (max-width: 1059px) {
+  .slick-slider {
+    max-width: 660px; } }
+
+@media (max-width: 1127px) and (max-width: 1039px) {
+  .slick-slider {
+    max-width: 620px; } }
+
+@media (max-width: 1127px) and (max-width: 1008px) {
+  .slick-slider {
+    max-width: 580px; } }
+
+@media (max-width: 1127px) and (max-width: 920px) {
+  .slick-slider {
+    max-width: 540px; } }
+
+@media (max-width: 1127px) and (max-width: 880px) {
+  .slick-slider {
+    max-width: 500px; } }
+
+@media (max-width: 1127px) and (max-width: 840px) {
+  .slick-slider {
+    max-width: 460px; } }
+
+@media (max-width: 1127px) and (max-width: 800px) {
+  .slick-slider {
+    max-width: 400px; } }
 
 .slick-slider.feedback-slider {
   margin: 0 auto; }
@@ -435,6 +507,16 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+@media (max-width: 836px) {
+  .brands__list {
+    flex-wrap: wrap;
+    text-align: center; } }
+
+@media (max-width: 836px) {
+  .brands__list-item {
+    flex-basis: 33%;
+    margin: 20px auto; } }
 
 .section__row-4 {
   margin-top: 105px;
@@ -683,6 +765,9 @@ input:focus ~ label[for="contact_message"] {
   height: 11px;
   vertical-align: baseline;
   margin-left: 10px; }
+
+.contact .section__row-4 {
+  padding-bottom: 115px; }
 
 .contact-end {
   display: flex;
