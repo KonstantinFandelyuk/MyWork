@@ -3,6 +3,60 @@
 	max-width: 800px;
 }
 
+@media (max-width: 1127px) {
+	.slick-slider {
+		max-width: 740px;
+	}
+
+	@media (max-width: 1118px) {
+		.slick-slider {
+			max-width: 700px;
+		}
+	}
+
+	@media (max-width: 1059px) {
+		.slick-slider {
+			max-width: 660px;
+		}
+	}
+
+	@media (max-width: 1039px) {
+		.slick-slider {
+			max-width: 620px;
+		}
+	}
+
+	@media (max-width: 1008px) {
+		.slick-slider {
+			max-width: 580px;
+		}
+	}
+
+	@media (max-width: 920px) {
+		.slick-slider {
+			max-width: 540px;
+		}
+	}
+
+	@media (max-width: 880px) {
+		.slick-slider {
+			max-width: 500px;
+		}
+	}
+
+	@media (max-width: 840px) {
+		.slick-slider {
+			max-width: 460px;
+		}
+	}
+
+	@media (max-width: 800px) {
+		.slick-slider {
+			max-width: 400px;
+		}
+	}
+}
+
 .slick-slider.feedback-slider {
 	margin: 0 auto;
 }
