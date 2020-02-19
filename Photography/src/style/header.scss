@@ -6,7 +6,13 @@
 }
 
 .header__row-1 {
-	padding-top: 275px;
+	padding-top: 240px;
+}
+
+@media (max-width: 780px) {
+	.header__row-1 {
+		padding-top: 110px;
+	}
 }
 
 h1 {
@@ -27,6 +33,18 @@ span {
 
 .header__row-2 {
 	margin-bottom: 210px;
+}
+
+@media (max-width: 780px) {
+	.header__row-2 {
+		margin-bottom: 166px;
+	}
+
+	@media (max-width: 490px) {
+		.header__row-2 {
+			margin-bottom: 150px;
+		}
+	}
 }
 
 .scroll-arrow {

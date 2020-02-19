@@ -61,8 +61,8 @@ label[for="contact_subject"] {
   left: 370px;
 }
 
-input:focus ~ label[for="contact_email"],
-input:focus ~ label[for="contact_subject"] {
+input:focus~label[for="contact_email"],
+input:focus~label[for="contact_subject"] {
   top: -10px;
   left: 370px;
   color: $gold-color;
@@ -77,9 +77,9 @@ label[for="contact_message"] {
   left: 12px;
 }
 
-input:focus ~ label[for="contact_name"],
-input:focus ~ label[for="contact_company"],
-input:focus ~ label[for="contact_message"] {
+input:focus~label[for="contact_name"],
+input:focus~label[for="contact_company"],
+input:focus~label[for="contact_message"] {
   top: -20px;
   left: 5px;
   color: $gold-color;
@@ -109,8 +109,15 @@ input:focus ~ label[for="contact_message"] {
   vertical-align: baseline;
   margin-left: 10px;
 }
+
 .contact .section__row-4 {
   padding-bottom: 115px;
+}
+
+@media (max-width: 630px) {
+  .contact .section__row-4 {
+    margin-top: 60px;
+  }
 }
 
 .contact-end {
@@ -119,6 +126,20 @@ input:focus ~ label[for="contact_message"] {
   color: #fff;
   max-width: 752px;
   margin: 0 auto;
+}
+
+@media (max-width: 630px) {
+  .contact-end {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 630px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 
 .contact-office,

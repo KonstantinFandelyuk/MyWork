@@ -48,8 +48,27 @@ h2 {
 	align-items: center;
 }
 
+@media (max-width: 630px) {
+	.seriveces-steps__list {
+		flex-wrap: wrap;
+	}
+}
+
 .seriveces-steps__list--item {
 	max-width: 235px;
+}
+
+@media (max-width: 630px) {
+	.seriveces-steps__list--item {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 730px) {
+	.seriveces-steps__list--item {
+		max-width: 179px;
+		margin-left: 5px;
+	}
 }
 
 .seriveces-step--img {
