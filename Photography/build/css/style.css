@@ -790,6 +790,10 @@ input {
   input {
     width: 125px; } }
 
+@media (max-width: 700px) and (max-width: 392px) {
+  input {
+    width: 220px; } }
+
 input:focus {
   transition: 0.3s linear;
   border-bottom: 1px solid #feb960; }
@@ -811,6 +815,10 @@ input:focus ~ label {
 .contact-form__item--msg input {
   width: 100%; }
 
+@media (max-width: 392px) {
+  .contact-form__item--msg input {
+    width: 220px; } }
+
 .contact-form__item--msg {
   width: 100%;
   margin-bottom: 40px; }
@@ -824,6 +832,11 @@ input:focus ~ label {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 auto; }
+
+@media (max-width: 630px) {
+  .contact-form__item--button {
+    font-size: 14px;
+    padding: 24px 20px 24px 20px; } }
 
 .contact-form__item--button::after {
   content: "";
