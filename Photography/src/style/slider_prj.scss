@@ -19,7 +19,8 @@
 
 @media (max-width: 799px) {
 	.prj__line {
-		height: 115px;
+		height: 95px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -36,6 +37,12 @@
 	position: absolute;
 	z-index: 100;
 	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 765px) {
+	.prj__tittle {
+		font-size: 50px;
+	}
 }
 
 .prj__slide-info {

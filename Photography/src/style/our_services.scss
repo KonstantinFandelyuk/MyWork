@@ -38,7 +38,7 @@ h2 {
 	margin-top: 110px;
 }
 
-.seriveces-steps--wrapper {
+.seriveces-steps__wrapper {
 	padding-bottom: 150px;
 }
 
@@ -48,7 +48,7 @@ h2 {
 	align-items: center;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 730px) {
 	.seriveces-steps__list {
 		flex-wrap: wrap;
 	}
@@ -58,16 +58,15 @@ h2 {
 	max-width: 235px;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 730px) {
 	.seriveces-steps__list--item {
-		max-width: 200px;
+		max-width: 100%;
 	}
 }
 
-@media (max-width: 730px) {
+@media (max-width: 630px) {
 	.seriveces-steps__list--item {
-		max-width: 179px;
-		margin-left: 5px;
+		margin: 10px 50px;
 	}
 }
 
@@ -82,6 +81,15 @@ h2 {
 	margin-bottom: 26px;
 }
 
+@media (max-width: 730px) {
+
+	.seriveces-step--tittle,
+	.seriveces-step--text,
+	.seriveces-step--img {
+		text-align: center;
+	}
+}
+
 .seriveces-step--tittle {
 	font-family: 'Merriweather', serif;
 	font-size: 30px;
@@ -94,6 +102,13 @@ h2 {
 
 .seriveces-step--seemore {
 	font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 730px) {
+	.seriveces-step--seemore {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .seriveces-step--seemore::after {

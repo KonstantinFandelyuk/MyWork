@@ -131,6 +131,8 @@ input:focus~label[for="contact_message"] {
 @media (max-width: 630px) {
   .contact-end {
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -145,6 +147,15 @@ input:focus~label[for="contact_message"] {
 .contact-office,
 .contact-other {
   max-width: 140px;
+}
+
+@media (max-width: 630px) {
+
+  .contact-office,
+  .contact-other {
+    max-width: 140px;
+  }
+
 }
 
 .contact-office--tittle,
