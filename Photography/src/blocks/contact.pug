@@ -6,22 +6,23 @@
 			h2 Let’s talk about the project
 		.section__row-3
 			form(action="", method="post").contact-form
-				ul.contact-form__list
-					li
-						input(type="text" id="contact_name").contact-form__item
+				.contact-form__list
+					.contact-form__item
+						input(type="text" id="contact_name")
 						label(for="contact_name") Your Name
-						input(type="email" id="contact_email").contact-form__item
+					.contact-form__item
+						input(type="email" id="contact_email")
 						label(for="contact_email") Your Email
-					li
-						input(type="text" id="contact_company").contact-form__item
+					.contact-form__item
+						input(type="text" id="contact_company")
 						label(for="contact_company") Company
-						input(type="text" id="contact_subject").contact-form__item
+					.contact-form__item
+						input(type="text" id="contact_subject")
 						label(for="contact_subject") Subject
-					li
-						input(type="text"  id="contact_message").contact-form__item.contact-form__item--msg
+					.contact-form__item.contact-form__item--msg
+						input(type="text"  id="contact_message")
 						label(for="contact_message") Your message
-					li
-						button(type="submit").contact-form__item--button get in touch
+					button(type="submit").contact-form__item--button get in touch
 		.section__row-4
 			.contact-end
 				.logo
