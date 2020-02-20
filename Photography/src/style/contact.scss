@@ -74,7 +74,7 @@ input {
     }
   }
 
-  @media (max-width: 392px) {
+  @media (max-width: 394px) {
     input {
       width: 220px;
     }
@@ -106,7 +106,7 @@ input:focus~label {
   width: 100%;
 }
 
-@media (max-width: 392px) {
+@media (max-width: 394px) {
   .contact-form__item--msg input {
     width: 220px;
   }
