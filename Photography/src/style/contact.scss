@@ -67,6 +67,12 @@ input {
       width: 140px;
     }
   }
+
+  @media (max-width: 432px) {
+    input {
+      width: 125px;
+    }
+  }
 }
 
 input:focus {
@@ -76,6 +82,7 @@ input:focus {
 
 label {
   position: absolute;
+  font-size: 12px;
   left: 10px;
   top: -10px;
   color: white;

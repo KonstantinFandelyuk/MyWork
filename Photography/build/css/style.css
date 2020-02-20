@@ -786,12 +786,17 @@ input {
   input {
     width: 140px; } }
 
+@media (max-width: 700px) and (max-width: 432px) {
+  input {
+    width: 125px; } }
+
 input:focus {
   transition: 0.3s linear;
   border-bottom: 1px solid #feb960; }
 
 label {
   position: absolute;
+  font-size: 12px;
   left: 10px;
   top: -10px;
   color: white;
