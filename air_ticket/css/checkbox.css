@@ -17,6 +17,7 @@ i {
   text-align: center;
   padding-right: 5px;
 }
+
 .check__input:checked + i::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
