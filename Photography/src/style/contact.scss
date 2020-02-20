@@ -26,7 +26,6 @@
 
 .contact-form__item {
   position: relative;
-
 }
 
 input {
@@ -54,6 +53,18 @@ input {
   @media (max-width: 570px) {
     input {
       width: 180px;
+    }
+  }
+
+  @media (max-width: 515px) {
+    input {
+      width: 160px;
+    }
+  }
+
+  @media (max-width: 471px) {
+    input {
+      width: 140px;
     }
   }
 }
