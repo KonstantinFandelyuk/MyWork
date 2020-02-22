@@ -20,8 +20,6 @@ const bodyElement = document.getElementById("body"),
   animatedModalElement = document.querySelector(".modal__menu-background"),
   closeModalElement = document.querySelector(".modal__close");
 
-console.log(bodyElement);
-
 buttonElement.addEventListener("click", function() {
   bodyElement.classList.add("hidden-scroll");
   modalElement.classList.add("active");
