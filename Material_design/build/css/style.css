@@ -349,6 +349,10 @@ header {
   .slider__info {
     max-width: 660px; } }
 
+@media (max-width: 768px) and (max-width: 487px) {
+  .slider__info {
+    max-width: 438px; } }
+
 @media (max-width: 425px) {
   .slider__info {
     max-width: 370px;
@@ -374,6 +378,10 @@ header {
 @media (max-width: 1000px) and (max-width: 768px) {
   .slider__info-tittle {
     font-size: 35px; } }
+
+@media (max-width: 1000px) and (max-width: 487px) {
+  .slider__info-tittle {
+    font-size: 29px; } }
 
 @media (max-width: 1000px) and (max-width: 425px) {
   .slider__info-tittle {
