@@ -1,9 +1,5 @@
 **Всем привет:) Меня зовут Константин. Я начинающий Front-end developer.**
 
-- **Мои небольшие работы по Html \ Css + JS.**
-
-- **Буду рад вашим комментриям или рекомендациям.**
-
 **Для запуска проектов** :
 
 Все проекты пишу с помощью сборщика GULP
@@ -12,12 +8,15 @@
 - **npm i gulp -g** - установка gulp глобально
 - **gulp** - запуск
 
+**Lending page - "Photography"**
+
+- https://konstantinfandelyuk.github.io/Portfolio/Photography/build/index.html
+
 **Lending page - "Микоцин"**
 
 - https://konstantinfandelyuk.github.io/Portfolio/Mikocin/build/index.html
 
-**Lending page - "Materia Desing - (Дорабатываю адаптацию под 3 экрана (768px & 320px + xiaomi
-Mi8Pro)"**
+**Lending page - "Materia Desing"**
 
 - https://konstantinfandelyuk.github.io/Portfolio/Material_design/build/index.html
 
