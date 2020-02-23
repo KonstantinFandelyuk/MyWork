@@ -82,6 +82,22 @@
 	position: relative;
 }
 
+@media (max-width: 440px) {
+
+	.clients-name::before,
+	.clients-name::after {
+		width: 120px;
+	}
+
+	@media (max-width: 370px) {
+
+		.clients-name::before,
+		.clients-name::after {
+			width: 100px;
+		}
+	}
+}
+
 .clients-name:before {
 	margin-left: -100%;
 	left: -40px;

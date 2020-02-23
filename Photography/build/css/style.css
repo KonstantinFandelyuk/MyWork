@@ -275,7 +275,12 @@ span {
   width: 11px;
   height: 7px;
   vertical-align: middle;
-  margin-left: 10px; }
+  margin-left: 10px;
+  transition: all 0.5s ease-in-out; }
+
+.seemore:hover::after {
+  transform: translateX(8px);
+  transition: all 0.5s ease-in-out; }
 
 .header__row-4 {
   padding-bottom: 40px; }
@@ -506,6 +511,10 @@ h2 {
   .slick-slider {
     max-width: 400px; } }
 
+@media (max-width: 1127px) and (max-width: 400px) {
+  .slick-slider {
+    max-width: 300px; } }
+
 .slick-slider.feedback-slider {
   margin: 0 auto; }
 
@@ -542,6 +551,10 @@ h2 {
 .slick-dots li {
   list-style: none;
   margin-left: 45px; }
+
+@media (max-width: 460px) {
+  .slick-dots li {
+    margin-left: 20px; } }
 
 /* Элемент точки */
 .slick-dots li button {
@@ -622,6 +635,16 @@ h2 {
   background-color: #474747;
   vertical-align: middle;
   position: relative; }
+
+@media (max-width: 440px) {
+  .clients-name::before,
+  .clients-name::after {
+    width: 120px; } }
+
+@media (max-width: 440px) and (max-width: 370px) {
+  .clients-name::before,
+  .clients-name::after {
+    width: 100px; } }
 
 .clients-name:before {
   margin-left: -100%;
@@ -846,7 +869,12 @@ input:focus ~ label {
   width: 18px;
   height: 11px;
   vertical-align: baseline;
-  margin-left: 10px; }
+  margin-left: 10px;
+  transition: all 0.5s ease-in-out; }
+
+.contact-form__item--button:hover::after {
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out; }
 
 .contact .section__row-4 {
   padding-bottom: 115px; }

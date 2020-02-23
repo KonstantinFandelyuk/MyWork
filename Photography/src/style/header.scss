@@ -113,6 +113,12 @@ span {
 	height: 7px;
 	vertical-align: middle;
 	margin-left: 10px;
+	transition: all 0.5s ease-in-out;
+}
+
+.seemore:hover::after {
+	transform: translateX(8px);
+	transition: all 0.5s ease-in-out;
 }
 
 .header__row-4 {
