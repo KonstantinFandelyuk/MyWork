@@ -144,6 +144,12 @@ input:focus~label {
   height: 11px;
   vertical-align: baseline;
   margin-left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-form__item--button:hover::after {
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
 }
 
 .contact .section__row-4 {

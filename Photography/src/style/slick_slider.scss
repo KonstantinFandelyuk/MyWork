@@ -55,6 +55,12 @@
 			max-width: 400px;
 		}
 	}
+
+	@media (max-width: 400px) {
+		.slick-slider {
+			max-width: 300px;
+		}
+	}
 }
 
 .slick-slider.feedback-slider {
@@ -118,6 +124,12 @@
 .slick-dots li {
 	list-style: none;
 	margin-left: 45px;
+}
+
+@media (max-width: 460px) {
+	.slick-dots li {
+		margin-left: 20px;
+	}
 }
 
 /* Элемент точки */
