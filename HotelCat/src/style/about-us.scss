@@ -1,0 +1,67 @@
+.about-us {
+	background-image: url("../img/section/about-us/background.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	min-height: 304px;
+	background-color: $backgrond;
+}
+
+.section__row-1 {
+	margin-top: 140px;
+}
+
+h2 {
+	font-family: $Rubik;
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.advantage__list {
+	display: flex;
+	flex: 0 0 33.333333%;
+	flex-wrap: wrap;
+}
+
+.advantage__list-item {
+	text-align: start;
+	background: #FFF;
+	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+	border-radius: 8px;
+	padding: 30px 31px 30px 30px;
+	max-width: 370px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+
+.advantage__list-item:first-child,
+.advantage__list-item:nth-child(4) {
+	margin-left: 0px;
+}
+
+.advantage-logo {
+	border-radius: 50%;
+	background-color: $yellow;
+	width: 91px;
+	height: 91px;
+	margin-bottom: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.advantage-tittle {
+	font-family: $Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.advantage-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 140%;
+}

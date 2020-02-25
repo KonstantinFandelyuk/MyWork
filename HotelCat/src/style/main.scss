@@ -1,0 +1,117 @@
+/* ---------Шрифыт----------- */
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap&subset=cyrillic');
+
+@font-face {
+  font-family: "LatoWeb";
+  src: url("../fonts/Lato/fonts/Lato-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("../fonts/Lato/fonts/Lato-Regular.woff2") format("woff2"),
+    /* Modern Browsers */
+    url("../fonts/Lato/fonts/LatoLato-Regular.woff") format("woff"),
+    /* Modern Browsers */
+    url("../fonts/Lato/fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Medium */
+@font-face {
+  font-family: "LatoWeb";
+  src: url('../fonts/Lato/fonts//Lato-Medium.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Lato/fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/Lato/fonts/ato-Medium.woff2') format('woff2'),
+    /* Modern Browsers */
+    url('../fonts/Lato/fonts/Lato-Medium.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/Lato/fonts/Lato-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Semibold */
+@font-face {
+  font-family: 'LatoWebSemibold';
+  src: url('../fonts/Lato/fonts/Lato-Semibold.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Lato/fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/Lato/fonts/Lato-Semibold.woff2') format('woff2'),
+    /* Modern Browsers */
+    url('../fonts/Lato/fonts/Lato-Semibold.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/Lato/fonts/Lato-Semibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}
+
+/* -------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Стили поумолчанию для всех элементов */
+body {
+  color: $black;
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+/* Поведение вхех картинок поумолчанию */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Стили ссылок поумолчанию */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transition-duration: 0.3s;
+}
+
+/* Убрать обводку поумолчанию у кнопок, font: inherit - позволит наследовать стили родителя (у кнопки сили шрифтов заданы поумолчанию) */
+button {
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Обёртка всего - идёт после body */
+.wrapper {
+  position: relative;
+}
+
+/* Класс который устанавливет рабочую область для контента */
+.container {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
+@media (max-width: 1110px) {
+  .container {
+    padding: 0 15px;
+  }
+}
