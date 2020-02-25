@@ -1,0 +1,65 @@
+.room {
+	background-image: url("../img/section/room/background.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-color: $backgrond;
+}
+
+.slider {
+	margin-left: 50px;
+}
+
+.slider__list-item {
+	position: relative;
+}
+
+.room-card {
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	right: -13%;
+	background: #FFF;
+	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+	border-radius: 8px;
+	max-width: 500px;
+	padding: 40px 100px 40px 100px;
+}
+
+.room-card__list--tittle {
+	font-family: $Rubik;
+	font-weight: 500;
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+
+.room-card__list--item {
+	font-family: $lato;
+	font-weight: normal;
+	font-size: 16px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.room-card__list--item:last-child {
+	margin-bottom: 30px;
+}
+
+.room-card__list--item::before {
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background-color: $yellow;
+	margin-right: 8px;
+}
+
+.button-orange {
+	color: white;
+	background-color: $orange;
+}
+
+.button-orange::after {
+	background-image: url("../img/button/icon2.png");
+	background-color: white;
+}

@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap&subset=cyrillic");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ---------Шрифыт----------- */
+@font-face {
+  font-family: "LatoWeb";
+  src: url("../fonts/Lato/fonts/Lato-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato/fonts/LatoLato-Regular.woff") format("woff"), url("../fonts/Lato/fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Lato-Medium */
+@font-face {
+  font-family: "LatoWeb";
+  src: url("../fonts/Lato/fonts//Lato-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato/fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/fonts/ato-Medium.woff2") format("woff2"), url("../fonts/Lato/fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato/fonts/Lato-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Lato-Semibold */
+@font-face {
+  font-family: 'LatoWebSemibold';
+  src: url("../fonts/Lato/fonts/Lato-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato/fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato/fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato/fonts/Lato-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  text-rendering: optimizeLegibility; }
+
+/* -------------------------------- */
+* {
+  box-sizing: border-box; }
+
+/* Стили поумолчанию для всех элементов */
+body {
+  color: #1A212F;
+  font-family: "LatoWeb";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #fff; }
+
+/* Поведение вхех картинок поумолчанию */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Стили ссылок поумолчанию */
+a {
+  text-decoration: none; }
+
+a:hover {
+  transition-duration: 0.3s; }
+
+/* Убрать обводку поумолчанию у кнопок, font: inherit - позволит наследовать стили родителя (у кнопки сили шрифтов заданы поумолчанию) */
+button {
+  border: none;
+  outline: none;
+  font: inherit; }
+
+button,
+input[type="submit"] {
+  cursor: pointer; }
+
+/* Обёртка всего - идёт после body */
+.wrapper {
+  position: relative; }
+
+/* Класс который устанавливет рабочую область для контента */
+.container {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+/* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
+@media (max-width: 1110px) {
+  .container {
+    padding: 0 15px; } }
+
+.header-inner {
+  background: #FFFEFD;
+  padding: 12px 0; }
+
+.header-inner__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.menu__list {
+  display: flex;
+  justify-content: space-between; }
+
+.menu__list-item {
+  font-family: "LatoWeb";
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 16px; }
+
+.menu__list-item > a {
+  color: #1A212F;
+  transition: 0.3s linear; }
+
+.menu__list-item > a:hover {
+  color: #FF7236;
+  transition: 0.3s linear; }
+
+.header-promo {
+  background-image: url("../img/header/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px; }
+
+.promo-box {
+  padding-top: 153px;
+  padding-bottom: 153px;
+  margin-left: 80px; }
+
+.promo-box__list--country {
+  font-family: "LatoWeb";
+  font-size: 14px;
+  margin-bottom: 15px; }
+
+.promo-box__list--tittle {
+  font-family: "Rubik";
+  font-weight: bold;
+  font-size: 62px;
+  margin-bottom: 25px; }
+
+.promo-box__list--text {
+  font-family: "LatoWeb";
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 40px; }
+
+.button {
+  background: #FFFEFD;
+  box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+  border-radius: 25px;
+  padding: 16px 63px 18px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1A212F;
+  position: relative; }
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background-color: #FF7236;
+  background-image: url("../img/button/icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s all; }
+
+.button:hover::after {
+  transition: 0.3s all;
+  transform: translateX(-20%); }
+
+.about-us {
+  background-image: url("../img/section/about-us/background.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  min-height: 304px;
+  background-color: #fffefd; }
+
+.section__row-1 {
+  margin-top: 140px; }
+
+h2 {
+  font-family: "Rubik";
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 70px; }
+
+.advantage__list {
+  display: flex;
+  flex: 0 0 33.333333%;
+  flex-wrap: wrap; }
+
+.advantage__list-item {
+  text-align: start;
+  background: #FFF;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+  padding: 30px 31px 30px 30px;
+  max-width: 370px;
+  margin-bottom: 20px;
+  margin-left: 30px; }
+
+.advantage__list-item:first-child,
+.advantage__list-item:nth-child(4) {
+  margin-left: 0px; }
+
+.advantage-logo {
+  border-radius: 50%;
+  background-color: #FAC663;
+  width: 91px;
+  height: 91px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.advantage-tittle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 20px; }
+
+.advantage-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%; }
+
+.room {
+  background-image: url("../img/section/room/background.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-color: #fffefd; }
+
+.slider {
+  margin-left: 50px; }
+
+.slider__list-item {
+  position: relative; }
+
+.room-card {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  right: -13%;
+  background: #FFF;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+  max-width: 500px;
+  padding: 40px 100px 40px 100px; }
+
+.room-card__list--tittle {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 30px; }
+
+.room-card__list--item {
+  font-family: "LatoWeb";
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 20px;
+  position: relative; }
+
+.room-card__list--item:last-child {
+  margin-bottom: 30px; }
+
+.room-card__list--item::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #FAC663;
+  margin-right: 8px; }
+
+.button-orange {
+  color: white;
+  background-color: #FF7236; }
+
+.button-orange::after {
+  background-image: url("../img/button/icon2.png");
+  background-color: white; }
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden; }
+
+/* Лента слайдов */
+.slick-track {
+  display: flex; }
+
+/* Слайд */
+.slick-slide {
+  outline: none; }
+
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px; }
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #E1E1E1;
+  border-radius: 50%;
+  margin-left: 10px; }
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #FAC663; }
