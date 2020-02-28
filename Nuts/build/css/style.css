@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900&display=swap&subset=cyrillic");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ---------Шрифыт----------- */
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe/Circe-Regular.eot");
+  src: local("../fonts/Circe/Circe"), local("Circe-Regular"), url("../fonts/Circe/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Regular.woff") format("woff"), url("../fonts/Circe/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+/* -------------------------------- */
+* {
+  box-sizing: border-box; }
+
+/* Стили поумолчанию для всех элементов */
+body {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #fff; }
+
+/* Поведение вхех картинок поумолчанию */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Стили ссылок поумолчанию */
+a {
+  text-decoration: none; }
+
+a:hover {
+  transition-duration: 0.3s; }
+
+/* Убрать обводку поумолчанию у кнопок, font: inherit - позволит наследовать стили родителя (у кнопки сили шрифтов заданы поумолчанию) */
+button {
+  border: none;
+  outline: none;
+  font: inherit; }
+
+button,
+input[type="submit"] {
+  cursor: pointer; }
+
+/* Обёртка всего - идёт после body */
+.wrapper {
+  position: relative; }
+
+/* Класс который устанавливет рабочую область для контента */
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+/* Медиа запрос - на этом разрешении экрана изменятся отступы по краям */
+@media (max-width: 1110px) {
+  .container {
+    padding: 0 15px; } }
+
+.header {
+  background-image: url("../img/header/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 937px; }
+
+.header__row-1 {
+  padding-top: 30px; }
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white; }
+
+.menu__list-item {
+  margin-left: 45px; }
+
+.menu__list-item:first-child {
+  margin-left: 0; }
+
+.nav__link {
+  font-family: 'Circe';
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase; }
+
+.header__phone {
+  font-family: 'Circe';
+  color: white;
+  font-weight: bold; }
+
+.header__row-2 {
+  margin-top: 55px;
+  margin-left: 280px; }
+
+.header__ifo {
+  color: #d89146;
+  max-width: 555px; }
+
+.header__info-tittle {
+  font-family: "Playfair Display";
+  font-size: 68px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  margin-bottom: 30px; }
+
+.header__tinfo-text {
+  font-family: 'Circe';
+  font-size: 26px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  letter-spacing: 3px; }
+
+.button-header {
+  margin-bottom: 90px;
+  margin-left: 50px; }
+
+.header__info-delivery {
+  font-family: 'Circe';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fcd7c7;
+  line-height: 1.7;
+  max-width: 285px;
+  display: flex;
+  align-items: center; }
+
+.header__info-delivery::before {
+  content: "";
+  background-image: url("../img/header/icon/delivery.png");
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 33px;
+  display: block;
+  margin-right: 30px; }
+
+.button {
+  font-family: 'Circe';
+  font-size: 16px;
+  border-radius: 60px;
+  background-color: #f50049;
+  padding: 18px 70px;
+  text-transform: uppercase;
+  color: white;
+  transition: 0.3s all;
+  border: none; }
+
+.button:hover {
+  box-shadow: 0px 0px 34px -3px rgba(255, 0, 67, 0.3);
+  transition: 0.3s all; }

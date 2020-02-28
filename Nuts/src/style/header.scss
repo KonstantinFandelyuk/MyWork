@@ -1,0 +1,99 @@
+.header {
+	background-image: url("../img/header/background.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 937px;
+}
+
+.header__row-1 {
+	padding-top: 30px;
+}
+
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.menu__list-item {
+	margin-left: 45px;
+}
+
+.menu__list-item:first-child {
+	margin-left: 0;
+}
+
+.nav__link {
+	font-family: 'Circe';
+	color: white;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.header__phone {
+	font-family: 'Circe';
+	color: white;
+	font-weight: bold;
+}
+
+.header__row-2 {
+	margin-top: 55px;
+	margin-left: 280px;
+}
+
+.header__ifo {
+	color: $gold;
+	max-width: 555px;
+}
+
+.header__info-tittle {
+	font-family: $fair;
+	font-size: 68px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 5px;
+	margin-bottom: 30px;
+}
+
+.header__tinfo-text {
+	font-family: 'Circe';
+	font-size: 26px;
+	margin-bottom: 50px;
+	margin-left: 20px;
+	letter-spacing: 3px;
+}
+
+.button-header {
+	margin-bottom: 90px;
+	margin-left: 50px;
+}
+
+.header__info-delivery {
+	font-family: 'Circe';
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fcd7c7;
+	line-height: 1.7;
+	max-width: 285px;
+	display: flex;
+	align-items: center;
+}
+
+.header__info-delivery::before {
+	content: "";
+	background-image: url("../img/header/icon/delivery.png");
+	background-repeat: no-repeat;
+	width: 70px;
+	height: 33px;
+	display: block;
+	margin-right: 30px;
+}
