@@ -1,0 +1,89 @@
+.shop {
+	margin-top: 20px;
+}
+
+.shop__promo {
+	background-image: url("../img/section/shop/background__promo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.shop__promo-item {
+	font-family: $fair;
+	color: #fcd7c7;
+	font-size: 13px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 18px;
+	letter-spacing: 2px;
+}
+
+.shop__promo-img {
+	margin-left: 18px;
+}
+
+.section__row-2 {
+	margin-top: 25px;
+}
+
+.product__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.product__list-item {
+	margin-left: 28px;
+	text-align: center;
+}
+
+.product-tittle {
+	font-family: $fair;
+	font-size: 16px;
+	font-weight: 900;
+	color: $shop-item;
+	margin-bottom: 25px;
+}
+
+.product-photo {
+	margin-bottom: 16px;
+}
+
+.product-tara {
+	font-family: "Circe";
+	font-size: 18px;
+	margin-right: 25px;
+	text-align: center;
+}
+
+.prodcut-price {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: 1px;
+	clip: rect(0 0 0 0);
+}
+
+i {
+	font-size: 30px;
+	color: $shop-item;
+	text-align: center;
+	padding-right: 5px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+.prodcut-price:checked+i::before {
+	font-family: "Font Awesome 5 Free";
+	font-size: 30px;
+	content: "\f14a";
+	color: $shop-item;
+}

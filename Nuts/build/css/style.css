@@ -203,7 +203,8 @@ input[type="submit"] {
 .header-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .menu__list {
   display: flex;
@@ -212,19 +213,33 @@ input[type="submit"] {
   color: white; }
 
 .menu__list-item {
-  margin-left: 45px; }
+  margin-left: 45px;
+  transition: width 0.6s ease-in-out; }
+
+.menu__list-item::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #d89146;
+  transform: translateY(0.1rem);
+  transition: width 0.6s ease-in-out; }
+
+.menu__list-item:hover:after,
+.menu__list-item:focus:after {
+  width: 100%; }
 
 .menu__list-item:first-child {
   margin-left: 0; }
 
 .nav__link {
-  font-family: 'Circe';
+  font-family: "Circe";
   color: white;
   font-size: 13px;
   text-transform: uppercase; }
 
 .header__phone {
-  font-family: 'Circe';
+  font-family: "Circe";
   color: white;
   font-weight: bold; }
 
@@ -246,7 +261,7 @@ input[type="submit"] {
   margin-bottom: 30px; }
 
 .header__tinfo-text {
-  font-family: 'Circe';
+  font-family: "Circe";
   font-size: 26px;
   margin-bottom: 50px;
   margin-left: 20px;
@@ -257,7 +272,7 @@ input[type="submit"] {
   margin-left: 50px; }
 
 .header__info-delivery {
-  font-family: 'Circe';
+  font-family: "Circe";
   font-size: 16px;
   text-transform: uppercase;
   color: #fcd7c7;
@@ -289,3 +304,79 @@ input[type="submit"] {
 .button:hover {
   box-shadow: 0px 0px 34px -3px rgba(255, 0, 67, 0.3);
   transition: 0.3s all; }
+
+.shop {
+  margin-top: 20px; }
+
+.shop__promo {
+  background-image: url("../img/section/shop/background__promo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.shop__promo-item {
+  font-family: "Playfair Display";
+  color: #fcd7c7;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18px;
+  letter-spacing: 2px; }
+
+.shop__promo-img {
+  margin-left: 18px; }
+
+.section__row-2 {
+  margin-top: 25px; }
+
+.product__list {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.product__list-item {
+  margin-left: 28px;
+  text-align: center; }
+
+.product-tittle {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-weight: 900;
+  color: #2d2829;
+  margin-bottom: 25px; }
+
+.product-photo {
+  margin-bottom: 16px; }
+
+.product-tara {
+  font-family: "Circe";
+  font-size: 18px;
+  margin-right: 25px;
+  text-align: center; }
+
+.prodcut-price {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0); }
+
+i {
+  font-size: 30px;
+  color: #2d2829;
+  text-align: center;
+  padding-right: 5px;
+  margin-right: 10px;
+  vertical-align: middle; }
+
+.prodcut-price:checked + i::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 30px;
+  content: "\f14a";
+  color: #2d2829; }
