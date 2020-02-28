@@ -249,7 +249,8 @@ input[type="submit"] {
   font-family: 'Circe';
   font-size: 26px;
   margin-bottom: 50px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  letter-spacing: 3px; }
 
 .button-header {
   margin-bottom: 90px;
