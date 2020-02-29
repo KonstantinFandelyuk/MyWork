@@ -1,7 +1,7 @@
 form(action="", method="post").shop-form
 	.shop-form__list
 		.shop-form__item
-			input(type="text" id="contact_name")
+			input(type="text" pattern="[a-z A-Z а-я А-Я]{3,60}" id="contact_name")
 			label(for="contact_name") Ваше имя
 		.shop-form__item
 			input(type="tel" id="contact_phone")
