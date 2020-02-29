@@ -1,108 +1,148 @@
 .shop {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .shop__promo {
-	background-image: url("../img/section/shop/background__promo.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+  background-image: url("../img/section/shop/background__promo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .shop__promo-item {
-	font-family: $fair;
-	color: #fcd7c7;
-	font-size: 13px;
-	text-transform: uppercase;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 18px;
-	letter-spacing: 2px;
+  font-family: $fair;
+  color: #fcd7c7;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18px;
+  letter-spacing: 2px;
 }
 
 .shop__promo-img {
-	margin-left: 18px;
+  margin-left: 18px;
 }
 
 .section__row-2 {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 .product__list {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	flex: 0 0 33.333333336%;
-	padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0 0 33.333333336%;
+  padding: 0 100px;
 }
 
 .product__list-item {
-	margin-left: 20px;
-	text-align: center;
-	margin-bottom: 20px;
-	box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.3);
-	border-radius: 3px;
-	padding: 10px;
-	transition: 0.3s all;
+  margin-left: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 20px 10px 10px 10px;
+  transition: 0.3s all;
 }
 
 .product__list-item:hover {
-	box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.6);
-	transition: 0.3s all;
+  box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.6);
+  transition: 0.3s all;
 }
 
 .product__list-item:nth-child(1),
 .product__list-item:nth-child(4),
 .product__list-item:nth-child(7),
 .product__list-item:nth-child(10) {
-	margin-left: 0px;
+  margin-left: 0px;
 }
 
 .product-tittle {
-	font-family: $fair;
-	font-size: 16px;
-	font-weight: 900;
-	color: $shop-item;
-	margin-bottom: 25px;
+  font-family: $fair;
+  font-size: 16px;
+  font-weight: 900;
+  color: $shop-item;
+  margin-bottom: 25px;
 }
 
 .product-photo {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .product-tara {
-	font-family: "Circe";
-	font-size: 18px;
-	margin-right: 25px;
-	text-align: center;
+  font-family: "Circe";
+  font-size: 18px;
+  margin-right: 25px;
+  text-align: center;
 }
 
 .prodcut-price {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: 1px;
-	clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  clip: rect(0 0 0 0);
 }
 
 i {
-	font-size: 30px;
-	color: $shop-item;
-	text-align: center;
-	padding-right: 5px;
-	margin-right: 10px;
-	vertical-align: middle;
+  font-size: 30px;
+  color: $shop-item;
+  text-align: center;
+  padding-right: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .prodcut-price:checked+i::before {
-	font-family: "Font Awesome 5 Free";
-	font-size: 30px;
-	content: "\f14a";
-	color: $shop-item;
+  font-family: "Font Awesome 5 Free";
+  font-size: 30px;
+  content: "\f14a";
+  color: $shop-item;
+}
+
+.order__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.order__list-text,
+.order__list-contact {
+  font-family: "Circe";
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.order__list-contact>a {
+  color: black;
+}
+
+.order__list-text:before {
+  content: "01";
+  font-size: 38px;
+  font-family: $fair;
+  display: inline-block;
+  margin-right: 20px;
+  color: #e44e57;
+}
+
+.order__list-text:last-child {
+  margin-bottom: 0;
+}
+
+.order__list-text:nth-child(2)::before {
+  content: "02";
+}
+
+.order__list-text:nth-child(3)::before {
+  content: "03";
 }
