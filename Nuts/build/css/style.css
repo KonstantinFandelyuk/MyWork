@@ -435,7 +435,8 @@ i {
 .shop-form__item {
   position: relative; }
 
-input {
+input[type=text],
+input[type=tel] {
   background-color: transparent;
   border: 0px solid black;
   border-bottom: 1px solid #5c5c5c;
@@ -449,7 +450,8 @@ input:focus {
   transition: 0.3s linear;
   border-bottom: 1px solid red; }
 
-label {
+label[for=contact_name],
+label[for=contact_phone] {
   position: absolute;
   font-size: 12px;
   left: 0;
