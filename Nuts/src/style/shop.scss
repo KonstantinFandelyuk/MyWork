@@ -64,7 +64,7 @@
   margin-left: 0px;
 }
 
-.product-tittle {
+.product-title {
   font-family: $fair;
   font-size: 16px;
   font-weight: 900;
@@ -97,7 +97,8 @@ i {
   text-align: center;
   padding-right: 5px;
   margin-right: 10px;
-  vertical-align: middle;
+  vertical-align: sub;
+  padding: 0;
 }
 
 .prodcut-price:checked+i::before {

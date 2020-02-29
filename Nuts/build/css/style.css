@@ -251,7 +251,7 @@ input[type="submit"] {
   color: #d89146;
   max-width: 555px; }
 
-.header__info-tittle {
+.header__info-title {
   font-family: "Playfair Display";
   font-size: 68px;
   text-transform: uppercase;
@@ -362,7 +362,7 @@ input[type="submit"] {
 .product__list-item:nth-child(10) {
   margin-left: 0px; }
 
-.product-tittle {
+.product-title {
   font-family: "Playfair Display";
   font-size: 16px;
   font-weight: 900;
@@ -391,7 +391,8 @@ i {
   text-align: center;
   padding-right: 5px;
   margin-right: 10px;
-  vertical-align: middle; }
+  vertical-align: sub;
+  padding: 0; }
 
 .prodcut-price:checked + i::before {
   font-family: "Font Awesome 5 Free";
@@ -464,3 +465,9 @@ input:focus ~ label {
   left: -5px;
   color: red;
   transition: 0.2s linear; }
+
+.slogan {
+  background-image: url("../img/section/slogan/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px; }
