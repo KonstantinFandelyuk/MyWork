@@ -333,7 +333,8 @@ input[type="submit"] {
   margin-left: 18px; }
 
 .section__row-2 {
-  margin-top: 25px; }
+  margin-top: 25px;
+  margin-bottom: 112px; }
 
 .product__list {
   display: flex;
@@ -469,5 +470,27 @@ input:focus ~ label {
 .slogan {
   background-image: url("../img/section/slogan/background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 800px; }
+  background-position: center top;
+  background-size: cover; }
+
+.slogan-box__list {
+  text-align: right;
+  vertical-align: middle;
+  padding-top: 100px;
+  padding-bottom: 50px; }
+
+.slogan-box__list-item {
+  color: white;
+  margin-bottom: 50px; }
+
+.slogan-box__list-item :last-child {
+  margin-bottom: 0px; }
+
+.slogan-box__list-item .slogan-box--title {
+  font-family: "Playfair Display";
+  font-size: 60px;
+  margin-bottom: 12px; }
+
+.slogan-box--text {
+  font-family: "Circe";
+  font-size: 24px; }
