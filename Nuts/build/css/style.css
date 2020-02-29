@@ -470,18 +470,21 @@ input:focus ~ label {
 .slogan {
   background-image: url("../img/section/slogan/background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 750px; }
+  background-position: center top;
+  background-size: cover; }
 
 .slogan-box__list {
   text-align: right;
   vertical-align: middle;
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 50px; }
 
 .slogan-box__list-item {
   color: white;
   margin-bottom: 50px; }
+
+.slogan-box__list-item :last-child {
+  margin-bottom: 0px; }
 
 .slogan-box__list-item .slogan-box--title {
   font-family: "Playfair Display";
