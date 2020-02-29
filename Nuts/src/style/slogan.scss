@@ -1,7 +1,29 @@
 .slogan {
 	background-image: url("../img/section/slogan/background.jpg");
 	background-repeat: no-repeat;
-	// background-position: center;
+	background-position: center;
 	background-size: cover;
-	min-height: 800px;
+	min-height: 750px;
+}
+
+.slogan-box__list {
+	text-align: right;
+	vertical-align: middle;
+	padding-top: 100px;
+}
+
+.slogan-box__list-item {
+	color: white;
+	margin-bottom: 50px;
+}
+
+.slogan-box__list-item .slogan-box--title {
+	font-family: $fair;
+	font-size: 60px;
+	margin-bottom: 12px;
+}
+
+.slogan-box--text {
+	font-family: "Circe";
+	font-size: 24px;
 }
