@@ -302,7 +302,7 @@ input[type="submit"] {
   border: none; }
 
 .button:hover {
-  box-shadow: 0px 0px 34px -3px rgba(255, 0, 67, 0.3);
+  box-shadow: 0px 0px 34px -3px rgba(255, 0, 67, 0.6);
   transition: 0.3s all; }
 
 .shop {
@@ -398,3 +398,67 @@ i {
   font-size: 30px;
   content: "\f14a";
   color: #2d2829; }
+
+.order__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 50px;
+  margin-top: 50px; }
+
+.order__list-text,
+.order__list-contact {
+  font-family: "Circe";
+  font-size: 20px;
+  margin-bottom: 25px; }
+
+.order__list-contact > a {
+  color: black; }
+
+.order__list-text:before {
+  content: "01";
+  font-size: 38px;
+  font-family: "Playfair Display";
+  display: inline-block;
+  margin-right: 20px;
+  color: #e44e57; }
+
+.order__list-text:last-child {
+  margin-bottom: 0; }
+
+.order__list-text:nth-child(2)::before {
+  content: "02"; }
+
+.order__list-text:nth-child(3)::before {
+  content: "03"; }
+
+.shop-form__item {
+  position: relative; }
+
+input {
+  background-color: transparent;
+  border: 0px solid black;
+  border-bottom: 1px solid #5c5c5c;
+  outline-style: none;
+  margin-bottom: 66px;
+  color: black;
+  width: 550px;
+  transition: 0.3s linear; }
+
+input:focus {
+  transition: 0.3s linear;
+  border-bottom: 1px solid red; }
+
+label {
+  position: absolute;
+  font-size: 12px;
+  left: 0;
+  top: -10px;
+  color: black;
+  transition: 0.2s linear; }
+
+input:focus ~ label {
+  top: -20px;
+  left: -5px;
+  color: red;
+  transition: 0.2s linear; }
