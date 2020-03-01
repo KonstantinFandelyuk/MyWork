@@ -82,6 +82,31 @@
   border-radius: 3px;
   padding: 20px 10px 10px 10px;
   transition: 0.3s all;
+  position: relative;
+}
+
+.product-description {
+  font-size: 15px;
+  text-transform: none;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  background-color: white;
+  top: 275px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  opacity: -1;
+  width: 96%;
+  height: 16%;
+}
+
+.product__list-item:hover .product-description {
+  transition: 0.4;
+  opacity: 0.8;
 }
 
 .product__list-item:hover {
