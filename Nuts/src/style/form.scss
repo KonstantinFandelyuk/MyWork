@@ -1,3 +1,7 @@
+.shop-form__list {
+	position: relative;
+}
+
 .shop-form__item {
 	position: relative;
 }
@@ -50,4 +54,19 @@ input:focus~label {
 	left: -5px;
 	color: red;
 	transition: 0.2s linear;
+}
+
+.delivery__info {
+	font-family: $fair;
+	line-height: 1.1;
+	font-size: 18px;
+	position: absolute;
+	top: 177px;
+	left: 254px;
+	text-align: center;
+	font-style: italic;
+}
+
+.delivery__info>span {
+	font-weight: bold;
 }

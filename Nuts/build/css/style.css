@@ -389,6 +389,10 @@ input[type="submit"] {
   margin-top: 25px;
   margin-bottom: 112px; }
 
+@media (max-width: 1025px) {
+  .section__row-2 {
+    margin-bottom: 0px; } }
+
 .product__list {
   display: flex;
   justify-content: center;
@@ -431,7 +435,7 @@ input[type="submit"] {
   transition: 0.4s ease-in-out;
   opacity: -1;
   width: 96%;
-  height: 16%; }
+  height: 18%; }
 
 .product__list-item:hover .product-description {
   transition: 0.4s ease-in-out;
@@ -504,6 +508,14 @@ i {
   margin-bottom: 50px;
   margin-top: 50px; }
 
+@media (max-width: 1025px) {
+  .order__list {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin-top: 0px; }
+  .order__list-item {
+    margin: 40px auto; } }
+
 .order__list-text,
 .order__list-contact {
   font-family: "Circe";
@@ -529,6 +541,9 @@ i {
 
 .order__list-text:nth-child(3)::before {
   content: "03"; }
+
+.shop-form__list {
+  position: relative; }
 
 .shop-form__item {
   position: relative; }
@@ -572,6 +587,19 @@ input:focus ~ label {
   left: -5px;
   color: red;
   transition: 0.2s linear; }
+
+.delivery__info {
+  font-family: "Playfair Display";
+  line-height: 1.1;
+  font-size: 18px;
+  position: absolute;
+  top: 177px;
+  left: 254px;
+  text-align: center;
+  font-style: italic; }
+
+.delivery__info > span {
+  font-weight: bold; }
 
 .slogan {
   background-image: url("../img/section/slogan/background.jpg");
@@ -619,10 +647,10 @@ input:focus ~ label {
 h2 {
   text-align: center;
   font-family: "Playfair Display";
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 30px; }
+  margin-bottom: 60px; }
 
 .feedback-clients {
   position: relative; }
