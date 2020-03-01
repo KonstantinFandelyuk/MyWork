@@ -1,0 +1,59 @@
+/* Слайдер */
+.slick-slider {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+}
+
+/* Слайд */
+.slick-slide {
+	outline: none;
+}
+
+/* Стрелка */
+.slick-arrow {}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+	position: absolute;
+	top: 88px;
+	left: -100px;
+	background-color: transparent;
+	font-size: 0;
+}
+
+.slick-arrow.slick-prev::before {
+	content: "";
+	background-image: url("../img/section/feedback/slider/left.png");
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+	position: absolute;
+	top: 88px;
+	left: 868px;
+	background-color: transparent;
+	font-size: 0;
+}
+
+.slick-arrow.slick-next::before {
+	content: "";
+	background-image: url("../img/section/feedback/slider/right.png");
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+}

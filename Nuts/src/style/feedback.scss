@@ -1,0 +1,45 @@
+.feedback {
+	margin-top: 100px;
+}
+
+h2 {
+	text-align: center;
+	font-family: $fair;
+	font-size: 40px;
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+.feedback-clients {
+	position: relative;
+}
+
+.feedback-clients__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.feedback-clients--photo {
+	border-radius: 50%;
+}
+
+.feedback-clients--info {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	margin-left: 40px;
+}
+
+.clients--name,
+.clients--fblink,
+.clients--text {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.clients--text {
+	line-height: 1.2;
+	font-size: 18px;
+}
