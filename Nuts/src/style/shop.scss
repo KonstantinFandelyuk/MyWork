@@ -31,13 +31,13 @@
     margin-left: 10px;
   }
 
-  @media (max-width:890px) {
+  @media (max-width: 890px) {
     .shop__promo-item {
       letter-spacing: 0;
     }
   }
 
-  @media (max-width:890px) {
+  @media (max-width: 890px) {
     .shop__promo-item:first-child {
       margin-left: 0;
     }
@@ -62,12 +62,12 @@
   padding: 0 100px;
 }
 
-@media (max-width:1400px) {
+@media (max-width: 1400px) {
   .product__list {
     padding: 0 40px;
   }
 
-  @media (max-width:980px) {
+  @media (max-width: 980px) {
     .product__list {
       padding: 0 20px;
     }
@@ -98,14 +98,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s all;
+  transition: 0.4s ease-in-out;
   opacity: -1;
   width: 96%;
   height: 16%;
 }
 
 .product__list-item:hover .product-description {
-  transition: 0.4;
+  transition: 0.4s ease-in-out;
   opacity: 0.8;
 }
 
@@ -114,7 +114,7 @@
   transition: 0.3s all;
 }
 
-@media (max-width:1546px) {
+@media (max-width: 1546px) {
   .product__list-item {
     max-width: 300px;
     margin-left: 10px;
@@ -140,7 +140,7 @@
   text-align: center;
 }
 
-@media (max-width:1546px) {
+@media (max-width: 1546px) {
   .product-tara {
     font-size: 14px;
     margin-right: 6px;
@@ -165,21 +165,21 @@ i {
   padding: 0;
 }
 
-@media (max-width:1546px) {
+@media (max-width: 1546px) {
   i {
     font-size: 25px;
   }
 }
 
-.prodcut-price:checked+i::before {
+.prodcut-price:checked + i::before {
   font-family: "Font Awesome 5 Free";
   font-size: 30px;
   content: "\f14a";
   color: $shop-item;
 }
 
-@media (max-width:1546px) {
-  .prodcut-price:checked+i::before {
+@media (max-width: 1546px) {
+  .prodcut-price:checked + i::before {
     font-size: 25px;
   }
 }
@@ -199,7 +199,7 @@ i {
   margin-bottom: 25px;
 }
 
-.order__list-contact>a {
+.order__list-contact > a {
   color: black;
 }
 
