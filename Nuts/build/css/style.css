@@ -398,7 +398,7 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex: 0 0 33.333333336%;
+  flex: 0 1 33.333333336%;
   padding: 0 100px; }
 
 @media (max-width: 1400px) {
@@ -679,6 +679,59 @@ h2 {
   line-height: 1.2;
   font-size: 18px; }
 
+.faq {
+  margin-top: 100px; }
+
+.faq_list {
+  position: relative;
+  color: #192430; }
+
+.faq_item {
+  padding: 10px 0 10px 15px; }
+
+.faq_item_title {
+  box-sizing: border-box;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative; }
+
+.faq_show_all .faq_item_title {
+  font-weight: 900;
+  padding-left: 23px;
+  margin-top: 20px; }
+
+.faq_item_title_inner {
+  display: inline-block;
+  position: relative;
+  padding: 0 60px 0 0;
+  cursor: pointer; }
+
+.faq_item_title_inner:hover:before {
+  transform: translateY(1px); }
+
+.faq_item_title_inner:before {
+  position: absolute;
+  content: '';
+  right: 10px;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  background-image: url("../img/section/faq/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out; }
+
+.faq_item_title_inner.open:before {
+  transform: rotate(180deg); }
+
+.faq_item_body {
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: none; }
+
 /* Слайдер */
 .slick-slider {
   max-width: 800px;
@@ -728,3 +781,83 @@ h2 {
   width: 20px;
   height: 20px;
   display: block; }
+
+.about_us {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.about-me--photo {
+  overflow: hidden;
+  border: 1px solid grey;
+  padding: 10px; }
+
+.about-me--info {
+  margin-left: 100px;
+  max-width: 570px;
+  line-height: 1.1;
+  color: #565253; }
+
+.about-me--title,
+.about-me--code {
+  font-family: 'Circe';
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: black; }
+
+.about-me--text {
+  font-family: 'Circe';
+  font-size: 18px;
+  margin-bottom: 25px; }
+
+.about_us ul {
+  padding-top: 25px; }
+
+.about_us li {
+  font-family: 'Circe';
+  font-weight: 400;
+  list-style: disc;
+  line-height: 1.2;
+  margin-left: 20px; }
+
+.about_us .section__row-2 {
+  margin-bottom: 40px; }
+
+.social__list {
+  display: flex;
+  justify-content: center; }
+
+.social__list-item {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 20px;
+  color: black; }
+
+.fb::after {
+  content: "\f09a"; }
+
+.instagram::after {
+  content: "\f16d"; }
+
+.other::after {
+  content: "\f2b3"; }
+
+.quote-text {
+  font-family: "Playfair Display";
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 1.2;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #2d2829; }
+
+.signature {
+  margin-top: 20px;
+  text-align: center; }

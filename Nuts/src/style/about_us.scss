@@ -1,0 +1,95 @@
+.about_us {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.about-me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-me--photo {
+	overflow: hidden;
+	border: 1px solid grey;
+	padding: 10px;
+}
+
+.about-me--info {
+	margin-left: 100px;
+	max-width: 570px;
+	line-height: 1.1;
+	color: #565253;
+}
+
+.about-me--title,
+.about-me--code {
+	font-family: 'Circe';
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 25px;
+	color: black;
+}
+
+.about-me--text {
+	font-family: 'Circe';
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
+.about_us ul {
+	padding-top: 25px;
+}
+
+.about_us li {
+	font-family: 'Circe';
+	font-weight: 400;
+	list-style: disc;
+	line-height: 1.2;
+	margin-left: 20px;
+}
+
+.about_us .section__row-2 {
+	margin-bottom: 40px;
+}
+
+.social__list {
+	display: flex;
+	justify-content: center;
+}
+
+.social__list-item {
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
+	font-size: 30px;
+	margin-left: 20px;
+	color: black;
+}
+
+.fb::after {
+	content: "\f09a";
+}
+
+.instagram::after {
+	content: "\f16d";
+}
+
+.other::after {
+	content: "\f2b3";
+}
+
+.quote-text {
+	font-family: $fair;
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+	line-height: 1.2;
+	max-width: 800px;
+	margin: 0 auto;
+	color: #2d2829;
+}
+
+.signature {
+	margin-top: 20px;
+	text-align: center;
+}
