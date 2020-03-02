@@ -12,11 +12,6 @@ $(document).ready(function() {
     $(this).toggleClass("open");
     if ($(this).hasClass("show_all")) {
       if ($(this).hasClass("open")) {
-        $(this).html("Свернуть все");
-        $(".faq_item_title_inner:not(.open)").trigger("click");
-      } else {
-        $(this).html("Смотреть все");
-        $(".faq_item_title_inner.open").trigger("click");
       }
     }
   });
