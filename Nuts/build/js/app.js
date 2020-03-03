@@ -1,3 +1,20 @@
+const bodyElement = document.getElementById("body");
+const modalElement = document.getElementById("modal");
+const buttonElement = document.querySelector(".burger__menu");
+// const animatedModalElement = document.querySelector(".header-inner--modal");
+const closeModalElement = document.querySelector(".modal__close");
+
+buttonElement.addEventListener("click", function() {
+  bodyElement.classList.add("hidden-scroll");
+  modalElement.classList.add("active");
+  modalElement.classList.add("fadeInDown");
+});
+
+closeModalElement.addEventListener("click", function() {
+  modalElement.classList.remove("active");
+  bodyElement.classList.remove("hidden-scroll");
+});
+
 $(document).ready(function() {
   $(".feedback-clients").slick({
     arrows: false,

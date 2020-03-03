@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Nuts</title>
   </head>
-  <body>
+  <body id="body">
     <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__row-1">
             <div class="header-inner">
-              <div class="header__background"></div>
               <div class="header__logo"><img src="img/header/logo.png" alt=""></div>
               <nav class="menu">
                 <ul class="menu__list">
@@ -63,7 +62,7 @@
             </div>
             <div class="section__row-2">
               <div class="social">
-                <div class="social__list"><a class="social__list-item fb" href=""></a><a class="social__list-item instagram" href=""></a><a class="social__list-item other" href="https://t.me/orehivkusnosti"></a></div>
+                <div class="social__list social__list--center"><a class="social__list-item fb" href=""></a><a class="social__list-item instagram" href=""></a><a class="social__list-item other" href=""></a></div>
               </div>
             </div>
             <div class="section__row-3">
@@ -357,10 +356,48 @@
             </div>
           </div>
         </section>
+        <section class="contacts">
+          <div class="section__row-1">
+            <div class="maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1271.8602433434492!2d30.603203726546703!3d50.390408913860895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5c623cc262b%3A0xee2448d1c6b8e235!2z0YPQuy4g0KbQtdC90YLRgNCw0LvRjNC90LDRjywgMTEsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1583247001167!5m2!1sru!2sua" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              <div class="maps-info">
+                <ul>
+                  <li class="maps-info--title">Контакты</li>
+                  <li class="maps-info--phone">Телефон: <a href="tel:+380935051864">+38 093 505 18 64</a></li>
+                  <li class="maps-info--mail">Почта: <a href="mailto:">support@mail.com</a></li>
+                  <li class="social">
+                    <div class="social__list social__list--center"><a class="social__list-item fb" href=""></a><a class="social__list-item instagram" href=""></a><a class="social__list-item other" href="https://t.me/orehivkusnosti"></a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="section__row-2">
+            <div class="copyright"> «Орехи Вкусности», 2020 ©</div>
+          </div>
+        </section>
+      </div>
+      <div class="modal animated" id="modal">
+        <div class="modal__close"></div>
+        <div class="header-inner header-inner--modal">
+          <div class="header__logo"><img src="img/header/logo.png" alt=""></div>
+          <nav class="menu menu--modal">
+            <ul class="menu__list menu__list--modal">
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href="">Наша продукция</a></li>
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href=""> Как заказать</a></li>
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href="">Отзывы</a></li>
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href="">О нас</a></li>
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href="">Контакты</a></li>
+            </ul>
+          </nav><a class="header__phone header__phone--modal" href="tel:+380935051864">+38 093 505 18 64</a>
+        </div>
+        <div class="social social--modal">
+          <div class="social__list social__list--center"><a class="social__list-item fb social__list-item--modal" href=""></a><a class="social__list-item instagram social__list-item--modal" href=""></a><a class="social__list-item other social__list-item--modal" href=""></a></div>
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/app.js?v10"></script>
+    <script src="js/app.js?v15"></script>
   </body>
 </html>
