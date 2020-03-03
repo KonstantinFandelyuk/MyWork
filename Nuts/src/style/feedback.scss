@@ -1,6 +1,6 @@
 .feedback {
 	margin-top: 100px;
-	display: none;
+	margin-bottom: 100px;
 }
 
 h2 {
@@ -10,6 +10,26 @@ h2 {
 	font-weight: 400;
 	font-style: italic;
 	margin-bottom: 60px;
+}
+
+h2::before {
+	content: "";
+	width: 100px;
+	height: 1px;
+	background-color: black;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+h2::after {
+	content: "";
+	width: 100px;
+	height: 1px;
+	background-color: black;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
 }
 
 .feedback-clients {
@@ -22,9 +42,9 @@ h2 {
 	align-items: center;
 }
 
-.feedback-clients--photo {
-	border-radius: 50%;
-}
+// .feedback-clients--photo {
+// 	border-radius: 50%;
+// }
 
 .feedback-clients--info {
 	display: flex;

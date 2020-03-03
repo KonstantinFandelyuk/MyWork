@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(".feedback-clients").slick({
-    arrows: true,
-    dots: false,
+    arrows: false,
+    dots: true,
     autoplay: true,
   });
   $(".faq_item_title_inner").on("click", function() {
