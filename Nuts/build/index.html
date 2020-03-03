@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Nuts</title>
   </head>
-  <body>
+  <body id="body">
     <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__row-1">
             <div class="header-inner">
-              <div class="header__background"></div>
               <div class="header__logo"><img src="img/header/logo.png" alt=""></div>
               <nav class="menu">
                 <ul class="menu__list">
@@ -377,6 +376,24 @@
             <div class="copyright"> «Орехи Вкусности», 2020 ©</div>
           </div>
         </section>
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal__close"></div>
+        <div class="header-inner header-inner--modal">
+          <div class="header__logo"><img src="img/header/logo.png" alt=""></div>
+          <nav class="menu menu--modal">
+            <ul class="menu__list menu__list--modal">
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href="">Наша продукция</a></li>
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href=""> Как заказать</a></li>
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href="">Отзывы</a></li>
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href="">О нас</a></li>
+              <li class="menu__list-item menu__list-item--modal"><a class="nav__link" href="">Контакты</a></li>
+            </ul>
+          </nav><a class="header__phone header__phone--modal" href="tel:+380935051864">+38 093 505 18 64</a>
+        </div>
+        <div class="social social--modal">
+          <div class="social__list social__list--center"><a class="social__list-item fb social__list-item--modal" href=""></a><a class="social__list-item instagram social__list-item--modal" href=""></a><a class="social__list-item other social__list-item--modal" href=""></a></div>
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

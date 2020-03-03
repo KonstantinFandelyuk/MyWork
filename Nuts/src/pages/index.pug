@@ -9,7 +9,7 @@ html(lang='ru')
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
 		link(rel='stylesheet', href='css/style.css')
 		title Nuts
-	body
+	body#body
 		.wrapper
 			include ../blocks/header.pug
 			.section
@@ -19,6 +19,7 @@ html(lang='ru')
 				include ../blocks/faq.pug
 				include ../blocks/feedback.pug
 				include ../blocks/contacts.pug
+			include ../blocks/modal.pug
 		script(src="https://code.jquery.com/jquery-3.4.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/app.js?v10")
