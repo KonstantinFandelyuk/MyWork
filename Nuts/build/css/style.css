@@ -440,8 +440,7 @@ input[type="submit"] {
 
 .shop {
   margin-top: 20px;
-  scroll-behavior: smooth;
-  display: none; }
+  scroll-behavior: smooth; }
 
 .shop__promo {
   background-image: url("../img/section/shop/background__promo.png");
@@ -620,6 +619,10 @@ i {
   font-size: 20px;
   margin-bottom: 25px; }
 
+@media (max-width: 570px) {
+  .order__list-text {
+    font-size: 18px; } }
+
 .order__list-contact > a {
   color: black; }
 
@@ -639,6 +642,10 @@ i {
 
 .order__list-text:nth-child(3)::before {
   content: "03"; }
+
+@media (max-width: 570px) {
+  .order__list-text:before {
+    margin-right: 10px; } }
 
 .shop-form__list {
   position: relative; }
@@ -695,6 +702,20 @@ input:focus ~ label {
   left: 254px;
   text-align: center;
   font-style: italic; }
+
+@media (max-width: 1200px) {
+  .delivery__info {
+    width: 300px; } }
+
+@media (max-width: 1200px) and (max-width: 675px) {
+  .delivery__info {
+    left: 230px;
+    width: 240px; } }
+
+@media (max-width: 1200px) and (max-width: 500px) {
+  .delivery__info {
+    width: 200px;
+    top: 165px; } }
 
 .delivery__info > span {
   font-weight: bold; }

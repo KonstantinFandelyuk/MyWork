@@ -67,6 +67,29 @@ input:focus~label {
 	font-style: italic;
 }
 
+@media (max-width:1200px) {
+
+	.delivery__info {
+		width: 300px;
+	}
+
+	@media (max-width:675px) {
+
+		.delivery__info {
+			left: 230px;
+			width: 240px;
+		}
+	}
+
+	@media (max-width:500px) {
+
+		.delivery__info {
+			width: 200px;
+			top: 165px;
+		}
+	}
+}
+
 .delivery__info>span {
 	font-weight: bold;
 }
