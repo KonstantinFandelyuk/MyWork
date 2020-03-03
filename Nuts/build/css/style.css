@@ -966,7 +966,8 @@ section.contacts {
   z-index: 1000;
   top: 0;
   left: 0;
-  display: none; }
+  display: none;
+  position: fixed; }
 
 .active {
   display: block; }
@@ -1018,9 +1019,9 @@ section.contacts {
   background: white; }
 
 .modal__close:before {
-  webkit-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 .modal__close:after {
-  webkit-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
