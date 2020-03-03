@@ -30,6 +30,10 @@ body {
   background-color: #fff;
 }
 
+.hidden-scroll {
+  overflow: hidden;
+}
+
 /* Поведение вхех картинок поумолчанию */
 img {
   max-width: 100%;
