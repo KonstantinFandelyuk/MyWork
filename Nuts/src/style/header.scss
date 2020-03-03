@@ -79,6 +79,23 @@
   font-weight: bold;
 }
 
+.burger__menu {
+  display: none;
+}
+
+@media (max-width: 810px) {
+  .burger__menu {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+  }
+
+  .burger__menu::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+  }
+}
+
 .header__row-2 {
   margin-top: 55px;
   padding-left: 280px;
