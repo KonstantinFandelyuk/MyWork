@@ -1,32 +1,3 @@
-h2 {
-	text-align: center;
-	font-family: $fair;
-	font-size: 36px;
-	font-weight: 400;
-	font-style: italic;
-	margin-bottom: 60px;
-}
-
-h2::before {
-	content: "";
-	width: 100px;
-	height: 1px;
-	background-color: black;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 15px;
-}
-
-h2::after {
-	content: "";
-	width: 100px;
-	height: 1px;
-	background-color: black;
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 15px;
-}
-
 .feedback-clients {
 	position: relative;
 }
@@ -37,6 +8,20 @@ h2::after {
 	align-items: center;
 }
 
+@media (max-width:670px) {
+
+	.feedback-clients__item {
+		flex-direction: column;
+	}
+}
+
+@media (max-width:670px) {
+
+	.feedback-clients--photo {
+		margin-bottom: 10px;
+	}
+}
+
 .feedback-clients--info {
 	display: flex;
 	flex-direction: column;
@@ -44,14 +29,36 @@ h2::after {
 	margin-left: 40px;
 }
 
+@media (max-width:670px) {
+	.feedback-clients--info {
+		margin-left: 0px;
+	}
+}
+
 .clients--name,
-.clients--fblink,
-.clients--text {
+.clients--fblink {
 	margin-bottom: 10px;
 	font-size: 20px;
 }
 
+@media (max-width:670px) {
+
+	.clients--name,
+	.clients--fblink,
+	.clients--text {
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
 .clients--text {
+	margin-bottom: 10px;
 	line-height: 1.2;
 	font-size: 18px;
+}
+
+@media (max-width:570px) {
+	.clients--text {
+		font-size: 16px;
+	}
 }

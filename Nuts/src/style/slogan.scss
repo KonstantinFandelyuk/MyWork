@@ -9,6 +9,30 @@
 	.slogan {
 		background-position: top;
 	}
+
+	@media (max-width:830px) {
+		.slogan {
+			background-position-x: -200px;
+		}
+	}
+
+	@media (max-width:750px) {
+		.slogan {
+			background-position-x: -300px;
+		}
+	}
+
+	@media (max-width:592px) {
+		.slogan {
+			background-position-x: -350px;
+		}
+	}
+
+	@media (max-width:592px) {
+		.slogan {
+			background-position-x: -450px;
+		}
+	}
 }
 
 .slogan-box__list {
@@ -37,6 +61,18 @@
 	.slogan-box--title {
 		font-size: 40px;
 	}
+
+	@media (max-width:550px) {
+		.slogan-box--title {
+			font-size: 35px;
+		}
+	}
+
+	@media (max-width:400px) {
+		.slogan-box--title {
+			font-size: 30px;
+		}
+	}
 }
 
 .slogan-box--text {
@@ -47,5 +83,11 @@
 @media (max-width:1035px) {
 	.slogan-box--text {
 		font-size: 19px;
+	}
+
+	@media (max-width:660px) {
+		.slogan-box--text {
+			font-size: 17px;
+		}
 	}
 }
