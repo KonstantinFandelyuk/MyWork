@@ -65,7 +65,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex: 0 1 33.333333336%;
+  flex: 0 1 33.3333333336%;
   padding: 0 100px;
 }
 
@@ -95,7 +95,6 @@
 .product-description {
   font-size: 15px;
   text-transform: none;
-  font-family: "Montserrat";
   font-weight: bold;
   color: black;
   position: absolute;
@@ -109,6 +108,12 @@
   opacity: -1;
   width: 96%;
   height: 18%;
+}
+
+@media (max-width: 1546px) {
+  .product-description {
+    top: 200px;
+  }
 }
 
 .product__list-item:hover .product-description {

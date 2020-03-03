@@ -255,6 +255,18 @@ input[type="submit"] {
   color: white;
   font-weight: bold; }
 
+.burger__menu {
+  display: none; }
+
+@media (max-width: 810px) {
+  .burger__menu {
+    display: inline-block;
+    font-size: 30px;
+    color: white; }
+  .burger__menu::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9"; } }
+
 .header__row-2 {
   margin-top: 55px;
   padding-left: 280px; }
@@ -400,7 +412,7 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex: 0 1 33.333333336%;
+  flex: 0 1 33.3333333336%;
   padding: 0 100px; }
 
 @media (max-width: 1400px) {
@@ -424,7 +436,6 @@ input[type="submit"] {
 .product-description {
   font-size: 15px;
   text-transform: none;
-  font-family: "Montserrat";
   font-weight: bold;
   color: black;
   position: absolute;
@@ -438,6 +449,10 @@ input[type="submit"] {
   opacity: -1;
   width: 96%;
   height: 18%; }
+
+@media (max-width: 1546px) {
+  .product-description {
+    top: 200px; } }
 
 .product__list-item:hover .product-description {
   transition: 0.4s ease-in-out;
@@ -644,7 +659,8 @@ input:focus ~ label {
     font-size: 20px; } }
 
 .feedback {
-  margin-top: 100px; }
+  margin-top: 100px;
+  display: none; }
 
 h2 {
   text-align: center;
