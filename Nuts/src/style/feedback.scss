@@ -35,18 +35,36 @@
 	}
 }
 
-.clients--name,
-.clients--fblink {
+.clients--name {
 	margin-bottom: 10px;
 	font-size: 20px;
+}
+
+.clients--fblink {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 30px;
+}
+
+.clients--fblink::after {
+	content: "\f09a";
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
+	font-size: 23px;
+	color: black;
+	transition: 0.3s all;
+}
+
+.clients--fblink:hover::after {
+	color: royalblue;
+	transition: 0.3s all;
 }
 
 @media (max-width:670px) {
 
 	.clients--name,
-	.clients--fblink,
 	.clients--text {
-		font-size: 18px;
+		font-size: 20px;
 		text-align: center;
 	}
 }

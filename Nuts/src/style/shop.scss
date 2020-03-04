@@ -34,13 +34,19 @@
 
   @media (max-width: 890px) {
     .shop__promo-item {
+      margin-left: 5px;
       letter-spacing: 0;
+      font-size: 11px;
     }
-  }
 
-  @media (max-width: 890px) {
-    .shop__promo-item:first-child {
-      margin-left: 0;
+    @media (max-width: 705px) {
+      .shop__promo-item {
+        font-size: 14px;
+      }
+
+      .shop__promo-item:nth-child(1n + 2) {
+        display: none;
+      }
     }
   }
 }
@@ -223,10 +229,10 @@ i {
   margin-bottom: 25px;
 }
 
-@media (max-width:570px) {
-
+@media (max-width: 570px) {
   .order__list-text {
     font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -255,9 +261,11 @@ i {
   content: "03";
 }
 
-@media (max-width:570px) {
-
+@media (max-width: 570px) {
   .order__list-text:before {
-    margin-right: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
   }
 }

@@ -32,6 +32,22 @@ input[type=tel] {
 			width: 440px;
 		}
 	}
+
+	@media (max-width:560px) {
+
+		input[type=text],
+		input[type=tel] {
+			width: 400px;
+		}
+	}
+
+	@media (max-width:420px) {
+
+		input[type=text],
+		input[type=tel] {
+			width: 300px;
+		}
+	}
 }
 
 input:focus {
@@ -81,11 +97,13 @@ input:focus~label {
 		}
 	}
 
-	@media (max-width:500px) {
+	@media (max-width:525px) {
 
 		.delivery__info {
-			width: 200px;
-			top: 165px;
+			width: 100%;
+			text-align: left;
+			top: 235px;
+			left: -2px;
 		}
 	}
 }
