@@ -237,7 +237,7 @@ input[type="submit"] {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  min-height: 937px; }
+  min-height: 973px; }
 
 @media (max-width: 752px) {
   .header {
@@ -443,7 +443,7 @@ input[type="submit"] {
   scroll-behavior: smooth; }
 
 .shop__promo {
-  background-image: url("../img/section/shop/background__promo.png");
+  background-image: url("../img/section/shop/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -765,6 +765,10 @@ input:focus ~ label {
 @media (max-width: 1035px) and (max-width: 592px) and (max-width: 430px) {
   .slogan {
     background-position-x: -350px; } }
+
+@media (max-width: 1035px) and (max-width: 592px) and (max-width: 408px) {
+  .slogan {
+    background-position-x: -280px; } }
 
 .slogan-box__list {
   text-align: right;
