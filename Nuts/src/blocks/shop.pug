@@ -1,10 +1,10 @@
 section.shop#shop-block
-	form(action="", method="POST")
+	form(action="send.php" method="POST")
 		.section__row-1
 			.shop__promo
-				.shop__promo-item Выбирай продукцию
+				.shop__promo-item Выбирайте продукцию
 					img(src="img/section/shop/icon/checkbox.png", alt="").shop__promo-img
-				.shop__promo-item Вес Фасофки
+				.shop__promo-item Вес Фасовки
 					img(src="img/section/shop/icon/arrow.png", alt="").shop__promo-img
 				.shop__promo-item Данные для заказа
 					img(src="img/section/shop/icon/arrow.png", alt="").shop__promo-img
@@ -21,11 +21,11 @@ section.shop#shop-block
 						.product-photo
 							img(src="img/section/shop/product/funduc.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price" value="1кг/295грн").prodcut-price
+							input(type="checkbox" name="price[]" value="ФУНДУК 295" ).prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 295 грн
 						label
-							input(type="radio", name="price" value="500г/148грн").prodcut-price
+							input(type="checkbox" name="price[]" value="ФУНДУК 148").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 148 грн
 					.product__list-item
@@ -34,11 +34,11 @@ section.shop#shop-block
 						.product-photo
 							img(src="img/section/shop/product/mindal.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="МИНДАЛЬ 335").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 335 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="МИНДАЛЬ 168").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 168 грн
 					.product__list-item
@@ -47,24 +47,24 @@ section.shop#shop-block
 						.product-photo
 							img(src="img/section/shop/product/keshq.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="КЕШЬЮ 295").prodcut-price
 							i.far.fa-square
-							span.product-tara 1кг / 295 грн
+							span.product-tara 1кг / 370 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="КЕШЬЮ 148").prodcut-price
 							i.far.fa-square
-							span.product-tara 500г / 148 грн
+							span.product-tara 500г / 185 грн
 					.product__list-item
 						.product-description Страна Бразилия
 						.product-title БРАЗИЛЬСКИЙ СЫРОЙ
 						.product-photo
 							img(src="img/section/shop/product/brazil.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="БРАЗИЛЬСКИЙ СЫРОЙ 420").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 420 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="БРАЗИЛЬСКИЙ СЫРОЙ 210").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 210 грн
 					.product__list-item
@@ -73,11 +73,11 @@ section.shop#shop-block
 						.product-photo
 							img(src="img/section/shop/product/fistash.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ФИСТАШКА СЫРАЯ 450").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 450 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ФИСТАШКА СЫРАЯ 225").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 225 грн
 					.product__list-item
@@ -86,11 +86,11 @@ section.shop#shop-block
 						.product-photo
 							img(src="img/section/shop/product/gree.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ГРЕЦКИЙ СЫРОЙ 190").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 190	 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ГРЕЦКИЙ СЫРОЙ 95").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 95 грн
 					.product__list-item
@@ -99,11 +99,11 @@ section.shop#shop-block
 						.product-photo
 							img(src="img/section/shop/product/makadamiya.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="МАКАДАМИЯ СЫРАЯ 850").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 850 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="МАКАДАМИЯ СЫРАЯ 425").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 425 грн
 					.product__list-item
@@ -112,11 +112,11 @@ section.shop#shop-block
 						.product-photo
 							img(src="img/section/shop/product/pekan.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ПЕКАН СЫРОЙ 570").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 570 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ПЕКАН СЫРОЙ 285").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 285 грн
 					.product__list-item
@@ -125,37 +125,37 @@ section.shop#shop-block
 						.product-photo
 							img(src="img/section/shop/product/kedr.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="КЕДР СЫРОЙ 680").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг /680 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="КЕДР СЫРОЙ 340").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 340 грн
 					.product__list-item
 						.product-description Страна Узбекистан
-						.product-title ИЗЮМ НАТУРАЛЬНЫЙ
+						.product-title ИЗЮМ Натуральный
 						.product-photo
 							img(src="img/section/shop/product/izum.jpg",  width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ИЗЮМ НАТУРАЛЬНЫЙ 185").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 185 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ИЗЮМ НАТУРАЛЬНЫЙ 93").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 93 грн
 					.product__list-item
 						.product-description Страна Турция
-						.product-title КУРАГА НАТУРАЛЬНАЯ
+						.product-title КУРАГА Натуральная
 						.product-photo
 							img(src="img/section/shop/product/kuraga.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="КУРАГА НАТУРАЛЬНАЯ 175").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 175 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="КУРАГА НАТУРАЛЬНАЯ 88").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 88 грн
 					.product__list-item
@@ -164,11 +164,11 @@ section.shop#shop-block
 						.product-photo
 							img(src="img/section/shop/product/finik2.jpg", width="415px" height="278px" alt="")
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ЧЕРНОСЛИВ  120").prodcut-price
 							i.far.fa-square
 							span.product-tara 1кг / 120 грн
 						label
-							input(type="radio", name="price").prodcut-price
+							input(type="checkbox" name="price[]" value="ЧЕРНОСЛИВ 60").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 60 грн
 		.section__row-2
