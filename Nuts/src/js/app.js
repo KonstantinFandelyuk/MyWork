@@ -1,7 +1,6 @@
 const bodyElement = document.getElementById("body");
 const modalElement = document.getElementById("modal");
 const buttonElement = document.querySelector(".burger__menu");
-// const animatedModalElement = document.querySelector(".header-inner--modal");
 const closeModalElement = document.querySelector(".modal__close");
 
 buttonElement.addEventListener("click", function() {
