@@ -1,10 +1,10 @@
-form(action="", method="post").shop-form
+.shop-form
 	.shop-form__list
 		.shop-form__item
-			input(type="text" pattern="[a-z A-Z а-я А-Я]{3,60}" id="contact_name")
+			input(type="text", name="name" pattern="[a-z A-Z а-я А-Я]{3,60}" id="contact_name" required)
 			label(for="contact_name") Ваше имя
 		.shop-form__item
-			input(type="tel" id="contact_phone")
+			input(type="tel", name="phone"  id="contact_phone" required)
 			label(for="contact_phone") Ваш телефон
 		button(type="submit").button.button__buy Заказать
 		.delivery__info При заказе от <span>1500грн</span> - доставка новой почтой Бесплатная.
