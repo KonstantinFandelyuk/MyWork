@@ -32,3 +32,21 @@ $(document).ready(function() {
     }
   });
 });
+
+$(".nav__link").on("click", function(e) {
+  $(this);
+  e.preventDefault();
+  e.stopPropagation();
+
+  $("html, body")
+    .animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top,
+      },
+      1000,
+    )
+    .ready(function() {
+      $(".modal").removeClass("active");
+      $("body").removeClass("hidden-scroll");
+    });
+});
