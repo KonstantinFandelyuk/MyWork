@@ -246,3 +246,21 @@
   animation-delay: 3s;
   animation-iteration-count: infinite;
 }
+
+.lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ru,
+.ua {
+  color: white;
+  font-size: 20px;
+}
+
+.ru::after {
+  content: "";
+  border-right: 1px solid white;
+  margin: 0 8px;
+}

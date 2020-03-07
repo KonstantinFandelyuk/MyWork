@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Nuts</title>
+    <title>Орехи Вкусности</title>
   </head>
   <body id="body">
     <div class="wrapper">
@@ -28,7 +28,7 @@
                   <li class="menu__list-item"><a class="nav__link" href="#contacts"> Контакты</a></li>
                 </ul>
               </nav><a class="header__phone" href="tel:+380935051864">+38 093 505 18 64</a>
-              <button class="burger__menu"></button>
+              <button class="burger__menu" name="Подробно"></button>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
             </div>
             <div class="section__row-2">
               <div class="social">
-                <div class="social__list social__list--center"><a class="social__list-item fb" href="https://www.facebook.com/igor.shvedun"></a><a class="social__list-item instagram" href="https://www.instagram.com/igorshvedun/"></a><a class="social__list-item other" href="tg://resolve?domain=@Zdes_Seychas"></a></div>
+                <div class="social__list social__list--center"><a class="social__list-item fb" href="https://www.facebook.com/igor.shvedun" target="_blank"></a><a class="social__list-item instagram" href="https://www.instagram.com/igorshvedun/" target="_blank"></a><a class="social__list-item other" href="https://t.me/Zdes_Seychas"></a></div>
               </div>
             </div>
             <div class="section__row-3">
@@ -78,17 +78,17 @@
           </div>
         </section>
         <section class="shop" id="shop-block">
-          <form action="send.php" method="POST">
-            <div class="section__row-1">
-              <div class="shop__promo">
-                <div class="shop__promo-item">Выбирайте продукцию<img class="shop__promo-img" src="img/section/shop/icon/checkbox.png" alt=""></div>
-                <div class="shop__promo-item">Вес Фасовки<img class="shop__promo-img" src="img/section/shop/icon/arrow.png" alt=""></div>
-                <div class="shop__promo-item">Данные для заказа<img class="shop__promo-img" src="img/section/shop/icon/arrow.png" alt=""></div>
-                <div class="shop__promo-item">Заказать <img class="shop__promo-img" src="img/section/shop/icon/arrow.png" alt=""><img class="shop__promo-img" src="img/section/shop/icon/bayke.png" alt=""></div>
-                <div class="shop__promo-item">Орехи едут к вам!</div>
-              </div>
+          <div class="section__row-1">
+            <div class="shop__promo">
+              <div class="shop__promo-item">Выбирайте продукцию<img class="shop__promo-img" src="img/section/shop/icon/checkbox.png" alt=""></div>
+              <div class="shop__promo-item">Вес Фасовки<img class="shop__promo-img" src="img/section/shop/icon/arrow.png" alt=""></div>
+              <div class="shop__promo-item">Данные для заказа<img class="shop__promo-img" src="img/section/shop/icon/arrow.png" alt=""></div>
+              <div class="shop__promo-item">Заказать <img class="shop__promo-img" src="img/section/shop/icon/arrow.png" alt=""><img class="shop__promo-img" src="img/section/shop/icon/bayke.png" alt=""></div>
+              <div class="shop__promo-item">Орехи едут к вам!</div>
             </div>
-            <div class="section__row-2">
+          </div>
+          <div class="section__row-2">
+            <form class="ajax-contact-form" action="contact">
               <div class="product" id="product">
                 <div class="product__list">
                   <div class="product__list-item">
@@ -225,37 +225,38 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="section__row-2">
-              <div class="container">
-                <div class="order">
-                  <div class="order__list">
-                    <div class="order__list-item">
-                      <div class="shop-form">
-                        <div class="shop-form__list">
-                          <div class="shop-form__item">
-                            <input type="text" name="name" pattern="[a-z A-Z а-я А-Я]{3,60}" id="contact_name" required>
-                            <label for="contact_name">Ваше имя</label>
+              <div class="section__row-2">
+                <div class="container">
+                  <div class="order">
+                    <div class="order__list">
+                      <div class="order__list-item"></div>
+                      <div class="order__list-item--note">
+                        <div class="shop-form">
+                          <div class="shop-form__list">
+                            <div class="shop-form__item">
+                              <input type="text" name="name" value="" pattern="[a-z A-Z а-я А-Я]{3,60}" id="contact_name" required>
+                              <label for="contact_name">Ваше имя</label>
+                            </div>
+                            <div class="shop-form__item">
+                              <input type="tel" name="tel" value="" id="contact_phone" required>
+                              <label for="contact_phone">Ваш телефон</label>
+                            </div>
+                            <button class="button button__buy" type="submit" name="buy">Заказать</button>
+                            <div class="delivery__info">При заказе от <span>1500грн</span> - доставка новой почтой Бесплатная.</div>
                           </div>
-                          <div class="shop-form__item">
-                            <input type="tel" name="phone" id="contact_phone" required>
-                            <label for="contact_phone">Ваш телефон</label>
-                          </div>
-                          <button class="button button__buy" type="submit">Заказать</button>
-                          <div class="delivery__info">При заказе от <span>1500грн</span> - доставка новой почтой Бесплатная.</div>
                         </div>
                       </div>
-                    </div>
-                    <div class="order__list-item">
-                      <div class="order__list-text">Поставьте галочки напротив выбранной продукции.</div>
-                      <div class="order__list-text">Заполните форму и нажмите кнопку “Заказать”.</div>
-                      <div class="order__list-text">Мы свяжемся с вами для уточнения деталей доставки.</div>
+                      <div class="order__list-item">
+                        <div class="order__list-text">Поставьте галочки напротив выбранной продукции.</div>
+                        <div class="order__list-text">Заполните форму и нажмите кнопку “Заказать”.</div>
+                        <div class="order__list-text">Мы свяжемся с вами для уточнения деталей доставки.</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </section>
         <section class="slogan">
           <div class="container">
@@ -373,7 +374,7 @@
                   <li class="maps-info--phone">Телефон: <a href="tel:+380935051864">+38 093 505 18 64</a></li>
                   <li class="maps-info--mail">Почта: <a href="mailto:sale@tastenuts.com">sale@tastenuts.com</a></li>
                   <li class="social">
-                    <div class="social__list social__list--center"><a class="social__list-item fb" href="https://www.facebook.com/orehivkusnosti"></a><a class="social__list-item instagram" href="https://www.instagram.com/igorshvedun/"></a><a class="social__list-item other" href="https://t.me/orehivkusnosti"></a></div>
+                    <div class="social__list social__list--center"><a class="social__list-item fb" href="https://www.facebook.com/orehivkusnosti" target="_blank"></a><a class="social__list-item instagram" href="https://www.instagram.com/igorshvedun/" target="_blank"></a><a class="social__list-item other" href="https://t.me/orehivkusnosti"></a></div>
                   </li>
                 </ul>
               </div>
@@ -399,12 +400,13 @@
           </nav><a class="header__phone header__phone--modal" href="tel:+380935051864">+38 093 505 18 64</a>
         </div>
         <div class="social social--modal">
-          <div class="social__list social__list--center"><a class="social__list-item fb social__list-item--modal" href="https://www.facebook.com/orehivkusnosti"></a><a class="social__list-item instagram social__list-item--modal" href="https://www.instagram.com/igorshvedun/"></a><a class="social__list-item other social__list-item--modal" href="https://t.me/orehivkusnosti"></a></div>
+          <div class="social__list social__list--center"><a class="social__list-item fb social__list-item--modal" href="https://www.facebook.com/orehivkusnosti" target="_blank"></a><a class="social__list-item instagram social__list-item--modal" href="https://www.instagram.com/igorshvedun/" target="_blank"></a><a class="social__list-item other social__list-item--modal" href="https://t.me/orehivkusnosti"></a></div>
         </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/app.js?v24"></script>
+    <script src="js/app.js?v4"></script>
+    <script src="js/contactform.js"></script>
   </body>
 </html>

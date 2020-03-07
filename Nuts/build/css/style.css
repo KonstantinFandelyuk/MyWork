@@ -423,6 +423,21 @@ input[type="submit"] {
   animation-delay: 3s;
   animation-iteration-count: infinite; }
 
+.lang {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.ru,
+.ua {
+  color: white;
+  font-size: 20px; }
+
+.ru::after {
+  content: "";
+  border-right: 1px solid white;
+  margin: 0 8px; }
+
 .button {
   font-family: 'Circe';
   font-size: 16px;
@@ -740,6 +755,10 @@ input:focus ~ label {
 
 .delivery__info > span {
   font-weight: bold; }
+
+p {
+  font-family: "Circe";
+  font-size: 20px; }
 
 .slogan {
   background-image: url("../img/section/slogan/2.jpg");

@@ -1,18 +1,18 @@
 section.shop#shop-block
-	form(action="send.php" method="POST")
-		.section__row-1
-			.shop__promo
-				.shop__promo-item Выбирайте продукцию
-					img(src="img/section/shop/icon/checkbox.png", alt="").shop__promo-img
-				.shop__promo-item Вес Фасовки
-					img(src="img/section/shop/icon/arrow.png", alt="").shop__promo-img
-				.shop__promo-item Данные для заказа
-					img(src="img/section/shop/icon/arrow.png", alt="").shop__promo-img
-				.shop__promo-item Заказать 
-					img(src="img/section/shop/icon/arrow.png", alt="").shop__promo-img
-					img(src="img/section/shop/icon/bayke.png", alt="").shop__promo-img
-				.shop__promo-item Орехи едут к вам!
-		.section__row-2
+	.section__row-1
+		.shop__promo
+			.shop__promo-item Выбирайте продукцию
+				img(src="img/section/shop/icon/checkbox.png", alt="").shop__promo-img
+			.shop__promo-item Вес Фасовки
+				img(src="img/section/shop/icon/arrow.png", alt="").shop__promo-img
+			.shop__promo-item Данные для заказа
+				img(src="img/section/shop/icon/arrow.png", alt="").shop__promo-img
+			.shop__promo-item Заказать 
+				img(src="img/section/shop/icon/arrow.png", alt="").shop__promo-img
+				img(src="img/section/shop/icon/bayke.png", alt="").shop__promo-img
+			.shop__promo-item Орехи едут к вам!
+	.section__row-2
+		form(action="contact").ajax-contact-form
 			.product#product
 				.product__list
 					.product__list-item
@@ -171,13 +171,14 @@ section.shop#shop-block
 							input(type="checkbox" name="price[]" value="ЧЕРНОСЛИВ 60").prodcut-price
 							i.far.fa-square
 							span.product-tara 500г / 60 грн
-		.section__row-2
-			.container
-				.order
-					.order__list
-						.order__list-item
-							include ../blocks/form.pug
-						.order__list-item
-							.order__list-text Поставьте галочки напротив выбранной продукции.
-							.order__list-text Заполните форму и нажмите кнопку “Заказать”.
-							.order__list-text Мы свяжемся с вами для уточнения деталей доставки.
+			.section__row-2
+				.container
+					.order
+						.order__list
+							.order__list-item
+							.order__list-item--note
+								include ../blocks/form.pug
+							.order__list-item
+								.order__list-text Поставьте галочки напротив выбранной продукции.
+								.order__list-text Заполните форму и нажмите кнопку “Заказать”.
+								.order__list-text Мы свяжемся с вами для уточнения деталей доставки.
