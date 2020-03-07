@@ -1,40 +1,40 @@
 .slogan {
-	background-image: url("../img/section/slogan/2.jpg");
-	// background-image: url("../img/section/slogan/background.jpg");
+	// background-image: url("../img/section/slogan/2.jpg");
+	background-image: url("../img/section/slogan/background.webp");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
-@media (max-width:1035px) {
+@media (max-width: 1035px) {
 	.slogan {
 		background-position: top;
 	}
 
-	@media (max-width:830px) {
+	@media (max-width: 830px) {
 		.slogan {
 			background-position-x: -15px;
 		}
 	}
 
-	@media (max-width:750px) {
+	@media (max-width: 750px) {
 		.slogan {
 			background-position-x: -86px;
 		}
 	}
 
-	@media (max-width:592px) {
+	@media (max-width: 592px) {
 		.slogan {
 			background-position-x: -230px;
 		}
 
-		@media (max-width:430px) {
+		@media (max-width: 430px) {
 			.slogan {
 				background-position-x: -350px;
 			}
 		}
 
-		@media (max-width:408px) {
+		@media (max-width: 408px) {
 			.slogan {
 				background-position-x: -280px;
 			}
@@ -64,18 +64,18 @@
 	margin-bottom: 12px;
 }
 
-@media (max-width:1035px) {
+@media (max-width: 1035px) {
 	.slogan-box--title {
 		font-size: 35px;
 	}
 
-	@media (max-width:550px) {
+	@media (max-width: 550px) {
 		.slogan-box--title {
 			font-size: 35px;
 		}
 	}
 
-	@media (max-width:400px) {
+	@media (max-width: 400px) {
 		.slogan-box--title {
 			font-size: 30px;
 		}
@@ -87,12 +87,12 @@
 	font-size: 20px;
 }
 
-@media (max-width:1035px) {
+@media (max-width: 1035px) {
 	.slogan-box--text {
 		font-size: 19px;
 	}
 
-	@media (max-width:660px) {
+	@media (max-width: 660px) {
 		.slogan-box--text {
 			font-size: 17px;
 		}

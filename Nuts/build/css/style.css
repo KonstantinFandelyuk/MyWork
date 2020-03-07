@@ -233,7 +233,7 @@ input[type="submit"] {
     padding: 0 15px; } }
 
 .header {
-  background-image: url("../img/header/background.jpg");
+  background-image: url("../img/header/background.webp");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -761,7 +761,7 @@ p {
   font-size: 20px; }
 
 .slogan {
-  background-image: url("../img/section/slogan/2.jpg");
+  background-image: url("../img/section/slogan/background.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
