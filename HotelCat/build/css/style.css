@@ -299,11 +299,10 @@ input[type="submit"] {
   background-image: url("../img/section/about-us/background.png");
   background-position: top right;
   background-repeat: no-repeat;
-  min-height: 304px;
   background-color: #fffefd; }
 
 .section__row-1 {
-  margin-top: 140px; }
+  padding-top: 140px; }
 
 h2 {
   font-family: "Rubik";
@@ -357,20 +356,15 @@ h2 {
 .room {
   background-image: url("../img/section/room/background.png");
   background-position: top left;
+  background-position-y: 150px;
   background-repeat: no-repeat;
   background-color: #fffefd; }
-
-.slider {
-  margin-left: 50px; }
-
-.slider__list-item {
-  position: relative; }
 
 .room-card {
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
-  right: -13%;
+  right: -18%;
   background: #FFF;
   box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
   border-radius: 8px;
@@ -411,8 +405,10 @@ h2 {
   background-color: white; }
 
 /* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
+.slick-slider {
+  max-width: 1082px;
+  margin: 0 auto; }
+
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden; }
@@ -423,16 +419,9 @@ h2 {
 
 /* Слайд */
 .slick-slide {
+  position: relative;
   outline: none; }
 
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
 /* Точки (булиты) */
 .slick-dots {
   display: flex;
@@ -445,6 +434,46 @@ h2 {
   width: 12px;
   height: 12px;
   background-color: #E1E1E1;
+  border-radius: 50%;
+  margin-left: 10px; }
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #FAC663; }
+
+/* Слайдер */
+.slider-feedback.slick-slider {
+  max-width: 1470px;
+  transform: translate(30%); }
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden; }
+
+/* Лента слайдов */
+.slick-track {
+  display: flex; }
+
+/* Слайд */
+.slider-feedback .slick-slide {
+  outline: none;
+  border: 1px solid red;
+  max-width: 470px;
+  padding: 35px 38px 70px 70px;
+  margin-left: 30px; }
+
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px; }
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #e1e1e1;
   border-radius: 50%;
   margin-left: 10px; }
 

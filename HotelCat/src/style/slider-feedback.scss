@@ -1,23 +1,26 @@
 /* Слайдер */
-.slick-slider {
-	max-width: 1082px;
-	margin: 0 auto;
+.slider-feedback.slick-slider {
+  max-width: 1470px;
+  transform: translate(30%);
 }
 
 /* Ограничивающая оболочка */
 .slick-list {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 /* Лента слайдов */
 .slick-track {
-	display: flex;
+  display: flex;
 }
 
 /* Слайд */
-.slick-slide {
-	position: relative;
-	outline: none;
+.slider-feedback .slick-slide {
+  outline: none;
+  border: 1px solid red;
+  max-width: 470px;
+  padding: 35px 38px 70px 70px;
+  margin-left: 30px;
 }
 
 // /* Стрелка */
@@ -34,22 +37,22 @@
 
 /* Точки (булиты) */
 .slick-dots {
-	display: flex;
-	justify-content: center;
-	margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
 }
 
 /* Элемент точки */
 .slick-dots li button {
-	font-size: 0;
-	width: 12px;
-	height: 12px;
-	background-color: #E1E1E1;
-	border-radius: 50%;
-	margin-left: 10px;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 /* Активная точка */
 .slick-dots li.slick-active button {
-	background-color: $yellow;
+  background-color: $yellow;
 }

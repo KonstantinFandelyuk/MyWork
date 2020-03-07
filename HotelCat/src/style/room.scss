@@ -1,23 +1,16 @@
 .room {
 	background-image: url("../img/section/room/background.png");
 	background-position: top left;
+	background-position-y: 150px;
 	background-repeat: no-repeat;
 	background-color: $backgrond;
-}
-
-.slider {
-	margin-left: 50px;
-}
-
-.slider__list-item {
-	position: relative;
 }
 
 .room-card {
 	transform: translate(-50%, -50%);
 	position: absolute;
 	top: 50%;
-	right: -13%;
+	right: -18%;
 	background: #FFF;
 	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
 	border-radius: 8px;
