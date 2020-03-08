@@ -32,6 +32,18 @@ $(document).ready(function() {
     }
   });
 });
+$(".button.button-header").on("click", function(e) {
+  $(this);
+  e.preventDefault();
+  e.stopPropagation();
+
+  $("html, body").animate(
+    {
+      scrollTop: $($(this).attr("href")).offset().top,
+    },
+    1000,
+  );
+});
 
 $(".nav__link").on("click", function(e) {
   $(this);
