@@ -223,6 +223,12 @@ i {
   }
 }
 
+@media (max-width: 1016px) {
+  .order__list-item--note {
+    margin: 20px auto;
+  }
+}
+
 .order__list-text,
 .order__list-contact {
   font-family: "Circe";
