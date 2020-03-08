@@ -233,7 +233,7 @@ input[type="submit"] {
     padding: 0 15px; } }
 
 .header {
-  background-image: url("../img/header/background.webp");
+  background-image: url("../img/header/background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -633,6 +633,10 @@ i {
   .order__list-item {
     margin: 40px auto; } }
 
+@media (max-width: 1016px) {
+  .order__list-item--note {
+    margin: 20px auto; } }
+
 .order__list-text,
 .order__list-contact {
   font-family: "Circe";
@@ -761,7 +765,7 @@ p {
   font-size: 20px; }
 
 .slogan {
-  background-image: url("../img/section/slogan/background.webp");
+  background-image: url("../img/section/slogan/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
