@@ -239,18 +239,6 @@ input[type="submit"] {
   background-size: cover;
   min-height: 973px; }
 
-@media (max-width: 752px) {
-  .header {
-    background-position-x: -400px; } }
-
-@media (max-width: 752px) and (max-width: 430px) {
-  .header {
-    background-position-x: -444px; } }
-
-@media (max-width: 752px) and (max-width: 430px) and (max-width: 400px) {
-  .header {
-    background-position-x: -520px; } }
-
 .header__row-1 {
   padding-top: 30px; }
 
@@ -327,8 +315,8 @@ input[type="submit"] {
     background-color: transparent; } }
 
 .header__row-2 {
-  margin-top: 55px;
-  padding-left: 280px; }
+  padding-left: 280px;
+  position: relative; }
 
 @media (max-width: 1558px) {
   .header__row-2 {
@@ -346,8 +334,42 @@ input[type="submit"] {
   .header__row-2 {
     padding-left: 20px; } }
 
-.header__ifo {
+.header__info {
+  background-image: url("../img/header/nuts.png");
+  background-position-x: 560px;
+  background-repeat: no-repeat;
+  background-size: 780px;
+  min-height: 780px;
   color: #d89146;
+  display: flex;
+  align-items: center;
+  margin: 0 auto; }
+
+@media (max-width: 1440px) {
+  .header__info {
+    background-position-x: 550px; } }
+
+@media (max-width: 1048px) {
+  .header__info {
+    background-position-x: 500px; } }
+
+@media (max-width: 933px) {
+  .header__info {
+    background-position-x: 400px; } }
+
+@media (max-width: 530px) {
+  .header__info {
+    background-position-x: 360px; } }
+
+@media (max-width: 530px) {
+  .header__info {
+    background-position-x: 370px; } }
+
+@media (max-width: 411px) {
+  .header__info {
+    background-position-x: 220px; } }
+
+.header__info--wrap {
   max-width: 555px; }
 
 .header__info-title {
@@ -371,11 +393,11 @@ input[type="submit"] {
   .header__info-title {
     font-size: 45px; } }
 
-@media (max-width: 1060px) and (max-width: 940px) and (max-width: 506px) and (max-width: 402px) {
+@media (max-width: 1060px) and (max-width: 940px) and (max-width: 506px) and (max-width: 411px) {
   .header__info-title {
     font-size: 34px; } }
 
-@media (max-width: 1060px) and (max-width: 940px) and (max-width: 506px) and (max-width: 402px) and (max-width: 320px) {
+@media (max-width: 1060px) and (max-width: 940px) and (max-width: 506px) and (max-width: 411px) and (max-width: 320px) {
   .header__info-title {
     font-size: 30px; } }
 

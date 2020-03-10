@@ -6,24 +6,6 @@
   min-height: 973px;
 }
 
-@media (max-width: 752px) {
-  .header {
-    background-position-x: -400px;
-  }
-
-  @media (max-width: 430px) {
-    .header {
-      background-position-x: -444px;
-    }
-
-    @media (max-width: 400px) {
-      .header {
-        background-position-x: -520px;
-      }
-    }
-  }
-}
-
 .header__row-1 {
   padding-top: 30px;
 }
@@ -121,8 +103,9 @@
 }
 
 .header__row-2 {
-  margin-top: 55px;
+  // margin-top: 55px;
   padding-left: 280px;
+  position: relative;
 }
 
 @media (max-width: 1558px) {
@@ -149,8 +132,56 @@
   }
 }
 
-.header__ifo {
+.header__info {
+  background-image: url("../img/header/nuts.png");
+  background-position-x: 560px;
+  background-repeat: no-repeat;
+  background-size: 780px;
+  min-height: 780px;
   color: $gold;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .header__info {
+    background-position-x: 550px;
+  }
+}
+
+@media (max-width: 1048px) {
+  .header__info {
+    background-position-x: 500px;
+  }
+}
+
+@media (max-width: 933px) {
+  .header__info {
+    background-position-x: 400px;
+  }
+}
+
+@media (max-width: 530px) {
+  .header__info {
+    background-position-x: 360px;
+  }
+}
+
+@media (max-width: 530px) {
+  .header__info {
+    background-position-x: 370px;
+  }
+}
+
+@media (max-width: 411px) {
+  .header__info {
+    background-position-x: 220px;
+  }
+}
+
+
+.header__info--wrap {
   max-width: 555px;
 }
 
@@ -179,7 +210,7 @@
         font-size: 45px;
       }
 
-      @media (max-width: 402px) {
+      @media (max-width: 411px) {
         .header__info-title {
           font-size: 34px;
         }
@@ -214,7 +245,7 @@
   display: inline-block;
 }
 
-@media (max-width:420px) {
+@media (max-width: 420px) {
   .button-header {
     margin-left: 5px;
   }
