@@ -205,19 +205,25 @@
       font-size: 50px;
     }
 
-    @media (max-width: 506px) {
-      .header__info-title {
-        font-size: 45px;
+    @media (max-width: 932px) {
+      .header__info-title--ua {
+        max-width: 350px;
       }
 
-      @media (max-width: 411px) {
+      @media (max-width: 506px) {
         .header__info-title {
-          font-size: 34px;
+          font-size: 45px;
         }
 
-        @media (max-width: 320px) {
+        @media (max-width: 411px) {
           .header__info-title {
-            font-size: 30px;
+            font-size: 34px;
+          }
+
+          @media (max-width: 320px) {
+            .header__info-title {
+              font-size: 30px;
+            }
           }
         }
       }
