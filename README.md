@@ -12,6 +12,8 @@
 
 - https://konstantinfandelyuk.github.io/MyWork/Nuts/build/index.html
 
+Реализоавана плавная анимация, отправка формы на почту со множественным выбором checkbox
+
 **Lending page - "Photography"**
 
 - https://konstantinfandelyuk.github.io/MyWork/Photography/build/index.html
