@@ -10,7 +10,7 @@
 
 **Lending page - "Орехи и Вкусности (Коммерческий проект)"**
 
-- https://konstantinfandelyuk.github.io/MyWork/Nuts/build/index.html
+- https://konstantinfandelyuk.github.io/Nuts/build/index.html
 
 Реализоавана плавная анимация, отправка формы на почту со множественным выбором checkbox
 
