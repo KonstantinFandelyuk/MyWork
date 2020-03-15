@@ -1,0 +1,43 @@
+.social__list {
+	margin-top: 15px;
+}
+
+.social__list--item {
+	font-family: "Font Awesome 5 Brands";
+	font-weight: 400;
+	font-size: 22px;
+	color: black;
+	transition: 0.5s ease-in;
+}
+
+.fb::before {
+	content: "\f09a";
+}
+
+.fb:hover::before {
+	color: white;
+	transition: 0.6s ease-in-out;
+	;
+}
+
+.inst::before {
+	content: "\f16d";
+	margin-left: 20px;
+}
+
+.inst:hover::before {
+	color: white;
+	transition: 0.6s ease-in-out;
+	;
+}
+
+.vk::before {
+	content: "\f189";
+	margin-left: 20px;
+}
+
+.vk:hover::before {
+	color: white;
+	transition: 0.6s ease-in-out;
+	;
+}

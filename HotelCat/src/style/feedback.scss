@@ -1,0 +1,35 @@
+.feedback {
+	background-image: url("../img/section/feedback/paw.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.slider-feedback--item {
+	position: relative;
+}
+
+.slider-feedback-text::before {
+	content: "";
+	background-image: url("../img/section/feedback/“.svg");
+	width: 27px;
+	height: 56px;
+	top: 36px;
+	left: 40px;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.slider-feedback-info {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+	color: gray;
+}
+
+.slider-feedback-text {
+	line-height: 140%;
+	font-family: $lato;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+}

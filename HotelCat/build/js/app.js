@@ -10,8 +10,8 @@ $(document).ready(function() {
   $(".slider-feedback").slick({
     arrows: false,
     dots: true,
-    autoplay: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    autoplay: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
   });
 });
