@@ -1,0 +1,33 @@
+.menu-inner {
+	background: #FFFEFD;
+	padding: 12px 0;
+}
+
+.menu-inner__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu__list-item {
+	font-family: $lato;
+	margin-left: 30px;
+	font-weight: 600;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.menu__list-item>a {
+	color: $black;
+	transition: 0.3s linear;
+}
+
+.menu__list-item>a:hover {
+	color: $orange;
+	transition: 0.3s linear;
+}

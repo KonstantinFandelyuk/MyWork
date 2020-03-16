@@ -1,18 +1,7 @@
 header.header
 	.container
 		.header__row-1
-			.header-inner
-				ul.header-inner__list
-					li.header-inner__list--item
-						.logo
-							img(src="img/header/logo.svg", alt="")
-					li.header-inner__list--item
-						nav.menu
-							ul.menu__list
-								li.menu__list-item <a href=""> Почему мы?</a>
-								li.menu__list-item <a href="">Номера</a>
-								li.menu__list-item <a href="">Отзывы</a>
-								li.menu__list-item <a href="">Как нас найти</a>
+			include ../blocks/menu.pug
 	.header__row-2
 		.header-promo
 			.container
