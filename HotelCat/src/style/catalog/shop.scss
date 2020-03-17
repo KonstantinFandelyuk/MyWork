@@ -30,7 +30,7 @@
 .shop-filter__up::before,
 .shop-filter__down::before {
   content: "";
-  background-image: url("../../img/catalog/icon/up.png");
+  background-image: url("../img/catalog/icon/up.png");
   background-repeat: no-repeat;
   width: 7px;
   height: 12px;
@@ -40,7 +40,7 @@
 }
 
 .shop-filter__down::before {
-  background-image: url("../../img/catalog/icon/down.png");
+  background-image: url("../img/catalog/icon/down.png");
 }
 
 .shop-filter__list>li:nth-child(1n+2) {
@@ -62,7 +62,7 @@
 }
 
 .banner-wrap {
-  background-image: url("../../img/catalog/shop/banner/banner.png");
+  background-image: url("../img/catalog/shop/banner/banner.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
