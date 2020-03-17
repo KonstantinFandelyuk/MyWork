@@ -8,8 +8,8 @@ let del = require("del");
 function serve() {
   return browserSync.init({
     server: {
-      baseDir: "./build"
-    }
+      baseDir: "./build",
+    },
   });
 }
 
@@ -25,9 +25,11 @@ function styles() {
 function view() {
   return gulp
     .src("src/pages/*.pug")
-    .pipe(pug({
-      pretty: true
-    }))
+    .pipe(
+      pug({
+        pretty: true,
+      }),
+    )
     .pipe(gulp.dest("build"));
 }
 
