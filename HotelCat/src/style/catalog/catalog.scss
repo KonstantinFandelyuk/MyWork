@@ -14,7 +14,7 @@
   box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
   border-radius: 6px;
   max-width: 275px;
-  margin-left: 25px;
+  margin-left: 24px;
   margin-bottom: 30px;
 }
 
@@ -32,7 +32,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 25px;
   margin-bottom: 20px;
 }
 
@@ -65,27 +65,50 @@
   color: $black;
 }
 
-.catalog-text__list {
+.catalog-text:nth-child(3) {
   position: relative;
 }
 
-.eee {
-  opacity: 1;
+.info-text {
+  opacity: 0;
   padding: 9px 10px;
   background-color: white;
   border: 1px solid #FAC663;
   box-shadow: 0px 4px 12px rgba(173, 152, 143, 0.18);
   position: absolute;
   top: -44px;
-  right: 30px;
+  right: 40px;
   font-family: $lato;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 14px;
   color: $black;
+  transition: 0.5s ease-in-out;
 }
 
-.catalog-text__list:hover + .eee1{
-  opacity: 0;
+.none-room,
+.claw-point-room,
+.lotok-room,
+.ball-room,
+.house-room {
+  margin-left: 7px;
+}
+
+.none-room,
+.lotok-room {
+  margin-left: 9px;
+}
+
+.none-room:hover+.info-text,
+.lotok-room:hover+.info-text,
+.claw-point-room:hover+.info-text,
+.ball-room:hover+.info-text,
+.house-room:hover+.info-text {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.text {
+  display: block;
 }
