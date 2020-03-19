@@ -8,6 +8,19 @@
 - **npm i gulp -g** - установка gulp глобально
 - **gulp** - запуск
 
+**Отель для кошек**
+
+- https://konstantinfandelyuk.github.io/MyWork/HotelCat/build/index.html
+
+	Что уже есть:
+	1. Верстка главной страницы
+	2. Верстка каталога номеров
+	Что будет:
+	1. Верстка окна записи
+	2. Верстка модальных окон
+	3. Js возможность записи
+	4. Js фильтрация номеров
+
 **Lending page - "Орехи и Вкусности (Коммерческий проект)"**
 
 - https://konstantinfandelyuk.github.io/Nuts/build/index.html
