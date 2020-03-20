@@ -1,5 +1,5 @@
 .catalog {
-  max-width: 870px;
+  max-width: 900px;
 }
 
 .catalog__list {
@@ -18,10 +18,10 @@
   margin-bottom: 30px;
 }
 
-.catalog__list-item:nth-child(1),
-.catalog__list-item:nth-child(4) {
-  margin-left: 0;
-}
+// .catalog__list-item:nth-child(1),
+// .catalog__list-item:nth-child(4) {
+//   margin-left: 0;
+// }
 
 .description-info {
   padding: 25px 20px;

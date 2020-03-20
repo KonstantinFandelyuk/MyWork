@@ -789,7 +789,7 @@ input[type="checkbox"]:checked + .far.fa-square::before {
   vertical-align: text-bottom; }
 
 .catalog {
-  max-width: 870px; }
+  max-width: 900px; }
 
 .catalog__list {
   display: flex;
@@ -804,10 +804,6 @@ input[type="checkbox"]:checked + .far.fa-square::before {
   max-width: 275px;
   margin-left: 24px;
   margin-bottom: 30px; }
-
-.catalog__list-item:nth-child(1),
-.catalog__list-item:nth-child(4) {
-  margin-left: 0; }
 
 .description-info {
   padding: 25px 20px; }
