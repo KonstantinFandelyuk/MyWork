@@ -1,40 +1,34 @@
-$(document).ready(function() {
-  $(".slider").slick({
-    arrows: false,
-    dots: true,
-    autoplay: true,
+let squareCheckbox = Array.from(document.querySelectorAll("input[name=square-input]"));
+let buttonFilterSumbit = document.querySelector(".button-filter--sumbit");
+let squareItem = document.querySelectorAll(".square");
+let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
+let catalog = document.querySelector(".catalog");
+let res = [];
+
+squareCheckbox.forEach(function(item, i) {
+  item.addEventListener("change", function() {
+    if (item.checked) {
+      buttonFilterSumbit.style.display = "block";
+      catalogItemProduct.forEach(function(vl, indx) {
+        if (i == indx) {
+          res.push(vl);
+        }
+      });
+    }
   });
 });
 
-$(document).ready(function() {
-  $(".slider-feedback").slick({
-    arrows: false,
-    dots: true,
-    autoplay: false,
-    slidesToShow: 2,
-    slidesToScroll: 1,
+function ClickMe() {
+  catalogItemProduct.forEach(function(vl, indx) {
+    res.forEach(function(val, index) {
+      if (val) {
+        console.log(val);
+        catalog.style.width = "100%";
+        val.style.display = "block";
+      }
+      if (vl) {
+        vl.style.display = "none";
+      }
+    });
   });
-});
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   let _selector = document.querySelector("input[name=square-input]");
-//   let buttonFilterSumbit = document.querySelector(".button-filter--sumbit");
-//   _selector.addEventListener("change", function() {
-//     if (_selector.checked) {
-//       buttonFilterSumbit.style.display = "block";
-//     } else {
-//       buttonFilterSumbit.style.display = "none";
-//     }
-//   });
-// });
-
-// let _selector = Array.from(document.querySelectorAll("input[name=square-input]"));
-// let buttonFilterSumbit = document.querySelector(".button-filter--sumbit");
-// console.log(_selector);
-
-// _selector.forEach((val,indx) {
-//   _selector.addEventListener("change", function() {
-//     if (_selector.checked) {
-//       buttonFilterSumbit.style.display = "block";
-//     }
-// }
+}
