@@ -882,3 +882,50 @@ input[type="checkbox"]:checked + .far.fa-square::before {
 
 .text {
   display: block; }
+
+.room__list {
+  display: flex; }
+
+.room-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #1A212F;
+  margin-bottom: 40px; }
+
+.room-text,
+.room-advantage {
+  font-family: "LatoWeb";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #1A212F;
+  margin-bottom: 25px; }
+
+.room-advantage {
+  margin-bottom: 17px; }
+
+.room-advantage::before {
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 8px; }
+
+.lotok::before {
+  background-image: url(../img/catalog/shop/icon/2.svg); }
+
+.house::before {
+  background-image: url(../img/catalog/shop/icon/5.svg); }
+
+.ball::before {
+  background-image: url(../img/catalog/shop/icon/4.svg); }
+
+.claw::before {
+  background-image: url(../img/catalog/shop/icon/3.svg); }
+
+.room-advantage:nth-child(8) {
+  margin-bottom: 32px; }
