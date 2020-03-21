@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="description" content="Описание для фотографов, кратко и лаконично. А главное красиво."/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Room</title>
+    <title>Apartament</title>
   </head>
   <body>
     <div class="wrapper">
@@ -23,10 +22,9 @@
                 <nav class="menu">
                   <ul class="menu__list">
                     <li class="menu__list-item"><a href=""> Почему мы?</a></li>
-                    <li class="menu__list-item"><a href="">Номера</a></li>
+                    <li class="menu__list-item"><a href="catalog.html">Номера</a></li>
                     <li class="menu__list-item"><a href="">Отзывы</a></li>
                     <li class="menu__list-item"><a href="">Как нас найти</a></li>
-                    <li class="menu__list-item"><a href="catalog.html">Каталог</a></li>
                   </ul>
                 </nav>
               </li>
@@ -34,24 +32,72 @@
           </div>
         </div>
       </header>
-      <div class="card-room">
-        <div class="container">
-          <div class="section__row-1">
-            <div class="room">
-              <div class="room__list">
-                <div class="room__list-item"> </div>
-                <div class="room__list-item">
-                  <div class="room-title">Супер-Люкс</div>
-                  <div class="room-text">Размеры (ШхГхВ) - 180х160х180 см</div>
-                  <div class="room-text">Площадь - 2,88 м2</div>
-                  <div class="room-text">Оснащение номера</div>
-                  <div class="room-advantage lotok">Лежак</div>
-                  <div class="room-advantage house">Домик</div>
-                  <div class="room-advantage ball">Игровой комплекс - 3 яруса</div>
-                  <div class="room-advantage claw">Когтеточка</div>
-                  <div class="room-text">Цена за сутки: <span class="catalog-price">600₽</span></div>
+      <div class="container">
+        <div class="apartament">
+          <div class="apartament__row-1">
+            <div class="apartament__wrapper">
+              <div class="apartament-item">
+                <div class="apartament-slider">
+                  <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper"><img class="swiper-slide" src="img/card-room/slider/cat1.jpg" alt=""/><img class="swiper-slide" src="img/card-room/slider/cat2.jpg" alt=""/><img class="swiper-slide" src="img/card-room/slider/cat3.jpg" alt=""/></div>
+                  </div>
+                  <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper"><img class="swiper-slide" src="img/card-room/slider/cat1.jpg" alt=""/><img class="swiper-slide" src="img/card-room/slider/cat2.jpg" alt=""/><img class="swiper-slide" src="img/card-room/slider/cat3.jpg" alt=""/></div>
+                  </div>
                 </div>
               </div>
+              <div class="apartament-item">
+                <div class="apartament-title">Супер-Люкс</div>
+                <div class="apartament-text">Размеры (ШхГхВ) - 180х160х180 см</div>
+                <div class="apartament-text">Площадь - 2,88 м2</div>
+                <div class="apartament-text">Оснащение номера</div>
+                <div class="apartament-advantage lotok">Лежак</div>
+                <div class="apartament-advantage house">Домик</div>
+                <div class="apartament-advantage ball">Игровой комплекс - 3 яруса</div>
+                <div class="apartament-advantage claw">Когтеточка</div>
+                <div class="apartament-text">Цена за сутки: <span class="catalog-price">600₽</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="apartament__row-2">
+            <h2 class="h2--center">Другие номера</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider__list-item">
+          <div class="room-photo"><img src="img/section/room/slider-img/1.png" alt=""/></div>
+          <div class="room-card">
+            <div class="room-card__list"> 
+              <div class="room-card__list--tittle">Эконом плюс</div>
+              <div class="room-card__list--item">Площадь - 0,90 м2</div>
+              <div class="room-card__list--item">Размеры (ШхГхВ) — 90х100х180 см</div>
+              <div class="room-card__list--item">Цена за сутки: 200₽</div>
+              <button class="button button-orange">Забронировать</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider__list-item">
+          <div class="room-photo"><img src="img/section/room/slider-img/2.png" alt=""/></div>
+          <div class="room-card">
+            <div class="room-card__list"> 
+              <div class="room-card__list--tittle">Комфорт</div>
+              <div class="room-card__list--item">Площадь - 1,13 м2</div>
+              <div class="room-card__list--item">Размеры (ШхГхВ) - 100х125х180 см</div>
+              <div class="room-card__list--item">Цена за сутки: 250₽</div>
+              <button class="button button-orange">Забронировать</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider__list-item">
+          <div class="room-photo"><img src="img/section/room/slider-img/3.png" alt=""/></div>
+          <div class="room-card">
+            <div class="room-card__list"> 
+              <div class="room-card__list--tittle">Сьют</div>
+              <div class="room-card__list--item">Площадь - 1,56 м2</div>
+              <div class="room-card__list--item">Размеры (ШхГхВ) - 125х125х180 см</div>
+              <div class="room-card__list--item">Цена за сутки: 350₽</div>
+              <button class="button button-orange">Забронировать</button>
             </div>
           </div>
         </div>
@@ -90,10 +136,9 @@
                 <nav class="menu">
                   <ul class="menu__list">
                     <li class="menu__list-item"><a href=""> Почему мы?</a></li>
-                    <li class="menu__list-item"><a href="">Номера</a></li>
+                    <li class="menu__list-item"><a href="catalog.html">Номера</a></li>
                     <li class="menu__list-item"><a href="">Отзывы</a></li>
                     <li class="menu__list-item"><a href="">Как нас найти</a></li>
-                    <li class="menu__list-item"><a href="catalog.html">Каталог</a></li>
                   </ul>
                 </nav>
               </li>
@@ -112,6 +157,9 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/app.js?v3"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/room-slider.js"></script>
+    <script src="js/app.js?v12"></script>
   </body>
 </html>

@@ -1,8 +1,16 @@
-.room__list {
+.apartament__wrapper {
 	display: flex;
 }
 
-.room-title {
+.apartament__row-1 {
+	margin-top: 70px;
+}
+
+.apartament-item:first-child {
+	margin-right: 70px;
+}
+
+.apartament-title {
 	font-family: $Rubik;
 	font-style: normal;
 	font-weight: bold;
@@ -11,8 +19,8 @@
 	margin-bottom: 40px;
 }
 
-.room-text,
-.room-advantage {
+.apartament-text,
+.apartament-advantage {
 	font-family: $lato;
 	font-style: normal;
 	font-weight: normal;
@@ -21,11 +29,11 @@
 	margin-bottom: 25px;
 }
 
-.room-advantage {
+.apartament-advantage {
 	margin-bottom: 17px;
 }
 
-.room-advantage::before {
+.apartament-advantage::before {
 	content: "";
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -51,6 +59,10 @@
 	background-image: url(../img/catalog/shop/icon/3.svg);
 }
 
-.room-advantage:nth-child(8) {
+.apartament-advantage:nth-child(8) {
 	margin-bottom: 32px;
+}
+
+.apartament__row-2 {
+	margin-top: 140px;
 }
