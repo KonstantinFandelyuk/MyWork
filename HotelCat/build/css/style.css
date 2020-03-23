@@ -919,6 +919,9 @@ input[type="checkbox"]:checked + .far.fa-square::before {
 .apartament-advantage {
   margin-bottom: 14px; }
 
+.apartament-advantage {
+  margin-bottom: 17px; }
+
 .apartament-advantage::before {
   content: "";
   background-repeat: no-repeat;
