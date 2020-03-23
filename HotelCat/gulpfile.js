@@ -48,7 +48,7 @@ function fonts() {
 // Следить за изменениями в файлах и запускать соответсвующую задачу
 function watch() {
   gulp.watch("src/style/**/*.scss", styles);
-  gulp.watch("src/**/*.pug", view);
+  gulp.watch("src/**/**/*.pug", view);
   gulp.watch("src/img/*.*", img);
   gulp.watch("src/js/*.*", js);
   gulp.watch("src/fonts/**/*.*", fonts);
