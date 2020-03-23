@@ -23,10 +23,9 @@
                 <nav class="menu">
                   <ul class="menu__list">
                     <li class="menu__list-item"><a href=""> Почему мы?</a></li>
-                    <li class="menu__list-item"><a href="">Номера</a></li>
+                    <li class="menu__list-item"><a href="catalog.html">Номера</a></li>
                     <li class="menu__list-item"><a href="">Отзывы</a></li>
                     <li class="menu__list-item"><a href="">Как нас найти</a></li>
-                    <li class="menu__list-item"><a href="catalog.html">Каталог</a></li>
                   </ul>
                 </nav>
               </li>
@@ -99,7 +98,7 @@
                     </li>
                     <li>
                       <label>
-                        <input type="checkbox" name=""><i class="far fa-square"></i><span class="checkbox-text">Лежак</span>
+                        <input type="checkbox" name="lotockCheckbox"><i class="far fa-square"></i><span class="checkbox-text">Лежак</span>
                       </label>
                     </li>
                     <li>
@@ -119,13 +118,13 @@
                     </li>
                   </ul>
                 </div>
-                <button class="button-filter--sumbit" onClick="ClickMe()">Применить</button>
-                <button class="button-filter-reset">Сбросить фильтр</button>
+                <button class="button__filter--sumbit" onClick="ClickMe()">Применить</button>
+                <button class="button__filter--reset" onClick="ClickReset()">Сбросить фильтр</button>
               </aside>
               <div class="catalog">
                 <div class="catalog__list">
                   <div class="catalog__list-item">
-                    <div class="catalog-photo"><img src="img/catalog/shop/room/cat/cat.png" alt=""></div>
+                    <div class="catalog-photo"><a href="apartament.html"><img src="img/catalog/shop/room/cat/cat.png" alt=""></a></div>
                     <div class="description-info">
                       <div class="catalog-title">Эконом</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х70х180 см</div>
@@ -140,7 +139,7 @@
                   <div class="catalog__list-item">
                     <div class="catalog-photo"><img src="img/catalog/shop/room/cat/cat1.jpg" alt=""></div>
                     <div class="description-info">
-                      <div class="catalog-title">Эконом</div>
+                      <div class="catalog-title">Эконом плюс</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х100х180 см</div>
                       <div class="catalog-text">Площадь - <span class="sque">0,90</span> м2</div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt="">
@@ -154,7 +153,7 @@
                   <div class="catalog__list-item">
                     <div class="catalog-photo"><img src="img/catalog/shop/room/cat/cat2.jpg" alt=""></div>
                     <div class="description-info">
-                      <div class="catalog-title">Эконом</div>
+                      <div class="catalog-title">Комфорт</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 100х125х180 см</div>
                       <div class="catalog-text">Площадь - 1,13 м2</div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt=""><img class="ball-room" src="img/catalog/shop/icon/3.svg" alt=""><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt=""></div>
@@ -165,7 +164,7 @@
                   <div class="catalog__list-item">
                     <div class="catalog-photo"><img src="img/catalog/shop/room/cat/cat3.jpg" alt=""></div>
                     <div class="description-info">
-                      <div class="catalog-title">Эконом</div>
+                      <div class="catalog-title">Сьют</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 125х125х180 см</div>
                       <div class="catalog-text">Площадь - 1,56 м2</div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt=""><img class="ball-room" src="img/catalog/shop/icon/3.svg" alt=""><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt=""></div>
@@ -176,7 +175,7 @@
                   <div class="catalog__list-item">
                     <div class="catalog-photo"><img src="img/catalog/shop/room/cat/cat4.jpg" alt=""></div>
                     <div class="description-info">
-                      <div class="catalog-title">Эконом</div>
+                      <div class="catalog-title">Люкс</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х70х180 см</div>
                       <div class="catalog-text">Площадь - 2,56 м2</div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt="">
@@ -192,7 +191,7 @@
                   <div class="catalog__list-item">
                     <div class="catalog-photo"><img src="img/catalog/shop/room/cat/cat5.jpg" alt=""></div>
                     <div class="description-info">
-                      <div class="catalog-title">Эконом</div>
+                      <div class="catalog-title">Супер-Люкс</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х70х180 см</div>
                       <div class="catalog-text">Площадь - 2,88 м2</div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt="">
@@ -220,60 +219,59 @@
             </div>
           </div>
         </div>
-        <footer class="footer">
-          <div class="footer__row-1">
-            <div class="footer-info">
-              <div class="footer-info__list">
-                <div class="footer-info__list--item">
-                  <h2>Как нас найти</h2>
-                  <ul>
-                    <li class="footer-title">Адрес<span class="footer-text">Санкт-Петербург,ул Большая Конюшенная, д 19</span></li>
-                    <li class="footer-title"> Режим работы<span class="footer-text">Ежедневно, с 9:00 до 20:00</span></li>
-                    <li class="footer-title">Телефон<span class="footer-text"><a href="tel:88003335599">8 (800) 333-55-99</a></span></li>
-                    <li class="footer-title">E-mail<span class="footer-text"><a href="mail:info@cat-hotel.ru">info@cat-hotel.ru</a></span></li>
-                    <li class="footer-social">Социальные сети
-                      <div class="social">
-                        <div class="social__list"><a class="social__list--item fb" href="http://" target="_blank"></a><a class="social__list--item inst" href="http://" target="_blank"></a><a class="social__list--item vk" href="http://" target="_blank"></a></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="footer-info__list--item">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.584911899059!2d30.511142716027177!3d50.44883187947518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce59bb472067%3A0x78e3f901cddf2fe7!2zR29sZGVuIEdhdGUsIEtpZXYsINCy0YPQu9C40YbRjyDQktC-0LvQvtC00LjQvNC40YDRgdGM0LrQsCwgNDDQkCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1584275111991!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer__row-2">
-            <div class="menu-inner">
-              <ul class="menu-inner__list">
-                <li class="menu-inner__list--item">
-                  <div class="logo"><img src="img/header/logo.svg" alt=""></div>
-                </li>
-                <li class="menu-inner__list--item">
-                  <nav class="menu">
-                    <ul class="menu__list">
-                      <li class="menu__list-item"><a href=""> Почему мы?</a></li>
-                      <li class="menu__list-item"><a href="">Номера</a></li>
-                      <li class="menu__list-item"><a href="">Отзывы</a></li>
-                      <li class="menu__list-item"><a href="">Как нас найти</a></li>
-                      <li class="menu__list-item"><a href="catalog.html">Каталог</a></li>
-                    </ul>
-                  </nav>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__row-3">
-            <div class="copyright">
-              <div class="copyright__list">
-                <div class="copyright__list-item">2019 Все права защищены</div>
-                <div class="copyright__list-item">Политика конфиденциальности</div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </section>
+      <footer class="footer">
+        <div class="footer__row-1">
+          <div class="footer-info">
+            <div class="footer-info__list">
+              <div class="footer-info__list--item">
+                <h2>Как нас найти</h2>
+                <ul>
+                  <li class="footer-title">Адрес<span class="footer-text">Санкт-Петербург,ул Большая Конюшенная, д 19</span></li>
+                  <li class="footer-title"> Режим работы<span class="footer-text">Ежедневно, с 9:00 до 20:00</span></li>
+                  <li class="footer-title">Телефон<span class="footer-text"><a href="tel:88003335599">8 (800) 333-55-99</a></span></li>
+                  <li class="footer-title">E-mail<span class="footer-text"><a href="mail:info@cat-hotel.ru">info@cat-hotel.ru</a></span></li>
+                  <li class="footer-social">Социальные сети
+                    <div class="social">
+                      <div class="social__list"><a class="social__list--item fb" href="http://" target="_blank"></a><a class="social__list--item inst" href="http://" target="_blank"></a><a class="social__list--item vk" href="http://" target="_blank"></a></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-info__list--item">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.584911899059!2d30.511142716027177!3d50.44883187947518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce59bb472067%3A0x78e3f901cddf2fe7!2zR29sZGVuIEdhdGUsIEtpZXYsINCy0YPQu9C40YbRjyDQktC-0LvQvtC00LjQvNC40YDRgdGM0LrQsCwgNDDQkCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1584275111991!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__row-2">
+          <div class="menu-inner">
+            <ul class="menu-inner__list">
+              <li class="menu-inner__list--item">
+                <div class="logo"><img src="img/header/logo.svg" alt=""></div>
+              </li>
+              <li class="menu-inner__list--item">
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li class="menu__list-item"><a href=""> Почему мы?</a></li>
+                    <li class="menu__list-item"><a href="catalog.html">Номера</a></li>
+                    <li class="menu__list-item"><a href="">Отзывы</a></li>
+                    <li class="menu__list-item"><a href="">Как нас найти</a></li>
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__row-3">
+          <div class="copyright">
+            <div class="copyright__list">
+              <div class="copyright__list-item">2019 Все права защищены</div>
+              <div class="copyright__list-item">Политика конфиденциальности</div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>

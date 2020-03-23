@@ -1,0 +1,69 @@
+.apartament__wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.apartament__row-1 {
+	margin-top: 70px;
+}
+
+.apartament-item:first-child {
+	margin-right: 70px;
+}
+
+.apartament-title {
+	font-family: $Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	color: $black;
+	margin-bottom: 32px;
+}
+
+.apartament-text,
+.apartament-advantage {
+	font-family: $lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: $black;
+	margin-bottom: 20px;
+}
+
+.apartament-advantage {
+	margin-bottom: 14px;
+}
+
+.apartament-advantage::before {
+	content: "";
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.lotok::before {
+	background-image: url(../img/catalog/shop/icon/2.svg);
+}
+
+.house::before {
+	background-image: url(../img/catalog/shop/icon/5.svg);
+}
+
+.ball::before {
+	background-image: url(../img/catalog/shop/icon/4.svg);
+}
+
+.claw::before {
+	background-image: url(../img/catalog/shop/icon/3.svg);
+}
+
+.apartament-advantage:nth-child(8) {
+	margin-bottom: 32px;
+}
+
+.apartament__row-2 {
+	margin-top: 140px;
+}

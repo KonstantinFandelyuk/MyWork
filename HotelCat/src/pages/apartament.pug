@@ -1,4 +1,4 @@
-doctype html
+<!DOCTYPE html>
 html(lang='ru')
 	head
 		meta(charset='UTF-8')
@@ -6,14 +6,17 @@ html(lang='ru')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
 		meta(name="description" content="Описание для фотографов, кратко и лаконично. А главное красиво.")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
-		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css")
 		link(rel='stylesheet', href='css/style.css')
-		title Catalog
+		title Apartament
 	body
 		.wrapper
-			include ../blocks/Catalog/header.pug
-			include ../blocks/Catalog/shop.pug
+			include ../blocks/Apartament/header.pug
+			include ../blocks/Apartament/card-room.pug
+			include ../blocks/room-slider.pug
 			include ../blocks/footer.pug
 		script(src="https://code.jquery.com/jquery-3.4.1.min.js")
 		script(src="js/slick.min.js")
-		script(src="js/app.js?v3")
+		script(src="js/slider.js")
+		script(src="js/swiper.min.js")
+		script(src="js/room-slider.js")
+		script(src="js/app.js?v12")

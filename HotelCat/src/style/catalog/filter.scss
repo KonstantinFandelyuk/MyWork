@@ -61,8 +61,8 @@ input[type="checkbox"]:checked+.far.fa-square::before {
 
 // -----------------BUTTON------------//
 
-.button-filter--sumbit,
-.button-filter-reset {
+.button__filter--sumbit,
+.button__filter--reset {
 	margin-top: 22px;
 	padding: 15px 55px 15px 56px;
 	border: 2px solid #FAC663;
@@ -74,7 +74,11 @@ input[type="checkbox"]:checked+.far.fa-square::before {
 	display: none;
 }
 
-.button-filter-reset {
+.button__filter--sumbit.active {
+	display: block;
+}
+
+.button__filter--reset {
 	margin-top: 15px;
 	background: transparent;
 	padding: 15px 36px 15px 36px;
@@ -82,7 +86,7 @@ input[type="checkbox"]:checked+.far.fa-square::before {
 	display: block;
 }
 
-.button-filter-reset::before {
+.button__filter--reset::before {
 	position: absolute;
 	content: "";
 	width: 100%;
@@ -92,7 +96,7 @@ input[type="checkbox"]:checked+.far.fa-square::before {
 	border-radius: 25px;
 }
 
-.button-filter-reset::before :hover {
+.button__filter--reset::before :hover {
 	background-color: #FAC663;
 }
 
