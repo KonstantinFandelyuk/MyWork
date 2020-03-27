@@ -12,6 +12,12 @@
 	margin-left: 80px;
 }
 
+@media (max-width: 470px) {
+	.promo-box {
+		margin-left: 20px;
+	}
+}
+
 .promo-box__list--country {
 	font-family: $lato;
 	font-size: 14px;
@@ -32,4 +38,16 @@
 	font-size: 20px;
 	// line-height: 24px;
 	margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+	.promo-box__list--text {
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 570px) {
+	.promo-box__list--text {
+		max-width: 200px;
+	}
 }
