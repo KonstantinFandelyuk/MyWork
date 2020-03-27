@@ -1,0 +1,124 @@
+.modal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	display: none;
+	background: rgba(255, 254, 253, 0.8);
+	backdrop-filter: blur(8px);
+}
+
+.modal.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.background-modal {
+	max-width: 570px;
+	background: #fffefd;
+	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+	border-radius: 10px;
+	padding: 70px 70px;
+	text-align: center;
+	background-image: url("../img/modal/paw.svg");
+	background-repeat: no-repeat;
+	background-position-x: -15px;
+	background-position-y: -24px;
+}
+
+.form-title {
+	font-family: $Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 33px;
+	color: $black;
+	margin-bottom: 50px;
+}
+
+.modal-form__list-item {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.modal-form__list-item:nth-child(6) {
+	margin-bottom: 50px;
+}
+
+.form-text[type="text"],
+.form-text[type="tel"],
+.form-text[type="email"] {
+	border: 1px solid #d7d7d7;
+	box-sizing: border-box;
+	border-radius: 25px;
+	width: 430px;
+	height: 52px;
+	outline: none;
+	transition: 0.4s ease-in-out;
+}
+
+.form-text[type="text"]:hover,
+.form-text[type="text"]:focus,
+.form-text[type="tel"]:hover,
+.form-text[type="tel"]:focus,
+.form-text[type="email"]:hover,
+.form-text[type="email"]:focus {
+	border: 1px solid $orange;
+	transition: 0.4s ease-in-out;
+}
+
+input[type="date"] {
+	border: 1px solid #d7d7d7;
+	box-sizing: border-box;
+	border-radius: 25px;
+	width: 129px;
+	height: 52px;
+	outline: none;
+	color: grey;
+	font-family: $lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+.modal-form__list-item label {
+	position: absolute;
+	top: 17px;
+	left: 30px;
+	font-family: $lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: $black;
+}
+
+.date-text {
+	font-family: $lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.date-text>.in {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.date-text>.on {
+	margin-left: 10px;
+	margin-right: 10px;
+}

@@ -1,5 +1,7 @@
 .apartament__wrapper {
 	display: flex;
+	align-items: center;
+
 }
 
 .apartament__row-1 {
@@ -16,7 +18,7 @@
 	font-weight: bold;
 	font-size: 36px;
 	color: $black;
-	margin-bottom: 40px;
+	margin-bottom: 32px;
 }
 
 .apartament-text,
@@ -26,7 +28,11 @@
 	font-weight: normal;
 	font-size: 16px;
 	color: $black;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
+}
+
+.apartament-advantage {
+	margin-bottom: 14px;
 }
 
 .apartament-advantage {

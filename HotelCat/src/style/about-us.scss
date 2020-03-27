@@ -20,6 +20,12 @@
 	flex-wrap: wrap;
 }
 
+@media (max-width: 1190px) {
+	.advantage__list {
+		justify-content: center;
+	}
+}
+
 .advantage__list-item {
 	text-align: start;
 	background: #FFF;
@@ -34,6 +40,18 @@
 .advantage__list-item:first-child,
 .advantage__list-item:nth-child(4) {
 	margin-left: 0px;
+}
+
+@media (max-width: 1190px) {
+	.advantage__list-item {
+		margin-left: 15px;
+		margin-bottom: 20px;
+	}
+
+	.advantage__list-item:first-child,
+	.advantage__list-item:nth-child(4) {
+		margin-left: 15px;
+	}
 }
 
 .advantage-logo {

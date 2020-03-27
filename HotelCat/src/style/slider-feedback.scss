@@ -3,6 +3,12 @@
   max-width: 1470px;
 }
 
+@media (max-width: 870px) {
+  .slider-feedback.slick-slider {
+    max-width: 830px;
+  }
+}
+
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
