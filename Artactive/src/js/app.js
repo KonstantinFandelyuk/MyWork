@@ -51,7 +51,6 @@ sliderServiceList.addEventListener("click", function(event) {
   if (btn) {
     let direction = btn.getAttribute("data-btn");
     sliderImg[curNum].classList.remove("active");
-    // console.log("remove", curNum, direction);
     if (direction == "prev") {
       curNum--;
     } else {
@@ -77,28 +76,10 @@ sliderServiceList.addEventListener("click", function(event) {
 // -------------------------------------------------
 
 $(document).ready(function() {
-  $(".slider").slick({ slidesToScroll: 1.5 });
+  $(".slider").slick({
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "172px",
+    // variableWidth: false,
+  });
 });
-
-// let sliderFeedbackList = document.querySelector("#slider-feedback-list");
-// let sliderItem = sliderFeedbackList.querySelectorAll(".slider__list-item");
-// let curNumItem = 0;
-
-// function myFunctionPrev() {
-//   // Code for Chrome, Safari, Opera
-//   document.getElementById("slider-feedback-list").style.WebkitTransform =
-//     "translate(800px";
-// }
-
-// function myFunctionNext() {
-//   document.getElementById("slider-feedback-list").style.WebkitTransform =
-//     "translate(-800px)";
-// }
-
-// document.getElementById("data-btn-prev").addEventListener("click", function () {
-//   myFunctionPrev();
-// });
-
-// document.getElementById("data-btn-next").addEventListener("click", function () {
-//   myFunctionNext();
-// });

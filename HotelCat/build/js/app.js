@@ -3,6 +3,8 @@
 // let buttonFilterReset = document.querySelector(".button__filter--reset");
 // let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
 // let res = [];
+const modalBuy = document.querySelector(".modal");
+let animateBuy = document.querySelector(".background-modal");
 
 // allCheckbox.forEach(function(item, i) {
 //   item.addEventListener("change", function() {
@@ -39,3 +41,20 @@
 //     }
 //   });
 // }
+
+document.addEventListener("click", function(event) {
+  const buttonBuy = event.target.closest(".button");
+  if (buttonBuy) {
+    modalBuy.classList.add("active");
+    animateBuy.classList.add("zoomIn");
+  }
+});
+
+document.addEventListener("click", function(event) {
+  let modalClose = event.target.closest(".modal__close");
+  let modalElementBackground = event.target.closest(".background-modal");
+  let modalElement = event.target.closest(".modal");
+  if (modalClose || (modalElement && !modalElementBackground)) {
+    modalBuy.classList.remove("active");
+  }
+});

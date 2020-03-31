@@ -45,79 +45,81 @@
           </div>
           <div class="section__row-2">
             <div class="catalog-box">
-              <aside class="catalog-filter">
-                <div class="catalog-filter--title">Цена за сутки,₽</div>
-                <div class="catalog-filter--price">
-                  <input type="text" name="" placeholder="от 100">
-                  <input type="text" name="" placeholder="до 600">
-                </div>
-                <div class="catalog-filter--title">Площадь </div>
-                <div class="catalog-filter--square">
-                  <ul>
-                    <li> 
-                      <label>
-                        <input type="checkbox" name="square-input"><i class="far fa-square"></i><span class="checkbox-text">0,63 м2</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="square-input"><i class="far fa-square"></i><span class="checkbox-text">0,90 м2</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="square-input"><i class="far fa-square"></i><span class="checkbox-text">1,13 м2</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="square-input"><i class="far fa-square"></i><span class="checkbox-text">1,56 м2</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="square-input"><i class="far fa-square"></i><span class="checkbox-text">2,56 м2</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="square-input"><i class="far fa-square"></i><span class="checkbox-text">2,88 м2</span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="catalog-filter--title">Оснащение номера</div>
-                <div class="equipment-fliter">
-                  <ul>
-                    <li> 
-                      <label>
-                        <input type="checkbox" name="none-room"><i class="far fa-square"></i><span class="checkbox-text">Пустой номер</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="lotock-input"><i class="far fa-square"></i><span class="checkbox-text">Лежак</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="claw-input"><i class="far fa-square"></i><span class="checkbox-text">Когтеточка</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="ball-input"><i class="far fa-square"></i><span class="checkbox-text">Игровой-комплекс</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="house-input"><i class="far fa-square"></i><span class="checkbox-text">Домик</span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-                <button class="button__filter--sumbit" onClick="ClickMe()">Применить</button>
-                <button class="button__filter--reset" onClick="ClickReset()">Сбросить фильтр</button>
+              <aside class="filter">
+                <form class="catalog-filter">
+                  <div class="catalog-filter--title">Цена за сутки,₽</div>
+                  <div class="catalog-filter--price">
+                    <input type="text" name="" placeholder="от 100" min="100">
+                    <input type="text" name="" placeholder="до 600" max="600">
+                  </div>
+                  <div class="catalog-filter--title">Площадь </div>
+                  <div class="catalog-filter--square">
+                    <ul>
+                      <li> 
+                        <label>
+                          <input type="checkbox" 0.63><i class="far fa-square"></i><span class="checkbox-text">0,63 м2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" 0.90><i class="far fa-square"></i><span class="checkbox-text">0,90 м2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" 1.13><i class="far fa-square"></i><span class="checkbox-text">1,13 м2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" 1.56><i class="far fa-square"></i><span class="checkbox-text">1,56 м2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" 2.56><i class="far fa-square"></i><span class="checkbox-text">2,56 м2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" 2.88><i class="far fa-square"></i><span class="checkbox-text">2,88 м2</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="catalog-filter--title">Оснащение номера</div>
+                  <div class="equipment-fliter">
+                    <ul>
+                      <li> 
+                        <label>
+                          <input type="checkbox" none-room><i class="far fa-square"></i><span class="checkbox-text">Пустой номер</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" lotok-room><i class="far fa-square"></i><span class="checkbox-text">Лежак</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" claw-point-room><i class="far fa-square"></i><span class="checkbox-text">Когтеточка</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" ball-room><i class="far fa-square"></i><span class="checkbox-text">Игровой-комплекс</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" house-room><i class="far fa-square"></i><span class="checkbox-text">Домик</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="button__filter--sumbit" onClick="ClickMe()">Применить</button>
+                  <button class="button__filter--reset" onClick="ClickReset()">Сбросить фильтр</button>
+                </form>
               </aside>
               <div class="catalog">
                 <div class="catalog__list">
@@ -126,7 +128,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Эконом</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х70х180 см</div>
-                      <div class="catalog-text">Площадь - <span class="square">0,63м2</span></div>
+                      <div class="catalog-text" 0.63>Площадь - <span class="square">0,63м2</span></div>
                       <div class="catalog-text">Оснащение номера<img class="none-room" src="img/catalog/shop/icon/1.svg" alt="">
                         <div class="info-text">Пустой номер</div>
                       </div>
@@ -139,7 +141,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Эконом плюс</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х100х180 см</div>
-                      <div class="catalog-text">Площадь - <span class="square">0,90м2</span></div>
+                      <div class="catalog-text" 0.90>Площадь - <span class="square">0,90м2</span></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt="">
                         <div class="info-text">Лежак</div><img class="ball-room" src="img/catalog/shop/icon/3.svg" alt="">
                         <div class="info-text">Когтеточка</div>
@@ -153,7 +155,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Комфорт</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 100х125х180 см</div>
-                      <div class="catalog-text">Площадь - <span class="square">1,13 м2</span></div>
+                      <div class="catalog-text" 1.13>Площадь - <span class="square">1,13 м2</span></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt=""><img class="claw-point-room" src="img/catalog/shop/icon/3.svg" alt=""><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt=""></div>
                       <div class="catalog-text">Цена за сутки: <span class="catalog-price">250₽</span></div>
                       <button class="button button-orange">Забронировать</button>
@@ -164,7 +166,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Сьют</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 125х125х180 см</div>
-                      <div class="catalog-text">Площадь - <span class="square">1,56 м2</span></div>
+                      <div class="catalog-text" 1.56>Площадь - <span class="square">1,56 м2</span></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt=""><img class="claw-point-room" src="img/catalog/shop/icon/3.svg" alt=""><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt=""></div>
                       <div class="catalog-text">Цена за сутки: <span class="catalog-price">350₽</span></div>
                       <button class="button button-orange">Забронировать</button>
@@ -175,7 +177,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Люкс</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х70х180 см</div>
-                      <div class="catalog-text">Площадь - <span class="square">2,56 м2</span></div>
+                      <div class="catalog-text" 2.56>Площадь - <span class="square">2,56 м2</span></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt="">
                         <div class="info-text">Лежак</div><img class="claw-point-room" src="img/catalog/shop/icon/3.svg" alt="">
                         <div class="info-text">Когтеточка</div><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt="">
@@ -191,7 +193,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Супер-Люкс</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х70х180 см</div>
-                      <div class="catalog-text">Площадь - <span class="square">2,88 м2</span></div>
+                      <div class="catalog-text" 2.88>Площадь - <span class="square">2,88 м2</span></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt="">
                         <div class="info-text">Лежак</div><img class="claw-point-room" src="img/catalog/shop/icon/3.svg" alt="">
                         <div class="info-text">Когтеточка</div><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt="">
