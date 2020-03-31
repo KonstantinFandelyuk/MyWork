@@ -269,21 +269,35 @@
   //  --------------Services-Card-END-----------
 
   //  --------------Feedback--------------------
-  .slider__list {
-    transform: translateX(-1%);
-  }
-
-  .slider__list-item--active {
-    max-width: 95%;
-  }
-
-  .feedback .slider-button {
-    margin-left: 2%;
-  }
-
   .slick-slide {
-    transform: translate(-8px);
+    flex-direction: column;
+    max-height: 400px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+
   }
+
+
+
+  .slider__list-item-social-link {
+    text-align: center;
+  }
+
+  // .slider__list {
+  //   transform: translateX(-1%);
+  // }
+
+  // .slider__list-item--active {
+  //   max-width: 95%;
+  // }
+
+  // .feedback .slider-button {
+  //   margin-left: 2%;
+  // }
+
+  // .slick-slide {
+  //   transform: translate(-8px);
+  // }
 
   //  ------------Feedback-END----------------
   .slick-prev.slick-arrow {

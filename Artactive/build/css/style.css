@@ -360,7 +360,15 @@ input[type="submit"] {
   font-size: 40px;
   content: "\f103";
   color: #fff;
-  top: 14px; }
+  top: 14px;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite; }
+
+.scroll {
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite; }
 
 .section .about {
   background-image: url("../img/section/item/line.png");
@@ -724,10 +732,13 @@ input[type="submit"] {
 .slider {
   position: relative; }
 
+.slider__list-item {
+  opacity: 0.3; }
+
 .feedback .slider__list-item-photo {
   background-color: #fff;
   border-radius: 50%;
-  width: 400px;
+  max-width: 400px;
   border: 0px solid grey; }
 
 .feedback .slider__list-item-text {
@@ -747,8 +758,7 @@ input[type="submit"] {
 .slider__list-item-social-link {
   color: #3594dd;
   margin-top: 10px;
-  display: block;
-  max-width: 20%; }
+  display: block; }
 
 footer .section__row-1 {
   position: relative; }
@@ -825,9 +835,6 @@ footer .company-name,
 .nda {
   text-decoration: underline; }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
 /* Ограничивающая оболочка */
 .slider .slick-list {
   overflow: hidden; }
@@ -840,7 +847,6 @@ footer .company-name,
 
 /* Слайд */
 .slick-slide {
-  transform: translate(-990px);
   display: flex;
   align-items: center;
   border-radius: 10px 10px 10px 10px;
@@ -851,17 +857,17 @@ footer .company-name,
   margin-left: 23px;
   background-color: #fff;
   box-shadow: -1px 2px 5px 5px rgba(0, 0, 0, 0.1);
-  opacity: 1;
   margin-bottom: 10px;
   outline: none; }
 
 /* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
+.slick-slide.slick-active {
+  opacity: 1;
+  user-select: none; }
+
 /* Стрелка влево */
-.slick-arrow.slick-prev {
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
   position: absolute;
   background-color: transparent;
   display: inline-flex;
@@ -885,13 +891,8 @@ footer .company-name,
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
-  position: absolute;
-  background-color: transparent;
-  display: inline-flex;
-  align-items: center;
   left: 150px;
-  bottom: -30px;
-  font-size: 0; }
+  bottom: -30px; }
 
 .slick-arrow.slick-next::before {
   width: 80px;
@@ -906,10 +907,6 @@ footer .company-name,
   content: "\f105";
   color: #883eca; }
 
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
 .modal {
   display: none;
   position: fixed;
@@ -1181,14 +1178,13 @@ footer .company-name,
     left: 16%; }
   .services-card .little-text {
     display: block; }
-  .slider__list {
-    transform: translateX(-1%); }
-  .slider__list-item--active {
-    max-width: 95%; }
-  .feedback .slider-button {
-    margin-left: 2%; }
   .slick-slide {
-    transform: translate(-8px); }
+    flex-direction: column;
+    max-height: 400px;
+    padding: 10px 10px 10px 10px;
+    text-align: center; }
+  .slider__list-item-social-link {
+    text-align: center; }
   .slick-prev.slick-arrow {
     left: 20px; }
   .slick-next.slick-arrow {

@@ -15,10 +15,14 @@
   position: relative;
 }
 
+.slider__list-item {
+  opacity: 0.3;
+}
+
 .feedback .slider__list-item-photo {
   background-color: #fff;
   border-radius: 50%;
-  width: 400px;
+  max-width: 400px;
   border: 0px solid grey;
 }
 
@@ -42,5 +46,5 @@
   color: #3594dd;
   margin-top: 10px;
   display: block;
-  max-width: 20%;
+  // max-width: 20%;
 }
