@@ -17,6 +17,7 @@
 }
 
 .background-modal {
+	position: relative;
 	max-width: 570px;
 	background: #fffefd;
 	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -121,4 +122,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .date-text>.on {
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.modal__close {
+	position: absolute;
+	top: 30px;
+	right: 15px;
+	transition: 0.5s ease-in-out;
+}
+
+.modal__close-top,
+.modal__close-bottom {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	width: 30px;
+	height: 1px;
+	background-color: black;
+	cursor: pointer;
+	transform: rotate(45deg);
+	transition: 0.5s ease-in-out;
+	padding: 2px;
+}
+
+.modal__close-bottom {
+	transform: rotate(-45deg);
 }

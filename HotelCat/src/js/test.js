@@ -10,47 +10,33 @@ let buttonFilterReset = document.querySelector(".button__filter--reset");
 // -------------------------
 
 let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
-let squareListItem = Array.from(document.querySelectorAll(".square"));
+let catalogText = Array.from(document.querySelectorAll(".catalog-text "));
+
+// let squareListItem = Array.from(document.querySelectorAll(".square"));
 let res = []; // - Массив данных  выбраных чекбоксов
 
 // --- Проходит по всем чекбоксам и активирует кнопку ---------
 
-allCheckbox.forEach(function(item, i) {
-  item.addEventListener("change", function() {
-    if (item.checked) {
-      buttonFilterSumbit.classList.add("active");
-    }
+// allCheckbox.map((value) => {
+//   value.onclick = function() {
+//     if (value) {
+//       buttonFilterSumbit.classList.add("active");
+//     }
+//   };
+// });
+
+// // --------------------------------------------
+
+allCheckbox.forEach((item, index) => {
+  item.addEventListener("change", (e) => {
+    catalogText.forEach((value, i) => {
+      let catalogTextAtr = value.getAttributeNames()[1];
+      let inputAtr = item.getAttributeNames()[1];
+      console.log(inputAtr);
+      // if (inputAtr === catalogTextAtr && catalogTextAtr[i] == i) {
+      //   console.log("res");
+      //   // res.push(element);
+      // }
+    });
   });
 });
-
-// --------------------------------------------
-
-allCheckbox.forEach(function(item, i) {
-  item.addEventListener("change", function() {
-    if (item.checked) {
-      catalogItemProduct.forEach(function(vl, index) {
-        if (i == index) {
-          // res.push(item);
-          console.log(item);
-        }
-      });
-    }
-  });
-});
-
-// function ClickMe() {
-//   res.forEach(function(item, i) {
-//     item.addEventListener("change", function() {
-//       if (item.checked) {
-//         catalogItemProduct.forEach(function(vl, indx) {
-//           if (i == indx) {
-//             catalog.classList.add("active");
-//             vl.style.display = "active";
-//           } else {
-//             vl.style.display = "none";
-//           }
-//         });
-//       }
-//     });
-//   });
-// }
