@@ -1,0 +1,69 @@
+aside.filter
+	form.catalog-filter
+		.catalog-filter--title Цена за сутки,₽
+		.catalog-filter--price
+			input(type="text" name="" placeholder="от 100" min="100")
+			input(type="text" name="" placeholder="до 600" max="600")
+		.catalog-filter--title Площадь 
+		.catalog-filter--square
+			ul
+				li 
+					label
+						input(type="checkbox" 0.63)
+						i.far.fa-square
+						span.checkbox-text 0,63 м2
+				li
+					label
+						input(type="checkbox" 0.90)
+						i.far.fa-square
+						span.checkbox-text 0,90 м2
+				li
+					label
+						input(type="checkbox" 1.13)
+						i.far.fa-square
+						span.checkbox-text 1,13 м2
+				li
+					label
+						input(type="checkbox" 1.56)
+						i.far.fa-square
+						span.checkbox-text 1,56 м2
+				li
+					label
+						input(type="checkbox" 2.56 )
+						i.far.fa-square
+						span.checkbox-text 2,56 м2
+				li
+					label
+						input(type="checkbox" 2.88)
+						i.far.fa-square
+						span.checkbox-text 2,88 м2
+		.catalog-filter--title Оснащение номера
+		.equipment-fliter
+			ul
+				li 
+					label
+						input(type="checkbox" none-room)
+						i.far.fa-square
+						span.checkbox-text Пустой номер
+				li
+					label
+						input(type="checkbox" lotok-room)
+						i.far.fa-square
+						span.checkbox-text Лежак
+				li
+					label
+						input(type="checkbox" claw-point-room)
+						i.far.fa-square
+						span.checkbox-text Когтеточка
+				li
+					label
+						input(type="checkbox" ball-room)
+						i.far.fa-square
+						span.checkbox-text Игровой-комплекс
+				li
+					label
+						input(type="checkbox" house-room)
+						i.far.fa-square
+						span.checkbox-text Домик
+		button.button__filter--sumbit(onClick="ClickMe()") Применить
+		button.button__filter--reset( onClick="ClickReset()") Сбросить фильтр
