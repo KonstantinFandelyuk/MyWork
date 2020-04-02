@@ -262,7 +262,7 @@ input[type="submit"] {
 
 @media (max-width: 550px) {
   .burger {
-    display: flex; } }
+    display: inline-block; } }
 
 .ham {
   cursor: pointer;
