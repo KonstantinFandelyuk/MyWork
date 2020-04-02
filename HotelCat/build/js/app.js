@@ -3,17 +3,37 @@
 // let buttonFilterReset = document.querySelector(".button__filter--reset");
 // let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
 // let res = [];
-let burgerMenu = document.querySelector(".burger-menu");
-let headerRow = document.querySelector(".header__row-1");
+
 let modalBuy = document.querySelector(".modal");
 let animateBuy = document.querySelector(".background-modal");
 
 document.addEventListener("click", function(event) {
+  let burgerMenu = document.querySelector(".burger-menu");
   const burgerMenuButton = event.target.closest(".burger");
+  let headerRow = document.querySelector(".header__row-1");
+  let animateBuy = document.querySelector(".burger-menu__background");
   if (burgerMenuButton) {
     burgerMenu.classList.toggle("active");
     headerRow.classList.toggle("active");
     animateBuy.classList.toggle("fadeInDown");
+  }
+});
+
+document.addEventListener("click", function(event) {
+  const buttonBuy = event.target.closest(".button");
+  if (buttonBuy) {
+    modalBuy.classList.add("active");
+    animateBuy.classList.add("zoomIn");
+  }
+});
+
+document.addEventListener("click", function(event) {
+  let modalClose = event.target.closest(".modal__close");
+  let modalElementBackground = event.target.closest(".background-modal");
+  let modalElement = event.target.closest(".modal");
+  if (modalClose || (modalElement && !modalElementBackground)) {
+    modalBuy.classList.remove("active");
+    modalElementBackground.classList.remove("zoomIn");
   }
 });
 
@@ -52,21 +72,3 @@ document.addEventListener("click", function(event) {
 //     }
 //   });
 // }
-
-document.addEventListener("click", function(event) {
-  const buttonBuy = event.target.closest(".button");
-  if (buttonBuy) {
-    modalBuy.classList.add("active");
-    animateBuy.classList.add("zoomIn");
-  }
-});
-
-document.addEventListener("click", function(event) {
-  let modalClose = event.target.closest(".modal__close");
-  let modalElementBackground = event.target.closest(".background-modal");
-  let modalElement = event.target.closest(".modal");
-  if (modalClose || (modalElement && !modalElementBackground)) {
-    modalBuy.classList.remove("active");
-    modalElementBackground.classList.remove("zoomIn");
-  }
-});
