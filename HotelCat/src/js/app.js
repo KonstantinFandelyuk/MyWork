@@ -3,8 +3,19 @@
 // let buttonFilterReset = document.querySelector(".button__filter--reset");
 // let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
 // let res = [];
-const modalBuy = document.querySelector(".modal");
+let burgerMenu = document.querySelector(".burger-menu");
+let headerRow = document.querySelector(".header__row-1");
+let modalBuy = document.querySelector(".modal");
 let animateBuy = document.querySelector(".background-modal");
+
+document.addEventListener("click", function(event) {
+  const burgerMenuButton = event.target.closest(".burger");
+  if (burgerMenuButton) {
+    burgerMenu.classList.toggle("active");
+    headerRow.classList.toggle("active");
+    animateBuy.classList.toggle("fadeInDown");
+  }
+});
 
 // allCheckbox.forEach(function(item, i) {
 //   item.addEventListener("change", function() {
