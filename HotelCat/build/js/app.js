@@ -56,5 +56,6 @@ document.addEventListener("click", function(event) {
   let modalElement = event.target.closest(".modal");
   if (modalClose || (modalElement && !modalElementBackground)) {
     modalBuy.classList.remove("active");
+    modalElementBackground.classList.remove("zoomIn");
   }
 });

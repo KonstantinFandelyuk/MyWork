@@ -103,6 +103,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	font-size: 16px;
 	line-height: 19px;
 	color: $black;
+	transition: 0.5s ease-in-out;
+}
+
+.modal-form__list-item:hover label,
+.modal-form__list-item:hover:focus label {
+	top: -18px;
+	left: 30px;
+	transition: 0.5s ease-in-out;
 }
 
 .date-text {
