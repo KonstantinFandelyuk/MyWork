@@ -257,6 +257,54 @@ input[type="submit"] {
   .promo-box__list--text {
     max-width: 200px; } }
 
+.burger {
+  display: none; }
+
+@media (max-width: 550px) {
+  .burger {
+    display: flex; } }
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.hamRotate.active {
+  transform: rotate(45deg); }
+
+.hamRotate180.active {
+  transform: rotate(180deg); }
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 3.3;
+  stroke-linecap: round; }
+
+.ham7 .top {
+  stroke-dasharray: 40 82; }
+
+.ham7 .middle {
+  stroke-dasharray: 40 111; }
+
+.ham7 .bottom {
+  stroke-dasharray: 40 161; }
+
+.ham7.active .top {
+  stroke-dasharray: 17 82;
+  stroke-dashoffset: -62px; }
+
+.ham7.active .middle {
+  stroke-dashoffset: 23px; }
+
+.ham7.active .bottom {
+  stroke-dashoffset: -83px; }
+
 .menu-inner {
   background: #FFFEFD;
   padding: 12px 0; }
@@ -265,6 +313,10 @@ input[type="submit"] {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+@media (max-width: 550px) {
+  .menu-inner__list--item:nth-child(2) {
+    display: none; } }
 
 .menu__list {
   display: flex;
@@ -307,16 +359,28 @@ input[type="submit"] {
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  transition: 0.3s all; }
+  transition: 0.6s all; }
 
 .button:hover::after {
-  transition: 0.3s all;
-  transform: translateX(-20%); }
+  animation: heart;
+  animation-duration: 5s;
+  animation-delay: 1s; }
 
-.button {
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite; }
+@keyframes heart {
+  from,
+  to {
+    transform: translate3d(0, 0, 0); }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-5px, 0, 0); }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(2px, 0, 0); } }
 
 .about-us {
   background-image: url("../img/section/about-us/background.png");
@@ -395,7 +459,7 @@ input[type="submit"] {
 .room-card {
   transform: translate(-50%, -50%);
   position: absolute;
-  top: 50%;
+  top: 49%;
   right: -18%;
   background: white;
   box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -1632,7 +1696,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #1A212F; }
+  color: #1A212F;
+  transition: 0.5s ease-in-out; }
+
+.modal-form__list-item:hover label,
+.modal-form__list-item:hover:focus label {
+  top: -18px;
+  left: 30px;
+  transition: 0.5s ease-in-out; }
 
 .date-text {
   font-family: "LatoWeb";

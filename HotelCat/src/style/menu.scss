@@ -9,6 +9,12 @@
 	align-items: center;
 }
 
+@media (max-width: 550px) {
+	.menu-inner__list--item:nth-child(2) {
+		display: none;
+	}
+}
+
 .menu__list {
 	display: flex;
 	justify-content: space-between;
