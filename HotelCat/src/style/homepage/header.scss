@@ -10,10 +10,8 @@
 	padding-top: 153px;
 	padding-bottom: 153px;
 	margin-left: 80px;
-}
 
-@media (max-width: 470px) {
-	.promo-box {
+	@media (max-width: 470px) {
 		margin-left: 20px;
 	}
 }
@@ -28,7 +26,6 @@
 	font-family: $Rubik;
 	font-weight: bold;
 	font-size: 62px;
-	// line-height: 73px;
 	margin-bottom: 25px;
 }
 
@@ -36,18 +33,13 @@
 	font-family: "LatoWeb";
 	font-weight: 500;
 	font-size: 20px;
-	// line-height: 24px;
 	margin-bottom: 40px;
-}
 
-@media (max-width: 700px) {
-	.promo-box__list--text {
+	@media (max-width: 700px) {
 		max-width: 300px;
 	}
-}
 
-@media (max-width: 570px) {
-	.promo-box__list--text {
+	@media (max-width: 570px) {
 		max-width: 200px;
 	}
 }

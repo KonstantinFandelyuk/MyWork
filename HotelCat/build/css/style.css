@@ -227,10 +227,9 @@ input[type="submit"] {
   padding-top: 153px;
   padding-bottom: 153px;
   margin-left: 80px; }
-
-@media (max-width: 470px) {
-  .promo-box {
-    margin-left: 20px; } }
+  @media (max-width: 470px) {
+    .promo-box {
+      margin-left: 20px; } }
 
 .promo-box__list--country {
   font-family: "LatoWeb";
@@ -248,14 +247,12 @@ input[type="submit"] {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 40px; }
-
-@media (max-width: 700px) {
-  .promo-box__list--text {
-    max-width: 300px; } }
-
-@media (max-width: 570px) {
-  .promo-box__list--text {
-    max-width: 200px; } }
+  @media (max-width: 700px) {
+    .promo-box__list--text {
+      max-width: 300px; } }
+  @media (max-width: 570px) {
+    .promo-box__list--text {
+      max-width: 200px; } }
 
 .burger {
   display: none; }
@@ -395,14 +392,16 @@ input[type="submit"] {
   text-align: center;
   margin-bottom: 70px; }
 
+.advantage {
+  margin-left: -30px; }
+
 .advantage__list {
   display: flex;
   flex: 0 0 33.333333%;
   flex-wrap: wrap; }
-
-@media (max-width: 1190px) {
-  .advantage__list {
-    justify-content: center; } }
+  @media (max-width: 1190px) {
+    .advantage__list {
+      justify-content: center; } }
 
 .advantage__list-item {
   text-align: start;
@@ -413,18 +412,6 @@ input[type="submit"] {
   max-width: 370px;
   margin-bottom: 20px;
   margin-left: 30px; }
-
-.advantage__list-item:first-child,
-.advantage__list-item:nth-child(4) {
-  margin-left: 0px; }
-
-@media (max-width: 1190px) {
-  .advantage__list-item {
-    margin-left: 15px;
-    margin-bottom: 20px; }
-  .advantage__list-item:first-child,
-  .advantage__list-item:nth-child(4) {
-    margin-left: 15px; } }
 
 .advantage-logo {
   border-radius: 50%;
@@ -466,28 +453,39 @@ input[type="submit"] {
   border-radius: 8px;
   max-width: 500px;
   padding: 40px 100px 40px 100px; }
-
-@media (max-width: 1000px) {
-  .room-card {
-    right: -29%; } }
-
-@media (max-width: 1000px) and (max-width: 940px) {
-  .room-card {
-    background: rgba(255, 255, 255, 0.9); } }
-
-@media (max-width: 1000px) and (max-width: 700px) {
-  .room-card {
-    right: -31%; } }
-
-@media (max-width: 1000px) and (max-width: 650px) {
-  .room-card {
-    right: -47%; } }
+  @media (max-width: 1000px) {
+    .room-card {
+      right: -29%; } }
+  @media (max-width: 940px) {
+    .room-card {
+      background: rgba(255, 255, 255, 0.9); } }
+  @media (max-width: 700px) {
+    .room-card {
+      right: -31%; } }
+  @media (max-width: 650px) {
+    .room-card {
+      right: -47%; } }
+  @media (max-width: 550px) {
+    .room-card {
+      right: -42%;
+      padding: 40px 65px 40px 65px; } }
+  @media (max-width: 490px) {
+    .room-card {
+      right: -42%;
+      padding: 15px 34px 15px 33px; } }
+  @media (max-width: 408px) {
+    .room-card {
+      right: -45%;
+      padding: 10px 10px 10px 10px; } }
 
 .room-card__list--tittle {
   font-family: "Rubik";
   font-weight: 500;
   font-size: 22px;
   margin-bottom: 30px; }
+  @media (max-width: 408px) {
+    .room-card__list--tittle {
+      margin-bottom: 15px; } }
 
 .room-card__list--item {
   font-family: "LatoWeb";
@@ -495,6 +493,9 @@ input[type="submit"] {
   font-size: 16px;
   margin-bottom: 20px;
   position: relative; }
+  @media (max-width: 408px) {
+    .room-card__list--item {
+      margin-bottom: 15px; } }
 
 .room-card__list--item:last-child {
   margin-bottom: 30px; }
@@ -520,18 +521,24 @@ input[type="submit"] {
 .slick-slider {
   max-width: 1082px;
   margin: 0 auto; }
-
-@media (max-width: 1000px) {
-  .slick-slider {
-    max-width: 800px; } }
-
-@media (max-width: 700px) {
-  .slick-slider {
-    max-width: 600px; } }
-
-@media (max-width: 700px) and (max-width: 650px) {
-  .slick-slider {
-    max-width: 500px; } }
+  @media (max-width: 1000px) {
+    .slick-slider {
+      max-width: 800px; } }
+  @media (max-width: 700px) {
+    .slick-slider {
+      max-width: 600px; } }
+  @media (max-width: 650px) {
+    .slick-slider {
+      max-width: 500px; } }
+  @media (max-width: 550px) {
+    .slick-slider {
+      max-width: 450px; } }
+  @media (max-width: 490px) {
+    .slick-slider {
+      max-width: 380px; } }
+  @media (max-width: 410px) {
+    .slick-slider {
+      max-width: 320px; } }
 
 /* Ограничивающая оболочка */
 .slick-list {

@@ -2,25 +2,36 @@
 .slick-slider {
 	max-width: 1082px;
 	margin: 0 auto;
-}
 
-@media (max-width: 1000px) {
-	.slick-slider {
+	@media (max-width: 1000px) {
 		max-width: 800px;
 	}
-}
 
-@media (max-width: 700px) {
-	.slick-slider {
+	@media (max-width: 700px) {
 		max-width: 600px;
 	}
 
 	@media (max-width: 650px) {
-		.slick-slider {
-			max-width: 500px;
-		}
+
+		max-width: 500px;
+	}
+
+	@media (max-width:550px) {
+
+		max-width: 450px;
+	}
+
+	@media (max-width:490px) {
+
+		max-width: 380px;
+	}
+
+	@media (max-width:410px) {
+
+		max-width: 320px;
 	}
 }
+
 
 /* Ограничивающая оболочка */
 .slick-list {
