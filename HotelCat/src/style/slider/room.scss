@@ -16,29 +16,36 @@
 	border-radius: 8px;
 	max-width: 500px;
 	padding: 40px 100px 40px 100px;
-}
 
-@media (max-width: 1000px) {
-	.room-card {
+	@media (max-width: 1000px) {
 		right: -29%;
 	}
 
 	@media (max-width: 940px) {
-		.room-card {
-			background: rgba(255, 255, 255, 0.9);
-		}
+		background: rgba(255, 255, 255, 0.9);
 	}
 
 	@media (max-width: 700px) {
-		.room-card {
-			right: -31%;
-		}
+		right: -31%;
 	}
 
 	@media (max-width: 650px) {
-		.room-card {
-			right: -47%;
-		}
+		right: -47%;
+	}
+
+	@media (max-width: 550px) {
+		right: -42%;
+		padding: 40px 65px 40px 65px;
+	}
+
+	@media (max-width: 490px) {
+		right: -42%;
+		padding: 15px 34px 15px 33px;
+	}
+
+	@media (max-width: 408px) {
+		right: -45%;
+		padding: 10px 10px 10px 10px;
 	}
 }
 
@@ -47,6 +54,10 @@
 	font-weight: 500;
 	font-size: 22px;
 	margin-bottom: 30px;
+
+	@media (max-width: 408px) {
+		margin-bottom: 15px;
+	}
 }
 
 .room-card__list--item {
@@ -55,6 +66,10 @@
 	font-size: 16px;
 	margin-bottom: 20px;
 	position: relative;
+
+	@media (max-width: 408px) {
+		margin-bottom: 15px;
+	}
 }
 
 .room-card__list--item:last-child {

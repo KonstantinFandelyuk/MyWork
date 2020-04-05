@@ -4,10 +4,11 @@
 // let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
 // let res = [];
 
+//  Блок модальных окон и меню
 let modalBuy = document.querySelector(".modal");
 let animateBuy = document.querySelector(".background-modal");
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
   let burgerMenu = document.querySelector(".burger-menu");
   const burgerMenuButton = event.target.closest(".burger");
   let headerRow = document.querySelector(".header__row-1");
@@ -19,7 +20,7 @@ document.addEventListener("click", function(event) {
   }
 });
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
   const buttonBuy = event.target.closest(".button");
   if (buttonBuy) {
     modalBuy.classList.add("active");
@@ -27,7 +28,7 @@ document.addEventListener("click", function(event) {
   }
 });
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
   let modalClose = event.target.closest(".modal__close");
   let modalElementBackground = event.target.closest(".background-modal");
   let modalElement = event.target.closest(".modal");
@@ -36,6 +37,16 @@ document.addEventListener("click", function(event) {
     modalElementBackground.classList.remove("zoomIn");
   }
 });
+
+// Блок проверки Инпутов на ввод данных
+let inputEmail = document.querySelector("#email-addres");
+let inputPhone = document.querySelector("input[type=tel]");
+
+let inputText = document.getElementById("name").value;
+console.log(inputText);
+if (inputText == "Привет") {
+  console.log(inputText);
+}
 
 // allCheckbox.forEach(function(item, i) {
 //   item.addEventListener("change", function() {
