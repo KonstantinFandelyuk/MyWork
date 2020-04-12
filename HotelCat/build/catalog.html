@@ -44,12 +44,12 @@
             <div class="tittle-wrapper">
               <h2>Наши номера</h2>
               <div class="shop-filter"> 
-                <ul class="shop-filter__list">
-                  <li class="shop-filter__list-item arrow-up active">По площади</li>
-                  <li class="shop-filter__list-item arrow-down">По площади</li>
-                  <li class="shop-filter__list-item arrow-up">По цене</li>
-                  <li class="shop-filter__list-item arrow-down">По цене</li>
-                </ul>
+                <div class="shop-filter__list">
+                  <div class="shop-filter__list-item arrow-up active">По площади</div>
+                  <div class="shop-filter__list-item arrow-down" onClick="sortSquare();">По площади</div>
+                  <div class="shop-filter__list-item arrow-up">По цене</div>
+                  <div class="shop-filter__list-item arrow-down">По цене</div>
+                </div>
               </div>
             </div>
           </div>
@@ -127,8 +127,8 @@
                       </li>
                     </ul>
                   </div>
-                  <button class="button__filter--sumbit" onClick="ClickMe()">Применить</button>
-                  <button class="button__filter--reset" onClick="ClickReset()">Сбросить фильтр</button>
+                  <button class="button__filter--sumbit" type="button" onClick="ClickMe();">Применить</button>
+                  <button class="button__filter--reset">Сбросить фильтр</button>
                 </form>
               </aside>
               <div class="catalog">
@@ -138,7 +138,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Эконом</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х70х180 см</div>
-                      <div class="catalog-text" 0.63>Площадь - <span class="square">0,63м2</span></div>
+                      <div class="catalog-text" 0.63>Площадь - <span class="square">0,63</span> м<sup>2</sup></div>
                       <div class="catalog-text">Оснащение номера<img class="none-room" src="img/catalog/shop/icon/1.svg" alt="">
                         <div class="info-text">Пустой номер</div>
                       </div>
@@ -151,7 +151,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Эконом плюс</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х100х180 см</div>
-                      <div class="catalog-text" 0.90>Площадь - <span class="square">0,90м2</span></div>
+                      <div class="catalog-text" 0.90>Площадь - <span class="square">0,90</span> м<sup>2</sup></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt="">
                         <div class="info-text">Лежак</div><img class="ball-room" src="img/catalog/shop/icon/3.svg" alt="">
                         <div class="info-text">Когтеточка</div>
@@ -165,7 +165,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Комфорт</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 100х125х180 см</div>
-                      <div class="catalog-text" 1.13>Площадь - <span class="square">1,13 м2</span></div>
+                      <div class="catalog-text" 1.13>Площадь - <span class="square">1,13</span> м<sup>2</sup></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt=""><img class="claw-point-room" src="img/catalog/shop/icon/3.svg" alt=""><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt=""></div>
                       <div class="catalog-text">Цена за сутки: <span class="catalog-price">250₽</span></div>
                       <button class="button button-orange">Забронировать</button>
@@ -176,7 +176,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Сьют</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 125х125х180 см</div>
-                      <div class="catalog-text" 1.56>Площадь - <span class="square">1,56 м2</span></div>
+                      <div class="catalog-text" 1.56>Площадь - <span class="square">1,56</span> м<sup>2</sup></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt=""><img class="claw-point-room" src="img/catalog/shop/icon/3.svg" alt=""><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt=""></div>
                       <div class="catalog-text">Цена за сутки: <span class="catalog-price">350₽</span></div>
                       <button class="button button-orange">Забронировать</button>
@@ -187,7 +187,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Люкс</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х70х180 см</div>
-                      <div class="catalog-text" 2.56>Площадь - <span class="square">2,56 м2</span></div>
+                      <div class="catalog-text" 2.56>Площадь - <span class="square">2,56</span> м<sup>2</sup></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt="">
                         <div class="info-text">Лежак</div><img class="claw-point-room" src="img/catalog/shop/icon/3.svg" alt="">
                         <div class="info-text">Когтеточка</div><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt="">
@@ -203,7 +203,7 @@
                     <div class="description-info">
                       <div class="catalog-title">Супер-Люкс</div>
                       <div class="catalog-text">Размеры (ШхГхВ) - 90х70х180 см</div>
-                      <div class="catalog-text" 2.88>Площадь - <span class="square">2,88 м2</span></div>
+                      <div class="catalog-text" 2.88>Площадь - <span class="square">2,88</span> м<sup>2</sup></div>
                       <div class="catalog-text">Оснащение номера<img class="lotok-room" src="img/catalog/shop/icon/2.svg" alt="">
                         <div class="info-text">Лежак</div><img class="claw-point-room" src="img/catalog/shop/icon/3.svg" alt="">
                         <div class="info-text">Когтеточка</div><img class="ball-room" src="img/catalog/shop/icon/4.svg" alt="">
@@ -289,6 +289,5 @@
       </footer>
     </div>
     <script src="js/app.js?v3"></script>
-    <script src="js/test.js?v3"></script>
   </body>
 </html>
