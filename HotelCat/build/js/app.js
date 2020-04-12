@@ -44,7 +44,7 @@ let inputPhone = document.querySelector("input[type=tel]");
 
 let inputText = document.getElementById("name").value;
 console.log(inputText);
-if (inputText == "Привет") {
+if (inputText.value == "!") {
   console.log(inputText);
 }
 
