@@ -1,12 +1,15 @@
-// let allCheckbox = Array.from(document.querySelectorAll("input[type=checkbox]"));
-// let buttonFilterSumbit = document.querySelector(".button__filter--sumbit");
-// let buttonFilterReset = document.querySelector(".button__filter--reset");
-// let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
-// let res = [];
+// Блок фильтр - CHECKBOX
+let allCheckbox = Array.from(document.querySelectorAll("input[type=checkbox]"));
+let buttonFilterSumbit = document.querySelector(".button__filter--sumbit");
+let buttonFilterReset = document.querySelector(".button__filter--reset");
+let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
+let res = [];
+// --------------------------------------------------------------
 
 //  Блок модальных окон и меню
 let modalBuy = document.querySelector(".modal");
 let animateBuy = document.querySelector(".background-modal");
+// --------------------------------------------------------------
 
 document.addEventListener("click", function (event) {
   let burgerMenu = document.querySelector(".burger-menu");
@@ -37,47 +40,55 @@ document.addEventListener("click", function (event) {
     modalElementBackground.classList.remove("zoomIn");
   }
 });
+// --------------------------------------------------------------
 
-// Блок проверки Инпутов на ввод данных
-let inputEmail = document.querySelector("#email-addres");
-let inputPhone = document.querySelector("input[type=tel]");
+// Блок фильтр
+let itemSquare = Array.from(document.querySelectorAll(".square"));
+let shopFilterList = document.querySelector(".shop-filter__list");
+// // --------------------------------------------------------------
 
-let inputText = document.getElementById("name").value;
-console.log(inputText);
-if (inputText.value == "!") {
-  console.log(inputText);
+shopFilterList.addEventListener("click", function (event) {
+  let shopFilterListItem = Array.from(document.querySelectorAll(".shop-filter__list-item"));
+  shopFilterListItem.forEach((value) => {
+    if (value.classList.contains("active")) {
+      value.classList.remove("active");
+    }
+  });
+  let target = event.target;
+  target.classList.add("active");
+});
+// --------------------------------------------------------------
+
+allCheckbox.forEach(function (item, i) {
+  item.addEventListener("change", function () {
+    if (item.checked) {
+      buttonFilterSumbit.classList.add("active");
+      catalogItemProduct.forEach(function (vl, indx) {
+        if (i == indx) {
+          res.push(vl);
+        }
+      });
+    }
+  });
+});
+
+function ClickMe() {
+  catalogItemProduct.forEach(function (vl, indx) {
+    let catalog = document.querySelector(".catalog");
+    res.forEach(function (val, index) {
+      if (val) {
+        catalog.classList.add("active");
+        val.style.display = "block";
+      }
+      if (vl != val) {
+        vl.style.display = "none";
+      }
+    });
+  });
 }
 
-// allCheckbox.forEach(function(item, i) {
-//   item.addEventListener("change", function() {
-//     if (item.checked) {
-//       buttonFilterSumbit.classList.add("active");
-//       catalogItemProduct.forEach(function(vl, indx) {
-//         if (i == indx) {
-//           res.push(vl);
-//         }
-//       });
-//     }
-//   });
-// });
-
-// function ClickMe() {
-//   catalogItemProduct.forEach(function(vl, indx) {
-//     let catalog = document.querySelector(".catalog");
-//     res.forEach(function(val, index) {
-//       if (val) {
-//         catalog.classList.add("active");
-//         val.style.display = "block";
-//       }
-//       if (vl != val) {
-//         vl.style.display = "none";
-//       }
-//     });
-//   });
-// }
-
 // function ClickReset() {
-//   allCheckbox.forEach(function(vl, indx) {
+//   allCheckbox.forEach(function (vl, indx) {
 //     if (vl.checked) {
 //       vl.checked = false;
 //     }

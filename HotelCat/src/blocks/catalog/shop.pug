@@ -4,11 +4,11 @@ section.shop
 			.tittle-wrapper
 				h2 Наши номера
 				.shop-filter 
-					ul.shop-filter__list
-						li.shop-filter__list-item.arrow-up.active По площади
-						li.shop-filter__list-item.arrow-down По площади
-						li.shop-filter__list-item.arrow-up По цене
-						li.shop-filter__list-item.arrow-down По цене
+					.shop-filter__list
+						.shop-filter__list-item.arrow-up.active По площади
+						.shop-filter__list-item.arrow-down(onClick="sortSquare();") По площади
+						.shop-filter__list-item.arrow-up По цене
+						.shop-filter__list-item.arrow-down По цене
 		.section__row-2
 			.catalog-box
 				include ../catalog/filter.pug
