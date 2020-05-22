@@ -1,9 +1,9 @@
 // Блок фильтр - CHECKBOX
-let allCheckbox = Array.from(document.querySelectorAll("input[type=checkbox]"));
 let buttonFilterSumbit = document.querySelector(".button__filter--sumbit");
 let buttonFilterReset = document.querySelector(".button__filter--reset");
 let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
 let res = [];
+
 // --------------------------------------------------------------
 
 //  Блок модальных окон и меню
@@ -43,54 +43,52 @@ document.addEventListener("click", function (event) {
 // --------------------------------------------------------------
 
 // Блок фильтр
-let itemSquare = Array.from(document.querySelectorAll(".square"));
-let shopFilterList = document.querySelector(".shop-filter__list");
+let catalogBox = document.querySelector(".catalog-box");
 // // --------------------------------------------------------------
 
-shopFilterList.addEventListener("click", function (event) {
-  let shopFilterListItem = Array.from(document.querySelectorAll(".shop-filter__list-item"));
-  shopFilterListItem.forEach((value) => {
-    if (value.classList.contains("active")) {
-      value.classList.remove("active");
+catalogBox.addEventListener("click", function (event) {
+  //
+  let buttonElement = event.target.closest(".button__filter--sumbit");
+  let inputElement = event.target.closest("input");
+
+  if (inputElement) {
+    //
+    let squareID = inputElement.dataset.name;
+    let roomID = inputElement.dataset.room;
+    //
+    let cardSquare = `[data-square="${squareID}"]`;
+    let cardNoneRoom = `[data-none="${roomID}"]`;
+    let cardLotokRoom = `[data-lotok="${roomID}"]`;
+    let cardBallRoom = `[data-ball="${roomID}"]`;
+    let cardClawRoom = `[data-claw="${roomID}"]`;
+    let cardHouseRoom = `[data-house="${roomID}"]`;
+
+    //
+    let cardSquareItem = document.querySelector(cardSquare);
+    let cardNoneRoomItem = document.querySelector(cardNoneRoom);
+    let cardLotokRoomItem = document.querySelector(cardLotokRoom);
+    let cardBallRoomItem = document.querySelector(cardBallRoom);
+    let cardClawRoomItem = document.querySelector(cardClawRoom);
+    let cardHouseRoomItem = document.querySelector(cardHouseRoom);
+
+    if (cardLotokRoomItem.dataset.lotok === roomID) {
+      cardLotokRoomItem.style.display = "block";
+    } else {
+      cardLotokRoomItem.style.display = "none";
     }
-  });
-  let target = event.target;
-  target.classList.add("active");
+  }
+  //
+  // let squareTrue = cardSquareItem.dataset.square == squareID;
+  // let noneTrue = cardNoneRoomItem.dataset.none == roomID;
+  // let lotokTrue = cardLotokRoomItem.dataset.lotok == roomID;
+  // let ballTrue = cardBallRoomItem.dataset.ball == roomID;
+  // let clawTrue = cardClawRoomItem.dataset.claw == roomID;
+  // let houseTrue = cardHouseRoomItem.dataset.house == roomID;
+  //
+  //   if (squareTrue) {
+  //     cardSquareItem.style.display = "none";
+  //   }
+
+  //   cardSquareItem.style.display = "block";
+  // }
 });
-// --------------------------------------------------------------
-
-allCheckbox.forEach(function (item, i) {
-  item.addEventListener("change", function () {
-    if (item.checked) {
-      buttonFilterSumbit.classList.add("active");
-      catalogItemProduct.forEach(function (vl, indx) {
-        if (i == indx) {
-          res.push(vl);
-        }
-      });
-    }
-  });
-});
-
-function ClickMe() {
-  catalogItemProduct.forEach(function (vl, indx) {
-    let catalog = document.querySelector(".catalog");
-    res.forEach(function (val, index) {
-      if (val) {
-        catalog.classList.add("active");
-        val.style.display = "block";
-      }
-      if (vl != val) {
-        vl.style.display = "none";
-      }
-    });
-  });
-}
-
-// function ClickReset() {
-//   allCheckbox.forEach(function (vl, indx) {
-//     if (vl.checked) {
-//       vl.checked = false;
-//     }
-//   });
-// }
