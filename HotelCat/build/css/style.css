@@ -976,7 +976,14 @@ input[type="checkbox"]:checked + .far.fa-square::before {
   border-radius: 6px;
   max-width: 275px;
   margin-left: 24px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  display: none; }
+
+.catalog__list-item.hide {
+  display: block; }
+
+.active {
+  display: block; }
 
 .description-info {
   padding: 25px 20px; }

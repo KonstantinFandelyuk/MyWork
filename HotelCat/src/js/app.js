@@ -2,8 +2,8 @@
 let buttonFilterSumbit = document.querySelector(".button__filter--sumbit");
 let buttonFilterReset = document.querySelector(".button__filter--reset");
 let catalogItemProduct = Array.from(document.querySelectorAll(".catalog__list-item"));
+let catalog = document.querySelector(".catalog");
 let res = [];
-
 // --------------------------------------------------------------
 
 //  Блок модальных окон и меню
@@ -47,48 +47,25 @@ let catalogBox = document.querySelector(".catalog-box");
 // // --------------------------------------------------------------
 
 catalogBox.addEventListener("click", function (event) {
-  //
-  let buttonElement = event.target.closest(".button__filter--sumbit");
   let inputElement = event.target.closest("input");
-
   if (inputElement) {
+    let id = inputElement.dataset.name;
     //
-    let squareID = inputElement.dataset.name;
-    let roomID = inputElement.dataset.room;
-    //
-    let cardSquare = `[data-square="${squareID}"]`;
-    let cardNoneRoom = `[data-none="${roomID}"]`;
-    let cardLotokRoom = `[data-lotok="${roomID}"]`;
-    let cardBallRoom = `[data-ball="${roomID}"]`;
-    let cardClawRoom = `[data-claw="${roomID}"]`;
-    let cardHouseRoom = `[data-house="${roomID}"]`;
 
-    //
-    let cardSquareItem = document.querySelector(cardSquare);
-    let cardNoneRoomItem = document.querySelector(cardNoneRoom);
-    let cardLotokRoomItem = document.querySelector(cardLotokRoom);
-    let cardBallRoomItem = document.querySelector(cardBallRoom);
-    let cardClawRoomItem = document.querySelector(cardClawRoom);
-    let cardHouseRoomItem = document.querySelector(cardHouseRoom);
-
-    if (cardLotokRoomItem.dataset.lotok === roomID) {
-      cardLotokRoomItem.style.display = "block";
-    } else {
-      cardLotokRoomItem.style.display = "none";
+    for (let cardItem of catalogItemProduct) {
+      let squareTrue = cardItem.dataset.square == id;
+      let noneTrue = cardItem.dataset.none == id;
+      let lotokTrue = cardItem.dataset.lotok == id;
+      let ballTrue = cardItem.dataset.ball == id;
+      let clawTrue = cardItem.dataset.claw == id;
+      let houseTrue = cardItem.dataset.house == id;
+      //
+      if (squareTrue || noneTrue || lotokTrue || ballTrue || clawTrue || houseTrue) {
+        cardItem.classList.add("active");
+        catalog.classList.add("active");
+      } else {
+        cardItem.classList.remove("hide");
+      }
     }
   }
-  //
-  // let squareTrue = cardSquareItem.dataset.square == squareID;
-  // let noneTrue = cardNoneRoomItem.dataset.none == roomID;
-  // let lotokTrue = cardLotokRoomItem.dataset.lotok == roomID;
-  // let ballTrue = cardBallRoomItem.dataset.ball == roomID;
-  // let clawTrue = cardClawRoomItem.dataset.claw == roomID;
-  // let houseTrue = cardHouseRoomItem.dataset.house == roomID;
-  //
-  //   if (squareTrue) {
-  //     cardSquareItem.style.display = "none";
-  //   }
-
-  //   cardSquareItem.style.display = "block";
-  // }
 });

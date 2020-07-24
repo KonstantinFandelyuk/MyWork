@@ -20,6 +20,15 @@
   max-width: 275px;
   margin-left: 24px;
   margin-bottom: 30px;
+  display: none;
+}
+
+.catalog__list-item.hide {
+  display: block;
+}
+
+.active {
+  display: block;
 }
 
 .description-info {
